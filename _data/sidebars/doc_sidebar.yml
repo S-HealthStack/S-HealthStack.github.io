@@ -33,7 +33,7 @@ entries:
       output: web, pdf
 
     - title: Contributing to the Open Source Project
-      url: /coming-soon.html
+      url: /contributing-to-the-project.html
       output: web, pdf
 
   - title: Installation
@@ -88,6 +88,10 @@ entries:
       url: /configuring-the-app.html
       output: web, pdf
 
+    - title: Testing the App
+      url: /testing-the-app.html
+      output: web, pdf
+
   - title: Study Execution
     output: web, pdf
     folderitems:
@@ -105,7 +109,7 @@ entries:
     folderitems:
 
     - title: Viewing Graphs
-      url: /coming-soon.html
+      url: /viewing-graphs.html
       output: web, pdf
 
     - title: Running Queries
@@ -113,7 +117,7 @@ entries:
       output: web, pdf
 
     - title: Viewing Individual Results
-      url: /coming-soon.html
+      url: /viewing-individual-results.html
       output: web, pdf
 
     - title: Exporting Data for External Analysis

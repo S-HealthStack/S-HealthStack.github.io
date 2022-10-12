@@ -31,7 +31,7 @@ Studies are managed from the Samsung Health Stack web portal. Follow these steps
 
     > Creating the initial study automatically prompts you to invite team members. Let's invite Dr. McCoy as a principal investigator. Enter these parameters:
     >
-    > - Email: drmccoy@yoursite.com
+    > - Email: daniel.mccoy@researchuniversity.org
     > - Role: Principal Investigator
 3. [Create a participant survey](../study management/creating-a-survey.md).
 
@@ -56,7 +56,7 @@ For our study, participants wear the Samsung Galaxy Watch 4 and use an Android m
 
 2. In Android Studio, clone the https://github.com/S-HealthStack/starter-app GitHub repository to retrieve the app starter code.
 
-   > git clone https://github.com/S-HealthStack/starter-app.git
+   > git clone https://github.com/S-HealthStack/starter-app
 
 3. Edit the code in the `main` branch to customize it for our study.
 
@@ -127,7 +127,7 @@ Now, return to the web portal to analyze the results. Results are available for 
 - View various graphs.
 
 - [Run queries](../results analysis/running-a-query.md).
-   
+  
    > From the **Data Insights** page, in the **DATA QUERY** section, enter these parameters to list people who have experienced any symptoms of Syndrome X:
    > - Table: <span style="color:red">???</span>
    > - Query: <span style="color:red">???</span>
@@ -139,5 +139,5 @@ Now, return to the web portal to analyze the results. Results are available for 
    > Due to the limited data sample size, you'll likely see no meaningful difference between two groups.
    
 - [Export the data for external analysis](../results analysis/exporting-data.md)).
-   
+  
    > In the **Query Results** table, click **Export .csv**.
