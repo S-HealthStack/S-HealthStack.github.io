@@ -100,7 +100,7 @@ entries:
       url: /onboarding-participants.html
       output: web, pdf
 
-    - title: Collecting Data
+    - title: Collecting Survey and Sensor Data
       url: /collecting-data.html
       output: web, pdf
 
