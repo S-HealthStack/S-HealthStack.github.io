@@ -87,4 +87,4 @@ Refer to [Configuring the App Environment](../app-creation/configure-app.md) for
 
 ## IX. Reference Documentation
 
-Refer to our [API reference](../../api-reference/api-overview.md) and [SDK reference](../../sdk-reference/kit.md) documentation for details on all the backend API endpoints and SDK packages.
+Refer to our [API reference](../docs/api-reference/API-Documentation.md) and [SDK reference](../docs/sdk-reference/SDK-Documentation.md) documentation for details on all the backend API endpoints and SDK packages.

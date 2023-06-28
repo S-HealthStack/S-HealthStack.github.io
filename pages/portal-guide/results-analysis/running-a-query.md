@@ -15,7 +15,7 @@ To run a data query:
 
    ![running-a-query](../../../images/running-a-query.png)
 
-2. Adjust the `SELECT * FROM <table>` query statement using any valid SQL syntax. Refer to the [full-stack tutorial](../get-started/tutorial.md#analyze-the-results) for a complex query examples.
+2. Adjust the `SELECT * FROM <table>` query statement using any valid SQL syntax.
    > Changing the table automatically updates the **Select a table** list selection.
 
 3. Click the standard column header arrows to sort the output on a particular column.

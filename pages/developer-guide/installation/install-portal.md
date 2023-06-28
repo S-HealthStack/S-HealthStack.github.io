@@ -58,7 +58,7 @@ Follow these instructions to install, build, and verify the web portal.
 3. Follow the prompts to generate an account activation email.
 4. Open the email and complete the account creation and sign in process.
 
->  If you are the very first person to create an account, the system adds the `Team Admin` [team role](/role-based-access-control.md) to your account settings. Because this role has advanced access privileges to the Samsung Health Stack, we recommend that your system administrator creates the first account.
+>  If you are the very first person to create an account, the system adds the `Team Admin` [team role](../../portal-guide/study-management/role-based-access-control.md) to your account settings. Because this role has advanced access privileges to the Samsung Health Stack, we recommend that your system administrator creates the first account.
 
 <!-- The system adds the `Team Member` team role to the account settings of all subsequent accounts upon creation. -->
 

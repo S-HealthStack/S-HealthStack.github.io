@@ -11,7 +11,7 @@ Members are the people who are conducting the study. Your team consists of as ma
 
 These actions are available for managing the members participating in a given study:
 
-- [Inviting Members and Assigning Roles](#Inviting -members-and-assigning-roles)
+- [Inviting Members and Assigning Roles](#inviting-members-and-assigning-roles)
 - [Editing Member Information](#editing-member-information)
 - [Removing a Member from a Study](#removing-a-member-from-a-study)
 

@@ -747,7 +747,7 @@ When a mail server is available, perform these steps:
    }'
    ```
 2. Check the account activation email and activate the login.
-> The system `Team Admin` [team role](role-based-access-control.md) to the first user to create an account. Because this role has advanced access privileges to the Samsung Health Stack, we recommend that your system administrator creates the first account.
+> The system `Team Admin` [team role](../../portal-guide/study-management/role-based-access-control.md) to the first user to create an account. Because this role has advanced access privileges to the Samsung Health Stack, we recommend that your system administrator creates the first account.
 
 
 ### Without Mail Server
