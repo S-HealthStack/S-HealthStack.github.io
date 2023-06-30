@@ -19,6 +19,14 @@ entries:
     - title: Version v0.9a (alpha)
       url: /v09alpha.html
       output: web, pdf
+      
+  - title: Version v1.0
+    output: web, pdf
+    folderitems:
+
+    - title: Version v1.0
+      url: /v10.html
+      output: web, pdf
 
       # <Below is how to create an additional hierarchy>
       # subfolders:
