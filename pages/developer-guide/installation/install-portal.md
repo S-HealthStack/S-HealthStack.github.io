@@ -29,9 +29,9 @@ Follow these instructions to install, build, and verify the web portal.
 
 1. Determine your URLs.
    
-   | Variable    | Description                                                  | Default value |
-   | ----------- | ------------------------------------------------------------ | ------------- |
-   | API_URL     | Base API URL to access endpoints.                            |               |
+   | Variable    | Description                                                                                                                                                                                                           | Default value |
+   | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+   | API_URL     | Base API URL to access endpoints.                                                                                                                                                                                     |               |
    | PUBLIC_PATH | Path will be used to host the app. For example, to host the frontend on [https://example.com/open-source/portal](https://example.com/open-source/portal){:target="_blank"} it should be set to '/open-source/portal'. | /             |
 
 2. Build `Dockerfile` with desired variables provided as build arguments. For example,
