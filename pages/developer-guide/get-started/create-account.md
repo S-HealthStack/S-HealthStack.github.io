@@ -5,6 +5,8 @@ permalink: create-account.html
 toc: false
 ---
 
+{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
+
 # Full-Stack Implementations
 Members are the users who conduct the studies. Once members have their Samsung Health Stack account, they can access all backend functionality via the web portal or otherwise.
 

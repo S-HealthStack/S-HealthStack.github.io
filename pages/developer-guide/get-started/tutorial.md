@@ -5,6 +5,8 @@ permalink: tutorial.html
 toc: true
 ---
 
+{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
+
 This getting started tutorial describes the steps you need to be up and running with your own study using the full Samsung Health Stack. The best way to explain the steps is to walk through a simple example, which was presented at the Samsung Developer Conference (SDC2022). Follow these steps to get started with .
 
 ## Set up your environment

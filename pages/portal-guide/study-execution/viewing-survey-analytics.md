@@ -5,6 +5,8 @@ permalink: viewing-survey-analytics.html
 toc: false
 ---
 
+{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
+
 The web portal provides easy visualization of survey response analytics. For each published survey, participation details and charts showing response percentages by gender and by age give you up-to-the-minute analytic data.
 
 To view survey response analytics:

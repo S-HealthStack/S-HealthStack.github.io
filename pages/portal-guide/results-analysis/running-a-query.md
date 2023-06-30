@@ -5,6 +5,8 @@ permalink: running-a-query.html
 toc: false
 ---
 
+{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
+
 Querying within the web portal allows you to gain some simple insights into your data. You can run queries at any point in the study.
 
 > For more detailed analysis, refer to [Exporting Data for External Analysis](exporting-data.md).

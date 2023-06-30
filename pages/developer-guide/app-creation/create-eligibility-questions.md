@@ -5,6 +5,8 @@ permalink: create-eligibility-questions.html
 toc: false
 ---
 
+{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
+
 Part of onboarding participants is asking them questions to determine if they are appropriate participants for your study. 
 
 # All Implementations

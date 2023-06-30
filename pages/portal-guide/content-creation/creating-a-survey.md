@@ -5,7 +5,7 @@ permalink: creating-a-survey.html
 toc: false
 ---
 
-<span style="color:red">*Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated.*</span>
+{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
 
 A survey is a sequence of questions that collect information from the participants in your study. You create surveys through the Samsung Health Stack web portal.
 
