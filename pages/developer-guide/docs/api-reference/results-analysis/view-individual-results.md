@@ -17,6 +17,7 @@ toc: false
 To create graphs and charts using the API endpoints:
 
 1. Refer to `POST /projects/{projectId}/graphql` in [Study API Endpoints](../../api-reference/all-endpoints/study-api-endpoints.md) in the API reference to fetch individual participant results data.
+
 2. Develop your own graphs and charts to display the information as needed for your use case.
 
 ## Web Portal

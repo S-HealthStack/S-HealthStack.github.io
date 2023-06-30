@@ -18,6 +18,7 @@ toc: false
 To export data using the API endpoints:
 
 1. Refer to `POST /projects/{projectId}/graphql` in [Study API Endpoints](../../api-reference/all-endpoints/study-api-endpoints.md) and other endpoints in the API reference to fetch the data.
+
 2. Develop your own method to export the data.
 
 ## Web Portal

@@ -25,6 +25,7 @@ To populate a survey using the API endpoints:
 
 1. Refer to `PATCH /projects/{projectId}/tasks/{taskid}` in [Study API Endpoints](../../api-reference/all-endpoints/study-api-endpoints.md) in the API reference.
 
+
 ## Web Portal
 
 We highly recommend you create surveys through the Samsung Health Stack web portal.
@@ -32,3 +33,4 @@ We highly recommend you create surveys through the Samsung Health Stack web port
 To create a survey using the web portal:
 
 1. Refer to [Creating a Survey](../../../../portal-guide/content-creation/creating-a-survey.md) in the web portal user guide.
+

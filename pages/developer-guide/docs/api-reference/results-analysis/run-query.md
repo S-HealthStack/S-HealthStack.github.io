@@ -18,6 +18,7 @@ toc: false
 To run a query using the API endpoints:
 
 1. Refer to `POST /projects/{projectId}/graphql` in [Data Query Service API Endpoints](../../api-reference/all-endpoints/data-query-service-api-endpoints.md).
+
 2. Use your preferred method to view the resulting data.
 
 ## Web Portal

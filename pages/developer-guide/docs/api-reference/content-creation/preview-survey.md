@@ -26,4 +26,3 @@ We highly recommend you preview surveys through the Samsung Health Stack web por
 To preview a survey using the web portal:
 
 1. Refer to [Previewing a Survey](../../../../portal-guide/content-creation/previewing-a-survey.md) in the web portal user guide.
-

@@ -20,4 +20,14 @@ entries:
       url: /v09alpha.html
       output: web, pdf
 
+      # <Below is how to create an additional hierarchy>
+      # subfolders:
+      # - title: foldername
+      #   output: web, pdf
+      #   subfolderitems:
+           
+      #   - title: Creating Eligibility Questions
+      #     url: /create-eligibility-questions.html
+      #     output: web, pdf
+
 # Copyright 2021 Google LLC
