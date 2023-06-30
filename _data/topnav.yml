@@ -6,7 +6,7 @@ topnav:
     - title: Documentation
       url: /index.html
     - title: Release Notes
-      url: /v09beta.html
+      url: /v10.html
 
 #Topnav dropdowns
 topnav_dropdowns:
