@@ -5,6 +5,8 @@ sidebar: doc_sidebar
 toc: false
 ---
 
+{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
+
 ## Configuring the Database
 
 The Samsung Health Stack is build to work with PostgreSQL Database. There are two methods to configure PostgreSQL database. You can edit `application.yml` or use `application.properties`

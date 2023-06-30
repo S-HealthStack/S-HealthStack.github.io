@@ -3,8 +3,10 @@ title: Creating the Mobile App
 sidebar: doc_sidebar
 permalink: create-app.html
 toc: false
-
 ---
+
+{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
+
 Use the app SDK to create your app. While you are welcome to develop from scratch if that suits you, we highly recommend starting with and customizing the starter app and following this development workflow:
 
 1. If you are not already familiar with developing code in Android Studio, take a look at [https://developer.android.com/studio/intro](https://developer.android.com/studio/intro){:target="_blank"}.

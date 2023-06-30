@@ -11,9 +11,9 @@ Follow these instructions to install, build, and verify the app SDK.
 
 # Prerequisites
 
-## I. Install OpenJDK 17
+## I. Install OpenJDK 11
 
-1. Set up and install OpenJDK 17 using the instructions at [https://openjdk.org/install/](https://openjdk.org/install/){:target="_blank"}.
+1. Set up and install OpenJDK 11 using the instructions at [https://openjdk.org/install/](https://openjdk.org/install/){:target="_blank"}.
 
 ## II. Install Android Studio 
 

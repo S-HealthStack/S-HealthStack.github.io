@@ -5,6 +5,8 @@ permalink: viewing-graphs.html
 toc: false
 ---
 
+{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
+
 The web portal provides line graphs and scatter plot charts for easy visualization of the data collected through your study. Each one provides views of the general trends and of datapoints filtered by demographic.
 
 To view graphs:

@@ -5,7 +5,7 @@ permalink: role-based-access-control.html
 toc: false
 ---
 
-<span style="color:red">*Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated.*</span>
+{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
 
 The role-based access control feature provides security with differing levels of access permission granted to different roles.
 

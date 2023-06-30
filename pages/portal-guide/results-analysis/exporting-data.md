@@ -5,6 +5,8 @@ permalink: exporting-data.html
 toc: false
 ---
 
+{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
+
 The web portal provides a straightforward way to export your data to **.csv** files for further analysis in popular data analysis tools such as SPSS, R, and Matlab. 
 
 > For simple insights into your data from within the web portal, refer to [Running a Data Query](running-a-query.md).
