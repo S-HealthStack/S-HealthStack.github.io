@@ -25,7 +25,7 @@ For the last question in this survey, the add skip logic will not appear.
 
 1. When there’s only 1 Condition inside a Rule, the “-” button is disabled to prevent users from removing the last Condition.
    The “+” button is always enabled to help users add more Conditions with or without an existing edited Condition.
-   GENERAL RULE: Changing the dropdown choice won’t affect the unselected dropdowns or those in another type (Condition/Destination), or before it.
+   GENERAL RULE: Changing the dropdown choice won’t affect the unselected dropdowns or those in another type (Condition/Destination) or before.
 2. The “Save” button is always enabled; clicking this button with an unfilled dropdown will trigger the corresponding error state.
 3. When there’s only one empty rule, the “Remove all” button will be disabled.
 4. The default state of a Rule box:
