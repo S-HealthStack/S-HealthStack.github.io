@@ -1,20 +1,10 @@
 ---
-
-
-
 title: getInstance
-permalink: /interface/healthstack.healthdata.link/-health-data-link-holder/get-instance.html
-
-
+permalink: /healthdata-link/interface/healthstack.healthdata.link/-health-data-link-holder/get-instance.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/hl_interface.html)/[healthstack.healthdata.link](../index.html)/[HealthDataLinkHolder](index.html)/[getInstance](get-instance.html)
+//[interface](../../../index.html)/[healthstack.healthdata.link](../index.html)/[HealthDataLinkHolder](index.html)/[getInstance](get-instance.html)
 
 
 
@@ -24,8 +14,6 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 fun [getInstance](get-instance.html)(): [HealthDataLink](../-health-data-link/index.html)
-
-
 
 
 

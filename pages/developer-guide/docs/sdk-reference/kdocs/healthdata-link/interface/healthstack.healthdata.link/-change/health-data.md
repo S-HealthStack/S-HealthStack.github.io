@@ -1,20 +1,10 @@
 ---
-
-
-
 title: healthData
-permalink: /interface/healthstack.healthdata.link/-change/health-data.html
-
-
+permalink: /healthdata-link/interface/healthstack.healthdata.link/-change/health-data.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/hl_interface.html)/[healthstack.healthdata.link](../index.html)/[Change](index.html)/[healthData](health-data.html)
+//[interface](../../../index.html)/[healthstack.healthdata.link](../index.html)/[Change](index.html)/[healthData](health-data.html)
 
 
 
@@ -24,8 +14,6 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 val [healthData](health-data.html): [HealthData](../-health-data/index.html)
-
-
 
 
 

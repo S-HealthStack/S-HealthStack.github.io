@@ -1,20 +1,10 @@
 ---
-
-
-
 title: TasksState
 permalink: /app-support/healthstack.app.viewmodel/-task-view-model/-tasks-state/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.viewmodel](../../index.html)/[TaskViewModel](../index.html)/[TasksState](index.html)
+//[app-support](../../../../index.html)/[healthstack.app.viewmodel](../../index.html)/[TaskViewModel](../index.html)/[TasksState](index.html)
 
 
 
@@ -41,6 +31,4 @@ data class [TasksState](index.html)(val tasks: [List](https://kotlinlang.org/api
 | Name | Summary |
 |---|---|
 | [tasks](tasks.html) | [androidJvm]<br>val [tasks](tasks.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;Task&gt; |
-
-
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: ConsentTextStep
 permalink: /kit/healthstack.kit.task.onboarding.step/-consent-text-step/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding.step](../index.html)/[ConsentTextStep](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.onboarding.step](../index.html)/[ConsentTextStep](index.html)
 
 
 
@@ -54,6 +44,4 @@ class [ConsentTextStep](index.html)(id: [String](https://kotlinlang.org/api/late
 | [name](../../healthstack.kit.task.base/-step/name.html) | [androidJvm]<br>val [name](../../healthstack.kit.task.base/-step/name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>name |
 | [result](../../healthstack.kit.task.base/-step/result.html) | [androidJvm]<br>var [result](../../healthstack.kit.task.base/-step/result.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
 | [view](../../healthstack.kit.task.base/-step/view.html) | [androidJvm]<br>val [view](../../healthstack.kit.task.base/-step/view.html): [View](../../healthstack.kit.task.base/-view/index.html)&lt;[ConsentTextModel](../../healthstack.kit.task.onboarding.model/-consent-text-model/index.html)&gt;<br>view object holding UI method |
-
-
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: getHealthData
-permalink: /interface/healthstack.healthdata.link/-health-data-link/get-health-data.html
-
-
+permalink: /healthdata-link/interface/healthstack.healthdata.link/-health-data-link/get-health-data.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/hl_interface.html)/[healthstack.healthdata.link](../index.html)/[HealthDataLink](index.html)/[getHealthData](get-health-data.html)
+//[interface](../../../index.html)/[healthstack.healthdata.link](../index.html)/[HealthDataLink](index.html)/[getHealthData](get-health-data.html)
 
 
 
@@ -53,8 +43,6 @@ androidJvm
 | startTime | Start point of time range |
 | endTime | End point of time range |
 | healthDataTypeName | Type of health data to read. |
-
-
 
 
 

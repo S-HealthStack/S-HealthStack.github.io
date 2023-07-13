@@ -1,20 +1,10 @@
 ---
-
-
-
 title: ItemProperties
-permalink: /interface/healthstack.backend.integration.task/-item-properties/index.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.task/-item-properties/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.task](../index.html)/[ItemProperties](index.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.task](../index.html)/[ItemProperties](index.html)
 
 
 
@@ -23,7 +13,7 @@ sidebar: dev_doc_sidebar
 
 
 [androidJvm]\
-open class [ItemProperties](index.html)(val tag: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))
+open class [ItemProperties](index.html)(val tag: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val skipLogic: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[SkipLogic](../-skip-logic/index.html)&gt;?)
 
 System distinguishes the UI component based on the tag.
 
@@ -34,7 +24,7 @@ System distinguishes the UI component based on the tag.
 
 | | |
 |---|---|
-| [ItemProperties](-item-properties.html) | [androidJvm]<br>fun [ItemProperties](-item-properties.html)(tag: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
+| [ItemProperties](-item-properties.html) | [androidJvm]<br>fun [ItemProperties](-item-properties.html)(tag: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), skipLogic: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[SkipLogic](../-skip-logic/index.html)&gt;?) |
 
 
 ## Properties
@@ -42,6 +32,7 @@ System distinguishes the UI component based on the tag.
 
 | Name | Summary |
 |---|---|
+| [skipLogic](skip-logic.html) | [androidJvm]<br>@SerializedName(value = &quot;skip_logic&quot;)<br>val [skipLogic](skip-logic.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[SkipLogic](../-skip-logic/index.html)&gt;? |
 | [tag](tag.html) | [androidJvm]<br>val [tag](tag.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>Type of UI component to render. (ex) Radio, Dropdown |
 
 
@@ -50,8 +41,9 @@ System distinguishes the UI component based on the tag.
 
 | Name |
 |---|
+| [TextProperties](../-text-properties/index.html) |
 | [ChoiceProperties](../-choice-properties/index.html) |
+| [RankingProperties](../-ranking-properties/index.html) |
+| [DateTimeProperties](../-date-time-properties/index.html) |
 | [ScaleProperties](../-scale-properties/index.html) |
-
-
 

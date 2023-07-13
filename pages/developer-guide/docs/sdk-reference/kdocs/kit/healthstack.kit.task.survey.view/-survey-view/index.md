@@ -1,20 +1,10 @@
 ---
-
-
-
 title: SurveyView
 permalink: /kit/healthstack.kit.task.survey.view/-survey-view/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.view](../index.html)/[SurveyView](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.view](../index.html)/[SurveyView](index.html)
 
 
 
@@ -23,7 +13,7 @@ sidebar: dev_doc_sidebar
 
 
 [androidJvm]\
-open class [SurveyView](index.html)(pageable: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true) : [View](../../healthstack.kit.task.base/-view/index.html)&lt;[SurveyModel](../../healthstack.kit.task.survey.model/-survey-model/index.html)&gt;
+open class [SurveyView](index.html)(pageable: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true, isEligibility: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false, isSurveyWithSection: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false) : [View](../../healthstack.kit.task.base/-view/index.html)&lt;[SurveyModel](../../healthstack.kit.task.survey.model/-survey-model/index.html)&gt;
 
 
 
@@ -32,7 +22,7 @@ open class [SurveyView](index.html)(pageable: [Boolean](https://kotlinlang.org/a
 
 | | |
 |---|---|
-| [SurveyView](-survey-view.html) | [androidJvm]<br>fun [SurveyView](-survey-view.html)(pageable: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true) |
+| [SurveyView](-survey-view.html) | [androidJvm]<br>fun [SurveyView](-survey-view.html)(pageable: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true, isEligibility: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false, isSurveyWithSection: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false) |
 
 
 ## Functions
@@ -49,6 +39,4 @@ open class [SurveyView](index.html)(pageable: [Boolean](https://kotlinlang.org/a
 | Name |
 |---|
 | [EligibilityCheckerView](../../healthstack.kit.task.onboarding.view/-eligibility-checker-view/index.html) |
-
-
 

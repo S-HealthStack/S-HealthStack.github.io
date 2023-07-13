@@ -1,20 +1,10 @@
 ---
-
-
-
 title: HealthDataLink
-permalink: /interface/healthstack.healthdata.link/-health-data-link/index.html
-
-
+permalink: /healthdata-link/interface/healthstack.healthdata.link/-health-data-link/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/hl_interface.html)/[healthstack.healthdata.link](../index.html)/[HealthDataLink](index.html)
+//[interface](../../../index.html)/[healthstack.healthdata.link](../index.html)/[HealthDataLink](index.html)
 
 
 
@@ -44,6 +34,4 @@ It has several methods for general health data client.
 | [hasAllPermissions](has-all-permissions.html) | [androidJvm]<br>abstract suspend fun [hasAllPermissions](has-all-permissions.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)<br>A method checking if all permissions are acquired. |
 | [isIntervalData](is-interval-data.html) | [androidJvm]<br>abstract fun [isIntervalData](is-interval-data.html)(healthDataName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)<br>A method checking if the given health data type is Interval data. |
 | [requestPermissions](request-permissions.html) | [androidJvm]<br>abstract suspend fun [requestPermissions](request-permissions.html)()<br>A method requesting all permissions. |
-
-
 

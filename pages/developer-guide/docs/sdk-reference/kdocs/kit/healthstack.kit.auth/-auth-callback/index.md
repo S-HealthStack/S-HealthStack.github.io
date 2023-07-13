@@ -1,20 +1,10 @@
 ---
-
-
-
 title: AuthCallback
 permalink: /kit/healthstack.kit.auth/-auth-callback/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.auth](../index.html)/[AuthCallback](index.html)
+//[kit](../../../index.html)/[healthstack.kit.auth](../index.html)/[AuthCallback](index.html)
 
 
 
@@ -42,6 +32,4 @@ class [AuthCallback](index.html)(val onSuccess: () -&gt; [Unit](https://kotlinla
 |---|---|
 | [onFailure](on-failure.html) | [androidJvm]<br>val [onFailure](on-failure.html): () -&gt; [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
 | [onSuccess](on-success.html) | [androidJvm]<br>val [onSuccess](on-success.html): () -&gt; [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
-
-
 

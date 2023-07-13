@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Change
-permalink: /interface/healthstack.healthdata.link/-change/index.html
-
-
+permalink: /healthdata-link/interface/healthstack.healthdata.link/-change/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/hl_interface.html)/[healthstack.healthdata.link](../index.html)/[Change](index.html)
+//[interface](../../../index.html)/[healthstack.healthdata.link](../index.html)/[Change](index.html)
 
 
 
@@ -44,6 +34,4 @@ A data object representing Change.
 |---|---|
 | [healthData](health-data.html) | [androidJvm]<br>val [healthData](health-data.html): [HealthData](../-health-data/index.html)<br>[HealthData](../-health-data/index.html) |
 | [token](token.html) | [androidJvm]<br>val [token](token.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>renewed changes token. |
-
-
 

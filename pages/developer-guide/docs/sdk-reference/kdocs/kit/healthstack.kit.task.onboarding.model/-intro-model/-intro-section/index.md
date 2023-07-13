@@ -1,20 +1,10 @@
 ---
-
-
-
 title: IntroSection
 permalink: /kit/healthstack.kit.task.onboarding.model/-intro-model/-intro-section/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding.model](../../index.html)/[IntroModel](../index.html)/[IntroSection](index.html)
+//[kit](../../../../index.html)/[healthstack.kit.task.onboarding.model](../../index.html)/[IntroModel](../index.html)/[IntroSection](index.html)
 
 
 
@@ -42,6 +32,4 @@ data class [IntroSection](index.html)(val subTitle: [String](https://kotlinlang.
 |---|---|
 | [description](description.html) | [androidJvm]<br>val [description](description.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [subTitle](sub-title.html) | [androidJvm]<br>val [subTitle](sub-title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-
-
 

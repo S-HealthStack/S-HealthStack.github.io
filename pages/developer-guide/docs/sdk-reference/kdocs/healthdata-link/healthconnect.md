@@ -1,16 +1,10 @@
 ---
-
-
-
 title: healthconnect
-permalink: /healthconnect.html
-
-
+permalink: /healthdata-link/healthconnect.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
+//[healthconnect](index.html)
 
 
 
@@ -24,6 +18,4 @@ sidebar: dev_doc_sidebar
 | Name |
 |---|
 | [healthstack.healthdata.link.healthconnect](healthconnect/healthstack.healthdata.link.healthconnect/index.html) |
-
-
 

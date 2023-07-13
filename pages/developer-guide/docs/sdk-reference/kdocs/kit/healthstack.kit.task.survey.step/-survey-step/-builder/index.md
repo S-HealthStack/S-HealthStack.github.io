@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Builder
 permalink: /kit/healthstack.kit.task.survey.step/-survey-step/-builder/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.step](../../index.html)/[SurveyStep](../index.html)/[Builder](index.html)
+//[kit](../../../../index.html)/[healthstack.kit.task.survey.step](../../index.html)/[SurveyStep](../index.html)/[Builder](index.html)
 
 
 
@@ -42,6 +32,4 @@ class [Builder](index.html)(title: [String](https://kotlinlang.org/api/latest/jv
 |---|---|
 | [addQuestions](add-questions.html) | [androidJvm]<br>fun &lt;[R](add-questions.html)&gt; [addQuestions](add-questions.html)(questions: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[QuestionModel](../../../healthstack.kit.task.survey.question.model/-question-model/index.html)&lt;[R](add-questions.html)&gt;&gt;): [SurveyStep.Builder](index.html) |
 | [build](build.html) | [androidJvm]<br>fun [build](build.html)(): [SurveyStep](../index.html) |
-
-
 

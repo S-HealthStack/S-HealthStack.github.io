@@ -1,20 +1,10 @@
 ---
-
-
-
 title: CardView
 permalink: /kit/healthstack.kit.task.survey/-survey-task/-card-view.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey](../index.html)/[SurveyTask](index.html)/[CardView](-card-view.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey](../index.html)/[SurveyTask](index.html)/[CardView](-card-view.html)
 
 
 
@@ -36,8 +26,6 @@ open override fun [CardView](-card-view.html)(onClick: () -&gt; [Unit](https://k
 
 
 A method for rendering CardView UI.
-
-
 
 
 

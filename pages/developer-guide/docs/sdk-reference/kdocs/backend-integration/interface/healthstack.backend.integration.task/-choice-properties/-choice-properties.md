@@ -1,20 +1,10 @@
 ---
-
-
-
 title: ChoiceProperties
-permalink: /interface/healthstack.backend.integration.task/-choice-properties/-choice-properties.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.task/-choice-properties/-choice-properties.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.task](../index.html)/[ChoiceProperties](index.html)/[ChoiceProperties](-choice-properties.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.task](../index.html)/[ChoiceProperties](index.html)/[ChoiceProperties](-choice-properties.html)
 
 
 
@@ -23,7 +13,7 @@ sidebar: dev_doc_sidebar
 
 
 [androidJvm]\
-fun [ChoiceProperties](-choice-properties.html)(tag: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), options: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Option](../-option/index.html)&gt;)
+fun [ChoiceProperties](-choice-properties.html)(tag: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), skipLogic: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[SkipLogic](../-skip-logic/index.html)&gt;? = null, options: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Option](../-option/index.html)&gt;)
 
 
 
@@ -35,8 +25,6 @@ androidJvm
 | | |
 |---|---|
 | tag | Type of UI component to render. (ex) Radio, Dropdown |
-
-
 
 
 

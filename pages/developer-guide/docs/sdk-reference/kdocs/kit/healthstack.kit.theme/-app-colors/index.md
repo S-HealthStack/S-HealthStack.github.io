@@ -1,20 +1,10 @@
 ---
-
-
-
 title: AppColors
 permalink: /kit/healthstack.kit.theme/-app-colors/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.theme](../index.html)/[AppColors](index.html)
+//[kit](../../../index.html)/[healthstack.kit.theme](../index.html)/[AppColors](index.html)
 
 
 
@@ -23,7 +13,7 @@ sidebar: dev_doc_sidebar
 
 
 [androidJvm]\
-class [AppColors](index.html)(primary: Color, primaryVariant: Color, background: Color, surface: Color, onPrimary: Color, onBackground: Color, onSurface: Color, onSurfaceVariant: Color, error: Color, errorVariant: Color, onError: Color, disabled: Color, onDisabled: Color, disabled2: Color, onDisabled2: Color, dataVisualization1: Color, dataVisualization1Variant: Color, dataVisualization2: Color, dataVisualization2Variant: Color, dataVisualization3: Color, dataVisualization3Variant: Color, dataVisualization4: Color, dataVisualization4Variant: Color, dataVisualization5: Color, dataVisualization5Variant: Color, success: Color, successVariant: Color, warning: Color, warningVariant: Color, isLight: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+class [AppColors](index.html)(val primary: Color, val primaryVariant: Color, val background: Color, val surface: Color, val onPrimary: Color, val onBackground: Color, val onSurface: Color, val onSurfaceVariant: Color, val error: Color, val errorVariant: Color, val onError: Color, val disabled: Color, val onDisabled: Color, val disabled2: Color, val onDisabled2: Color, val dataVisualization1: Color, val dataVisualization1Variant: Color, val dataVisualization2: Color, val dataVisualization2Variant: Color, val dataVisualization3: Color, val dataVisualization3Variant: Color, val dataVisualization4: Color, val dataVisualization4Variant: Color, val dataVisualization5: Color, val dataVisualization5Variant: Color, val success: Color, val successVariant: Color, val warning: Color, val warningVariant: Color, val isLight: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
 
 
 
@@ -40,9 +30,7 @@ class [AppColors](index.html)(primary: Color, primaryVariant: Color, background:
 
 | Name | Summary |
 |---|---|
-| [copy](copy.html) | [androidJvm]<br>fun [copy](copy.html)(primary: Color = this.primary, primaryVariant: Color = this.primaryVariant, background: Color = this.background, surface: Color = this.surface, onPrimary: Color = this.onPrimary, onBackground: Color = this.onBackground, onSurface: Color = this.onSurface, onSurfaceVariant: Color = this.onSurfaceVariant, error: Color = this.error, errorVariant: Color = this.errorVariant, onError: Color = this.onError, disabled: Color = this.disabled, onDisabled: Color = this.onDisabled, disabled2: Color = this.disabled2, onDisabled2: Color = this.onDisabled2, dataVisualization1: Color = this.dataVisualization1, dataVisualization1Variant: Color = this.dataVisualization1Variant, dataVisualization2: Color = this.dataVisualization2, dataVisualization2Variant: Color = this.dataVisualization2Variant, dataVisualization3: Color = this.dataVisualization3, dataVisualization3Variant: Color = this.dataVisualization3Variant, dataVisualization4: Color = this.dataVisualization4, dataVisualization4Variant: Color = this.dataVisualization4Variant, dataVisualization5: Color = this.dataVisualization5, dataVisualization5Variant: Color = this.dataVisualization5Variant, success: Color = this.success, successVariant: Color = this.successVariant, warning: Color = this.warning, warningVariant: Color = this.warningVariant, isLight: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = this.isLight): [AppColors](index.html) |
 | [materialColors](material-colors.html) | [androidJvm]<br>fun [materialColors](material-colors.html)(): Colors |
-| [updateColorsFrom](update-colors-from.html) | [androidJvm]<br>fun [updateColorsFrom](update-colors-from.html)(other: [AppColors](index.html)) |
 
 
 ## Properties
@@ -80,6 +68,4 @@ class [AppColors](index.html)(primary: Color, primaryVariant: Color, background:
 | [surface](surface.html) | [androidJvm]<br>val [surface](surface.html): Color |
 | [warning](warning.html) | [androidJvm]<br>val [warning](warning.html): Color |
 | [warningVariant](warning-variant.html) | [androidJvm]<br>val [warningVariant](warning-variant.html): Color |
-
-
 

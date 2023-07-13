@@ -1,16 +1,14 @@
 ---
-
-
-
 title: healthstack-adapter
-permalink: /healthstack-adapter.html
-
-
+permalink: /backend-integration/healthstack-adapter.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
+//[healthstack-adapter](index.html)
+
+
+
+# healthstack-adapter
 
 
 
@@ -20,6 +18,4 @@ sidebar: dev_doc_sidebar
 | Name |
 |---|
 | [healthstack.backend.integration.adapter](healthstack-adapter/healthstack.backend.integration.adapter/index.html) |
-
-
 

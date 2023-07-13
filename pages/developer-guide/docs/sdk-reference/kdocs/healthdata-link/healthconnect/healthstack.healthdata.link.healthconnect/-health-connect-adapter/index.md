@@ -1,20 +1,10 @@
 ---
-
-
-
 title: HealthConnectAdapter
-permalink: /healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-adapter/index.html
-
-
+permalink: /healthdata-link/healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-adapter/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[healthconnect](/healthconnect.html)/[healthstack.healthdata.link.healthconnect](../index.html)/[HealthConnectAdapter](index.html)
+//[healthconnect](../../../index.html)/[healthstack.healthdata.link.healthconnect](../index.html)/[HealthConnectAdapter](index.html)
 
 
 
@@ -47,6 +37,4 @@ class [HealthConnectAdapter](index.html)(healthDataTypeNames: [List](https://kot
 | [hasAllPermissions](has-all-permissions.html) | [androidJvm]<br>open suspend override fun [hasAllPermissions](has-all-permissions.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
 | [isIntervalData](is-interval-data.html) | [androidJvm]<br>open override fun [isIntervalData](is-interval-data.html)(healthDataName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
 | [requestPermissions](request-permissions.html) | [androidJvm]<br>open suspend override fun [requestPermissions](request-permissions.html)() |
-
-
 

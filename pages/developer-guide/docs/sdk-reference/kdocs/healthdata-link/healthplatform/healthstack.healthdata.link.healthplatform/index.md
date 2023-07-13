@@ -1,20 +1,10 @@
 ---
-
-
-
 title: healthstack.healthdata.link.healthplatform
-permalink: /healthplatform/healthstack.healthdata.link.healthplatform/index.html
-
-
+permalink: /healthdata-link/healthplatform/healthstack.healthdata.link.healthplatform/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[healthplatform](/healthplatform.html)/[healthstack.healthdata.link.healthplatform](index.html)
+//[healthplatform](../../index.html)/[healthstack.healthdata.link.healthplatform](index.html)
 
 
 
@@ -27,6 +17,7 @@ sidebar: dev_doc_sidebar
 
 | Name | Summary |
 |---|---|
+| [ForVerificationGenerated](-for-verification-generated/index.html) | [androidJvm]<br>@[Target](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-target/index.html)(allowedTargets = [[AnnotationTarget.FUNCTION](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-f-u-n-c-t-i-o-n/index.html), [AnnotationTarget.CLASS](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-c-l-a-s-s/index.html)])<br>annotation class [ForVerificationGenerated](-for-verification-generated/index.html) |
 | [HealthPlatformAdapter](-health-platform-adapter/index.html) | [androidJvm]<br>class [HealthPlatformAdapter](-health-platform-adapter/index.html)(healthDataClient: HealthDataClient, healthDataTypeNames: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)&gt;) : HealthDataLink |
 
 
@@ -36,6 +27,4 @@ sidebar: dev_doc_sidebar
 | Name | Summary |
 |---|---|
 | [toHealthData](to-health-data.html) | [androidJvm]<br>fun ReadDataResponse.[toHealthData](to-health-data.html)(healthDataType: DataType): HealthData |
-
-
 

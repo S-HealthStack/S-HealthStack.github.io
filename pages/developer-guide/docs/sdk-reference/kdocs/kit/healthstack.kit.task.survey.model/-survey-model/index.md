@@ -1,20 +1,10 @@
 ---
-
-
-
 title: SurveyModel
 permalink: /kit/healthstack.kit.task.survey.model/-survey-model/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.model](../index.html)/[SurveyModel](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.model](../index.html)/[SurveyModel](index.html)
 
 
 
@@ -51,6 +41,4 @@ open class [SurveyModel](index.html)(val id: [String](https://kotlinlang.org/api
 | Name |
 |---|
 | [EligibilityCheckerModel](../../healthstack.kit.task.onboarding.model/-eligibility-checker-model/index.html) |
-
-
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: ImageArticleModel
 permalink: /kit/healthstack.kit.task.base/-image-article-model/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.base](../index.html)/[ImageArticleModel](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[ImageArticleModel](index.html)
 
 
 
@@ -46,6 +36,4 @@ A [StepModel](../-step-model/index.html) with image.
 | [drawableId](../-step-model/drawable-id.html) | [androidJvm]<br>val [drawableId](../-step-model/drawable-id.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?<br>a representative image for UI |
 | [id](../-step-model/id.html) | [androidJvm]<br>val [id](../-step-model/id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>id |
 | [title](../-step-model/title.html) | [androidJvm]<br>val [title](../-step-model/title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>a title of UI |
-
-
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: CardView
 permalink: /kit/healthstack.kit.task.base/-task/-card-view.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.base](../index.html)/[Task](index.html)/[CardView](-card-view.html)
+//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[Task](index.html)/[CardView](-card-view.html)
 
 
 
@@ -36,8 +26,6 @@ abstract fun [CardView](-card-view.html)(onClick: () -&gt; [Unit](https://kotlin
 
 
 A method for rendering CardView UI.
-
-
 
 
 

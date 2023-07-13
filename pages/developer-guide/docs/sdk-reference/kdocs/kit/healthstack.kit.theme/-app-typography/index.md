@@ -1,20 +1,10 @@
 ---
-
-
-
 title: AppTypography
 permalink: /kit/healthstack.kit.theme/-app-typography/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.theme](../index.html)/[AppTypography](index.html)
+//[kit](../../../index.html)/[healthstack.kit.theme](../index.html)/[AppTypography](index.html)
 
 
 
@@ -136,6 +126,4 @@ data class [AppTypography](index.html)(val headline1: TextStyle = TextStyle(
 | [title1](title1.html) | [androidJvm]<br>val [title1](title1.html): TextStyle |
 | [title2](title2.html) | [androidJvm]<br>val [title2](title2.html): TextStyle |
 | [title3](title3.html) | [androidJvm]<br>val [title3](title3.html): TextStyle |
-
-
 

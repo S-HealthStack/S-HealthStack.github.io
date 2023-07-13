@@ -1,20 +1,10 @@
 ---
-
-
-
 title: PreviewGenerated
 permalink: /kit/healthstack.kit.annotation/-preview-generated/-preview-generated.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.annotation](../index.html)/[PreviewGenerated](index.html)/[PreviewGenerated](-preview-generated.html)
+//[kit](../../../index.html)/[healthstack.kit.annotation](../index.html)/[PreviewGenerated](index.html)/[PreviewGenerated](-preview-generated.html)
 
 
 
@@ -24,8 +14,6 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 fun [PreviewGenerated](-preview-generated.html)()
-
-
 
 
 

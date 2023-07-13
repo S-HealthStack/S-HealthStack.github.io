@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Task
 permalink: /kit/healthstack.kit.task.base/-task/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.base](../index.html)/[Task](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[Task](index.html)
 
 
 
@@ -65,6 +55,7 @@ SimpleTask - Task with one Step. OrderedTask - Task with multiple Steps.
 | [canceled](canceled.html) | [androidJvm]<br>var [canceled](canceled.html): () -&gt; [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)? = null<br>a method handling task's state when it is canceled |
 | [description](description.html) | [androidJvm]<br>val [description](description.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>concise description of task |
 | [id](id.html) | [androidJvm]<br>val [id](id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>id |
+| [isActive](is-active.html) | [androidJvm]<br>var [isActive](is-active.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true |
 | [isCompleted](is-completed.html) | [androidJvm]<br>var [isCompleted](is-completed.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false<br>flag for completion of task |
 | [name](name.html) | [androidJvm]<br>val [name](name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>name |
 
@@ -76,6 +67,4 @@ SimpleTask - Task with one Step. OrderedTask - Task with multiple Steps.
 |---|
 | [OrderedTask](../-ordered-task/index.html) |
 | [SurveyTask](../../healthstack.kit.task.survey/-survey-task/index.html) |
-
-
 

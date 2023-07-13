@@ -1,20 +1,10 @@
 ---
-
-
-
 title: BottomSquareButtonPreview
 permalink: /kit/healthstack.kit.ui/-bottom-square-button-preview.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[BottomSquareButtonPreview](-bottom-square-button-preview.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[BottomSquareButtonPreview](-bottom-square-button-preview.html)
 
 
 
@@ -40,8 +30,6 @@ sidebar: dev_doc_sidebar
 
 
 fun [BottomSquareButtonPreview](-bottom-square-button-preview.html)()
-
-
 
 
 

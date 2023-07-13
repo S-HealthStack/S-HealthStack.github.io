@@ -1,21 +1,16 @@
 ---
-
-
-
 title: app-support
 permalink: /app-support.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
+//[app-support](index.html)
 
 
 
+# app-support
 
-Samsung Health Stack app-support includes a variety of packages to make developing research apps quicker and with a robust structure. Explore the following packages to see the structure of SDK. 
+
 
 ## Packages
 
@@ -32,7 +27,6 @@ Samsung Health Stack app-support includes a variety of packages to make developi
 | [healthstack.app.task.entity](app-support/healthstack.app.task.entity/index.html) |
 | [healthstack.app.task.repository](app-support/healthstack.app.task.repository/index.html) |
 | [healthstack.app.task.spec](app-support/healthstack.app.task.spec/index.html) |
+| [healthstack.app.task.utils](app-support/healthstack.app.task.utils/index.html) |
 | [healthstack.app.viewmodel](app-support/healthstack.app.viewmodel/index.html) |
-
-
 

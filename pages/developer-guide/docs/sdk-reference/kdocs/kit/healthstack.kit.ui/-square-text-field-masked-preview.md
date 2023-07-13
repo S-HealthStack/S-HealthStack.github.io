@@ -1,20 +1,10 @@
 ---
-
-
-
 title: SquareTextFieldMaskedPreview
 permalink: /kit/healthstack.kit.ui/-square-text-field-masked-preview.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[SquareTextFieldMaskedPreview](-square-text-field-masked-preview.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[SquareTextFieldMaskedPreview](-square-text-field-masked-preview.html)
 
 
 
@@ -40,8 +30,6 @@ sidebar: dev_doc_sidebar
 
 
 fun [SquareTextFieldMaskedPreview](-square-text-field-masked-preview.html)()
-
-
 
 
 

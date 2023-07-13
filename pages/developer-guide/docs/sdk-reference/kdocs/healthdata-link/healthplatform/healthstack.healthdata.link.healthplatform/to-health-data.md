@@ -1,20 +1,10 @@
 ---
-
-
-
 title: toHealthData
-permalink: /healthplatform/healthstack.healthdata.link.healthplatform/to-health-data.html
-
-
+permalink: /healthdata-link/healthplatform/healthstack.healthdata.link.healthplatform/to-health-data.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[healthplatform](/healthplatform.html)/[healthstack.healthdata.link.healthplatform](index.html)/[toHealthData](to-health-data.html)
+//[healthplatform](../../index.html)/[healthstack.healthdata.link.healthplatform](index.html)/[toHealthData](to-health-data.html)
 
 
 
@@ -24,8 +14,6 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 fun ReadDataResponse.[toHealthData](to-health-data.html)(healthDataType: DataType): HealthData
-
-
 
 
 

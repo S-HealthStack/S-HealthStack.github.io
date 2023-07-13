@@ -1,20 +1,10 @@
 ---
-
-
-
 title: TextInputQuestionComponent
 permalink: /kit/healthstack.kit.task.survey.question.component/-text-input-question-component/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.question.component](../index.html)/[TextInputQuestionComponent](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.question.component](../index.html)/[TextInputQuestionComponent](index.html)
 
 
 
@@ -40,7 +30,6 @@ class [TextInputQuestionComponent](index.html) : [QuestionComponent](../-questio
 
 | Name | Summary |
 |---|---|
+| [InputTextField](-input-text-field.html) | [androidJvm]<br>@Composable<br>fun [InputTextField](-input-text-field.html)(model: [TextInputQuestionModel](../../healthstack.kit.task.survey.question.model/-text-input-question-model/index.html)) |
 | [Render](-render.html) | [androidJvm]<br>@Composable<br>open override fun [Render](-render.html)(model: [TextInputQuestionModel](../../healthstack.kit.task.survey.question.model/-text-input-question-model/index.html), callbackCollection: [CallbackCollection](../../healthstack.kit.task.base/-callback-collection/index.html))<br>A method rendering UI. |
-
-
 

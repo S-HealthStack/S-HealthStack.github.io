@@ -1,20 +1,10 @@
 ---
-
-
-
 title: RegisterException
-permalink: /interface/healthstack.backend.integration.exception/-register-exception/index.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.exception/-register-exception/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.exception](../index.html)/[RegisterException](index.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.exception](../index.html)/[RegisterException](index.html)
 
 
 
@@ -59,6 +49,4 @@ Occurs when a user sign up to the App, except for the situation in which the use
 |---|---|
 | [cause](../-user-already-exists-exception/index.html#-654012527%2FProperties%2F1470167800) | [androidJvm]<br>open val [cause](../-user-already-exists-exception/index.html#-654012527%2FProperties%2F1470167800): [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)? |
 | [message](../-user-already-exists-exception/index.html#1824300659%2FProperties%2F1470167800) | [androidJvm]<br>open val [message](../-user-already-exists-exception/index.html#1824300659%2FProperties%2F1470167800): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
-
-
 

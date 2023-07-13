@@ -1,20 +1,10 @@
 ---
-
-
-
 title: healthstack.kit.task.onboarding.step
 permalink: /kit/healthstack.kit.task.onboarding.step/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding.step](index.html)
+//[kit](../../index.html)/[healthstack.kit.task.onboarding.step](index.html)
 
 
 
@@ -32,6 +22,4 @@ sidebar: dev_doc_sidebar
 | [EligibilityIntroStep](-eligibility-intro-step/index.html) | [androidJvm]<br>open class [EligibilityIntroStep](-eligibility-intro-step/index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), model: [EligibilityIntroModel](../healthstack.kit.task.onboarding.model/-eligibility-intro-model/index.html), view: [View](../healthstack.kit.task.base/-view/index.html)&lt;[EligibilityIntroModel](../healthstack.kit.task.onboarding.model/-eligibility-intro-model/index.html)&gt; = EligibilityIntroView()) : [Step](../healthstack.kit.task.base/-step/index.html)&lt;[EligibilityIntroModel](../healthstack.kit.task.onboarding.model/-eligibility-intro-model/index.html), [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)&gt; |
 | [EligibilityResultStep](-eligibility-result-step/index.html) | [androidJvm]<br>class [EligibilityResultStep](-eligibility-result-step/index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), model: [EligibilityResultModel](../healthstack.kit.task.onboarding.model/-eligibility-result-model/index.html), view: [View](../healthstack.kit.task.base/-view/index.html)&lt;[EligibilityResultModel](../healthstack.kit.task.onboarding.model/-eligibility-result-model/index.html)&gt; = EligibilityResultView()) : [Step](../healthstack.kit.task.base/-step/index.html)&lt;[EligibilityResultModel](../healthstack.kit.task.onboarding.model/-eligibility-result-model/index.html), [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)&gt; |
 | [IntroStep](-intro-step/index.html) | [androidJvm]<br>open class [IntroStep](-intro-step/index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), model: [IntroModel](../healthstack.kit.task.onboarding.model/-intro-model/index.html), view: [View](../healthstack.kit.task.base/-view/index.html)&lt;[IntroModel](../healthstack.kit.task.onboarding.model/-intro-model/index.html)&gt; = IntroView(&quot;Get Started&quot;)) : [Step](../healthstack.kit.task.base/-step/index.html)&lt;[IntroModel](../healthstack.kit.task.onboarding.model/-intro-model/index.html), [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)&gt; |
-
-
 

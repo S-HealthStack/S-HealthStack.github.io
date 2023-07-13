@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Result
 permalink: /app-support/healthstack.app.task.entity/-task/-result/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.task.entity](../../index.html)/[Task](../index.html)/[Result](index.html)
+//[app-support](../../../../index.html)/[healthstack.app.task.entity](../../index.html)/[Task](../index.html)/[Result](index.html)
 
 
 
@@ -42,6 +32,4 @@ data class [Result](index.html)(val questionId: [String](https://kotlinlang.org/
 |---|---|
 | [questionId](question-id.html) | [androidJvm]<br>val [questionId](question-id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [response](response.html) | [androidJvm]<br>val [response](response.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-
-
 

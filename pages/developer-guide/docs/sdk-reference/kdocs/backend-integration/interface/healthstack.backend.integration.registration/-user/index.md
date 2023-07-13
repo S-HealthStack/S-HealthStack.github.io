@@ -1,20 +1,10 @@
 ---
-
-
-
 title: User
-permalink: /interface/healthstack.backend.integration.registration/-user/index.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.registration/-user/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.registration](../index.html)/[User](index.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.registration](../index.html)/[User](index.html)
 
 
 
@@ -44,6 +34,4 @@ Data including profile information collected during the Eligibility Check and th
 |---|---|
 | [profile](profile.html) | [androidJvm]<br>val [profile](profile.html): [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)&lt;[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)&gt;<br>Information collected during the Eligibility Check. |
 | [userId](user-id.html) | [androidJvm]<br>val [userId](user-id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>ID of user |
-
-
 

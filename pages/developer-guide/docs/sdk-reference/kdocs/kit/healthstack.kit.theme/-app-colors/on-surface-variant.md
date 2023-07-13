@@ -1,20 +1,10 @@
 ---
-
-
-
 title: onSurfaceVariant
 permalink: /kit/healthstack.kit.theme/-app-colors/on-surface-variant.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.theme](../index.html)/[AppColors](index.html)/[onSurfaceVariant](on-surface-variant.html)
+//[kit](../../../index.html)/[healthstack.kit.theme](../index.html)/[AppColors](index.html)/[onSurfaceVariant](on-surface-variant.html)
 
 
 
@@ -24,8 +14,6 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 val [onSurfaceVariant](on-surface-variant.html): Color
-
-
 
 
 

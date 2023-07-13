@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Companion
-permalink: /healthstack-adapter/healthstack.backend.integration.adapter/-health-stack-backend-adapter/-companion/index.html
-
-
+permalink: /backend-integration/healthstack-adapter/healthstack.backend.integration.adapter/-health-stack-backend-adapter/-companion/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[healthstack-adapter](/healthstack-adapter.html)/[healthstack.backend.integration.adapter](../../index.html)/[HealthStackBackendAdapter](../index.html)/[Companion](index.html)
+//[healthstack-adapter](../../../../index.html)/[healthstack.backend.integration.adapter](../../index.html)/[HealthStackBackendAdapter](../index.html)/[Companion](index.html)
 
 
 
@@ -34,6 +24,4 @@ object [Companion](index.html)
 |---|---|
 | [getInstance](get-instance.html) | [androidJvm]<br>fun [getInstance](get-instance.html)(): [HealthStackBackendAdapter](../index.html) |
 | [initialize](initialize.html) | [androidJvm]<br>fun [initialize](initialize.html)(platformEndpoint: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), researchProjectId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
-
-
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: PropertyDeserializer
-permalink: /interface/healthstack.backend.integration.task/-property-deserializer/index.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.task/-property-deserializer/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.task](../index.html)/[PropertyDeserializer](index.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.task](../index.html)/[PropertyDeserializer](index.html)
 
 
 
@@ -41,6 +31,4 @@ class [PropertyDeserializer](index.html) : JsonDeserializer&lt;[ItemProperties](
 | Name | Summary |
 |---|---|
 | [deserialize](deserialize.html) | [androidJvm]<br>open override fun [deserialize](deserialize.html)(json: JsonElement?, typeOfT: [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html)?, context: JsonDeserializationContext?): [ItemProperties](../-item-properties/index.html)? |
-
-
 

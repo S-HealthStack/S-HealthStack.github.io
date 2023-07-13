@@ -1,20 +1,10 @@
 ---
-
-
-
 title: isSufficient
 permalink: /kit/healthstack.kit.task.survey.question/-sub-step-holder/is-sufficient.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.question](../index.html)/[SubStepHolder](index.html)/[isSufficient](is-sufficient.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.question](../index.html)/[SubStepHolder](index.html)/[isSufficient](is-sufficient.html)
 
 
 
@@ -28,8 +18,6 @@ fun [isSufficient](is-sufficient.html)(): [Boolean](https://kotlinlang.org/api/l
 
 
 A method to get result using its subSteps.
-
-
 
 
 

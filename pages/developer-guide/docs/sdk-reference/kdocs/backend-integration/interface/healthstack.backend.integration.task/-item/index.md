@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Item
-permalink: /interface/healthstack.backend.integration.task/-item/index.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.task/-item/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.task](../index.html)/[Item](index.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.task](../index.html)/[Item](index.html)
 
 
 
@@ -46,6 +36,4 @@ Stores the information of the item received from backend.
 | [name](name.html) | [androidJvm]<br>val [name](name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>Name of the item. |
 | [sequence](sequence.html) | [androidJvm]<br>val [sequence](sequence.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>Sequence of the item. (For ordering) |
 | [type](type.html) | [androidJvm]<br>val [type](type.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>Type of the item. |
-
-
 

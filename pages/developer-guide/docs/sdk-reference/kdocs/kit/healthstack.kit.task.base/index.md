@@ -1,20 +1,10 @@
 ---
-
-
-
 title: healthstack.kit.task.base
 permalink: /kit/healthstack.kit.task.base/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.base](index.html)
+//[kit](../../index.html)/[healthstack.kit.task.base](index.html)
 
 
 
@@ -34,6 +24,4 @@ sidebar: dev_doc_sidebar
 | [StepModel](-step-model/index.html) | [androidJvm]<br>abstract class [StepModel](-step-model/index.html)(val id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val drawableId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?)<br>A data object for [Step](-step/index.html). |
 | [Task](-task/index.html) | [androidJvm]<br>abstract class [Task](-task/index.html)(val id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val description: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))<br>An object representing a flow of actions(= a list of pages) such as survey flow or onBoarding flow. |
 | [View](-view/index.html) | [androidJvm]<br>abstract class [View](-view/index.html)&lt;[T](-view/index.html) : [StepModel](-step-model/index.html)&gt;<br>A UI rendering object for [Step](-step/index.html). |
-
-
 

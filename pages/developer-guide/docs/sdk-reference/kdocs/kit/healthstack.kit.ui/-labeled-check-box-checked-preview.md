@@ -1,20 +1,10 @@
 ---
-
-
-
 title: LabeledCheckBoxCheckedPreview
 permalink: /kit/healthstack.kit.ui/-labeled-check-box-checked-preview.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[LabeledCheckBoxCheckedPreview](-labeled-check-box-checked-preview.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[LabeledCheckBoxCheckedPreview](-labeled-check-box-checked-preview.html)
 
 
 
@@ -40,8 +30,6 @@ sidebar: dev_doc_sidebar
 
 
 fun [LabeledCheckBoxCheckedPreview](-labeled-check-box-checked-preview.html)()
-
-
 
 
 

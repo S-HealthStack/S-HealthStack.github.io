@@ -1,20 +1,10 @@
 ---
-
-
-
 title: AppTheme
 permalink: /kit/healthstack.kit.theme/-app-theme/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.theme](../index.html)/[AppTheme](index.html)
+//[kit](../../../index.html)/[healthstack.kit.theme](../index.html)/[AppTheme](index.html)
 
 
 
@@ -34,6 +24,4 @@ object [AppTheme](index.html)
 |---|---|
 | [colors](colors.html) | [androidJvm]<br>@get:Composable<br>@get:ReadOnlyComposable<br>val [colors](colors.html): [AppColors](../-app-colors/index.html) |
 | [typography](typography.html) | [androidJvm]<br>@get:Composable<br>@get:ReadOnlyComposable<br>val [typography](typography.html): [AppTypography](../-app-typography/index.html) |
-
-
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: BottomBarWithGradientBackground
 permalink: /kit/healthstack.kit.ui/-bottom-bar-with-gradient-background.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[BottomBarWithGradientBackground](-bottom-bar-with-gradient-background.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[BottomBarWithGradientBackground](-bottom-bar-with-gradient-background.html)
 
 
 
@@ -37,8 +27,6 @@ fun [BottomBarWithGradientBackground](-bottom-bar-with-gradient-background.html)
         startY = 0.0f,
         endY = 100.0f
     ), shape: [ButtonShape](-button-shape/index.html) = SQUARE, onClick: () -&gt; [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html))
-
-
 
 
 

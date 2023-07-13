@@ -1,20 +1,10 @@
 ---
-
-
-
 title: OrderedTask
 permalink: /kit/healthstack.kit.task.base/-ordered-task/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.base](../index.html)/[OrderedTask](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[OrderedTask](index.html)
 
 
 
@@ -65,6 +55,7 @@ open class [OrderedTask](index.html)(val id: [String](https://kotlinlang.org/api
 | [canceled](../-task/canceled.html) | [androidJvm]<br>var [canceled](../-task/canceled.html): () -&gt; [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)? = null<br>a method handling task's state when it is canceled |
 | [description](../-task/description.html) | [androidJvm]<br>val [description](../-task/description.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>concise description of task |
 | [id](../-task/id.html) | [androidJvm]<br>val [id](../-task/id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>id |
+| [isActive](../-task/is-active.html) | [androidJvm]<br>var [isActive](../-task/is-active.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true |
 | [isCompleted](../-task/is-completed.html) | [androidJvm]<br>var [isCompleted](../-task/is-completed.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false<br>flag for completion of task |
 | [name](../-task/name.html) | [androidJvm]<br>val [name](../-task/name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>name |
 | [pageCallbacks](page-callbacks.html) | [androidJvm]<br>open val [pageCallbacks](page-callbacks.html): [CallbackCollection](../-callback-collection/index.html)<br>An object including callback. |
@@ -76,8 +67,7 @@ open class [OrderedTask](index.html)(val id: [String](https://kotlinlang.org/api
 
 | Name |
 |---|
+| [ActivityTask](../../healthstack.kit.task.activity/-activity-task/index.html) |
 | [OnboardingTask](../../healthstack.kit.task.onboarding/-onboarding-task/index.html) |
 | [SignUpTask](../../healthstack.kit.task.signup/-sign-up-task/index.html) |
-
-
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: ChoiceQuestionModel
 permalink: /kit/healthstack.kit.task.survey.question.model/-choice-question-model/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.question.model](../index.html)/[ChoiceQuestionModel](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.question.model](../index.html)/[ChoiceQuestionModel](index.html)
 
 
 
@@ -23,7 +13,7 @@ sidebar: dev_doc_sidebar
 
 
 [androidJvm]\
-class [ChoiceQuestionModel](index.html)&lt;[R](index.html)&gt;(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), query: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), explanation: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, drawableId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null, answer: [R](index.html)? = null, val candidates: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[R](index.html)&gt;, val viewType: [ChoiceQuestionModel.ViewType](-view-type/index.html) = Radio) : [QuestionModel](../-question-model/index.html)&lt;[R](index.html)&gt;
+class [ChoiceQuestionModel](index.html)&lt;[R](index.html)&gt;(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), query: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), explanation: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, drawableId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null, answer: [R](index.html)? = null, skipLogics: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[SkipLogic](../-skip-logic/index.html)&gt; = emptyList(), val candidates: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[R](index.html)&gt;, val viewType: [ChoiceQuestionModel.ViewType](-view-type/index.html) = Radio) : [QuestionModel](../-question-model/index.html)&lt;[R](index.html)&gt;
 
 
 
@@ -32,7 +22,7 @@ class [ChoiceQuestionModel](index.html)&lt;[R](index.html)&gt;(id: [String](http
 
 | | |
 |---|---|
-| [ChoiceQuestionModel](-choice-question-model.html) | [androidJvm]<br>fun &lt;[R](index.html)&gt; [ChoiceQuestionModel](-choice-question-model.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), query: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), explanation: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, drawableId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null, answer: [R](index.html)? = null, candidates: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[R](index.html)&gt;, viewType: [ChoiceQuestionModel.ViewType](-view-type/index.html) = Radio) |
+| [ChoiceQuestionModel](-choice-question-model.html) | [androidJvm]<br>fun &lt;[R](index.html)&gt; [ChoiceQuestionModel](-choice-question-model.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), query: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), explanation: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, drawableId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null, answer: [R](index.html)? = null, skipLogics: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[SkipLogic](../-skip-logic/index.html)&gt; = emptyList(), candidates: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[R](index.html)&gt;, viewType: [ChoiceQuestionModel.ViewType](-view-type/index.html) = Radio) |
 
 
 ## Types
@@ -63,8 +53,7 @@ class [ChoiceQuestionModel](index.html)&lt;[R](index.html)&gt;(id: [String](http
 | [id](../-question-model/id.html) | [androidJvm]<br>val [id](../-question-model/id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [question](../-question-model/question.html) | [androidJvm]<br>val [question](../-question-model/question.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [selection](selection.html) | [androidJvm]<br>var [selection](selection.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null |
+| [skipLogics](../-question-model/skip-logics.html) | [androidJvm]<br>val [skipLogics](../-question-model/skip-logics.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[SkipLogic](../-skip-logic/index.html)&gt; |
 | [type](../-question-model/type.html) | [androidJvm]<br>val [type](../-question-model/type.html): [QuestionModel.QuestionType](../-question-model/-question-type/index.html) |
 | [viewType](view-type.html) | [androidJvm]<br>val [viewType](view-type.html): [ChoiceQuestionModel.ViewType](-view-type/index.html) |
-
-
 

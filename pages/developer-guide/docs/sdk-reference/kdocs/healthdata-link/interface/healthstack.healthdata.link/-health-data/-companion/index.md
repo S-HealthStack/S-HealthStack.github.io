@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Companion
-permalink: /interface/healthstack.healthdata.link/-health-data/-companion/index.html
-
-
+permalink: /healthdata-link/interface/healthstack.healthdata.link/-health-data/-companion/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/hl_interface.html)/[healthstack.healthdata.link](../../index.html)/[HealthData](../index.html)/[Companion](index.html)
+//[interface](../../../../index.html)/[healthstack.healthdata.link](../../index.html)/[HealthData](../index.html)/[Companion](index.html)
 
 
 
@@ -35,6 +25,4 @@ object [Companion](index.html)
 | [END_TIME_KEY](-e-n-d_-t-i-m-e_-k-e-y.html) | [androidJvm]<br>const val [END_TIME_KEY](-e-n-d_-t-i-m-e_-k-e-y.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [START_TIME_KEY](-s-t-a-r-t_-t-i-m-e_-k-e-y.html) | [androidJvm]<br>const val [START_TIME_KEY](-s-t-a-r-t_-t-i-m-e_-k-e-y.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [TIME_KEY](-t-i-m-e_-k-e-y.html) | [androidJvm]<br>const val [TIME_KEY](-t-i-m-e_-k-e-y.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-
-
 

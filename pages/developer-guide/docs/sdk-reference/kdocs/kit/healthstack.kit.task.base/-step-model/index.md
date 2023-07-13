@@ -1,20 +1,10 @@
 ---
-
-
-
 title: StepModel
 permalink: /kit/healthstack.kit.task.base/-step-model/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.base](../index.html)/[StepModel](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[StepModel](index.html)
 
 
 
@@ -68,6 +58,16 @@ Then, View renders UI using Model's data.
 
 | Name |
 |---|
+| [ColorWordChallengeMeasureModel](../../healthstack.kit.task.activity.model/-color-word-challenge-measure-model/index.html) |
+| [GuidedBreathingMeasureModel](../../healthstack.kit.task.activity.model/-guided-breathing-measure-model/index.html) |
+| [MobileSpirometryMeasureModel](../../healthstack.kit.task.activity.model/-mobile-spirometry-measure-model/index.html) |
+| [ReactionTimeMeasureModel](../../healthstack.kit.task.activity.model/-reaction-time-measure-model/index.html) |
+| [SpeechRecognitionMeasureModel](../../healthstack.kit.task.activity.model/-speech-recognition-measure-model/index.html) |
+| [SustainedPhonationMeasureModel](../../healthstack.kit.task.activity.model/-sustained-phonation-measure-model/index.html) |
+| [TappingSpeedMeasureModel](../../healthstack.kit.task.activity.model/-tapping-speed-measure-model/index.html) |
+| [SimpleAudioActivityModel](../../healthstack.kit.task.activity.model.common/-simple-audio-activity-model/index.html) |
+| [SimpleTimerActivityModel](../../healthstack.kit.task.activity.model.common/-simple-timer-activity-model/index.html) |
+| [SimpleViewActivityModel](../../healthstack.kit.task.activity.model.common/-simple-view-activity-model/index.html) |
 | [ImageArticleModel](../-image-article-model/index.html) |
 | [ConsentTextModel](../../healthstack.kit.task.onboarding.model/-consent-text-model/index.html) |
 | [EligibilityIntroModel](../../healthstack.kit.task.onboarding.model/-eligibility-intro-model/index.html) |
@@ -76,6 +76,4 @@ Then, View renders UI using Model's data.
 | [RegistrationCompletedModel](../../healthstack.kit.task.signup.model/-registration-completed-model/index.html) |
 | [SignUpModel](../../healthstack.kit.task.signup.model/-sign-up-model/index.html) |
 | [SurveyModel](../../healthstack.kit.task.survey.model/-survey-model/index.html) |
-
-
 

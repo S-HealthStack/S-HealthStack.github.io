@@ -1,20 +1,10 @@
 ---
-
-
-
 title: SampleHealthDataStatus
 permalink: /app-support/healthstack.app.status/-sample-health-data-status/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.status](../index.html)/[SampleHealthDataStatus](index.html)
+//[app-support](../../../index.html)/[healthstack.app.status](../index.html)/[SampleHealthDataStatus](index.html)
 
 
 
@@ -23,7 +13,17 @@ sidebar: dev_doc_sidebar
 
 
 [androidJvm]\
-abstract class [SampleHealthDataStatus](index.html)(healthDataName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [StatusDataType](../-status-data-type/index.html)
+abstract class [SampleHealthDataStatus](index.html)(healthDataName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [HealthStatus](../-health-status/index.html)
+
+Returns the data key used to extract the heart rate status information.
+
+
+
+#### Return
+
+
+
+The data key.
 
 
 
@@ -40,10 +40,11 @@ abstract class [SampleHealthDataStatus](index.html)(healthDataName: [String](htt
 
 | Name | Summary |
 |---|---|
-| [getDataKey](get-data-key.html) | [androidJvm]<br>abstract fun [getDataKey](get-data-key.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| [getIcon](../-status-data-type/get-icon.html) | [androidJvm]<br>abstract fun [getIcon](../-status-data-type/get-icon.html)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
-| [getLatestStatus](get-latest-status.html) | [androidJvm]<br>open suspend override fun [getLatestStatus](get-latest-status.html)(): [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? |
-| [getUnitString](../-status-data-type/get-unit-string.html) | [androidJvm]<br>abstract fun [getUnitString](../-status-data-type/get-unit-string.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [getDataKey](get-data-key.html) | [androidJvm]<br>abstract fun [getDataKey](get-data-key.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>Returns the data key used to extract the status information. |
+| [getIcon](../-status-data-type/get-icon.html) | [androidJvm]<br>abstract fun [getIcon](../-status-data-type/get-icon.html)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>Returns the icon resource ID for this health data type. |
+| [getLatestStatus](get-latest-status.html) | [androidJvm]<br>open suspend override fun [getLatestStatus](get-latest-status.html)(): [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?<br>Retrieves the latest status information for this health data type. |
+| [getUnitString](../-status-data-type/get-unit-string.html) | [androidJvm]<br>abstract fun [getUnitString](../-status-data-type/get-unit-string.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>Returns the unit string for this health data type. |
+| [toViewModel](../-health-status/to-view-model.html) | [androidJvm]<br>abstract fun [toViewModel](../-health-status/to-view-model.html)(): [HealthStatusViewModel](../../healthstack.app.viewmodel/-health-status-view-model/index.html) |
 
 
 ## Inheritors
@@ -52,6 +53,4 @@ abstract class [SampleHealthDataStatus](index.html)(healthDataName: [String](htt
 | Name |
 |---|
 | [HeartRateStatus](../-heart-rate-status/index.html) |
-
-
 

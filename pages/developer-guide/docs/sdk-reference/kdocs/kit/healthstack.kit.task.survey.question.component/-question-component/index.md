@@ -1,20 +1,10 @@
 ---
-
-
-
 title: QuestionComponent
 permalink: /kit/healthstack.kit.task.survey.question.component/-question-component/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.question.component](../index.html)/[QuestionComponent](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.question.component](../index.html)/[QuestionComponent](index.html)
 
 
 
@@ -57,8 +47,9 @@ abstract class [QuestionComponent](index.html)&lt;[T](index.html) : [QuestionMod
 | Name |
 |---|
 | [ChoiceQuestionComponent](../-choice-question-component/index.html) |
+| [DateTimeQuestionComponent](../-date-time-question-component/index.html) |
+| [ImageQuestionComponent](../-image-question-component/index.html) |
 | [MultiChoiceQuestionComponent](../-multi-choice-question-component/index.html) |
+| [RankingQuestionComponent](../-ranking-question-component/index.html) |
 | [TextInputQuestionComponent](../-text-input-question-component/index.html) |
-
-
 

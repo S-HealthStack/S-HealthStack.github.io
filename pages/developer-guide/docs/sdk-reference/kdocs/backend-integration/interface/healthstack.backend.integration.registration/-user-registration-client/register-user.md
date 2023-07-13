@@ -1,20 +1,10 @@
 ---
-
-
-
 title: registerUser
-permalink: /interface/healthstack.backend.integration.registration/-user-registration-client/register-user.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.registration/-user-registration-client/register-user.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.registration](../index.html)/[UserRegistrationClient](index.html)/[registerUser](register-user.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.registration](../index.html)/[UserRegistrationClient](index.html)/[registerUser](register-user.html)
 
 
 
@@ -40,8 +30,6 @@ androidJvm
 |---|---|
 | idToken | An encrypted token containing the user's information issued when the logs in to the application. |
 | user | Data including profile information collected during the Eligibility Check and the basic information of user. |
-
-
 
 
 

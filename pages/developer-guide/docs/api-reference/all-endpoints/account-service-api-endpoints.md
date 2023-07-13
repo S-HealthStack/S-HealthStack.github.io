@@ -1,404 +1,1532 @@
 ---
-
-
-title: Account Service API Endpoints
+title: Account Service v0.7.0
 sidebar: dev_doc_sidebar
 permalink: account-service-api-endpoints.html
-toc: false
-
+toc: true
+language_tabs:
+  - kotlin: Kotlin
+  - java: Java
+language_clients:
+  - kotlin: OkHttp
+  - java: unirest
+toc_footers: []
+includes: []
+search: true
+highlight_theme: darkula
+headingLevel: 2
 
 ---
 
+<!-- Generator: Widdershins v4.0.1 -->
 
-# Account Service
-## Version: 0.7.0
+<h1 id="account-service">Account Service v0.7.0</h1>
 
-You can also find more interactive document here: [SwaggerHub-Account_Service/0.7.0](https://app.swaggerhub.com/apis-docs/zainalisamsung/account-service/0.7.0)
+> Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
-### /account-service/invitations
+# Authentication
 
-#### POST
-##### Summary
+- HTTP Authentication, scheme: bearer 
 
-Invite a new user for specific project.
+<h1 id="account-service-invitation">Invitation</h1>
 
-##### Description
+## Invites a new user to a specific project
 
-When someone is invited, platform will send a invitation mail with invitation-link to given email address.
+> Code samples
 
-##### Responses
+```java
+URL obj = new URL("/account-service/invitations");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
 
-| Code | Description |
-| ---- | ----------- |
-| 200 | A new account was created with given email. |
-| default | unexpected error |
+```
 
-### /account-service/user/password/reset
+`POST /account-service/invitations`
 
-#### POST
-##### Summary
+This operation invites a new user to a specific project. The platform sends an invitation email with an invitation link to the provided email address.
 
-Reset password
+> Body parameter
 
-##### Responses
+```json
+[
+  {
+    "email": "cubist@samsung.com",
+    "roles": [
+      "project_sample:research-assistant"
+    ]
+  }
+]
+```
 
-| Code | Description |
-| ---- | ----------- |
-| 200 | The operation was successful. |
-| default | unexpected error |
+<h3 id="invites-a-new-user-to-a-specific-project-parameters">Parameters</h3>
 
-### /account-service/signin
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|array[object]|true|none|
 
-#### POST
-##### Summary
+> Example responses
 
-Sign in a user with email and password
+> default Response
 
-##### Responses
+```json
+{
+  "code": "string",
+  "message": "string"
+}
+```
 
-| Code | Description |
-| ---- | ----------- |
-| 200 | The operation was successful. |
-| default | unexpected error |
+<h3 id="invites-a-new-user-to-a-specific-project-responses">Responses</h3>
 
-### /account-service/signup
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|A new account has been created with the provided email.|None|
+|default|Default|An unexpected error has occurred.|Inline|
 
-#### POST
-##### Summary
+<h3 id="invites-a-new-user-to-a-specific-project-responseschema">Response Schema</h3>
 
-Sign up a new user
+Status Code **default**
 
-##### Description
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» code|string|true|none|none|
+|» message|string|true|none|none|
 
-Sign up a new user. The server will then send a verification link to the given email address.
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+bearerAuth
+</aside>
 
-##### Responses
+<h1 id="account-service-researchassistant">ResearchAssistant</h1>
 
-| Code | Description |
-| ---- | ----------- |
-| 200 | A new account was created. |
-| 409 | Given email was already registered. |
-| default | unexpected error |
+## Verifies the provided email and sends a reset password email
 
-### /account-service/user/roles
+> Code samples
 
-#### PUT
-##### Summary
-
-Assign roles to user
-
-##### Responses
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | The operation was successful. |
-| default | unexpected error |
-
-### /account-service/user/roles/remove
-
-#### POST
-##### Summary
-
-Remove roles from user
-
-##### Responses
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | The operation was successful. |
-| default | unexpected error |
-
-### /account-service/users
-
-#### GET
-##### Summary
-
-Get user list
-
-##### Parameters
-
-| Name | Located in | Description | Required | Schema |
-| ---- | ---------- | ----------- | -------- | ---- |
-| projectId | query | Specific project id to retrieve users | Yes | string |
-
-##### Responses
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | The operation was successful. |
-| default | Unexpected Error |
-
-### /account-service/token/refresh
-
-#### POST
-##### Summary
-
-Refresh Access Token.
-
-##### Description
-
-Request new token by sending pair of jwt(accessToken) and refreshToken.
-
-##### Responses
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | The operation was successful. |
-| default | unexpected error |
-
-### /account-service/user/email/verify
-
-#### POST
-##### Summary
-
-Verify email with token.
-
-##### Responses
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | The operation was successful. |
-| 401 | Invalid token error |
-| default | unexpected error |
-
-### /account-service/verification
-
-#### POST
-##### Summary
-
-Resend a verification mail.
-
-##### Description
-
-The server will resend a verification link to the given email address.
-
-##### Responses
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | The operation was successful. |
-| 400 | bad request |
-| 409 | The email was already verified. |
-| 500 | unexpected error |
-
-### Models
-
-#### InvitationReq
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| InvitationReq | array |  |  |
-
-#### Invitation
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| email | string (email) | _Example:_ `"cubist@samsung.com"` | Yes |
-| roles | [ string ] |  | Yes |
-
-#### Roles
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| Roles | array |  |  |
-
-#### Role
+```java
+URL obj = new URL("/account-service/user/password/forgot");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+`POST /account-service/user/password/forgot`
+
+This operation accepts an email address. If the provided email address is registered, the server sends a password reset email. If not, it returns a 404 response.
+
+> Body parameter
+
+```json
+{
+  "email": "string"
+}
+```
+
+<h3 id="verifies-the-provided-email-and-sends-a-reset-password-email-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|object|true|none|
+
+<h3 id="verifies-the-provided-email-and-sends-a-reset-password-email-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|The operation was successful.|None|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|The provided email is malformed.|None|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|The email is not registered.|None|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+bearerAuth
+</aside>
+
+## Resets the password
+
+> Code samples
+
+```java
+URL obj = new URL("/account-service/user/password/reset");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+`POST /account-service/user/password/reset`
+
+This operation resets the user's password. The "profile" field is optional. If no value is set for this field, the server doesn't change the user's profile.
+
+> Body parameter
+
+```json
+{
+  "resetToken": "aadfad...badfdfad",
+  "password": "string",
+  "profile": {
+    "name": "david.lee",
+    "status": "active"
+  }
+}
+```
+
+<h3 id="resets-the-password-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|object|true|none|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "email": "cubist@samsung.com",
+  "id": "7d08351b-85b6-488e-a8a2-b8653defb865",
+  "jwt": "eyJhbGc...ssw5c",
+  "refreshToken": "aadfad...badfdfad",
+  "roles": [
+    "project_sample:research-assistant"
+  ],
+  "profile": {
+    "name": "david.lee",
+    "status": "active"
+  }
+}
+```
+
+<h3 id="resets-the-password-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|The operation was successful.|Inline|
+|default|Default|An unexpected error has occurred.|Inline|
+
+<h3 id="resets-the-password-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» email|string(email)|true|none|none|
+|» id|string|true|none|none|
+|» jwt|string|true|none|Signed Json Web Token payload is as below.<br>{<br>  "email": "cubist@samsung.com",<br>  "roles": ["study_1:study-creator", "study_2:research-assistant"],<br>  "iss": "https://research-hub.io/",<br>  "exp": 1660377937,<br>  "iat": 1660291536<br>}|
+|» refreshToken|string|true|none|none|
+|» roles|[string]|true|none|none|
+|» profile|object|true|none|Account information in JSON without pre-defined fields.|
+
+Status Code **default**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» code|string|true|none|none|
+|» message|string|true|none|none|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Signs in a user with an email and password
+
+> Code samples
+
+```java
+URL obj = new URL("/account-service/signin");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+`POST /account-service/signin`
+
+> Body parameter
+
+```json
+{
+  "email": "cubist@samsung.com",
+  "password": "string"
+}
+```
+
+<h3 id="signs-in-a-user-with-an-email-and-password-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|object|true|none|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "email": "cubist@samsung.com",
+  "id": "7d08351b-85b6-488e-a8a2-b8653defb865",
+  "jwt": "eyJhbGc...ssw5c",
+  "refreshToken": "aadfad...badfdfad",
+  "roles": [
+    "project_sample:research-assistant"
+  ],
+  "profile": {
+    "name": "david.lee",
+    "status": "active"
+  }
+}
+```
+
+<h3 id="signs-in-a-user-with-an-email-and-password-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|The operation was successful.|Inline|
+|default|Default|An unexpected error has occurred.|Inline|
+
+<h3 id="signs-in-a-user-with-an-email-and-password-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» email|string(email)|true|none|none|
+|» id|string|true|none|none|
+|» jwt|string|true|none|Signed Json Web Token payload is as below.<br>{<br>  "email": "cubist@samsung.com",<br>  "roles": ["study_1:study-creator", "study_2:research-assistant"],<br>  "iss": "https://research-hub.io/",<br>  "exp": 1660377937,<br>  "iat": 1660291536<br>}|
+|» refreshToken|string|true|none|none|
+|» roles|[string]|true|none|none|
+|» profile|object|true|none|Account information in JSON without pre-defined fields.|
+
+Status Code **default**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» code|string|true|none|none|
+|» message|string|true|none|none|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Signs up a new user
+
+> Code samples
+
+```java
+URL obj = new URL("/account-service/signup");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+`POST /account-service/signup`
+
+This operation signs up a new user. Afterwards, the server sends a verification link to the provided email address.
+
+> Body parameter
+
+```json
+{
+  "email": "cubist@samsung.com",
+  "password": "string",
+  "profile": {
+    "name": "david.lee",
+    "status": "active"
+  }
+}
+```
+
+<h3 id="signs-up-a-new-user-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|object|true|none|
+
+> Example responses
+
+> default Response
+
+```json
+{
+  "code": "string",
+  "message": "string"
+}
+```
+
+<h3 id="signs-up-a-new-user-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|A new account has been created.|None|
+|409|[Conflict](https://tools.ietf.org/html/rfc7231#section-6.5.8)|The provided email is already registered.|None|
+|default|Default|An unexpected error has occurred.|Inline|
+
+<h3 id="signs-up-a-new-user-responseschema">Response Schema</h3>
+
+Status Code **default**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» code|string|true|none|none|
+|» message|string|true|none|none|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Refreshes the access token
+
+> Code samples
+
+```java
+URL obj = new URL("/account-service/token/refresh");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+`POST /account-service/token/refresh`
+
+This operation requests a new token by sending a pair of JWT (accessToken) and refreshToken.
+
+> Body parameter
+
+```json
+{
+  "jwt": "eyJhbGc...ssw5c",
+  "refreshToken": "aadfad...badfdfad"
+}
+```
+
+<h3 id="refreshes-the-access-token-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|object|true|none|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "jwt": "eyJhbGc...ssw5c",
+  "refreshToken": "aadfad...badfdfad"
+}
+```
+
+<h3 id="refreshes-the-access-token-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|The operation was successful.|Inline|
+|default|Default|An unexpected error has occurred.|Inline|
+
+<h3 id="refreshes-the-access-token-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» jwt|string|true|none|Signed Json Web Token payload is as below.<br>{<br>  "email": "cubist@samsung.com",<br>  "roles": ["study_1:study-creator", "study_2:research-assistant"],<br>  "iss": "https://research-hub.io/",<br>  "exp": 1660377937,<br>  "iat": 1660291536<br>}|
+|» refreshToken|string|true|none|none|
+
+Status Code **default**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» code|string|true|none|none|
+|» message|string|true|none|none|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+<h1 id="account-service-role">Role</h1>
+
+## Assigns roles to a user
+
+> Code samples
+
+```java
+URL obj = new URL("/account-service/user/roles");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("PUT");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+`PUT /account-service/user/roles`
+
+> Body parameter
+
+```json
+{
+  "accountId": "7d08351b-85b6-488e-a8a2-b8653defb865",
+  "roles": [
+    "project_sample:research-assistant"
+  ]
+}
+```
+
+<h3 id="assigns-roles-to-a-user-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|object|true|none|
+
+> Example responses
+
+> default Response
+
+```json
+{
+  "code": "string",
+  "message": "string"
+}
+```
+
+<h3 id="assigns-roles-to-a-user-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|The operation was successful.|None|
+|default|Default|An unexpected error has occurred.|Inline|
+
+<h3 id="assigns-roles-to-a-user-responseschema">Response Schema</h3>
+
+Status Code **default**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» code|string|true|none|none|
+|» message|string|true|none|none|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+bearerAuth
+</aside>
+
+## Removes roles from a user
+
+> Code samples
+
+```java
+URL obj = new URL("/account-service/user/roles/remove");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+`POST /account-service/user/roles/remove`
+
+> Body parameter
+
+```json
+{
+  "accountId": "7d08351b-85b6-488e-a8a2-b8653defb865",
+  "roles": [
+    "project_sample:research-assistant"
+  ]
+}
+```
+
+<h3 id="removes-roles-from-a-user-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|object|true|none|
+
+> Example responses
+
+> default Response
+
+```json
+{
+  "code": "string",
+  "message": "string"
+}
+```
+
+<h3 id="removes-roles-from-a-user-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|The operation was successful.|None|
+|default|Default|An unexpected error has occurred.|Inline|
+
+<h3 id="removes-roles-from-a-user-responseschema">Response Schema</h3>
+
+Status Code **default**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» code|string|true|none|none|
+|» message|string|true|none|none|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+bearerAuth
+</aside>
+
+<h1 id="account-service-user">User</h1>
+
+## Retrieves a list of users
+
+> Code samples
+
+```java
+URL obj = new URL("/account-service/users?projectId=100");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("GET");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+`GET /account-service/users`
+
+<h3 id="retrieves-a-list-of-users-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|projectId|query|string|true|The ID of the specific project for which to retrieve users|
+
+> Example responses
+
+> 200 Response
+
+```json
+[
+  {
+    "email": "cubist@samsung.com",
+    "id": "7d08351b-85b6-488e-a8a2-b8653defb865",
+    "roles": [
+      "project_sample:research-assistant"
+    ],
+    "profile": {
+      "name": "david.lee",
+      "status": "active"
+    }
+  }
+]
+```
+
+<h3 id="retrieves-a-list-of-users-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|The operation was successful.|Inline|
+|default|Default|An unexpected error has occurred.|Inline|
+
+<h3 id="retrieves-a-list-of-users-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» email|string(email)|true|none|none|
+|» id|string|true|none|none|
+|» roles|[string]|false|none|none|
+|» profile|object|false|none|Account information in JSON without pre-defined fields.|
+
+Status Code **default**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» code|string|true|none|none|
+|» message|string|true|none|none|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+bearerAuth
+</aside>
+
+<h1 id="account-service-email-verification">Email Verification</h1>
+
+## Verifies the email with a token
+
+> Code samples
+
+```java
+URL obj = new URL("/account-service/user/email/verify");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+`POST /account-service/user/email/verify`
+
+> Body parameter
+
+```json
+{
+  "token": "aadfad...badfdfad"
+}
+```
+
+<h3 id="verifies-the-email-with-a-token-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|object|true|none|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "email": "cubist@samsung.com",
+  "id": "7d08351b-85b6-488e-a8a2-b8653defb865",
+  "jwt": "eyJhbGc...ssw5c",
+  "refreshToken": "aadfad...badfdfad",
+  "roles": [
+    "project_sample:research-assistant"
+  ],
+  "profile": {
+    "name": "david.lee",
+    "status": "active"
+  }
+}
+```
+
+<h3 id="verifies-the-email-with-a-token-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|The operation was successful.|Inline|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|The token is invalid.|None|
+|default|Default|An unexpected error has occurred.|Inline|
+
+<h3 id="verifies-the-email-with-a-token-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» email|string(email)|true|none|none|
+|» id|string|true|none|none|
+|» jwt|string|true|none|Signed Json Web Token payload is as below.<br>{<br>  "email": "cubist@samsung.com",<br>  "roles": ["study_1:study-creator", "study_2:research-assistant"],<br>  "iss": "https://research-hub.io/",<br>  "exp": 1660377937,<br>  "iat": 1660291536<br>}|
+|» refreshToken|string|true|none|none|
+|» roles|[string]|true|none|none|
+|» profile|object|true|none|Account information in JSON without pre-defined fields.|
+
+Status Code **default**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» code|string|true|none|none|
+|» message|string|true|none|none|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Resends a verification email
+
+> Code samples
+
+```java
+URL obj = new URL("/account-service/verification");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("POST");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+
+```
+
+`POST /account-service/verification`
+
+This operation resends a verification link to the provided email address.
+
+> Body parameter
+
+```json
+{
+  "email": "cubist@samsung.com"
+}
+```
+
+<h3 id="resends-a-verification-email-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|object|true|none|
+
+> Example responses
+
+> 500 Response
+
+```json
+{
+  "code": "string",
+  "message": "string"
+}
+```
+
+<h3 id="resends-a-verification-email-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|The operation was successful.|None|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|The request is bad.|None|
+|409|[Conflict](https://tools.ietf.org/html/rfc7231#section-6.5.8)|The email has already been verified.|None|
+|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|An unexpected error has occurred.|Inline|
+
+<h3 id="resends-a-verification-email-responseschema">Response Schema</h3>
+
+Status Code **500**
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|» code|string|true|none|none|
+|» message|string|true|none|none|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+# Schemas
+
+<h2 id="tocS_InvitationReq">InvitationReq</h2>
+<!-- backwards compatibility -->
+<a id="schemainvitationreq"></a>
+<a id="schema_InvitationReq"></a>
+<a id="tocSinvitationreq"></a>
+<a id="tocsinvitationreq"></a>
+
+```json
+[
+  {
+    "email": "cubist@samsung.com",
+    "roles": [
+      "project_sample:research-assistant"
+    ]
+  }
+]
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|email|string(email)|true|none|none|
+|roles|[string]|true|none|none|
+
+<h2 id="tocS_Invitation">Invitation</h2>
+<!-- backwards compatibility -->
+<a id="schemainvitation"></a>
+<a id="schema_Invitation"></a>
+<a id="tocSinvitation"></a>
+<a id="tocsinvitation"></a>
+
+```json
+{
+  "email": "cubist@samsung.com",
+  "roles": [
+    "project_sample:research-assistant"
+  ]
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|email|string(email)|true|none|none|
+|roles|[string]|true|none|none|
+
+<h2 id="tocS_Roles">Roles</h2>
+<!-- backwards compatibility -->
+<a id="schemaroles"></a>
+<a id="schema_Roles"></a>
+<a id="tocSroles"></a>
+<a id="tocsroles"></a>
+
+```json
+[
+  "project_sample:research-assistant"
+]
+
+```
+
+### Properties
+
+*None*
+
+<h2 id="tocS_Role">Role</h2>
+<!-- backwards compatibility -->
+<a id="schemarole"></a>
+<a id="schema_Role"></a>
+<a id="tocSrole"></a>
+<a id="tocsrole"></a>
+
+```json
+"project_sample:research-assistant"
+
+```
 
 A role is either system role or project role.
 Researchers must have project roles to access specific project.
-
 - The format of project role is as follow: $project_id:$role_name
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| Role | string | A role is either system role or project role. Researchers must have project roles to access specific project. - The format of project role is as follow: $project_id:$role_name  |  |
+### Properties
 
-**Example**
-<pre>project_sample:researcher</pre>
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|*anonymous*|string|false|none|A role is either system role or project role.<br>Researchers must have project roles to access specific project.<br>- The format of project role is as follow: $project_id:$role_name|
 
-#### ResetPasswordReq
+<h2 id="tocS_ForgotPasswordReq">ForgotPasswordReq</h2>
+<!-- backwards compatibility -->
+<a id="schemaforgotpasswordreq"></a>
+<a id="schema_ForgotPasswordReq"></a>
+<a id="tocSforgotpasswordreq"></a>
+<a id="tocsforgotpasswordreq"></a>
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| resetToken | string | _Example:_ `"aadfad...badfdfad"` | Yes |
-| password | string |  | Yes |
-| profile | object | Account information in JSON without pre-defined fields<br>_Example:_ `{"name":"david.lee","status":"active"}` | No |
+```json
+{
+  "email": "string"
+}
 
-#### SignInReq
+```
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| email | string (email) | _Example:_ `"cubist@samsung.com"` | Yes |
-| password | string |  | Yes |
+### Properties
 
-#### SignInResponse
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|email|string|true|none|none|
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| email | string (email) | _Example:_ `"cubist@samsung.com"` | Yes |
-| id | string | _Example:_ `"7d08351b-85b6-488e-a8a2-b8653defb865"` | Yes |
-| jwt | string | Signed Json Web Token. payload is as below. {   "email": "cubist@samsung.com",   "roles": ["study_1:owner", "study_2:research"],   "iss": "https://research-hub.io/",   "exp": 1660377937,   "iat": 1660291536 } <br>_Example:_ `"eyJhbGc...ssw5c"` | Yes |
-| refreshToken | string | _Example:_ `"aadfad...badfdfad"` | Yes |
-| roles | [ string ] |  | Yes |
-| profile | object | Account information in JSON without pre-defined fields<br>_Example:_ `{"name":"david.lee","status":"active"}` | Yes |
+<h2 id="tocS_ResetPasswordReq">ResetPasswordReq</h2>
+<!-- backwards compatibility -->
+<a id="schemaresetpasswordreq"></a>
+<a id="schema_ResetPasswordReq"></a>
+<a id="tocSresetpasswordreq"></a>
+<a id="tocsresetpasswordreq"></a>
 
-#### SignUpReq
+```json
+{
+  "resetToken": "aadfad...badfdfad",
+  "password": "string",
+  "profile": {
+    "name": "david.lee",
+    "status": "active"
+  }
+}
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| email | string (email) | _Example:_ `"cubist@samsung.com"` | Yes |
-| password | string |  | Yes |
-| profile | object | Account information in JSON without pre-defined fields<br>_Example:_ `{"name":"david.lee","status":"active"}` | Yes |
+```
 
-#### RoleReq
+### Properties
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| accountId | string | _Example:_ `"7d08351b-85b6-488e-a8a2-b8653defb865"` | Yes |
-| roles | [ string ] |  | Yes |
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|resetToken|string|true|none|none|
+|password|string|true|none|none|
+|profile|object|false|none|Account information in JSON without pre-defined fields.|
 
-#### RefreshReq
+<h2 id="tocS_ResetPasswordResponse">ResetPasswordResponse</h2>
+<!-- backwards compatibility -->
+<a id="schemaresetpasswordresponse"></a>
+<a id="schema_ResetPasswordResponse"></a>
+<a id="tocSresetpasswordresponse"></a>
+<a id="tocsresetpasswordresponse"></a>
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| jwt | string | Signed Json Web Token. payload is as below. {   "email": "cubist@samsung.com",   "roles": ["study_1:owner", "study_2:research"],   "iss": "https://research-hub.io/",   "exp": 1660377937,   "iat": 1660291536 } <br>_Example:_ `"eyJhbGc...ssw5c"` | Yes |
-| refreshToken | string | _Example:_ `"aadfad...badfdfad"` | Yes |
-
-#### RefreshResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| jwt | string | Signed Json Web Token. payload is as below. {   "email": "cubist@samsung.com",   "roles": ["study_1:owner", "study_2:research"],   "iss": "https://research-hub.io/",   "exp": 1660377937,   "iat": 1660291536 } <br>_Example:_ `"eyJhbGc...ssw5c"` | Yes |
-| refreshToken | string | _Example:_ `"aadfad...badfdfad"` | Yes |
-
-#### VerifyEmailReq
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| token | string | _Example:_ `"aadfad...badfdfad"` | Yes |
-
-#### VerifyEmailResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| email | string (email) | _Example:_ `"cubist@samsung.com"` | Yes |
-| id | string | _Example:_ `"7d08351b-85b6-488e-a8a2-b8653defb865"` | Yes |
-| jwt | string | Signed Json Web Token. payload is as below. {   "email": "cubist@samsung.com",   "roles": ["study_1:owner", "study_2:research"],   "iss": "https://research-hub.io/",   "exp": 1660377937,   "iat": 1660291536 } <br>_Example:_ `"eyJhbGc...ssw5c"` | Yes |
-| refreshToken | string | _Example:_ `"aadfad...badfdfad"` | Yes |
-| roles | [ string ] |  | Yes |
-| profile | object | Account information in JSON without pre-defined fields<br>_Example:_ `{"name":"david.lee","status":"active"}` | Yes |
-
-#### VerificationReq
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| email | string (email) | _Example:_ `"cubist@samsung.com"` | Yes |
-
-#### Users
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| Users | array |  |  |
-
-#### User
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| email | string (email) | _Example:_ `"cubist@samsung.com"` | Yes |
-| id | string | _Example:_ `"7d08351b-85b6-488e-a8a2-b8653defb865"` | Yes |
-| roles | [ string ] |  | No |
-| profile | object | Account information in JSON without pre-defined fields<br>_Example:_ `{"name":"david.lee","status":"active"}` | No |
-
-#### Profile
-
-Account information in JSON without pre-defined fields
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| Profile | object | Account information in JSON without pre-defined fields |  |
-
-**Example**
-<pre>{
-  "name": "david.lee",
-  "status": "active"
-}</pre>
-
-#### Token
-
-Signed Json Web Token.
-payload is as below.
+```json
 {
   "email": "cubist@samsung.com",
-  "roles": ["study_1:owner", "study_2:research"],
+  "id": "7d08351b-85b6-488e-a8a2-b8653defb865",
+  "jwt": "eyJhbGc...ssw5c",
+  "refreshToken": "aadfad...badfdfad",
+  "roles": [
+    "project_sample:research-assistant"
+  ],
+  "profile": {
+    "name": "david.lee",
+    "status": "active"
+  }
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|email|string(email)|true|none|none|
+|id|string|true|none|none|
+|jwt|string|true|none|Signed Json Web Token payload is as below.<br>{<br>  "email": "cubist@samsung.com",<br>  "roles": ["study_1:study-creator", "study_2:research-assistant"],<br>  "iss": "https://research-hub.io/",<br>  "exp": 1660377937,<br>  "iat": 1660291536<br>}|
+|refreshToken|string|true|none|none|
+|roles|[string]|true|none|none|
+|profile|object|true|none|Account information in JSON without pre-defined fields.|
+
+<h2 id="tocS_SignInReq">SignInReq</h2>
+<!-- backwards compatibility -->
+<a id="schemasigninreq"></a>
+<a id="schema_SignInReq"></a>
+<a id="tocSsigninreq"></a>
+<a id="tocssigninreq"></a>
+
+```json
+{
+  "email": "cubist@samsung.com",
+  "password": "string"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|email|string(email)|true|none|none|
+|password|string|true|none|none|
+
+<h2 id="tocS_SignInResponse">SignInResponse</h2>
+<!-- backwards compatibility -->
+<a id="schemasigninresponse"></a>
+<a id="schema_SignInResponse"></a>
+<a id="tocSsigninresponse"></a>
+<a id="tocssigninresponse"></a>
+
+```json
+{
+  "email": "cubist@samsung.com",
+  "id": "7d08351b-85b6-488e-a8a2-b8653defb865",
+  "jwt": "eyJhbGc...ssw5c",
+  "refreshToken": "aadfad...badfdfad",
+  "roles": [
+    "project_sample:research-assistant"
+  ],
+  "profile": {
+    "name": "david.lee",
+    "status": "active"
+  }
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|email|string(email)|true|none|none|
+|id|string|true|none|none|
+|jwt|string|true|none|Signed Json Web Token payload is as below.<br>{<br>  "email": "cubist@samsung.com",<br>  "roles": ["study_1:study-creator", "study_2:research-assistant"],<br>  "iss": "https://research-hub.io/",<br>  "exp": 1660377937,<br>  "iat": 1660291536<br>}|
+|refreshToken|string|true|none|none|
+|roles|[string]|true|none|none|
+|profile|object|true|none|Account information in JSON without pre-defined fields.|
+
+<h2 id="tocS_SignUpReq">SignUpReq</h2>
+<!-- backwards compatibility -->
+<a id="schemasignupreq"></a>
+<a id="schema_SignUpReq"></a>
+<a id="tocSsignupreq"></a>
+<a id="tocssignupreq"></a>
+
+```json
+{
+  "email": "cubist@samsung.com",
+  "password": "string",
+  "profile": {
+    "name": "david.lee",
+    "status": "active"
+  }
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|email|string(email)|true|none|none|
+|password|string|true|none|none|
+|profile|object|true|none|Account information in JSON without pre-defined fields.|
+
+<h2 id="tocS_RoleReq">RoleReq</h2>
+<!-- backwards compatibility -->
+<a id="schemarolereq"></a>
+<a id="schema_RoleReq"></a>
+<a id="tocSrolereq"></a>
+<a id="tocsrolereq"></a>
+
+```json
+{
+  "accountId": "7d08351b-85b6-488e-a8a2-b8653defb865",
+  "roles": [
+    "project_sample:research-assistant"
+  ]
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|accountId|string|true|none|none|
+|roles|[string]|true|none|none|
+
+<h2 id="tocS_RefreshReq">RefreshReq</h2>
+<!-- backwards compatibility -->
+<a id="schemarefreshreq"></a>
+<a id="schema_RefreshReq"></a>
+<a id="tocSrefreshreq"></a>
+<a id="tocsrefreshreq"></a>
+
+```json
+{
+  "jwt": "eyJhbGc...ssw5c",
+  "refreshToken": "aadfad...badfdfad"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|jwt|string|true|none|Signed Json Web Token payload is as below.<br>{<br>  "email": "cubist@samsung.com",<br>  "roles": ["study_1:study-creator", "study_2:research-assistant"],<br>  "iss": "https://research-hub.io/",<br>  "exp": 1660377937,<br>  "iat": 1660291536<br>}|
+|refreshToken|string|true|none|none|
+
+<h2 id="tocS_RefreshResponse">RefreshResponse</h2>
+<!-- backwards compatibility -->
+<a id="schemarefreshresponse"></a>
+<a id="schema_RefreshResponse"></a>
+<a id="tocSrefreshresponse"></a>
+<a id="tocsrefreshresponse"></a>
+
+```json
+{
+  "jwt": "eyJhbGc...ssw5c",
+  "refreshToken": "aadfad...badfdfad"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|jwt|string|true|none|Signed Json Web Token payload is as below.<br>{<br>  "email": "cubist@samsung.com",<br>  "roles": ["study_1:study-creator", "study_2:research-assistant"],<br>  "iss": "https://research-hub.io/",<br>  "exp": 1660377937,<br>  "iat": 1660291536<br>}|
+|refreshToken|string|true|none|none|
+
+<h2 id="tocS_VerifyEmailReq">VerifyEmailReq</h2>
+<!-- backwards compatibility -->
+<a id="schemaverifyemailreq"></a>
+<a id="schema_VerifyEmailReq"></a>
+<a id="tocSverifyemailreq"></a>
+<a id="tocsverifyemailreq"></a>
+
+```json
+{
+  "token": "aadfad...badfdfad"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|token|string|true|none|none|
+
+<h2 id="tocS_VerifyEmailResponse">VerifyEmailResponse</h2>
+<!-- backwards compatibility -->
+<a id="schemaverifyemailresponse"></a>
+<a id="schema_VerifyEmailResponse"></a>
+<a id="tocSverifyemailresponse"></a>
+<a id="tocsverifyemailresponse"></a>
+
+```json
+{
+  "email": "cubist@samsung.com",
+  "id": "7d08351b-85b6-488e-a8a2-b8653defb865",
+  "jwt": "eyJhbGc...ssw5c",
+  "refreshToken": "aadfad...badfdfad",
+  "roles": [
+    "project_sample:research-assistant"
+  ],
+  "profile": {
+    "name": "david.lee",
+    "status": "active"
+  }
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|email|string(email)|true|none|none|
+|id|string|true|none|none|
+|jwt|string|true|none|Signed Json Web Token payload is as below.<br>{<br>  "email": "cubist@samsung.com",<br>  "roles": ["study_1:study-creator", "study_2:research-assistant"],<br>  "iss": "https://research-hub.io/",<br>  "exp": 1660377937,<br>  "iat": 1660291536<br>}|
+|refreshToken|string|true|none|none|
+|roles|[string]|true|none|none|
+|profile|object|true|none|Account information in JSON without pre-defined fields.|
+
+<h2 id="tocS_VerificationReq">VerificationReq</h2>
+<!-- backwards compatibility -->
+<a id="schemaverificationreq"></a>
+<a id="schema_VerificationReq"></a>
+<a id="tocSverificationreq"></a>
+<a id="tocsverificationreq"></a>
+
+```json
+{
+  "email": "cubist@samsung.com"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|email|string(email)|true|none|none|
+
+<h2 id="tocS_Users">Users</h2>
+<!-- backwards compatibility -->
+<a id="schemausers"></a>
+<a id="schema_Users"></a>
+<a id="tocSusers"></a>
+<a id="tocsusers"></a>
+
+```json
+[
+  {
+    "email": "cubist@samsung.com",
+    "id": "7d08351b-85b6-488e-a8a2-b8653defb865",
+    "roles": [
+      "project_sample:research-assistant"
+    ],
+    "profile": {
+      "name": "david.lee",
+      "status": "active"
+    }
+  }
+]
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|email|string(email)|true|none|none|
+|id|string|true|none|none|
+|roles|[string]|false|none|none|
+|profile|object|false|none|Account information in JSON without pre-defined fields.|
+
+<h2 id="tocS_User">User</h2>
+<!-- backwards compatibility -->
+<a id="schemauser"></a>
+<a id="schema_User"></a>
+<a id="tocSuser"></a>
+<a id="tocsuser"></a>
+
+```json
+{
+  "email": "cubist@samsung.com",
+  "id": "7d08351b-85b6-488e-a8a2-b8653defb865",
+  "roles": [
+    "project_sample:research-assistant"
+  ],
+  "profile": {
+    "name": "david.lee",
+    "status": "active"
+  }
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|email|string(email)|true|none|none|
+|id|string|true|none|none|
+|roles|[string]|false|none|none|
+|profile|object|false|none|Account information in JSON without pre-defined fields.|
+
+<h2 id="tocS_Profile">Profile</h2>
+<!-- backwards compatibility -->
+<a id="schemaprofile"></a>
+<a id="schema_Profile"></a>
+<a id="tocSprofile"></a>
+<a id="tocsprofile"></a>
+
+```json
+{
+  "name": "david.lee",
+  "status": "active"
+}
+
+```
+
+Account information in JSON without pre-defined fields.
+
+### Properties
+
+*None*
+
+<h2 id="tocS_Token">Token</h2>
+<!-- backwards compatibility -->
+<a id="schematoken"></a>
+<a id="schema_Token"></a>
+<a id="tocStoken"></a>
+<a id="tocstoken"></a>
+
+```json
+"eyJhbGc...ssw5c"
+
+```
+
+Signed Json Web Token payload is as below.
+{
+  "email": "cubist@samsung.com",
+  "roles": ["study_1:study-creator", "study_2:research-assistant"],
   "iss": "https://research-hub.io/",
   "exp": 1660377937,
   "iat": 1660291536
 }
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| Token | string | Signed Json Web Token. payload is as below. {   "email": "cubist@samsung.com",   "roles": ["study_1:owner", "study_2:research"],   "iss": "https://research-hub.io/",   "exp": 1660377937,   "iat": 1660291536 }  |  |
+### Properties
 
-**Example**
-<pre>eyJhbGc...ssw5c</pre>
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|*anonymous*|string|false|none|Signed Json Web Token payload is as below.<br>{<br>  "email": "cubist@samsung.com",<br>  "roles": ["study_1:study-creator", "study_2:research-assistant"],<br>  "iss": "https://research-hub.io/",<br>  "exp": 1660377937,<br>  "iat": 1660291536<br>}|
 
-#### Email
+<h2 id="tocS_Email">Email</h2>
+<!-- backwards compatibility -->
+<a id="schemaemail"></a>
+<a id="schema_Email"></a>
+<a id="tocSemail"></a>
+<a id="tocsemail"></a>
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| Email | string |  |  |
+```json
+"cubist@samsung.com"
 
-**Example**
-<pre>cubist@samsung.com</pre>
+```
 
-#### AccountId
+### Properties
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| AccountId | string |  |  |
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|*anonymous*|string(email)|false|none|none|
 
-**Example**
-<pre>7d08351b-85b6-488e-a8a2-b8653defb865</pre>
+<h2 id="tocS_AccountId">AccountId</h2>
+<!-- backwards compatibility -->
+<a id="schemaaccountid"></a>
+<a id="schema_AccountId"></a>
+<a id="tocSaccountid"></a>
+<a id="tocsaccountid"></a>
 
-#### ProjectId
+```json
+"7d08351b-85b6-488e-a8a2-b8653defb865"
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| ProjectId | string |  |  |
+```
 
-**Example**
-<pre>100</pre>
+### Properties
 
-#### ResetToken
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|*anonymous*|string|false|none|none|
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| ResetToken | string |  |  |
+<h2 id="tocS_ProjectId">ProjectId</h2>
+<!-- backwards compatibility -->
+<a id="schemaprojectid"></a>
+<a id="schema_ProjectId"></a>
+<a id="tocSprojectid"></a>
+<a id="tocsprojectid"></a>
 
-**Example**
-<pre>aadfad...badfdfad</pre>
+```json
+100
 
-#### RefreshToken
+```
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| RefreshToken | string |  |  |
+### Properties
 
-**Example**
-<pre>aadfad...badfdfad</pre>
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|*anonymous*|string|false|none|none|
 
-#### VerifyEmailToken
+<h2 id="tocS_ResetToken">ResetToken</h2>
+<!-- backwards compatibility -->
+<a id="schemaresettoken"></a>
+<a id="schema_ResetToken"></a>
+<a id="tocSresettoken"></a>
+<a id="tocsresettoken"></a>
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| VerifyEmailToken | string |  |  |
+```json
+"aadfad...badfdfad"
 
-**Example**
-<pre>aadfad...badfdfad</pre>
+```
 
-#### Error
+### Properties
 
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| code | string |  | Yes |
-| message | string |  | Yes |
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|*anonymous*|string|false|none|none|
+
+<h2 id="tocS_RefreshToken">RefreshToken</h2>
+<!-- backwards compatibility -->
+<a id="schemarefreshtoken"></a>
+<a id="schema_RefreshToken"></a>
+<a id="tocSrefreshtoken"></a>
+<a id="tocsrefreshtoken"></a>
+
+```json
+"aadfad...badfdfad"
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|*anonymous*|string|false|none|none|
+
+<h2 id="tocS_VerifyEmailToken">VerifyEmailToken</h2>
+<!-- backwards compatibility -->
+<a id="schemaverifyemailtoken"></a>
+<a id="schema_VerifyEmailToken"></a>
+<a id="tocSverifyemailtoken"></a>
+<a id="tocsverifyemailtoken"></a>
+
+```json
+"aadfad...badfdfad"
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|*anonymous*|string|false|none|none|
+
+<h2 id="tocS_Error">Error</h2>
+<!-- backwards compatibility -->
+<a id="schemaerror"></a>
+<a id="schema_Error"></a>
+<a id="tocSerror"></a>
+<a id="tocserror"></a>
+
+```json
+{
+  "code": "string",
+  "message": "string"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|code|string|true|none|none|
+|message|string|true|none|none|
+

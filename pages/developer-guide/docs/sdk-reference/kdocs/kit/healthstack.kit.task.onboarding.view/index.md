@@ -1,20 +1,10 @@
 ---
-
-
-
 title: healthstack.kit.task.onboarding.view
 permalink: /kit/healthstack.kit.task.onboarding.view/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding.view](index.html)
+//[kit](../../index.html)/[healthstack.kit.task.onboarding.view](index.html)
 
 
 
@@ -47,6 +37,4 @@ sidebar: dev_doc_sidebar
 | [IntroViewPreview](-intro-view-preview.html) | [androidJvm]<br>@[PreviewGenerated](../healthstack.kit.annotation/-preview-generated/index.html)<br>@Preview(showBackground = true, device = &quot;id:Nexus 5&quot;)<br>@Composable<br>fun [IntroViewPreview](-intro-view-preview.html)() |
 | [Summary](-summary.html) | [androidJvm]<br>@Composable<br>fun [Summary](-summary.html)(summaries: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Pair](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html)&lt;[Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)&gt;&gt;) |
 | [SummaryPreview](-summary-preview.html) | [androidJvm]<br>@[PreviewGenerated](../healthstack.kit.annotation/-preview-generated/index.html)<br>@Preview(showBackground = true)<br>@Composable<br>fun [SummaryPreview](-summary-preview.html)() |
-
-
 

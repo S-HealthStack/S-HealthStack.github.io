@@ -1,20 +1,10 @@
 ---
-
-
-
 title: EligibilityResultStep
 permalink: /kit/healthstack.kit.task.onboarding.step/-eligibility-result-step/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding.step](../index.html)/[EligibilityResultStep](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.onboarding.step](../index.html)/[EligibilityResultStep](index.html)
 
 
 
@@ -55,6 +45,4 @@ class [EligibilityResultStep](index.html)(id: [String](https://kotlinlang.org/ap
 | [result](../../healthstack.kit.task.base/-step/result.html) | [androidJvm]<br>var [result](../../healthstack.kit.task.base/-step/result.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
 | [success](success.html) | [androidJvm]<br>val [success](success.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true |
 | [view](../../healthstack.kit.task.base/-step/view.html) | [androidJvm]<br>val [view](../../healthstack.kit.task.base/-step/view.html): [View](../../healthstack.kit.task.base/-view/index.html)&lt;[EligibilityResultModel](../../healthstack.kit.task.onboarding.model/-eligibility-result-model/index.html)&gt;<br>view object holding UI method |
-
-
 

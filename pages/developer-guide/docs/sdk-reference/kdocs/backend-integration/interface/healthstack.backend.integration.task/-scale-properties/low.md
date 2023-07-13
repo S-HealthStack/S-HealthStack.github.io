@@ -1,20 +1,10 @@
 ---
-
-
-
 title: low
-permalink: /interface/healthstack.backend.integration.task/-scale-properties/low.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.task/-scale-properties/low.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.task](../index.html)/[ScaleProperties](index.html)/[low](low.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.task](../index.html)/[ScaleProperties](index.html)/[low](low.html)
 
 
 
@@ -24,8 +14,6 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 val [low](low.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
-
-
 
 
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Component
 permalink: /kit/healthstack.kit.task.survey.question.component/-component/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.question.component](../index.html)/[Component](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.question.component](../index.html)/[Component](index.html)
 
 
 
@@ -67,6 +57,4 @@ Component can only render a partial &quot;UI component&quot; such as one questio
 | Name |
 |---|
 | [QuestionComponent](../-question-component/index.html) |
-
-
 

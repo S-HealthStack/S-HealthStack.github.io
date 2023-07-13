@@ -18,7 +18,7 @@ Once you've completed creating your survey questions, the next step is to schedu
 
 To schedule and publish a survey using the API endpoints:
 
-1. Refer to `PATCH /projects/{projectId}/tasks/{taskId}` in [Study API Endpoints](../../api-reference/all-endpoints/study-api-endpoints.md) in the API reference.
+1. Refer to `PATCH /projects/{projectId}/tasks/{taskId}` in [Study API Endpoints](../docs/api-reference/all-endpoints/study-api-endpoints.md) in the API reference.
 
 
 ## Web Portal
@@ -27,4 +27,4 @@ We highly recommend you schedule and publish surveys through the Samsung Health 
 
 To schedule and publish a survey using the web portal:
 
-1. Refer to [Scheduling and Publishing a Survey](../../../../portal-guide/content-creation/publishing-a-survey.md) in the web portal user guide.
+1. Refer to [Scheduling and Publishing a Survey](../../portal-guide/content-creation/publishing-a-survey.md) in the web portal user guide.

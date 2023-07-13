@@ -1,20 +1,10 @@
 ---
-
-
-
 title: pageCallbacks
 permalink: /kit/healthstack.kit.task.onboarding/-onboarding-task/page-callbacks.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding](../index.html)/[OnboardingTask](index.html)/[pageCallbacks](page-callbacks.html)
+//[kit](../../../index.html)/[healthstack.kit.task.onboarding](../index.html)/[OnboardingTask](index.html)/[pageCallbacks](page-callbacks.html)
 
 
 
@@ -39,8 +29,6 @@ androidJvm
 | | |
 |---|---|
 | [healthstack.kit.task.base.CallbackCollection](../../healthstack.kit.task.base/-callback-collection/index.html) |  |
-
-
 
 
 

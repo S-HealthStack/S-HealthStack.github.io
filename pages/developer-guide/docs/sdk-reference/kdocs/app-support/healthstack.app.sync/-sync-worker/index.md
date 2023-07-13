@@ -1,20 +1,10 @@
 ---
-
-
-
 title: SyncWorker
 permalink: /app-support/healthstack.app.sync/-sync-worker/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.sync](../index.html)/[SyncWorker](index.html)
+//[app-support](../../../index.html)/[healthstack.app.sync](../index.html)/[SyncWorker](index.html)
 
 
 
@@ -24,6 +14,8 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 class [SyncWorker](index.html)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html), params: [WorkerParameters](https://developer.android.com/reference/kotlin/androidx/work/WorkerParameters.html)) : [CoroutineWorker](https://developer.android.com/reference/kotlin/androidx/work/CoroutineWorker.html)
+
+A [CoroutineWorker](https://developer.android.com/reference/kotlin/androidx/work/CoroutineWorker.html) that performs synchronization of health data with the backend.
 
 
 
@@ -40,7 +32,7 @@ class [SyncWorker](index.html)(context: [Context](https://developer.android.com/
 
 | Name | Summary |
 |---|---|
-| [doWork](do-work.html) | [androidJvm]<br>open suspend override fun [doWork](do-work.html)(): [ListenableWorker.Result](https://developer.android.com/reference/kotlin/androidx/work/ListenableWorker.Result.html) |
+| [doWork](do-work.html) | [androidJvm]<br>open suspend override fun [doWork](do-work.html)(): [ListenableWorker.Result](https://developer.android.com/reference/kotlin/androidx/work/ListenableWorker.Result.html)<br>The main entry point of the worker that performs the synchronization. |
 | [getApplicationContext](index.html#-560782721%2FFunctions%2F-1544593023) | [androidJvm]<br>@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)<br>fun [getApplicationContext](index.html#-560782721%2FFunctions%2F-1544593023)(): [Context](https://developer.android.com/reference/kotlin/android/content/Context.html) |
 | [getBackgroundExecutor](index.html#1421258461%2FFunctions%2F-1544593023) | [androidJvm]<br>@[RestrictTo](https://developer.android.com/reference/kotlin/androidx/annotation/RestrictTo.html)(value = [[RestrictTo.Scope.LIBRARY_GROUP](https://developer.android.com/reference/kotlin/androidx/annotation/RestrictTo.Scope.LIBRARY_GROUP.html)])<br>@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)<br>open fun [getBackgroundExecutor](index.html#1421258461%2FFunctions%2F-1544593023)(): [Executor](https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html) |
 | [getForegroundInfo](index.html#1577343784%2FFunctions%2F-1544593023) | [androidJvm]<br>open suspend fun [getForegroundInfo](index.html#1577343784%2FFunctions%2F-1544593023)(): [ForegroundInfo](https://developer.android.com/reference/kotlin/androidx/work/ForegroundInfo.html) |
@@ -74,6 +66,4 @@ class [SyncWorker](index.html)(context: [Context](https://developer.android.com/
 | Name | Summary |
 |---|---|
 | [coroutineContext](index.html#1269180052%2FProperties%2F-1544593023) | [androidJvm]<br>~~open~~ ~~val~~ [~~coroutineContext~~](index.html#1269180052%2FProperties%2F-1544593023)~~:~~ CoroutineDispatcher |
-
-
 

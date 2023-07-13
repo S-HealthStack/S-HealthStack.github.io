@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Render
 permalink: /kit/healthstack.kit.task.base/-step/-render.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.base](../index.html)/[Step](index.html)/[Render](-render.html)
+//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[Step](index.html)/[Render](-render.html)
 
 
 
@@ -62,8 +52,6 @@ androidJvm
 | | |
 |---|---|
 | callbackCollection | an object holding callback functions |
-
-
 
 
 

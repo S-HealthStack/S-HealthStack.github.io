@@ -1,20 +1,10 @@
 ---
-
-
-
 title: healthstack.kit.task.signup.view
 permalink: /kit/healthstack.kit.task.signup.view/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.signup.view](index.html)
+//[kit](../../index.html)/[healthstack.kit.task.signup.view](index.html)
 
 
 
@@ -42,6 +32,4 @@ sidebar: dev_doc_sidebar
 | [GoogleSignInButtonPreview](-google-sign-in-button-preview.html) | [androidJvm]<br>@[PreviewGenerated](../healthstack.kit.annotation/-preview-generated/index.html)<br>@Preview(showBackground = true)<br>@Composable<br>fun [GoogleSignInButtonPreview](-google-sign-in-button-preview.html)() |
 | [RegistrationCompletedViewPreview](-registration-completed-view-preview.html) | [androidJvm]<br>@[PreviewGenerated](../healthstack.kit.annotation/-preview-generated/index.html)<br>@Preview(showBackground = true)<br>@Composable<br>fun [RegistrationCompletedViewPreview](-registration-completed-view-preview.html)() |
 | [SignUpViewPreview](-sign-up-view-preview.html) | [androidJvm]<br>@[PreviewGenerated](../healthstack.kit.annotation/-preview-generated/index.html)<br>@Preview(showBackground = true)<br>@Composable<br>fun [SignUpViewPreview](-sign-up-view-preview.html)() |
-
-
 

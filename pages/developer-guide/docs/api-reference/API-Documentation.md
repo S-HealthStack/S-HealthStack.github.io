@@ -11,7 +11,7 @@ sidebar: dev_doc_sidebar
 
 
 
-The API Documentation of the product, Documentation version v0.9 (beta), is structured into several sections:
+The API Documentation of the product, Documentation version v1.0, is structured into several sections:
 
 1. **Study Management:** This section contains guides for creating a study and managing members. Each guide is accessible via a unique URL and available on the web.
 

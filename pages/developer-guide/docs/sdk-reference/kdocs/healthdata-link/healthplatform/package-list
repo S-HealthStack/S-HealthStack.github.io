@@ -2,6 +2,8 @@ $dokka.format:jekyll-v1
 $dokka.linkExtension:html
 $dokka.location:healthstack.healthdata.link.healthplatform////PointingToDeclaration/healthplatform/healthstack.healthdata.link.healthplatform/index.html
 $dokka.location:healthstack.healthdata.link.healthplatform//toHealthData/com.google.android.libraries.healthdata.data.ReadDataResponse#com.google.android.libraries.healthdata.data.DataType/PointingToDeclaration/healthplatform/healthstack.healthdata.link.healthplatform/to-health-data.html
+$dokka.location:healthstack.healthdata.link.healthplatform/ForVerificationGenerated///PointingToDeclaration/healthplatform/healthstack.healthdata.link.healthplatform/-for-verification-generated/index.html
+$dokka.location:healthstack.healthdata.link.healthplatform/ForVerificationGenerated/ForVerificationGenerated/#/PointingToDeclaration/healthplatform/healthstack.healthdata.link.healthplatform/-for-verification-generated/-for-verification-generated.html
 $dokka.location:healthstack.healthdata.link.healthplatform/HealthPlatformAdapter.Companion///PointingToDeclaration/healthplatform/healthstack.healthdata.link.healthplatform/-health-platform-adapter/-companion/index.html
 $dokka.location:healthstack.healthdata.link.healthplatform/HealthPlatformAdapter.Companion/convertStringToHealthDataType/#kotlin.String/PointingToDeclaration/healthplatform/healthstack.healthdata.link.healthplatform/-health-platform-adapter/-companion/convert-string-to-health-data-type.html
 $dokka.location:healthstack.healthdata.link.healthplatform/HealthPlatformAdapter///PointingToDeclaration/healthplatform/healthstack.healthdata.link.healthplatform/-health-platform-adapter/index.html

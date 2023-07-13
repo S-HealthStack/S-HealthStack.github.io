@@ -1,20 +1,10 @@
 ---
-
-
-
 title: IntroModel
 permalink: /kit/healthstack.kit.task.onboarding.model/-intro-model/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding.model](../index.html)/[IntroModel](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.onboarding.model](../index.html)/[IntroModel](index.html)
 
 
 
@@ -54,6 +44,4 @@ open class [IntroModel](index.html)(val id: [String](https://kotlinlang.org/api/
 | [sections](sections.html) | [androidJvm]<br>val [sections](sections.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[IntroModel.IntroSection](-intro-section/index.html)&gt; |
 | [summaries](summaries.html) | [androidJvm]<br>val [summaries](summaries.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Pair](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html)&lt;[Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)&gt;&gt;? = null |
 | [title](../../healthstack.kit.task.base/-step-model/title.html) | [androidJvm]<br>val [title](../../healthstack.kit.task.base/-step-model/title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>a title of UI |
-
-
 

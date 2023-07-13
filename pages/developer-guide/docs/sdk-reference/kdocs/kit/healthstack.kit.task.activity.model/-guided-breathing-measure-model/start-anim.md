@@ -1,0 +1,20 @@
+---
+title: startAnim
+permalink: /kit/healthstack.kit.task.activity.model/-guided-breathing-measure-model/start-anim.html
+
+sidebar: dev_doc_sidebar
+---
+//[kit](../../../index.html)/[healthstack.kit.task.activity.model](../index.html)/[GuidedBreathingMeasureModel](index.html)/[startAnim](start-anim.html)
+
+
+
+# startAnim
+
+
+
+[androidJvm]\
+val [startAnim](start-anim.html): TweenSpec&lt;[Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)&gt;
+
+
+
+

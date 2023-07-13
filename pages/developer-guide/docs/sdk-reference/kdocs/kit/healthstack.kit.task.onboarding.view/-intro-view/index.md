@@ -1,20 +1,10 @@
 ---
-
-
-
 title: IntroView
 permalink: /kit/healthstack.kit.task.onboarding.view/-intro-view/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding.view](../index.html)/[IntroView](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.onboarding.view](../index.html)/[IntroView](index.html)
 
 
 
@@ -49,6 +39,4 @@ class [IntroView](index.html)(val bottomBarText: [String](https://kotlinlang.org
 | Name | Summary |
 |---|---|
 | [bottomBarText](bottom-bar-text.html) | [androidJvm]<br>val [bottomBarText](bottom-bar-text.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-
-
 

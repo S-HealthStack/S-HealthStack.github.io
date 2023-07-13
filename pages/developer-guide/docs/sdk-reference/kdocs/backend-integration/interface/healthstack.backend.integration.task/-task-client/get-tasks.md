@@ -1,20 +1,10 @@
 ---
-
-
-
 title: getTasks
-permalink: /interface/healthstack.backend.integration.task/-task-client/get-tasks.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.task/-task-client/get-tasks.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.task](../index.html)/[TaskClient](index.html)/[getTasks](get-tasks.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.task](../index.html)/[TaskClient](index.html)/[getTasks](get-tasks.html)
 
 
 
@@ -23,7 +13,7 @@ sidebar: dev_doc_sidebar
 
 
 [androidJvm]\
-abstract suspend fun [getTasks](get-tasks.html)(idToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), lastSyncTime: [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html), endTime: [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html) = LocalDateTime.now()): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[TaskSpec](../-task-spec/index.html)&gt;
+abstract suspend fun [getTasks](get-tasks.html)(idToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), lastSyncTime: [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html), endTime: [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html) = LocalDateTime.now(Clock.systemUTC())): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[TaskSpec](../-task-spec/index.html)&gt;
 
 
 
@@ -45,8 +35,6 @@ androidJvm
 | idToken | An encrypted token containing the user's information issued when the logs in to the application. |
 | lastSyncTime | Get tasks that published after lastSyncTime |
 | endTime | Retrieves all tasks created before endTime |
-
-
 
 
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: HealthStatusViewModel
 permalink: /app-support/healthstack.app.viewmodel/-health-status-view-model/-health-status-view-model.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.viewmodel](../index.html)/[HealthStatusViewModel](index.html)/[HealthStatusViewModel](-health-status-view-model.html)
+//[app-support](../../../index.html)/[healthstack.app.viewmodel](../index.html)/[HealthStatusViewModel](index.html)/[HealthStatusViewModel](-health-status-view-model.html)
 
 
 
@@ -23,9 +13,7 @@ sidebar: dev_doc_sidebar
 
 
 [androidJvm]\
-fun [HealthStatusViewModel](-health-status-view-model.html)(dataType: [StatusDataType](../../healthstack.app.status/-status-data-type/index.html))
-
-
+fun [HealthStatusViewModel](-health-status-view-model.html)(healthStatus: [HealthStatus](../../healthstack.app.status/-health-status/index.html), intervalTimeMillis: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html))
 
 
 

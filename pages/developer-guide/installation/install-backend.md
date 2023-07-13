@@ -5,8 +5,6 @@ permalink: install-backend.html
 toc: false
 ---
 
-{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
-
 Follow these instructions to install, build, and verify the backend system.
 
 # System Requirements
@@ -48,26 +46,16 @@ To operate the backend system, the system requirement are:
 ## III. Install Docker and Docker Compose
 
 1. Follow the instructions at https://docs.docker.com/engine/install/ubuntu/ to install Docker and Docker Compose.
-   
+
+      > You can also download Docker Desktop here: [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
 2. Confirm successful installation.
       ```
       sudo docker --version
       sudo systemctl status docker
       ```
 
-# Build
-
->  For your convenience, we've created some config files for you. To optionally use them, navigate to [this GitHub directory](https://github.com/S-HealthStack/S-HealthStack.github.io/tree/main/files/installing-the-backend){:target="_blank"}, download [**backend-config-files.zip**](https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files.zip), extract the contents to your chosen temporary location, and move each desired file into place as you encounter them in the steps below.
-
-## IV. Create a Network
-
-   1. Create a docker network repository proxy (hrp) to connect docker containers.
-
-      ```
-      sudo docker network create hrp
-      ```
-
-## V. Clone Backend System
+## VI. Clone Backend System
 
 1. If you do not have Git, install it using the instruction here: [Git - Installing Git (git-scm.com)](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
@@ -77,15 +65,117 @@ To operate the backend system, the system requirement are:
    git clone https://github.com/S-HealthStack/backend-system
    ```
 
-3. Move to the backend-system directory. Most of 
+## V. Firebase Service
+
+1. If you do not have an account, create a Firebase account and a project with default settings by visiting: [Firebase (google.com)](https://firebase.google.com/)
+
+2. Go to the [Firebase console]([Firebase console](https://console.firebase.google.com/)) and select your project.
+
+3. Click on the gear icon in the top left corner to access your project settings.
+
+4. Click on the **Service accounts** tab.
+
+5. Click **Generate new private key** button to generate a new service account key file.
+
+6. Return to the terminal and create a Firebase **service-account-key.json** file.
 
    ```
-   cd backend-system
+   cd install_path>/backend-system/platform
+   touch service-account-key.json
    ```
 
+7. Update the **service-account-key.json** file with the private key generated in step 5 using the instructions at [https://firebase.google.com/docs/admin/setup?authuser=0](https://firebase.google.com/docs/admin/setup?authuser=0){:target="_blank"}.
 
+   >  Be sure to keep this file private and securely stored. It contains your unique security key.
 
-## VI. Deploy Postgres
+# Installation
+
+## Method 1: Using Docker Compose
+
+### I. backend-config-files-v1.zip
+
+1. Download **backend-config-files-v1.zip** from [https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip](https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip)
+
+2. Extract the files and place them at the level of ***backend-system***. Your file structure should look as follows for **<install_path>**
+
+   backend-system	docker-compose.yml	haproxy	multi_db	rule-update	trino	.env
+
+## II. Database
+
+1. Following the [Configuring the Database](configure-database.md) page instructions if you want to connect to the running Postgres container.
+
+2. (Optional) Update PostgreSQL root user password and SMTP relay server host, username, port, and password. We use SMTP service to send account invitation/activation/password reset emails.
+
+   ```
+   POSTGRES_PASSWORD=<new-value-here>
+   SMTP_HOST=<new-value-here>
+   SMTP_PORT=<new-value-here>
+   MAIL_USER=<new-value-here>
+   MAIL_USER_PASSWORD= <new-value-here>
+   ```
+
+3. (Required if performing Step 2)  Sync password with Trino PostgreSQL catalog file downloaded located at:  **<install_path>/trino/etc/catalog/postgresql/postgresql.properties**
+
+   ```
+   connector.name=postgresql
+   connection-url=jdbc:postgresql://hrp-postgres:5432/healthstack
+   connection-user=postgres
+   connection-password= <new-value-here>
+   ```
+
+## III. Compile
+
+1. Compile and package the backend-related microservices:
+
+   ```
+   cd backend-system ; ./gradlew clean ; ./gradlew build -x detekt
+   ```
+
+2. (Optional) If you prefer to build a specific component only (e.g. account-service). Use appropriate target in Gradle:
+
+   ```
+   cd <package-path> ./gradlew :account-service:build -x detekt)
+   ```
+
+## IV. Run
+
+1. Move back to the **<install_path>** and run provided compose file to build and start backend cluster:
+
+   ```
+   sudo docker compose up -d
+   ```
+
+   Please note that supertokens container is optional and to be replaced with your own authorization service if necessary.
+
+2. Check the backend cluster is up and running. 
+
+   ```
+   sudo docker ps -a
+   ```
+
+   ![viewing-graphs-1](../../../images/install-docker-services.png)
+
+   
+
+## Method 2: Manual Build
+
+>  You can download [**backend-config-files-v1.zip**](https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip) from [GitHub directory](https://github.com/S-HealthStack/S-HealthStack.github.io/tree/main/files/installing-the-backend){:target="_blank"}. Extract the contents to your chosen temporary location, and move each desired file into place as you encounter them in the steps below.
+
+## I. Create a Network
+
+   1. Move to the backend-system directory. 
+
+      ```
+      cd backend-system
+      ```
+
+   2. Create a docker network repository proxy (hrp) to connect docker containers.
+
+      ```
+      sudo docker network create hrp
+      ```
+
+## II. Deploy Postgres
 
 1. If you wish to connect to the running Postgres container, follow the [Configuring the Database](configure-database.md) page instructions.
 
@@ -103,16 +193,17 @@ To operate the backend system, the system requirement are:
    
    This command creates a Docker container based on the PostgreSQL 14.5 image, sets the container name to `hrp-postgres`, connects the container to the Docker network `hrp`, and sets the environment variable `POSTGRES_PASSWORD` to `password`.
 
-## VII. Deploy SuperTokens
+## III. Deploy SuperTokens
 
 You don't have to use SuperTokens. You can implement a backend adapter to complement the authorization service of your choice. If you choose to use supertokens:
 1. In Postgres, create a database named `supertokens`.
 
-2. Deploy [SuperTokens](https://supertokens.com/){:target="_blank"}.
+2. Create database tables using following instructions: https://supertokens.com/docs/thirdparty/custom-ui/init/database-setup/postgresql
+
+3. Deploy [SuperTokens](https://supertokens.com/){:target="_blank"}.
 
    ```
-   sudo docker run \
-     -p 3567:3567 \
+   sudo docker run \	
      --name hrp-supertokens \
      --network hrp \
      -e POSTGRESQL_USER=postgres \
@@ -124,7 +215,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
      supertokens/supertokens-postgresql
    ```
 
-## VIII. Deploy Account Service
+## IV. Deploy Account Service
 
 1. In Postgres, create a database named `tokens`.
 
@@ -139,7 +230,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
 
    ```
    sudo docker run \
-     -p 8080:8081 \
+     --expose=8080 \
      --name hrp-account-service \
      --network hrp \
      -e SMTP_HOST=smtp.server.addr \
@@ -160,29 +251,9 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    
    This command runs a Docker container for an account service, with various environment variables set. The container is based on the `hrp-account-service:0.9.0` image and is named `hrp-account-service`. It is connected to the `hrp` network, and it exposes port `8080` on the Docker host. The environment variables set in the container include the SMTP server host address and port, email account credentials, super token URL, JWK URL, PostgreSQL database URL, database name, username, and password. These values should be customized to match the value you want to use in your environment.
 
-## IX. Create Firebase Service Account
 
-1. If you do not have an account, create a Firebase account and a project with default settings by visiting: [Firebase (google.com)](https://firebase.google.com/)
 
-2. Go to the [Firebase console]([Firebase console](https://console.firebase.google.com/)) and select your project.
-
-3. Click on the gear icon in the top left corner to access your project settings.
-
-4. Click on the **Service accounts** tab.
-
-5. Click **Generate new private key** button to generate a new service account key file.
-
-6. Return to the terminal and create a Firebase **service-account-key.json** file.
-
-   ```
-   cd <install_path>/backend-system/platform
-   touch service-account-key.json
-   ```
-
-7. Update the **service-account-key.json** file with the private key generated in step 5 using the instructions at [https://firebase.google.com/docs/admin/setup?authuser=0](https://firebase.google.com/docs/admin/setup?authuser=0){:target="_blank"}.
-   >  Be sure to keep this file private and securely stored. It contains your unique security key.
-
-## X. Deploy Platform
+## V. Deploy Platform
 
 1. Test and format the code.
    
@@ -209,7 +280,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    ```
    sudo docker run \
      -d \
-     -p 3030:3030 \
+     --expose=3030 \
      --name hrp-platform \
      --network hrp \
      -e DB_HOST=hrp-postgres \
@@ -228,24 +299,9 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    sudo docker ps | grep hrp-platform
    ```
 
-## XI. Deploy trino-rule-update-service
+## VI. Deploy trino-rule-update-service
 
-1. If **trino-rule-update-service** directory does not exist create the directory.
-
-   ```
-   mkdir trino-rule-update-service
-   ```
-
-2. If the **trino-rule-update-service/Dockerfile** does not exist or does not contain the following content create the file with the following content:
-
-   ```
-   FROM openjdk:17.0.2-jdk-oracle
-   ARG JAR_FILE=build/libs/*.jar
-   COPY ${JAR_FILE} application.jar
-   ENTRYPOINT ["java","-jar","/application.jar"]
-   ```
-
-3. Create a Docker image of trino-rule-update-service.
+1. Create a Docker image of trino-rule-update-service.
 
    ```
    ./gradlew :trino-rule-update-service:build -x detekt
@@ -253,25 +309,25 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    sudo docker build --tag hrp-trino-rule-update-service:0.9.0 ./trino-rule-update-service/
    ```
 
-4. Create a healthstack directory at the root level of your system or at a location of your choice.
+2. Create a healthstack directory at the root level of your system or at a location of your choice.
 
    ```
    mkdir /root/healthstack
    ```
 
-5. Create a **rule-update** directory inside the healthstack directory.
+3. Create a **rule-update** directory inside the healthstack directory ***<install_path>/backend-system***.
 
    ```
    mkdir /root/healthstack/rule-update
    ```
 
-6. Create a `rules.json` file inside the `rule-update` directory. You can use the optionally provided file from the GitHub zip file located at: **backend-config-files\rule-update** or create your own file with your custom rules.
+4. Create a `rules.json` file inside the `rule-update` directory. You can use the optionally provided file from the GitHub zip file located at: **backend-config-files-v1\rule-update** or create your own file with your custom rules.
 
    ```
    touch /root/healthstack/rule-update/rules.json
    ```
 
-7. Add content to **rules.json**
+5. Add content to **rules.json**
 
    ```
    echo "\
@@ -328,7 +384,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    " > /root/healthstack/rule-update/rules.json
    ```
 
-8. Deploy trino-rule-update-service.
+6. Deploy trino-rule-update-service.
 
    ```
    sudo docker run \
@@ -336,12 +392,12 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
      --network hrp \
      -e FIXED_DELAY_MILLISEC=5000 \
      -e ACCOUNT_SERVICE_URL=http://hrp-account-service:8080 \
-     -v /root/healthstack/rule-update:/etc/trino/access-control \
+     -v ${PWD}/rule-update:/etc/trino/access-control \
      -d \
      hrp-trino-rule-update-service:0.9.0
    ```
 
-## XII. Deploy Trino
+## VII. Deploy Trino
 
 1. Download trinodb/trino version 402.
 
@@ -357,7 +413,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    mkdir -p trino/etc/catalog && touch trino/etc/catalog/jvm.config 
    ```
 
-4. Create the **trino/etc/catalog/jvm.config** file with these contents:
+4. Create the **<install_path>/trino/etc/catalog/jvm.config** file with these contents:
 
    ```
    echo "\
@@ -376,7 +432,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    -Djak.attach.allowAttachSelf=true
    -Didk.nio.maxCachedBufferSize=2000000
    -XX:+UnlockDiagnosticVMOptions
-   -XX:+UseAESCTRIntrinsics" > trino/etc/catalog/jvm.config
+   -XX:+UseAESCTRIntrinsics" > ${PWD}/trino/etc/catalog/jvm.config
    ```
 
 5. Ensure you are in **healthstack** directory and create necessary directory and file for **postgresql.properties**
@@ -385,7 +441,18 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    mkdir -p trino/etc/postgresql && touch trino/etc/postgresql/postgresql.properties 
    ```
 
-6. Create the **trino/etc/postgresql/postgresql.properties** file with these contents:
+6. Create the **<install_path>/backend-system/trino/etc/config.properties** file with these contents:
+
+   ```
+   echo "\
+   coordinator=true
+   node-scheduler.include-coordinator=true
+   http-server.http.port=8080
+   discovery-server.enabled=true
+   discovery.uri=http://hrp-trino:8080" > ${PWD}/trino/etc/config.properties
+   ```
+
+7. Create the **<install_path>/backend-system/trino/etc/postgresql/postgresql.properties** file with these contents:
 
    ```
    connector.name=postgresql
@@ -394,22 +461,23 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    connection-password=password
    ```
 
-7. Run the hrp-trino container trinodb/trino image (mapping the hrp-trino default port 8080).
+8. Run the hrp-trino container trinodb/trino image (mapping the hrp-trino default port 8080).
 
    ```
    sudo docker run \
      -d \
      --name hrp-trino \
      --network hrp \
-     -v /root/healthstack/rule-update:/etc/trino/access-control \
-     -v /root/healthstack/trino/etc/catalog/jvm.config:/etc/trino/jvm.config \
-     -v /root/healthstack/trino/etc/postgresql/postgresql.properties:/etc/trino/catalog/postgresql.properties \
+     -v ${PWD}/root/healthstack/rule-update:/etc/trino/access-control \
+     -v ${PWD}/root/healthstack/trino/etc/catalog/jvm.config:/etc/trino/jvm.config \
+     -v ${PWD}/root/healthstack/trino/etc/postgresql/postgresql.properties:/etc/trino/catalog/postgresql.properties \
+     -v ${PWD}/trino/etc/config.properties:/etc/trino/config.properties \
      trinodb/trino:402
    ```
 
 
 
-## XIII. Deploy data-query-service
+## VIII. Deploy data-query-service
 
 1. Change the directory to the **backend-system**
 
@@ -430,7 +498,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    ```
    sudo docker run \
      -d \
-     -p 3031:3031 \  
+     --expose=3031 \  
      --name hrp-data-query-service \
      --network hrp \
      -e TRINO_CATALOG=postgresql \
@@ -447,7 +515,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    sudo docker ps
    ```
 
-## XIV. Haproxy Configuration
+## IX. Haproxy Configuration
 
 1. Change directory to the **/root/healthstack**
 
@@ -579,7 +647,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
      haproxy:2.6.6
    ```
 
-## XV. Deploy docker-compose.yml
+## X. Deploy docker-compose.yml
 
 1. Create the **docker-compose.yml** file with these contents:
    ```
@@ -731,7 +799,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
 
 # Wrap Up
 
-## XVI. Create Initial Account
+## XI. Create Initial Account
 
 > If you intend to use the web portal and a mail server, skip this step and proceed to [web portal installation and setup](install-portal.md).
 
@@ -741,12 +809,13 @@ When a mail server is available, perform these steps:
 1. Create an account for the initial user.
 
    ```
-   curl --location --request POST 'localhost:8080/account-service/signup'
-   --header 'Content-Type: application/json'
+   curl --location --request POST 'localhost:3035/account-service/signup' \
+   --header 'Content-Type: application/json' \
    --data-raw '{
      "email": "your_address@your_email.com",
      "password": "your_password"
    }'
+   
    ```
 2. Check the account activation email and activate the login.
 > The system `Team Admin` [team role](../../portal-guide/study-management/role-based-access-control.md) to the first user to create an account. Because this role has advanced access privileges to the Samsung Health Stack, we recommend that your system administrator creates the first account.
@@ -758,8 +827,8 @@ When a mail server is not available, perform these steps:
 1. Create the `Team Admin` team role.
 
    ```
-   curl --location --request PUT 'localhost:3567/recipe/role'
-   --header 'Content-Type: application/json'
+   curl --location --request PUT 'localhost:3035/recipe/role' \
+   --header 'Content-Type: application/json' \
    --data-raw '{ "role": "team-admin" }'
    ```
 
@@ -775,9 +844,9 @@ When a mail server is not available, perform these steps:
 2. Create the initial user login.
 
    ```
-   curl --location --request POST 'localhost:3567/recipe/signup'
-   --header 'cdi-version: 2.15'
-   --header 'Content-Type: application/json'
+   curl --location --request POST 'localhost:3035/recipe/signup' \
+   --header 'cdi-version: 2.15' \
+   --header 'Content-Type: application/json' \
    --data-raw '{ "email": "your_address@your_email.com", "password": "your_password" }'
    ```
 
@@ -797,12 +866,13 @@ When a mail server is not available, perform these steps:
 3. Copy the returned `id` to the `userId` field in the following command to assign the `Team Admin` team role to the user.
 
    ```
-   curl --location --request PUT 'localhost:3567/recipe/user/role'
-   --header 'Content-Type: application/json'
+   curl --location --request PUT 'localhost:3035/recipe/user/role' \
+   --header 'Content-Type: application/json' \
    --data-raw '{
      "userId": "785d492b-688f-49c1-adbb-e9c00ed0c5b4",
      "role": "team-admin"
    }'
+   
    ```
 
    > Successful result: 
@@ -817,12 +887,13 @@ When a mail server is not available, perform these steps:
 4. Copy the returned `email` to the `email` field and the returned `id` to the `userId` field in the following command to retrieve a verifcation token.
 
    ```
-   $ curl --location --request POST 'localhost:3567/recipe/user/email/verify/token' \
+   curl --location --request POST 'localhost:3035/recipe/user/email/verify/token' \
    --header 'Content-Type: application/json' \
    --data-raw '{
      "userId": "7e5b869e-ed96-4768-9595-93a459f9f5ad",
      "email": "team-admin@samsung.com"
    }'
+   
    ```
 
    > Successful result: 
@@ -837,7 +908,7 @@ When a mail server is not available, perform these steps:
 5. Copy the returned `token` to the `token` field to activate your account.
 
    ```
-   $ curl --location --request POST 'localhost:3567/recipe/user/email/verify' \
+   curl --location --request POST 'localhost:3035/recipe/user/email/verify' \
    --header 'Content-Type: application/json' \
    --data-raw '{
        "method": "token",

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: deserialize
-permalink: /interface/healthstack.backend.integration.task/-property-deserializer/deserialize.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.task/-property-deserializer/deserialize.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.task](../index.html)/[PropertyDeserializer](index.html)/[deserialize](deserialize.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.task](../index.html)/[PropertyDeserializer](index.html)/[deserialize](deserialize.html)
 
 
 
@@ -24,8 +14,6 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 open override fun [deserialize](deserialize.html)(json: JsonElement?, typeOfT: [Type](https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html)?, context: JsonDeserializationContext?): [ItemProperties](../-item-properties/index.html)?
-
-
 
 
 

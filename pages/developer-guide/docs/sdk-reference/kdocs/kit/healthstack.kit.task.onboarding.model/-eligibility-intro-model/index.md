@@ -1,20 +1,10 @@
 ---
-
-
-
 title: EligibilityIntroModel
 permalink: /kit/healthstack.kit.task.onboarding.model/-eligibility-intro-model/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding.model](../index.html)/[EligibilityIntroModel](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.onboarding.model](../index.html)/[EligibilityIntroModel](index.html)
 
 
 
@@ -55,6 +45,4 @@ open class [EligibilityIntroModel](index.html)(val id: [String](https://kotlinla
 | [id](../../healthstack.kit.task.base/-step-model/id.html) | [androidJvm]<br>val [id](../../healthstack.kit.task.base/-step-model/id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>id |
 | [title](../../healthstack.kit.task.base/-step-model/title.html) | [androidJvm]<br>val [title](../../healthstack.kit.task.base/-step-model/title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>a title of UI |
 | [viewType](view-type.html) | [androidJvm]<br>val [viewType](view-type.html): [EligibilityIntroModel.ViewType](-view-type/index.html) |
-
-
 

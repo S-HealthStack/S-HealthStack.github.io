@@ -1,20 +1,10 @@
 ---
-
-
-
 title: healthstack.app.task.converter
 permalink: /app-support/healthstack.app.task.converter/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.task.converter](index.html)
+//[app-support](../../index.html)/[healthstack.app.task.converter](index.html)
 
 
 
@@ -30,6 +20,4 @@ sidebar: dev_doc_sidebar
 | [LocalDateTimeConverter](-local-date-time-converter/index.html) | [androidJvm]<br>class [LocalDateTimeConverter](-local-date-time-converter/index.html) |
 | [PropertiesTypeConverter](-properties-type-converter/index.html) | [androidJvm]<br>class [PropertiesTypeConverter](-properties-type-converter/index.html) |
 | [ResultConverter](-result-converter/index.html) | [androidJvm]<br>class [ResultConverter](-result-converter/index.html)(gson: Gson) |
-
-
 

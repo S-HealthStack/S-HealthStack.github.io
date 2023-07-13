@@ -1,20 +1,10 @@
 ---
-
-
-
 title: title
-permalink: /interface/healthstack.backend.integration.task/-contents/title.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.task/-contents/title.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.task](../index.html)/[Contents](index.html)/[title](title.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.task](../index.html)/[Contents](index.html)/[title](title.html)
 
 
 
@@ -23,9 +13,7 @@ sidebar: dev_doc_sidebar
 
 
 [androidJvm]\
-val [title](title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
-
-
+val [title](title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null
 
 
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: KitButton
 permalink: /kit/healthstack.kit.ui/-kit-button.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[KitButton](-kit-button.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[KitButton](-kit-button.html)
 
 
 
@@ -39,8 +29,6 @@ fun [KitButton](-kit-button.html)(text: [String](https://kotlinlang.org/api/late
     ), border: BorderStroke? = null, modifier: Modifier = Modifier
         .height(44.dp)
         .fillMaxWidth(), enabled: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true, onClick: () -&gt; [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html))
-
-
 
 
 

@@ -2,10 +2,16 @@ $dokka.format:jekyll-v1
 $dokka.linkExtension:html
 $dokka.location:healthstack.app.pref////PointingToDeclaration/app-support/healthstack.app.pref/index.html
 $dokka.location:healthstack.app.pref//dataStore/android.content.Context#/PointingToDeclaration/app-support/healthstack.app.pref/data-store.html
-$dokka.location:healthstack.app.pref/AppStage.Main///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}app-support/healthstack.app.pref/-app-stage/-main/index.html
+$dokka.location:healthstack.app.pref/AppStage.Education///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}app-support/healthstack.app.pref/-app-stage/-education/index.html
+$dokka.location:healthstack.app.pref/AppStage.Home///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}app-support/healthstack.app.pref/-app-stage/-home/index.html
+$dokka.location:healthstack.app.pref/AppStage.Insights///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}app-support/healthstack.app.pref/-app-stage/-insights/index.html
 $dokka.location:healthstack.app.pref/AppStage.Onboarding///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}app-support/healthstack.app.pref/-app-stage/-onboarding/index.html
+$dokka.location:healthstack.app.pref/AppStage.Profile///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}app-support/healthstack.app.pref/-app-stage/-profile/index.html
+$dokka.location:healthstack.app.pref/AppStage.Settings///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}app-support/healthstack.app.pref/-app-stage/-settings/index.html
 $dokka.location:healthstack.app.pref/AppStage.SignUp///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}app-support/healthstack.app.pref/-app-stage/-sign-up/index.html
+$dokka.location:healthstack.app.pref/AppStage.StudyInformation///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}app-support/healthstack.app.pref/-app-stage/-study-information/index.html
 $dokka.location:healthstack.app.pref/AppStage///PointingToDeclaration/app-support/healthstack.app.pref/-app-stage/index.html
+$dokka.location:healthstack.app.pref/AppStage/title/#/PointingToDeclaration/app-support/healthstack.app.pref/-app-stage/title.html
 $dokka.location:healthstack.app.pref/MetaDataStore///PointingToDeclaration/app-support/healthstack.app.pref/-meta-data-store/index.html
 $dokka.location:healthstack.app.pref/MetaDataStore/MetaDataStore/#android.content.Context/PointingToDeclaration/app-support/healthstack.app.pref/-meta-data-store/-meta-data-store.html
 $dokka.location:healthstack.app.pref/MetaDataStore/clearDataStore/#/PointingToDeclaration/app-support/healthstack.app.pref/-meta-data-store/clear-data-store.html
@@ -14,18 +20,25 @@ $dokka.location:healthstack.app.pref/MetaDataStore/readChangesToken/#kotlin.Stri
 $dokka.location:healthstack.app.pref/MetaDataStore/saveChangesToken/#kotlin.String#kotlin.String/PointingToDeclaration/app-support/healthstack.app.pref/-meta-data-store/save-changes-token.html
 $dokka.location:healthstack.app.pref/SettingPreference.Companion///PointingToDeclaration/app-support/healthstack.app.pref/-setting-preference/-companion/index.html
 $dokka.location:healthstack.app.pref/SettingPreference.Companion/APP_STAGE/#/PointingToDeclaration/app-support/healthstack.app.pref/-setting-preference/-companion/-a-p-p_-s-t-a-g-e.html
+$dokka.location:healthstack.app.pref/SettingPreference.Companion/TASK_RESULT_SYNC_TIME/#/PointingToDeclaration/app-support/healthstack.app.pref/-setting-preference/-companion/-t-a-s-k_-r-e-s-u-l-t_-s-y-n-c_-t-i-m-e.html
 $dokka.location:healthstack.app.pref/SettingPreference.Companion/TASK_SYNC_TIME/#/PointingToDeclaration/app-support/healthstack.app.pref/-setting-preference/-companion/-t-a-s-k_-s-y-n-c_-t-i-m-e.html
 $dokka.location:healthstack.app.pref/SettingPreference///PointingToDeclaration/app-support/healthstack.app.pref/-setting-preference/index.html
 $dokka.location:healthstack.app.pref/SettingPreference/SettingPreference/#android.content.Context/PointingToDeclaration/app-support/healthstack.app.pref/-setting-preference/-setting-preference.html
 $dokka.location:healthstack.app.pref/SettingPreference/appStage/#/PointingToDeclaration/app-support/healthstack.app.pref/-setting-preference/app-stage.html
 $dokka.location:healthstack.app.pref/SettingPreference/setAppStage/#healthstack.app.pref.AppStage/PointingToDeclaration/app-support/healthstack.app.pref/-setting-preference/set-app-stage.html
+$dokka.location:healthstack.app.pref/SettingPreference/setTaskResultSyncTime/#kotlin.String/PointingToDeclaration/app-support/healthstack.app.pref/-setting-preference/set-task-result-sync-time.html
 $dokka.location:healthstack.app.pref/SettingPreference/setTaskSyncTime/#kotlin.String/PointingToDeclaration/app-support/healthstack.app.pref/-setting-preference/set-task-sync-time.html
+$dokka.location:healthstack.app.pref/SettingPreference/taskResultSyncTime/#/PointingToDeclaration/app-support/healthstack.app.pref/-setting-preference/task-result-sync-time.html
 $dokka.location:healthstack.app.pref/SettingPreference/taskSyncTime/#/PointingToDeclaration/app-support/healthstack.app.pref/-setting-preference/task-sync-time.html
 $dokka.location:healthstack.app.status////PointingToDeclaration/app-support/healthstack.app.status/index.html
+$dokka.location:healthstack.app.status/HealthStatus///PointingToDeclaration/app-support/healthstack.app.status/-health-status/index.html
+$dokka.location:healthstack.app.status/HealthStatus/HealthStatus/#/PointingToDeclaration/app-support/healthstack.app.status/-health-status/-health-status.html
+$dokka.location:healthstack.app.status/HealthStatus/toViewModel/#/PointingToDeclaration/app-support/healthstack.app.status/-health-status/to-view-model.html
 $dokka.location:healthstack.app.status/HeartRateStatus///PointingToDeclaration/app-support/healthstack.app.status/-heart-rate-status/index.html
 $dokka.location:healthstack.app.status/HeartRateStatus/getDataKey/#/PointingToDeclaration/app-support/healthstack.app.status/-heart-rate-status/get-data-key.html
 $dokka.location:healthstack.app.status/HeartRateStatus/getIcon/#/PointingToDeclaration/app-support/healthstack.app.status/-heart-rate-status/get-icon.html
 $dokka.location:healthstack.app.status/HeartRateStatus/getUnitString/#/PointingToDeclaration/app-support/healthstack.app.status/-heart-rate-status/get-unit-string.html
+$dokka.location:healthstack.app.status/HeartRateStatus/toViewModel/#/PointingToDeclaration/app-support/healthstack.app.status/-heart-rate-status/to-view-model.html
 $dokka.location:healthstack.app.status/SampleHealthDataStatus///PointingToDeclaration/app-support/healthstack.app.status/-sample-health-data-status/index.html
 $dokka.location:healthstack.app.status/SampleHealthDataStatus/SampleHealthDataStatus/#kotlin.String/PointingToDeclaration/app-support/healthstack.app.status/-sample-health-data-status/-sample-health-data-status.html
 $dokka.location:healthstack.app.status/SampleHealthDataStatus/getDataKey/#/PointingToDeclaration/app-support/healthstack.app.status/-sample-health-data-status/get-data-key.html
@@ -34,6 +47,7 @@ $dokka.location:healthstack.app.status/SleepSessionStatus///PointingToDeclaratio
 $dokka.location:healthstack.app.status/SleepSessionStatus/getIcon/#/PointingToDeclaration/app-support/healthstack.app.status/-sleep-session-status/get-icon.html
 $dokka.location:healthstack.app.status/SleepSessionStatus/getLatestStatus/#/PointingToDeclaration/app-support/healthstack.app.status/-sleep-session-status/get-latest-status.html
 $dokka.location:healthstack.app.status/SleepSessionStatus/getUnitString/#/PointingToDeclaration/app-support/healthstack.app.status/-sleep-session-status/get-unit-string.html
+$dokka.location:healthstack.app.status/SleepSessionStatus/toViewModel/#/PointingToDeclaration/app-support/healthstack.app.status/-sleep-session-status/to-view-model.html
 $dokka.location:healthstack.app.status/StatusDataType///PointingToDeclaration/app-support/healthstack.app.status/-status-data-type/index.html
 $dokka.location:healthstack.app.status/StatusDataType/StatusDataType/#/PointingToDeclaration/app-support/healthstack.app.status/-status-data-type/-status-data-type.html
 $dokka.location:healthstack.app.status/StatusDataType/getIcon/#/PointingToDeclaration/app-support/healthstack.app.status/-status-data-type/get-icon.html
@@ -44,6 +58,14 @@ $dokka.location:healthstack.app.status/TaskStatus/getIcon/#/PointingToDeclaratio
 $dokka.location:healthstack.app.status/TaskStatus/getLatestStatus/#/PointingToDeclaration/app-support/healthstack.app.status/-task-status/get-latest-status.html
 $dokka.location:healthstack.app.status/TaskStatus/getUnitString/#/PointingToDeclaration/app-support/healthstack.app.status/-task-status/get-unit-string.html
 $dokka.location:healthstack.app.sync////PointingToDeclaration/app-support/healthstack.app.sync/index.html
+$dokka.location:healthstack.app.sync/FileSyncManager.Companion///PointingToDeclaration/app-support/healthstack.app.sync/-file-sync-manager/-companion/index.html
+$dokka.location:healthstack.app.sync/FileSyncManager.Companion/getInstance/#/PointingToDeclaration/app-support/healthstack.app.sync/-file-sync-manager/-companion/get-instance.html
+$dokka.location:healthstack.app.sync/FileSyncManager.Companion/initialize/#android.content.Context#kotlin.Long/PointingToDeclaration/app-support/healthstack.app.sync/-file-sync-manager/-companion/initialize.html
+$dokka.location:healthstack.app.sync/FileSyncManager///PointingToDeclaration/app-support/healthstack.app.sync/-file-sync-manager/index.html
+$dokka.location:healthstack.app.sync/FileSyncManager/startBackgroundSync/#/PointingToDeclaration/app-support/healthstack.app.sync/-file-sync-manager/start-background-sync.html
+$dokka.location:healthstack.app.sync/FileSyncWorker///PointingToDeclaration/app-support/healthstack.app.sync/-file-sync-worker/index.html
+$dokka.location:healthstack.app.sync/FileSyncWorker/FileSyncWorker/#android.content.Context#androidx.work.WorkerParameters/PointingToDeclaration/app-support/healthstack.app.sync/-file-sync-worker/-file-sync-worker.html
+$dokka.location:healthstack.app.sync/FileSyncWorker/doWork/#/PointingToDeclaration/app-support/healthstack.app.sync/-file-sync-worker/do-work.html
 $dokka.location:healthstack.app.sync/SyncManager.Companion///PointingToDeclaration/app-support/healthstack.app.sync/-sync-manager/-companion/index.html
 $dokka.location:healthstack.app.sync/SyncManager.Companion/HEALTH_DATA_TYPE_KEY/#/PointingToDeclaration/app-support/healthstack.app.sync/-sync-manager/-companion/-h-e-a-l-t-h_-d-a-t-a_-t-y-p-e_-k-e-y.html
 $dokka.location:healthstack.app.sync/SyncManager.Companion/getInstance/#/PointingToDeclaration/app-support/healthstack.app.sync/-sync-manager/-companion/get-instance.html
@@ -89,8 +111,9 @@ $dokka.location:healthstack.app.task.db/TaskRoomDatabase///PointingToDeclaration
 $dokka.location:healthstack.app.task.db/TaskRoomDatabase/TaskRoomDatabase/#/PointingToDeclaration/app-support/healthstack.app.task.db/-task-room-database/-task-room-database.html
 $dokka.location:healthstack.app.task.db/TaskRoomDatabase/taskDao/#/PointingToDeclaration/app-support/healthstack.app.task.db/-task-room-database/task-dao.html
 $dokka.location:healthstack.app.task.entity////PointingToDeclaration/app-support/healthstack.app.task.entity/index.html
+$dokka.location:healthstack.app.task.entity//translate/healthstack.backend.integration.task.SkipLogic#/PointingToDeclaration/app-support/healthstack.app.task.entity/translate.html
 $dokka.location:healthstack.app.task.entity/Task.Properties///PointingToDeclaration/app-support/healthstack.app.task.entity/-task/-properties/index.html
-$dokka.location:healthstack.app.task.entity/Task.Properties/Properties/#kotlin.String#kotlin.String#kotlin.collections.List[healthstack.backend.integration.task.Item]/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/-properties/-properties.html
+$dokka.location:healthstack.app.task.entity/Task.Properties/Properties/#kotlin.String#kotlin.String?#kotlin.collections.List[healthstack.backend.integration.task.Item]/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/-properties/-properties.html
 $dokka.location:healthstack.app.task.entity/Task.Properties/description/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/-properties/description.html
 $dokka.location:healthstack.app.task.entity/Task.Properties/items/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/-properties/items.html
 $dokka.location:healthstack.app.task.entity/Task.Properties/title/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/-properties/title.html
@@ -99,7 +122,7 @@ $dokka.location:healthstack.app.task.entity/Task.Result/Result/#kotlin.String#ko
 $dokka.location:healthstack.app.task.entity/Task.Result/questionId/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/-result/question-id.html
 $dokka.location:healthstack.app.task.entity/Task.Result/response/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/-result/response.html
 $dokka.location:healthstack.app.task.entity/Task///PointingToDeclaration/app-support/healthstack.app.task.entity/-task/index.html
-$dokka.location:healthstack.app.task.entity/Task/Task/#kotlin.Int?#kotlin.Int#kotlin.String#healthstack.app.task.entity.Task.Properties#kotlin.collections.List[healthstack.app.task.entity.Task.Result]?#java.time.LocalDateTime#java.time.LocalDateTime#java.time.LocalDateTime#java.time.LocalDateTime?#java.time.LocalDateTime?/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/-task.html
+$dokka.location:healthstack.app.task.entity/Task/Task/#kotlin.Int?#kotlin.Int#kotlin.String#kotlin.String#healthstack.app.task.entity.Task.Properties#kotlin.collections.List[healthstack.app.task.entity.Task.Result]?#java.time.LocalDateTime#java.time.LocalDateTime#java.time.LocalDateTime#java.time.LocalDateTime?#java.time.LocalDateTime?/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/-task.html
 $dokka.location:healthstack.app.task.entity/Task/createdAt/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/created-at.html
 $dokka.location:healthstack.app.task.entity/Task/id/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/id.html
 $dokka.location:healthstack.app.task.entity/Task/properties/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/properties.html
@@ -110,12 +133,14 @@ $dokka.location:healthstack.app.task.entity/Task/startedAt/#/PointingToDeclarati
 $dokka.location:healthstack.app.task.entity/Task/submittedAt/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/submitted-at.html
 $dokka.location:healthstack.app.task.entity/Task/taskId/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/task-id.html
 $dokka.location:healthstack.app.task.entity/Task/toViewTask/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/to-view-task.html
+$dokka.location:healthstack.app.task.entity/Task/type/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/type.html
 $dokka.location:healthstack.app.task.entity/Task/validUntil/#/PointingToDeclaration/app-support/healthstack.app.task.entity/-task/valid-until.html
 $dokka.location:healthstack.app.task.repository////PointingToDeclaration/app-support/healthstack.app.task.repository/index.html
 $dokka.location:healthstack.app.task.repository//getResult/healthstack.kit.task.survey.question.SubStepHolder#/PointingToDeclaration/app-support/healthstack.app.task.repository/get-result.html
 $dokka.location:healthstack.app.task.repository/TaskRepository///PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository/index.html
 $dokka.location:healthstack.app.task.repository/TaskRepository/getActiveTasks/#java.time.LocalDateTime/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository/get-active-tasks.html
 $dokka.location:healthstack.app.task.repository/TaskRepository/getCompletedTasks/#java.time.LocalDate/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository/get-completed-tasks.html
+$dokka.location:healthstack.app.task.repository/TaskRepository/getCompletedTasksToSync/#java.time.LocalDateTime#java.time.LocalDateTime/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository/get-completed-tasks-to-sync.html
 $dokka.location:healthstack.app.task.repository/TaskRepository/getUpcomingTasks/#java.time.LocalDateTime/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository/get-upcoming-tasks.html
 $dokka.location:healthstack.app.task.repository/TaskRepository/insertAll/#kotlin.collections.List[healthstack.app.task.entity.Task]/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository/insert-all.html
 $dokka.location:healthstack.app.task.repository/TaskRepository/updateResult/#healthstack.kit.task.base.Task/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository/update-result.html
@@ -123,6 +148,7 @@ $dokka.location:healthstack.app.task.repository/TaskRepositoryImpl///PointingToD
 $dokka.location:healthstack.app.task.repository/TaskRepositoryImpl/TaskRepositoryImpl/#/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository-impl/-task-repository-impl.html
 $dokka.location:healthstack.app.task.repository/TaskRepositoryImpl/getActiveTasks/#java.time.LocalDateTime/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository-impl/get-active-tasks.html
 $dokka.location:healthstack.app.task.repository/TaskRepositoryImpl/getCompletedTasks/#java.time.LocalDate/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository-impl/get-completed-tasks.html
+$dokka.location:healthstack.app.task.repository/TaskRepositoryImpl/getCompletedTasksToSync/#java.time.LocalDateTime#java.time.LocalDateTime/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository-impl/get-completed-tasks-to-sync.html
 $dokka.location:healthstack.app.task.repository/TaskRepositoryImpl/getUpcomingTasks/#java.time.LocalDateTime/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository-impl/get-upcoming-tasks.html
 $dokka.location:healthstack.app.task.repository/TaskRepositoryImpl/insertAll/#kotlin.collections.List[healthstack.app.task.entity.Task]/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository-impl/insert-all.html
 $dokka.location:healthstack.app.task.repository/TaskRepositoryImpl/updateResult/#healthstack.kit.task.base.Task/PointingToDeclaration/app-support/healthstack.app.task.repository/-task-repository-impl/update-result.html
@@ -132,13 +158,25 @@ $dokka.location:healthstack.app.task.spec/TaskGenerator/generate/#healthstack.ba
 $dokka.location:healthstack.app.task.spec/TimeUtil///PointingToDeclaration/app-support/healthstack.app.task.spec/-time-util/index.html
 $dokka.location:healthstack.app.task.spec/TimeUtil/dateToLocalDateTimeSystem/#java.util.Date/PointingToDeclaration/app-support/healthstack.app.task.spec/-time-util/date-to-local-date-time-system.html
 $dokka.location:healthstack.app.task.spec/TimeUtil/stringToDate/#kotlin.String/PointingToDeclaration/app-support/healthstack.app.task.spec/-time-util/string-to-date.html
+$dokka.location:healthstack.app.task.utils////PointingToDeclaration/app-support/healthstack.app.task.utils/index.html
+$dokka.location:healthstack.app.task.utils/ItemToModelUtil///PointingToDeclaration/app-support/healthstack.app.task.utils/-item-to-model-util/index.html
+$dokka.location:healthstack.app.task.utils/ItemToModelUtil/toChoice/#healthstack.backend.integration.task.Item/PointingToDeclaration/app-support/healthstack.app.task.utils/-item-to-model-util/to-choice.html
+$dokka.location:healthstack.app.task.utils/ItemToModelUtil/toDateTime/#healthstack.backend.integration.task.Item/PointingToDeclaration/app-support/healthstack.app.task.utils/-item-to-model-util/to-date-time.html
+$dokka.location:healthstack.app.task.utils/ItemToModelUtil/toImageChoice/#healthstack.backend.integration.task.Item/PointingToDeclaration/app-support/healthstack.app.task.utils/-item-to-model-util/to-image-choice.html
+$dokka.location:healthstack.app.task.utils/ItemToModelUtil/toMultiChoice/#healthstack.backend.integration.task.Item/PointingToDeclaration/app-support/healthstack.app.task.utils/-item-to-model-util/to-multi-choice.html
+$dokka.location:healthstack.app.task.utils/ItemToModelUtil/toRank/#healthstack.backend.integration.task.Item/PointingToDeclaration/app-support/healthstack.app.task.utils/-item-to-model-util/to-rank.html
+$dokka.location:healthstack.app.task.utils/ItemToModelUtil/toScale/#healthstack.backend.integration.task.Item/PointingToDeclaration/app-support/healthstack.app.task.utils/-item-to-model-util/to-scale.html
+$dokka.location:healthstack.app.task.utils/ItemToModelUtil/toText/#healthstack.backend.integration.task.Item/PointingToDeclaration/app-support/healthstack.app.task.utils/-item-to-model-util/to-text.html
 $dokka.location:healthstack.app.viewmodel////PointingToDeclaration/app-support/healthstack.app.viewmodel/index.html
-$dokka.location:healthstack.app.viewmodel/HealthStatusViewModel.HealthState///PointingToDeclaration/app-support/healthstack.app.viewmodel/-health-status-view-model/-health-state/index.html
-$dokka.location:healthstack.app.viewmodel/HealthStatusViewModel.HealthState/HealthState/#kotlin.Any/PointingToDeclaration/app-support/healthstack.app.viewmodel/-health-status-view-model/-health-state/-health-state.html
-$dokka.location:healthstack.app.viewmodel/HealthStatusViewModel.HealthState/state/#/PointingToDeclaration/app-support/healthstack.app.viewmodel/-health-status-view-model/-health-state/state.html
+$dokka.location:healthstack.app.viewmodel/HealthState///PointingToDeclaration/app-support/healthstack.app.viewmodel/-health-state/index.html
+$dokka.location:healthstack.app.viewmodel/HealthState/HealthState/#kotlin.Any/PointingToDeclaration/app-support/healthstack.app.viewmodel/-health-state/-health-state.html
+$dokka.location:healthstack.app.viewmodel/HealthState/state/#/PointingToDeclaration/app-support/healthstack.app.viewmodel/-health-state/state.html
 $dokka.location:healthstack.app.viewmodel/HealthStatusViewModel///PointingToDeclaration/app-support/healthstack.app.viewmodel/-health-status-view-model/index.html
-$dokka.location:healthstack.app.viewmodel/HealthStatusViewModel/HealthStatusViewModel/#healthstack.app.status.StatusDataType/PointingToDeclaration/app-support/healthstack.app.viewmodel/-health-status-view-model/-health-status-view-model.html
+$dokka.location:healthstack.app.viewmodel/HealthStatusViewModel/HealthStatusViewModel/#healthstack.app.status.HealthStatus#kotlin.Long/PointingToDeclaration/app-support/healthstack.app.viewmodel/-health-status-view-model/-health-status-view-model.html
 $dokka.location:healthstack.app.viewmodel/HealthStatusViewModel/healthState/#/PointingToDeclaration/app-support/healthstack.app.viewmodel/-health-status-view-model/health-state.html
+$dokka.location:healthstack.app.viewmodel/HealthStatusViewModel/lifecycle/#/PointingToDeclaration/app-support/healthstack.app.viewmodel/-health-status-view-model/lifecycle.html
+$dokka.location:healthstack.app.viewmodel/HeartRateStatusViewModel///PointingToDeclaration/app-support/healthstack.app.viewmodel/-heart-rate-status-view-model/index.html
+$dokka.location:healthstack.app.viewmodel/SleepSessionStatusViewModel///PointingToDeclaration/app-support/healthstack.app.viewmodel/-sleep-session-status-view-model/index.html
 $dokka.location:healthstack.app.viewmodel/TaskViewModel.TasksState///PointingToDeclaration/app-support/healthstack.app.viewmodel/-task-view-model/-tasks-state/index.html
 $dokka.location:healthstack.app.viewmodel/TaskViewModel.TasksState/TasksState/#kotlin.collections.List[healthstack.kit.task.base.Task]/PointingToDeclaration/app-support/healthstack.app.viewmodel/-task-view-model/-tasks-state/-tasks-state.html
 $dokka.location:healthstack.app.viewmodel/TaskViewModel.TasksState/tasks/#/PointingToDeclaration/app-support/healthstack.app.viewmodel/-task-view-model/-tasks-state/tasks.html
@@ -151,11 +189,19 @@ $dokka.location:healthstack.app.viewmodel/TaskViewModel/syncTasks/#/PointingToDe
 $dokka.location:healthstack.app.viewmodel/TaskViewModel/todayTasks/#/PointingToDeclaration/app-support/healthstack.app.viewmodel/-task-view-model/today-tasks.html
 $dokka.location:healthstack.app////PointingToDeclaration/app-support/healthstack.app/index.html
 $dokka.location:healthstack.app//BaseApplication/#healthstack.kit.task.onboarding.OnboardingTask#healthstack.kit.task.signup.SignUpTask#kotlin.collections.List[healthstack.app.status.StatusDataType]#kotlin.collections.List[healthstack.app.sync.SyncManager.HealthDataSyncSpec]/PointingToDeclaration/app-support/healthstack.app/-base-application.html
-$dokka.location:healthstack.app//HealthStatusCard/#healthstack.app.status.StatusDataType#healthstack.app.viewmodel.HealthStatusViewModel/PointingToDeclaration/app-support/healthstack.app/-health-status-card.html
-$dokka.location:healthstack.app//Home/#kotlin.collections.List[healthstack.app.status.StatusDataType]#healthstack.app.viewmodel.TaskViewModel/PointingToDeclaration/app-support/healthstack.app/-home.html
+$dokka.location:healthstack.app//HealthStatusCard/#kotlin.collections.List[healthstack.app.status.HealthStatus]/PointingToDeclaration/app-support/healthstack.app/-health-status-card.html
+$dokka.location:healthstack.app//Home/#kotlin.collections.List[healthstack.app.status.StatusDataType]#healthstack.app.viewmodel.TaskViewModel#kotlin.Function1[healthstack.app.pref.AppStage,kotlin.Unit]/PointingToDeclaration/app-support/healthstack.app/-home.html
+$dokka.location:healthstack.app//HomeTaskCard/#kotlin.String#healthstack.app.viewmodel.TaskViewModel.TasksState#kotlin.Function0[kotlin.Unit]#kotlin.Function1[healthstack.kit.task.base.Task,kotlin.Unit]/PointingToDeclaration/app-support/healthstack.app/-home-task-card.html
 $dokka.location:healthstack.app//StatusCards/#kotlin.collections.List[healthstack.app.status.StatusDataType]#healthstack.app.viewmodel.TaskViewModel/PointingToDeclaration/app-support/healthstack.app/-status-cards.html
 $dokka.location:healthstack.app//TaskStatusCard/#healthstack.app.status.StatusDataType#healthstack.app.viewmodel.TaskViewModel/PointingToDeclaration/app-support/healthstack.app/-task-status-card.html
-$dokka.location:healthstack.app//Tasks/#kotlin.String#healthstack.app.viewmodel.TaskViewModel.TasksState#kotlin.Function0[kotlin.Unit]#kotlin.Function1[healthstack.kit.task.base.Task,kotlin.Unit]/PointingToDeclaration/app-support/healthstack.app/-tasks.html
+$dokka.location:healthstack.app/EducationView///PointingToDeclaration/app-support/healthstack.app/-education-view/index.html
+$dokka.location:healthstack.app/EducationView/EducationView/#kotlin.Function1[healthstack.app.pref.AppStage,kotlin.Unit]#kotlin.collections.List[healthstack.kit.info.publication.Publication]/PointingToDeclaration/app-support/healthstack.app/-education-view/-education-view.html
+$dokka.location:healthstack.app/EducationView/Render/#/PointingToDeclaration/app-support/healthstack.app/-education-view/-render.html
+$dokka.location:healthstack.app/EducationView/changeNavigation/#/PointingToDeclaration/app-support/healthstack.app/-education-view/change-navigation.html
+$dokka.location:healthstack.app/HomeScreenState.HOME///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}app-support/healthstack.app/-home-screen-state/-h-o-m-e/index.html
+$dokka.location:healthstack.app/HomeScreenState.TASK///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}app-support/healthstack.app/-home-screen-state/-t-a-s-k/index.html
+$dokka.location:healthstack.app/HomeScreenState///PointingToDeclaration/app-support/healthstack.app/-home-screen-state/index.html
+$dokka.location:healthstack.app/HomeScreenState/title/#/PointingToDeclaration/app-support/healthstack.app/-home-screen-state/title.html
 healthstack.app
 healthstack.app.pref
 healthstack.app.status
@@ -166,5 +212,6 @@ healthstack.app.task.db
 healthstack.app.task.entity
 healthstack.app.task.repository
 healthstack.app.task.spec
+healthstack.app.task.utils
 healthstack.app.viewmodel
 

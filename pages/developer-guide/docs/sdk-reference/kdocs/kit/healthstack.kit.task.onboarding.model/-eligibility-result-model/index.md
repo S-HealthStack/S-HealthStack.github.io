@@ -1,20 +1,10 @@
 ---
-
-
-
 title: EligibilityResultModel
 permalink: /kit/healthstack.kit.task.onboarding.model/-eligibility-result-model/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding.model](../index.html)/[EligibilityResultModel](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.onboarding.model](../index.html)/[EligibilityResultModel](index.html)
 
 
 
@@ -45,6 +35,4 @@ class [EligibilityResultModel](index.html)(val id: [String](https://kotlinlang.o
 | [id](../../healthstack.kit.task.base/-step-model/id.html) | [androidJvm]<br>val [id](../../healthstack.kit.task.base/-step-model/id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>id |
 | [successModel](success-model.html) | [androidJvm]<br>val [successModel](success-model.html): [ImageArticleModel](../../healthstack.kit.task.base/-image-article-model/index.html) |
 | [title](../../healthstack.kit.task.base/-step-model/title.html) | [androidJvm]<br>val [title](../../healthstack.kit.task.base/-step-model/title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>a title of UI |
-
-
 

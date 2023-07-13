@@ -1,20 +1,10 @@
 ---
-
-
-
 title: healthstack.backend.integration.adapter
-permalink: /healthstack-adapter/healthstack.backend.integration.adapter/index.html
-
-
+permalink: /backend-integration/healthstack-adapter/healthstack.backend.integration.adapter/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[healthstack-adapter](/healthstack-adapter.html)/[healthstack.backend.integration.adapter](index.html)
+//[healthstack-adapter](../../index.html)/[healthstack.backend.integration.adapter](index.html)
 
 
 
@@ -38,6 +28,4 @@ sidebar: dev_doc_sidebar
 | Name | Summary |
 |---|---|
 | [instantToString](instant-to-string.html) | [androidJvm]<br>fun HealthData.[instantToString](instant-to-string.html)(): HealthData |
-
-
 

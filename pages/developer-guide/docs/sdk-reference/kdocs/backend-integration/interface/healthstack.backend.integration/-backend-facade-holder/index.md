@@ -1,20 +1,10 @@
 ---
-
-
-
 title: BackendFacadeHolder
-permalink: /interface/healthstack.backend.integration/-backend-facade-holder/index.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration/-backend-facade-holder/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration](../index.html)/[BackendFacadeHolder](index.html)
+//[interface](../../../index.html)/[healthstack.backend.integration](../index.html)/[BackendFacadeHolder](index.html)
 
 
 
@@ -36,6 +26,4 @@ To use the instance as a singleton, we provide holder which holds the single ins
 |---|---|
 | [getInstance](get-instance.html) | [androidJvm]<br>fun [getInstance](get-instance.html)(): [BackendFacade](../-backend-facade/index.html) |
 | [initialize](initialize.html) | [androidJvm]<br>fun [initialize](initialize.html)(backendFacade: [BackendFacade](../-backend-facade/index.html)) |
-
-
 

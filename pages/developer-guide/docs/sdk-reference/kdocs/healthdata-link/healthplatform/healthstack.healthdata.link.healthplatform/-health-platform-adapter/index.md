@@ -1,20 +1,10 @@
 ---
-
-
-
 title: HealthPlatformAdapter
-permalink: /healthplatform/healthstack.healthdata.link.healthplatform/-health-platform-adapter/index.html
-
-
+permalink: /healthdata-link/healthplatform/healthstack.healthdata.link.healthplatform/-health-platform-adapter/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[healthplatform](/healthplatform.html)/[healthstack.healthdata.link.healthplatform](../index.html)/[HealthPlatformAdapter](index.html)
+//[healthplatform](../../../index.html)/[healthstack.healthdata.link.healthplatform](../index.html)/[HealthPlatformAdapter](index.html)
 
 
 
@@ -55,6 +45,4 @@ class [HealthPlatformAdapter](index.html)(healthDataClient: HealthDataClient, he
 | [hasPermissions](has-permissions.html) | [androidJvm]<br>suspend fun [hasPermissions](has-permissions.html)(permissions: [Set](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html)&lt;Permission&gt;): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
 | [isIntervalData](is-interval-data.html) | [androidJvm]<br>open override fun [isIntervalData](is-interval-data.html)(healthDataName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
 | [requestPermissions](request-permissions.html) | [androidJvm]<br>open suspend override fun [requestPermissions](request-permissions.html)() |
-
-
 

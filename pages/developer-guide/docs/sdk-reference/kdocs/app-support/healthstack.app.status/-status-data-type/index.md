@@ -1,20 +1,10 @@
 ---
-
-
-
 title: StatusDataType
 permalink: /app-support/healthstack.app.status/-status-data-type/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.status](../index.html)/[StatusDataType](index.html)
+//[app-support](../../../index.html)/[healthstack.app.status](../index.html)/[StatusDataType](index.html)
 
 
 
@@ -24,6 +14,8 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 abstract class [StatusDataType](index.html)
+
+An abstract class representing a type of health data for which status information can be retrieved.
 
 
 
@@ -40,9 +32,9 @@ abstract class [StatusDataType](index.html)
 
 | Name | Summary |
 |---|---|
-| [getIcon](get-icon.html) | [androidJvm]<br>abstract fun [getIcon](get-icon.html)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
-| [getLatestStatus](get-latest-status.html) | [androidJvm]<br>abstract suspend fun [getLatestStatus](get-latest-status.html)(): [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? |
-| [getUnitString](get-unit-string.html) | [androidJvm]<br>abstract fun [getUnitString](get-unit-string.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [getIcon](get-icon.html) | [androidJvm]<br>abstract fun [getIcon](get-icon.html)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>Returns the icon resource ID for this health data type. |
+| [getLatestStatus](get-latest-status.html) | [androidJvm]<br>abstract suspend fun [getLatestStatus](get-latest-status.html)(): [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?<br>Returns the unit string for this health data type. |
+| [getUnitString](get-unit-string.html) | [androidJvm]<br>abstract fun [getUnitString](get-unit-string.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>Returns the unit string for this health data type. |
 
 
 ## Inheritors
@@ -50,9 +42,6 @@ abstract class [StatusDataType](index.html)
 
 | Name |
 |---|
-| [SampleHealthDataStatus](../-sample-health-data-status/index.html) |
-| [SleepSessionStatus](../-sleep-session-status/index.html) |
+| [HealthStatus](../-health-status/index.html) |
 | [TaskStatus](../-task-status/index.html) |
-
-
 

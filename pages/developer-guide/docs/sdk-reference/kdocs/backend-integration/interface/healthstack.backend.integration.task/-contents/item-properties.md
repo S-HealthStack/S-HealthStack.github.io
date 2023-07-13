@@ -1,20 +1,10 @@
 ---
-
-
-
 title: itemProperties
-permalink: /interface/healthstack.backend.integration.task/-contents/item-properties.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.task/-contents/item-properties.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.task](../index.html)/[Contents](index.html)/[itemProperties](item-properties.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.task](../index.html)/[Contents](index.html)/[itemProperties](item-properties.html)
 
 
 
@@ -31,9 +21,7 @@ sidebar: dev_doc_sidebar
 
 
 
-val [itemProperties](item-properties.html): [ItemProperties](../-item-properties/index.html)
-
-
+val [itemProperties](item-properties.html): [ItemProperties](../-item-properties/index.html)? = null
 
 
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: uploadTaskResult
-permalink: /interface/healthstack.backend.integration.task/-task-client/upload-task-result.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.task/-task-client/upload-task-result.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.task](../index.html)/[TaskClient](index.html)/[uploadTaskResult](upload-task-result.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.task](../index.html)/[TaskClient](index.html)/[uploadTaskResult](upload-task-result.html)
 
 
 
@@ -40,8 +30,6 @@ androidJvm
 |---|---|
 | idToken | An encrypted token containing the user's information issued when the logs in to the application. |
 | result | [healthstack.backend.integration.task.TaskResult](../-task-result/index.html) |
-
-
 
 
 

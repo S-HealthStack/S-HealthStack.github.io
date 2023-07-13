@@ -1,23 +1,16 @@
 ---
-
-
-
-title: SDK Reference Documentation
-
-permalink: kit.html
-toc: false
-
-
+title: kit
+permalink: /kit.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
+//[kit](index.html)
 
 
 
+# kit
 
-Samsung Health Stack Software Development Kit (SDK) includes a variety of packages to make developing research apps quicker and with a robust structure. Explore the following packages to see the structure of SDK. 
+
 
 ## Packages
 
@@ -26,6 +19,20 @@ Samsung Health Stack Software Development Kit (SDK) includes a variety of packag
 |---|
 | [healthstack.kit.annotation](kit/healthstack.kit.annotation/index.html) |
 | [healthstack.kit.auth](kit/healthstack.kit.auth/index.html) |
+| [healthstack.kit.datastore](kit/healthstack.kit.datastore/index.html) |
+| [healthstack.kit.info](kit/healthstack.kit.info/index.html) |
+| [healthstack.kit.info.publication](kit/healthstack.kit.info.publication/index.html) |
+| [healthstack.kit.info.publication.content](kit/healthstack.kit.info.publication.content/index.html) |
+| [healthstack.kit.notification](kit/healthstack.kit.notification/index.html) |
+| [healthstack.kit.sensor](kit/healthstack.kit.sensor/index.html) |
+| [healthstack.kit.task.activity](kit/healthstack.kit.task.activity/index.html) |
+| [healthstack.kit.task.activity.model](kit/healthstack.kit.task.activity.model/index.html) |
+| [healthstack.kit.task.activity.model.common](kit/healthstack.kit.task.activity.model.common/index.html) |
+| [healthstack.kit.task.activity.predefined](kit/healthstack.kit.task.activity.predefined/index.html) |
+| [healthstack.kit.task.activity.step](kit/healthstack.kit.task.activity.step/index.html) |
+| [healthstack.kit.task.activity.step.common](kit/healthstack.kit.task.activity.step.common/index.html) |
+| [healthstack.kit.task.activity.view](kit/healthstack.kit.task.activity.view/index.html) |
+| [healthstack.kit.task.activity.view.common](kit/healthstack.kit.task.activity.view.common/index.html) |
 | [healthstack.kit.task.base](kit/healthstack.kit.task.base/index.html) |
 | [healthstack.kit.task.onboarding](kit/healthstack.kit.task.onboarding/index.html) |
 | [healthstack.kit.task.onboarding.model](kit/healthstack.kit.task.onboarding.model/index.html) |
@@ -47,5 +54,4 @@ Samsung Health Stack Software Development Kit (SDK) includes a variety of packag
 | [healthstack.kit.ui](kit/healthstack.kit.ui/index.html) |
 | [healthstack.kit.ui.layout](kit/healthstack.kit.ui.layout/index.html) |
 | [healthstack.kit.ui.util](kit/healthstack.kit.ui.util/index.html) |
-
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: ConsentTextModel
 permalink: /kit/healthstack.kit.task.onboarding.model/-consent-text-model/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding.model](../index.html)/[ConsentTextModel](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.onboarding.model](../index.html)/[ConsentTextModel](index.html)
 
 
 
@@ -56,6 +46,4 @@ class [ConsentTextModel](index.html)(val id: [String](https://kotlinlang.org/api
 | [selections](selections.html) | [androidJvm]<br>val [selections](selections.html): [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html) |
 | [subTitle](sub-title.html) | [androidJvm]<br>val [subTitle](sub-title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [title](../../healthstack.kit.task.base/-step-model/title.html) | [androidJvm]<br>val [title](../../healthstack.kit.task.base/-step-model/title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>a title of UI |
-
-
 

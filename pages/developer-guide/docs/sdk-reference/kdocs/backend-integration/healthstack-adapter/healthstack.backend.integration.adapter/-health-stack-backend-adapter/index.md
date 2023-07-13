@@ -1,20 +1,10 @@
 ---
-
-
-
 title: HealthStackBackendAdapter
-permalink: /healthstack-adapter/healthstack.backend.integration.adapter/-health-stack-backend-adapter/index.html
-
-
+permalink: /backend-integration/healthstack-adapter/healthstack.backend.integration.adapter/-health-stack-backend-adapter/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[healthstack-adapter](/healthstack-adapter.html)/[healthstack.backend.integration.adapter](../index.html)/[HealthStackBackendAdapter](index.html)
+//[healthstack-adapter](../../../index.html)/[healthstack.backend.integration.adapter](../index.html)/[HealthStackBackendAdapter](index.html)
 
 
 
@@ -51,7 +41,7 @@ class [HealthStackBackendAdapter](index.html)(networkClient: [HealthStackBackend
 | [getTasks](get-tasks.html) | [androidJvm]<br>open suspend override fun [getTasks](get-tasks.html)(idToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), lastSyncTime: [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html), endTime: [LocalDateTime](https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html)): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;TaskSpec&gt; |
 | [registerUser](register-user.html) | [androidJvm]<br>open suspend override fun [registerUser](register-user.html)(idToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), user: User) |
 | [sync](sync.html) | [androidJvm]<br>open suspend override fun [sync](sync.html)(idToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), healthData: HealthData) |
+| [updateUser](update-user.html) | [androidJvm]<br>open suspend override fun [updateUser](update-user.html)(idToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), userId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), userProfile: UserProfile) |
 | [uploadTaskResult](upload-task-result.html) | [androidJvm]<br>open suspend override fun [uploadTaskResult](upload-task-result.html)(idToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), result: TaskResult) |
-
-
+| [uploadTaskResultAsFile](upload-task-result-as-file.html) | [androidJvm]<br>open suspend override fun [uploadTaskResultAsFile](upload-task-result-as-file.html)(idToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), sourcePath: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), targetPath: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) |
 

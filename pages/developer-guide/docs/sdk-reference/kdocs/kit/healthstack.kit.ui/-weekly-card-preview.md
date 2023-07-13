@@ -1,20 +1,10 @@
 ---
-
-
-
 title: WeeklyCardPreview
 permalink: /kit/healthstack.kit.ui/-weekly-card-preview.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[WeeklyCardPreview](-weekly-card-preview.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[WeeklyCardPreview](-weekly-card-preview.html)
 
 
 
@@ -40,8 +30,6 @@ sidebar: dev_doc_sidebar
 
 
 fun [WeeklyCardPreview](-weekly-card-preview.html)()
-
-
 
 
 

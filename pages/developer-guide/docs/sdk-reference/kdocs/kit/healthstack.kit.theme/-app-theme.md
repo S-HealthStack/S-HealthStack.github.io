@@ -1,20 +1,10 @@
 ---
-
-
-
 title: AppTheme
 permalink: /kit/healthstack.kit.theme/-app-theme.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.theme](index.html)/[AppTheme](-app-theme.html)
+//[kit](../../index.html)/[healthstack.kit.theme](index.html)/[AppTheme](-app-theme.html)
 
 
 
@@ -32,8 +22,6 @@ sidebar: dev_doc_sidebar
 
 
 fun [AppTheme](-app-theme.html)(colors: [AppColors](-app-colors/index.html) = AppTheme.colors, typography: [AppTypography](-app-typography/index.html) = AppTheme.typography, shapes: Shapes = MaterialTheme.shapes, content: @Composable() -&gt; [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html))
-
-
 
 
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: TaskResult
-permalink: /interface/healthstack.backend.integration.task/-task-result/index.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.task/-task-result/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.task](../index.html)/[TaskResult](index.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.task](../index.html)/[TaskResult](index.html)
 
 
 
@@ -48,6 +38,4 @@ Data Transfer Object for uploading the result of the task.
 | [submittedAt](submitted-at.html) | [androidJvm]<br>val [submittedAt](submitted-at.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>Time when the user submitted the task. |
 | [taskId](task-id.html) | [androidJvm]<br>val [taskId](task-id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>ID of the completed task. |
 | [userId](user-id.html) | [androidJvm]<br>val [userId](user-id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>ID of the user who upload the task result. |
-
-
 

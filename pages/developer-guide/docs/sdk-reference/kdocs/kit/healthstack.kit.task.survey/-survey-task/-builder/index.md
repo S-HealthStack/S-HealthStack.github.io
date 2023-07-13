@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Builder
 permalink: /kit/healthstack.kit.task.survey/-survey-task/-builder/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey](../../index.html)/[SurveyTask](../index.html)/[Builder](index.html)
+//[kit](../../../../index.html)/[healthstack.kit.task.survey](../../index.html)/[SurveyTask](../index.html)/[Builder](index.html)
 
 
 
@@ -40,8 +30,7 @@ class [Builder](index.html)(id: [String](https://kotlinlang.org/api/latest/jvm/s
 
 | Name | Summary |
 |---|---|
-| [addQuestion](add-question.html) | [androidJvm]<br>fun &lt;[R](add-question.html)&gt; [addQuestion](add-question.html)(question: [QuestionModel](../../../healthstack.kit.task.survey.question.model/-question-model/index.html)&lt;[R](add-question.html)&gt;)<br>fun &lt;[R](add-question.html)&gt; [addQuestion](add-question.html)(question: [QuestionModel](../../../healthstack.kit.task.survey.question.model/-question-model/index.html)&lt;[R](add-question.html)&gt;, component: [Component](../../../healthstack.kit.task.survey.question.component/-component/index.html)&lt;[QuestionModel](../../../healthstack.kit.task.survey.question.model/-question-model/index.html)&lt;[R](add-question.html)&gt;&gt;) |
+| [addQuestion](add-question.html) | [androidJvm]<br>fun &lt;[R](add-question.html)&gt; [addQuestion](add-question.html)(question: [QuestionModel](../../../healthstack.kit.task.survey.question.model/-question-model/index.html)&lt;[R](add-question.html)&gt;) |
+| [addSection](add-section.html) | [androidJvm]<br>fun [addSection](add-section.html)() |
 | [build](build.html) | [androidJvm]<br>fun [build](build.html)(): [SurveyTask](../index.html) |
-
-
 

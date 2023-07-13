@@ -1,20 +1,10 @@
 ---
-
-
-
 title: SignUpView
 permalink: /kit/healthstack.kit.task.signup.view/-sign-up-view/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.signup.view](../index.html)/[SignUpView](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.signup.view](../index.html)/[SignUpView](index.html)
 
 
 
@@ -41,6 +31,4 @@ class [SignUpView](index.html) : [View](../../healthstack.kit.task.base/-view/in
 | Name | Summary |
 |---|---|
 | [Render](-render.html) | [androidJvm]<br>@Composable<br>open override fun [Render](-render.html)(model: [SignUpModel](../../healthstack.kit.task.signup.model/-sign-up-model/index.html), callbackCollection: [CallbackCollection](../../healthstack.kit.task.base/-callback-collection/index.html), holder: [SubStepHolder](../../healthstack.kit.task.survey.question/-sub-step-holder/index.html)?)<br>A method rendering UI. |
-
-
 

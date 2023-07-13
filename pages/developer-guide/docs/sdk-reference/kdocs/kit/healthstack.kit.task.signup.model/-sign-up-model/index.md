@@ -1,20 +1,10 @@
 ---
-
-
-
 title: SignUpModel
 permalink: /kit/healthstack.kit.task.signup.model/-sign-up-model/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.signup.model](../index.html)/[SignUpModel](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.signup.model](../index.html)/[SignUpModel](index.html)
 
 
 
@@ -45,6 +35,4 @@ open class [SignUpModel](index.html)(val id: [String](https://kotlinlang.org/api
 | [id](../../healthstack.kit.task.base/-step-model/id.html) | [androidJvm]<br>val [id](../../healthstack.kit.task.base/-step-model/id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>id |
 | [providers](providers.html) | [androidJvm]<br>val [providers](providers.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[SignInProvider](../../healthstack.kit.auth/-sign-in-provider/index.html)&gt; |
 | [title](../../healthstack.kit.task.base/-step-model/title.html) | [androidJvm]<br>val [title](../../healthstack.kit.task.base/-step-model/title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>a title of UI |
-
-
 

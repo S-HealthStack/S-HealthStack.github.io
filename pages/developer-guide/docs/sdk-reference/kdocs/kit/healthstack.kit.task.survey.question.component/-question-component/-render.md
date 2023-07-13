@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Render
 permalink: /kit/healthstack.kit.task.survey.question.component/-question-component/-render.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.question.component](../index.html)/[QuestionComponent](index.html)/[Render](-render.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.question.component](../index.html)/[QuestionComponent](index.html)/[Render](-render.html)
 
 
 
@@ -59,8 +49,6 @@ androidJvm
 |---|---|
 | model | an object holding data to be rendered |
 | callbackCollection | an object holding callback functions |
-
-
 
 
 

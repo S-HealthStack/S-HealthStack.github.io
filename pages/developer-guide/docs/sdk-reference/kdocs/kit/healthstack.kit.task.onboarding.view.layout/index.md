@@ -1,20 +1,10 @@
 ---
-
-
-
 title: healthstack.kit.task.onboarding.view.layout
 permalink: /kit/healthstack.kit.task.onboarding.view.layout/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding.view.layout](index.html)
+//[kit](../../index.html)/[healthstack.kit.task.onboarding.view.layout](index.html)
 
 
 
@@ -32,6 +22,4 @@ sidebar: dev_doc_sidebar
 | [LockScreenOrientation](-lock-screen-orientation.html) | [androidJvm]<br>@Composable<br>fun [LockScreenOrientation](-lock-screen-orientation.html)(orientation: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)) |
 | [SignatureLayout](-signature-layout.html) | [androidJvm]<br>@Composable<br>fun [SignatureLayout](-signature-layout.html)(onClickDone: ([String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) -&gt; [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) = {}, onClickCancel: () -&gt; [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) = {}, lockLandscapeOrientation: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true) |
 | [SignatureViewPreview](-signature-view-preview.html) | [androidJvm]<br>@[PreviewGenerated](../healthstack.kit.annotation/-preview-generated/index.html)<br>@Preview(showBackground = true)<br>@Composable<br>fun [SignatureViewPreview](-signature-view-preview.html)() |
-
-
 

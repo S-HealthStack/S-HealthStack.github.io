@@ -1,20 +1,10 @@
 ---
-
-
-
 title: getChanges
-permalink: /interface/healthstack.healthdata.link/-health-data-link/get-changes.html
-
-
+permalink: /healthdata-link/interface/healthstack.healthdata.link/-health-data-link/get-changes.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/hl_interface.html)/[healthstack.healthdata.link](../index.html)/[HealthDataLink](index.html)/[getChanges](get-changes.html)
+//[interface](../../../index.html)/[healthstack.healthdata.link](../index.html)/[HealthDataLink](index.html)/[getChanges](get-changes.html)
 
 
 
@@ -52,8 +42,6 @@ androidJvm
 |---|---|
 | token | Changes token. |
 | healthDataTypeName | Type of health data to read. |
-
-
 
 
 

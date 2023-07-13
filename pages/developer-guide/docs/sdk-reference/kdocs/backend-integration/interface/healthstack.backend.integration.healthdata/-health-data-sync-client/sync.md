@@ -1,20 +1,10 @@
 ---
-
-
-
 title: sync
-permalink: /interface/healthstack.backend.integration.healthdata/-health-data-sync-client/sync.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.healthdata/-health-data-sync-client/sync.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.healthdata](../index.html)/[HealthDataSyncClient](index.html)/[sync](sync.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.healthdata](../index.html)/[HealthDataSyncClient](index.html)/[sync](sync.html)
 
 
 
@@ -40,8 +30,6 @@ androidJvm
 |---|---|
 | idToken | An encrypted token containing the user's information issued when the logs in to the application. |
 | healthData | Health data of users collected through the healthstack.healthdata.link.HealthDataLink. |
-
-
 
 
 

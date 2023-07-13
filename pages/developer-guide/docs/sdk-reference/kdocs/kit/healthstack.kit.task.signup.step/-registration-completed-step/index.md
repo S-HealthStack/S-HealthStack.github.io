@@ -1,20 +1,10 @@
 ---
-
-
-
 title: RegistrationCompletedStep
 permalink: /kit/healthstack.kit.task.signup.step/-registration-completed-step/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.signup.step](../index.html)/[RegistrationCompletedStep](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.signup.step](../index.html)/[RegistrationCompletedStep](index.html)
 
 
 
@@ -54,6 +44,4 @@ class [RegistrationCompletedStep](index.html)(id: [String](https://kotlinlang.or
 | [name](../../healthstack.kit.task.base/-step/name.html) | [androidJvm]<br>val [name](../../healthstack.kit.task.base/-step/name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>name |
 | [result](../../healthstack.kit.task.base/-step/result.html) | [androidJvm]<br>var [result](../../healthstack.kit.task.base/-step/result.html): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
 | [view](../../healthstack.kit.task.base/-step/view.html) | [androidJvm]<br>val [view](../../healthstack.kit.task.base/-step/view.html): [View](../../healthstack.kit.task.base/-view/index.html)&lt;[RegistrationCompletedModel](../../healthstack.kit.task.signup.model/-registration-completed-model/index.html)&gt;<br>view object holding UI method |
-
-
 

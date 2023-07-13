@@ -1,20 +1,10 @@
 ---
-
-
-
 title: TaskRoomDatabase
 permalink: /app-support/healthstack.app.task.db/-task-room-database/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.task.db](../index.html)/[TaskRoomDatabase](index.html)
+//[app-support](../../../index.html)/[healthstack.app.task.db](../index.html)/[TaskRoomDatabase](index.html)
 
 
 
@@ -87,6 +77,4 @@ abstract class [TaskRoomDatabase](index.html) : [RoomDatabase](https://developer
 | [mCallbacks](index.html#1144805490%2FProperties%2F-1544593023) | [androidJvm]<br>@[RestrictTo](https://developer.android.com/reference/kotlin/androidx/annotation/RestrictTo.html)(value = [[RestrictTo.Scope.LIBRARY_GROUP_PREFIX](https://developer.android.com/reference/kotlin/androidx/annotation/RestrictTo.Scope.LIBRARY_GROUP_PREFIX.html)])<br>@[Nullable](https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html)<br>~~val~~ [~~mCallbacks~~](index.html#1144805490%2FProperties%2F-1544593023)~~:~~ [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)&lt;[RoomDatabase.Callback](https://developer.android.com/reference/kotlin/androidx/room/RoomDatabase.Callback.html)&gt;? |
 | [mDatabase](index.html#-1772608385%2FProperties%2F-1544593023) | [androidJvm]<br>~~val~~ [~~mDatabase~~](index.html#-1772608385%2FProperties%2F-1544593023)~~:~~ [SupportSQLiteDatabase](https://developer.android.com/reference/kotlin/androidx/sqlite/db/SupportSQLiteDatabase.html) |
 | [mWriteAheadLoggingEnabled](index.html#1724433270%2FProperties%2F-1544593023) | [androidJvm]<br>val [mWriteAheadLoggingEnabled](index.html#1724433270%2FProperties%2F-1544593023): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
-
-
 

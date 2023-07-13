@@ -1,20 +1,10 @@
 ---
-
-
-
 title: HealthDataSyncClient
-permalink: /interface/healthstack.backend.integration.healthdata/-health-data-sync-client/index.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.healthdata/-health-data-sync-client/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.healthdata](../index.html)/[HealthDataSyncClient](index.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.healthdata](../index.html)/[HealthDataSyncClient](index.html)
 
 
 
@@ -43,6 +33,4 @@ Interface for syncing data with backend.
 | Name |
 |---|
 | [BackendFacade](../../healthstack.backend.integration/-backend-facade/index.html) |
-
-
 

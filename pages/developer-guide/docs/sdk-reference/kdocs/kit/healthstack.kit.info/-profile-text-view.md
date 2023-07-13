@@ -1,0 +1,28 @@
+---
+title: ProfileTextView
+permalink: /kit/healthstack.kit.info/-profile-text-view.html
+
+sidebar: dev_doc_sidebar
+---
+//[kit](../../index.html)/[healthstack.kit.info](index.html)/[ProfileTextView](-profile-text-view.html)
+
+
+
+# ProfileTextView
+
+
+
+[androidJvm]\
+
+
+
+
+@Composable
+
+
+
+fun [ProfileTextView](-profile-text-view.html)(title: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), value: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), disabled: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true, changeValue: ([String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) -&gt; [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) = {})
+
+
+
+

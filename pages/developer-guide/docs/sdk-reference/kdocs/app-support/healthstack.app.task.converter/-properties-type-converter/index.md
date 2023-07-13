@@ -1,20 +1,10 @@
 ---
-
-
-
 title: PropertiesTypeConverter
 permalink: /app-support/healthstack.app.task.converter/-properties-type-converter/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.task.converter](../index.html)/[PropertiesTypeConverter](index.html)
+//[app-support](../../../index.html)/[healthstack.app.task.converter](../index.html)/[PropertiesTypeConverter](index.html)
 
 
 
@@ -42,6 +32,4 @@ class [PropertiesTypeConverter](index.html)
 |---|---|
 | [jsonToObject](json-to-object.html) | [androidJvm]<br>fun [jsonToObject](json-to-object.html)(value: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [Task.Properties](../../healthstack.app.task.entity/-task/-properties/index.html) |
 | [objectToJson](object-to-json.html) | [androidJvm]<br>fun [objectToJson](object-to-json.html)(value: [Task.Properties](../../healthstack.app.task.entity/-task/-properties/index.html)): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-
-
 

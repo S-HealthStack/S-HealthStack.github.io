@@ -1,20 +1,10 @@
 ---
-
-
-
 title: HealthState
 permalink: /app-support/healthstack.app.viewmodel/-health-status-view-model/-health-state/-health-state.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.viewmodel](../../index.html)/[HealthStatusViewModel](../index.html)/[HealthState](index.html)/[HealthState](-health-state.html)
+//[app-support](../../../../index.html)/[healthstack.app.viewmodel](../../index.html)/[HealthStatusViewModel](../index.html)/[HealthState](index.html)/[HealthState](-health-state.html)
 
 
 
@@ -24,8 +14,6 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 fun [HealthState](-health-state.html)(state: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html))
-
-
 
 
 

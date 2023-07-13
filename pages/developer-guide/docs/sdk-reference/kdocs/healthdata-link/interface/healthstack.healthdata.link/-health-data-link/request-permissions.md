@@ -1,20 +1,10 @@
 ---
-
-
-
 title: requestPermissions
-permalink: /interface/healthstack.healthdata.link/-health-data-link/request-permissions.html
-
-
+permalink: /healthdata-link/interface/healthstack.healthdata.link/-health-data-link/request-permissions.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/hl_interface.html)/[healthstack.healthdata.link](../index.html)/[HealthDataLink](index.html)/[requestPermissions](request-permissions.html)
+//[interface](../../../index.html)/[healthstack.healthdata.link](../index.html)/[HealthDataLink](index.html)/[requestPermissions](request-permissions.html)
 
 
 
@@ -28,8 +18,6 @@ abstract suspend fun [requestPermissions](request-permissions.html)()
 
 
 A method requesting all permissions.
-
-
 
 
 

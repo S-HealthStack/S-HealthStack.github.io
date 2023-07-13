@@ -1,20 +1,10 @@
 ---
-
-
-
 title: AppTypography
 permalink: /kit/healthstack.kit.theme/-app-typography/-app-typography.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.theme](../index.html)/[AppTypography](index.html)/[AppTypography](-app-typography.html)
+//[kit](../../../index.html)/[healthstack.kit.theme](../index.html)/[AppTypography](index.html)/[AppTypography](-app-typography.html)
 
 
 
@@ -104,8 +94,6 @@ fun [AppTypography](-app-typography.html)(headline1: TextStyle = TextStyle(
         fontSize = 10.sp,
         lineHeight = 13.sp
     ))
-
-
 
 
 

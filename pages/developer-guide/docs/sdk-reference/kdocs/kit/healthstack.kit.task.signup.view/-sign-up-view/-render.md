@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Render
 permalink: /kit/healthstack.kit.task.signup.view/-sign-up-view/-render.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.signup.view](../index.html)/[SignUpView](index.html)/[Render](-render.html)
+//[kit](../../../index.html)/[healthstack.kit.task.signup.view](../index.html)/[SignUpView](index.html)/[Render](-render.html)
 
 
 
@@ -61,8 +51,6 @@ androidJvm
 | model | an object holding data to be rendered |
 | callbackCollection | an object holding callback functions |
 | holder | an container object managing sub Steps |
-
-
 
 
 

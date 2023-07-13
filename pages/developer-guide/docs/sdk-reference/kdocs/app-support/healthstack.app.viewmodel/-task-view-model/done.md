@@ -1,20 +1,10 @@
 ---
-
-
-
 title: done
 permalink: /app-support/healthstack.app.viewmodel/-task-view-model/done.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.viewmodel](../index.html)/[TaskViewModel](index.html)/[done](done.html)
+//[app-support](../../../index.html)/[healthstack.app.viewmodel](../index.html)/[TaskViewModel](index.html)/[done](done.html)
 
 
 
@@ -24,8 +14,6 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 fun [done](done.html)(task: Task)
-
-
 
 
 

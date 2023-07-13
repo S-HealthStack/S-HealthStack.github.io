@@ -1,20 +1,10 @@
 ---
-
-
-
 title: TaskViewModel
 permalink: /app-support/healthstack.app.viewmodel/-task-view-model/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.viewmodel](../index.html)/[TaskViewModel](index.html)
+//[app-support](../../../index.html)/[healthstack.app.viewmodel](../index.html)/[TaskViewModel](index.html)
 
 
 
@@ -48,6 +38,7 @@ class [TaskViewModel](index.html)(taskRepository: [TaskRepository](../../healths
 
 | Name | Summary |
 |---|---|
+| [addCloseable](index.html#264516373%2FFunctions%2F-1544593023) | [androidJvm]<br>open fun [addCloseable](index.html#264516373%2FFunctions%2F-1544593023)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)p0: [Closeable](https://developer.android.com/reference/kotlin/java/io/Closeable.html)) |
 | [clear](index.html#-1936886459%2FFunctions%2F-1544593023) | [androidJvm]<br>@[MainThread](https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html)<br>fun [clear](index.html#-1936886459%2FFunctions%2F-1544593023)() |
 | [done](done.html) | [androidJvm]<br>fun [done](done.html)(task: Task) |
 | [getTag](index.html#-215894976%2FFunctions%2F-1544593023) | [androidJvm]<br>open fun &lt;[T](index.html#-215894976%2FFunctions%2F-1544593023) : [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)&gt; [getTag](index.html#-215894976%2FFunctions%2F-1544593023)(p0: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [T](index.html#-215894976%2FFunctions%2F-1544593023) |
@@ -64,6 +55,4 @@ class [TaskViewModel](index.html)(taskRepository: [TaskRepository](../../healths
 | [activeTasks](active-tasks.html) | [androidJvm]<br>val [activeTasks](active-tasks.html): StateFlow&lt;[TaskViewModel.TasksState](-tasks-state/index.html)&gt; |
 | [completedTasks](completed-tasks.html) | [androidJvm]<br>val [completedTasks](completed-tasks.html): StateFlow&lt;[TaskViewModel.TasksState](-tasks-state/index.html)&gt; |
 | [todayTasks](today-tasks.html) | [androidJvm]<br>val [todayTasks](today-tasks.html): StateFlow&lt;[TaskViewModel.TasksState](-tasks-state/index.html)&gt; |
-
-
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: ImageArticleLayoutSquarePreview
 permalink: /kit/healthstack.kit.ui.layout/-image-article-layout-square-preview.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui.layout](index.html)/[ImageArticleLayoutSquarePreview](-image-article-layout-square-preview.html)
+//[kit](../../index.html)/[healthstack.kit.ui.layout](index.html)/[ImageArticleLayoutSquarePreview](-image-article-layout-square-preview.html)
 
 
 
@@ -40,8 +30,6 @@ sidebar: dev_doc_sidebar
 
 
 fun [ImageArticleLayoutSquarePreview](-image-article-layout-square-preview.html)()
-
-
 
 
 

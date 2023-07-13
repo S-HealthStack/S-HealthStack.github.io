@@ -1,20 +1,10 @@
 ---
-
-
-
 title: ChoiceQuestionComponent
 permalink: /kit/healthstack.kit.task.survey.question.component/-choice-question-component/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.question.component](../index.html)/[ChoiceQuestionComponent](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.question.component](../index.html)/[ChoiceQuestionComponent](index.html)
 
 
 
@@ -40,9 +30,7 @@ class [ChoiceQuestionComponent](index.html)&lt;[T](index.html) : [ChoiceQuestion
 
 | Name | Summary |
 |---|---|
-| [DropDownGroup](-drop-down-group.html) | [androidJvm]<br>@Composable<br>fun [DropDownGroup](-drop-down-group.html)(question: [ChoiceQuestionModel](../../healthstack.kit.task.survey.question.model/-choice-question-model/index.html)&lt;*&gt;, modifier: Modifier) |
+| [DropDownGroup](-drop-down-group.html) | [androidJvm]<br>@Composable<br>fun [DropDownGroup](-drop-down-group.html)(question: [ChoiceQuestionModel](../../healthstack.kit.task.survey.question.model/-choice-question-model/index.html)&lt;*&gt;) |
 | [Render](-render.html) | [androidJvm]<br>@Composable<br>open override fun [Render](-render.html)(model: [T](index.html), callbackCollection: [CallbackCollection](../../healthstack.kit.task.base/-callback-collection/index.html))<br>A method rendering UI. |
 | [SliderGroup](-slider-group.html) | [androidJvm]<br>@Composable<br>fun [SliderGroup](-slider-group.html)(question: [ChoiceQuestionModel](../../healthstack.kit.task.survey.question.model/-choice-question-model/index.html)&lt;*&gt;) |
-
-
 

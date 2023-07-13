@@ -1,20 +1,10 @@
 ---
-
-
-
 title: ResultConverter
 permalink: /app-support/healthstack.app.task.converter/-result-converter/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.task.converter](../index.html)/[ResultConverter](index.html)
+//[app-support](../../../index.html)/[healthstack.app.task.converter](../index.html)/[ResultConverter](index.html)
 
 
 
@@ -42,6 +32,4 @@ class [ResultConverter](index.html)(gson: Gson)
 |---|---|
 | [jsonToObject](json-to-object.html) | [androidJvm]<br>fun [jsonToObject](json-to-object.html)(value: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Task.Result](../../healthstack.app.task.entity/-task/-result/index.html)&gt;? |
 | [objectToJson](object-to-json.html) | [androidJvm]<br>fun [objectToJson](object-to-json.html)(value: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Task.Result](../../healthstack.app.task.entity/-task/-result/index.html)&gt;?): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
-
-
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Step
 permalink: /kit/healthstack.kit.task.base/-step/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.base](../index.html)/[Step](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[Step](index.html)
 
 
 
@@ -71,6 +61,17 @@ Then, View renders UI with data of Model.
 
 | Name |
 |---|
+| [ColorWordChallengeMeasureStep](../../healthstack.kit.task.activity.step/-color-word-challenge-measure-step/index.html) |
+| [GuidedBreathingMeasureStep](../../healthstack.kit.task.activity.step/-guided-breathing-measure-step/index.html) |
+| [MobileSpirometryMeasureStep](../../healthstack.kit.task.activity.step/-mobile-spirometry-measure-step/index.html) |
+| [RangeOfMotionMeasureStep](../../healthstack.kit.task.activity.step/-range-of-motion-measure-step/index.html) |
+| [ReactionTimeMeasureStep](../../healthstack.kit.task.activity.step/-reaction-time-measure-step/index.html) |
+| [SpeechRecognitionMeasureStep](../../healthstack.kit.task.activity.step/-speech-recognition-measure-step/index.html) |
+| [SustainedPhonationMeasureStep](../../healthstack.kit.task.activity.step/-sustained-phonation-measure-step/index.html) |
+| [TappingSpeedMeasureStep](../../healthstack.kit.task.activity.step/-tapping-speed-measure-step/index.html) |
+| [SimpleAudioActivityStep](../../healthstack.kit.task.activity.step.common/-simple-audio-activity-step/index.html) |
+| [SimpleTimerActivityStep](../../healthstack.kit.task.activity.step.common/-simple-timer-activity-step/index.html) |
+| [SimpleViewActivityStep](../../healthstack.kit.task.activity.step.common/-simple-view-activity-step/index.html) |
 | [ConsentTextStep](../../healthstack.kit.task.onboarding.step/-consent-text-step/index.html) |
 | [EligibilityIntroStep](../../healthstack.kit.task.onboarding.step/-eligibility-intro-step/index.html) |
 | [EligibilityResultStep](../../healthstack.kit.task.onboarding.step/-eligibility-result-step/index.html) |
@@ -78,6 +79,4 @@ Then, View renders UI with data of Model.
 | [RegistrationCompletedStep](../../healthstack.kit.task.signup.step/-registration-completed-step/index.html) |
 | [SignUpStep](../../healthstack.kit.task.signup.step/-sign-up-step/index.html) |
 | [SurveyStep](../../healthstack.kit.task.survey.step/-survey-step/index.html) |
-
-
 

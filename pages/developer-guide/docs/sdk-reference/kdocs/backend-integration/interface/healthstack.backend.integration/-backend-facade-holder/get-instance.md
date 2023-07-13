@@ -1,20 +1,10 @@
 ---
-
-
-
 title: getInstance
-permalink: /interface/healthstack.backend.integration/-backend-facade-holder/get-instance.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration/-backend-facade-holder/get-instance.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration](../index.html)/[BackendFacadeHolder](index.html)/[getInstance](get-instance.html)
+//[interface](../../../index.html)/[healthstack.backend.integration](../index.html)/[BackendFacadeHolder](index.html)/[getInstance](get-instance.html)
 
 
 
@@ -24,8 +14,6 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 fun [getInstance](get-instance.html)(): [BackendFacade](../-backend-facade/index.html)
-
-
 
 
 

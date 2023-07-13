@@ -1,20 +1,10 @@
 ---
-
-
-
 title: BottomRoundButtonPreview
 permalink: /kit/healthstack.kit.ui/-bottom-round-button-preview.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[BottomRoundButtonPreview](-bottom-round-button-preview.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[BottomRoundButtonPreview](-bottom-round-button-preview.html)
 
 
 
@@ -40,8 +30,6 @@ sidebar: dev_doc_sidebar
 
 
 fun [BottomRoundButtonPreview](-bottom-round-button-preview.html)()
-
-
 
 
 

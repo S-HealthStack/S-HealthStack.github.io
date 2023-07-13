@@ -1,20 +1,10 @@
 ---
-
-
-
 title: View
 permalink: /kit/healthstack.kit.task.base/-view/-view.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.base](../index.html)/[View](index.html)/[View](-view.html)
+//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[View](index.html)/[View](-view.html)
 
 
 
@@ -24,8 +14,6 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 fun [View](-view.html)()
-
-
 
 
 

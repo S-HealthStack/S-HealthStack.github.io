@@ -1,20 +1,10 @@
 ---
-
-
-
 title: TaskStatus
 permalink: /kit/healthstack.kit.ui/-task-status.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[TaskStatus](-task-status.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[TaskStatus](-task-status.html)
 
 
 
@@ -32,8 +22,6 @@ sidebar: dev_doc_sidebar
 
 
 fun [TaskStatus](-task-status.html)(@[DrawableRes](https://developer.android.com/reference/kotlin/androidx/annotation/DrawableRes.html)drawableId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), value: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), unit: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) = &quot;&quot;)
-
-
 
 
 

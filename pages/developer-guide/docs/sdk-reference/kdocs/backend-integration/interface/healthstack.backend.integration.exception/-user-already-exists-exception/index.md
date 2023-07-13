@@ -1,20 +1,10 @@
 ---
-
-
-
 title: UserAlreadyExistsException
-permalink: /interface/healthstack.backend.integration.exception/-user-already-exists-exception/index.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.exception/-user-already-exists-exception/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.exception](../index.html)/[UserAlreadyExistsException](index.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.exception](../index.html)/[UserAlreadyExistsException](index.html)
 
 
 
@@ -59,6 +49,4 @@ During the sign-up process, it occurs when the user is already registered.
 |---|---|
 | [cause](index.html#-654012527%2FProperties%2F1470167800) | [androidJvm]<br>open val [cause](index.html#-654012527%2FProperties%2F1470167800): [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)? |
 | [message](index.html#1824300659%2FProperties%2F1470167800) | [androidJvm]<br>open val [message](index.html#1824300659%2FProperties%2F1470167800): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
-
-
 

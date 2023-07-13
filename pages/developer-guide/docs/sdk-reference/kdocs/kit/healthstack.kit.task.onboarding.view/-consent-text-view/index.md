@@ -1,20 +1,10 @@
 ---
-
-
-
 title: ConsentTextView
 permalink: /kit/healthstack.kit.task.onboarding.view/-consent-text-view/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.onboarding.view](../index.html)/[ConsentTextView](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.onboarding.view](../index.html)/[ConsentTextView](index.html)
 
 
 
@@ -41,6 +31,4 @@ class [ConsentTextView](index.html)(buttonText: [String](https://kotlinlang.org/
 | Name | Summary |
 |---|---|
 | [Render](-render.html) | [androidJvm]<br>@Composable<br>open override fun [Render](-render.html)(model: [ConsentTextModel](../../healthstack.kit.task.onboarding.model/-consent-text-model/index.html), callbackCollection: [CallbackCollection](../../healthstack.kit.task.base/-callback-collection/index.html), holder: [SubStepHolder](../../healthstack.kit.task.survey.question/-sub-step-holder/index.html)?)<br>A method rendering UI. |
-
-
 

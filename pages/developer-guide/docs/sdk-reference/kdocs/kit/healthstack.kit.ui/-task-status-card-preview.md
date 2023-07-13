@@ -1,20 +1,10 @@
 ---
-
-
-
 title: TaskStatusCardPreview
 permalink: /kit/healthstack.kit.ui/-task-status-card-preview.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[TaskStatusCardPreview](-task-status-card-preview.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[TaskStatusCardPreview](-task-status-card-preview.html)
 
 
 
@@ -40,8 +30,6 @@ sidebar: dev_doc_sidebar
 
 
 fun [TaskStatusCardPreview](-task-status-card-preview.html)()
-
-
 
 
 

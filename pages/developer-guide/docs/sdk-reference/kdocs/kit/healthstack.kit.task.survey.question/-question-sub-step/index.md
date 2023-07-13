@@ -1,20 +1,10 @@
 ---
-
-
-
 title: QuestionSubStep
 permalink: /kit/healthstack.kit.task.survey.question/-question-sub-step/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.question](../index.html)/[QuestionSubStep](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.question](../index.html)/[QuestionSubStep](index.html)
 
 
 
@@ -53,6 +43,4 @@ class [QuestionSubStep](index.html)&lt;[T](index.html) : [QuestionModel](../../h
 | [id](id.html) | [androidJvm]<br>val [id](id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [model](model.html) | [androidJvm]<br>val [model](model.html): [T](index.html) |
 | [name](name.html) | [androidJvm]<br>val [name](name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-
-
 

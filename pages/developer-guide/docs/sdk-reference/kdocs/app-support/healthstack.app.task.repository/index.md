@@ -1,20 +1,10 @@
 ---
-
-
-
 title: healthstack.app.task.repository
 permalink: /app-support/healthstack.app.task.repository/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.task.repository](index.html)
+//[app-support](../../index.html)/[healthstack.app.task.repository](index.html)
 
 
 
@@ -37,6 +27,4 @@ sidebar: dev_doc_sidebar
 | Name | Summary |
 |---|---|
 | [getResult](get-result.html) | [androidJvm]<br>fun SubStepHolder.[getResult](get-result.html)(): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Task.Result](../healthstack.app.task.entity/-task/-result/index.html)&gt; |
-
-
 

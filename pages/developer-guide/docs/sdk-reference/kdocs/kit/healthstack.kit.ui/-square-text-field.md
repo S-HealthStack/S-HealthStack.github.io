@@ -1,20 +1,10 @@
 ---
-
-
-
 title: SquareTextField
 permalink: /kit/healthstack.kit.ui/-square-text-field.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[SquareTextField](-square-text-field.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[SquareTextField](-square-text-field.html)
 
 
 
@@ -39,8 +29,6 @@ fun [SquareTextField](-square-text-field.html)(modifier: Modifier = Modifier, va
         focusedBorderColor = AppTheme.colors.primary,
         unfocusedBorderColor = Color.Transparent,
     ), shouldMask: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false)
-
-
 
 
 

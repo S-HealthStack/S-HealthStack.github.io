@@ -1,20 +1,10 @@
 ---
-
-
-
 title: healthstack.app.sync
 permalink: /app-support/healthstack.app.sync/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.sync](index.html)
+//[app-support](../../index.html)/[healthstack.app.sync](index.html)
 
 
 
@@ -27,8 +17,8 @@ sidebar: dev_doc_sidebar
 
 | Name | Summary |
 |---|---|
-| [SyncManager](-sync-manager/index.html) | [androidJvm]<br>class [SyncManager](-sync-manager/index.html) |
-| [SyncWorker](-sync-worker/index.html) | [androidJvm]<br>class [SyncWorker](-sync-worker/index.html)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html), params: [WorkerParameters](https://developer.android.com/reference/kotlin/androidx/work/WorkerParameters.html)) : [CoroutineWorker](https://developer.android.com/reference/kotlin/androidx/work/CoroutineWorker.html) |
-
-
+| [FileSyncManager](-file-sync-manager/index.html) | [androidJvm]<br>class [FileSyncManager](-file-sync-manager/index.html) |
+| [FileSyncWorker](-file-sync-worker/index.html) | [androidJvm]<br>class [FileSyncWorker](-file-sync-worker/index.html)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html), params: [WorkerParameters](https://developer.android.com/reference/kotlin/androidx/work/WorkerParameters.html)) : [CoroutineWorker](https://developer.android.com/reference/kotlin/androidx/work/CoroutineWorker.html) |
+| [SyncManager](-sync-manager/index.html) | [androidJvm]<br>class [SyncManager](-sync-manager/index.html)<br>SyncManager is a singleton class using Android's WorkManager for scheduled health data synchronization tasks. Each task is specified by a [HealthDataSyncSpec](-sync-manager/-health-data-sync-spec/index.html), which includes the health data type and its sync interval. |
+| [SyncWorker](-sync-worker/index.html) | [androidJvm]<br>class [SyncWorker](-sync-worker/index.html)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html), params: [WorkerParameters](https://developer.android.com/reference/kotlin/androidx/work/WorkerParameters.html)) : [CoroutineWorker](https://developer.android.com/reference/kotlin/androidx/work/CoroutineWorker.html)<br>A [CoroutineWorker](https://developer.android.com/reference/kotlin/androidx/work/CoroutineWorker.html) that performs synchronization of health data with the backend. |
 

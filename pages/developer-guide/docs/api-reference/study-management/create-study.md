@@ -18,7 +18,7 @@ A Samsung Health Stack study project manages all aspects of the research process
 
 To create a study using the API endpoints:
 
-1. Refer to `POST /projects` in [Study API Endpoints](../all-endpoints/study-api-endpoints.md) in the API reference.
+1. Refer to `POST /projects` in [Study API Endpoints](../docs/api-reference/all-endpoints/study-api-endpoints.md) in the API reference.
 
 ## Web Portal
 
@@ -26,4 +26,4 @@ We highly recommend you create studies through the Samsung Health Stack web port
 
 To create a study using the web portal:
 
-1. Refer to [Creating a Study](../../../../portal-guide/study-management/creating-a-study.md) in the web portal user guide.
+1. Refer to [Creating a Study](../../portal-guide/study-management/creating-a-study.md) in the web portal user guide.

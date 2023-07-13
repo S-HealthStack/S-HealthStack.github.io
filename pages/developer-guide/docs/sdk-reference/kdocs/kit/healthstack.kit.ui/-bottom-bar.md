@@ -1,20 +1,10 @@
 ---
-
-
-
 title: BottomBar
 permalink: /kit/healthstack.kit.ui/-bottom-bar.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[BottomBar](-bottom-bar.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[BottomBar](-bottom-bar.html)
 
 
 
@@ -42,8 +32,6 @@ fun [BottomBar](-bottom-bar.html)(leftButtonText: [String](https://kotlinlang.or
 
 
 fun [BottomBar](-bottom-bar.html)(text: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), buttonEnabled: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true, shape: [ButtonShape](-button-shape/index.html) = SQUARE, onClick: () -&gt; [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html))
-
-
 
 
 

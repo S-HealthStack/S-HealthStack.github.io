@@ -1,20 +1,10 @@
 ---
-
-
-
 title: getUnitString
 permalink: /app-support/healthstack.app.status/-sleep-session-status/get-unit-string.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.status](../index.html)/[SleepSessionStatus](index.html)/[getUnitString](get-unit-string.html)
+//[app-support](../../../index.html)/[healthstack.app.status](../index.html)/[SleepSessionStatus](index.html)/[getUnitString](get-unit-string.html)
 
 
 
@@ -26,6 +16,16 @@ sidebar: dev_doc_sidebar
 open override fun [getUnitString](get-unit-string.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
 
 
+
+Returns the unit string for sleep sessions.
+
+
+
+#### Return
+
+
+
+The unit string.
 
 
 

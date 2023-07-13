@@ -1,20 +1,10 @@
 ---
-
-
-
 title: RegistrationCompletedModel
 permalink: /kit/healthstack.kit.task.signup.model/-registration-completed-model/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.signup.model](../index.html)/[RegistrationCompletedModel](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.signup.model](../index.html)/[RegistrationCompletedModel](index.html)
 
 
 
@@ -53,6 +43,4 @@ class [RegistrationCompletedModel](index.html)(val id: [String](https://kotlinla
 | [drawableId](../../healthstack.kit.task.base/-step-model/drawable-id.html) | [androidJvm]<br>val [drawableId](../../healthstack.kit.task.base/-step-model/drawable-id.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)?<br>a representative image for UI |
 | [id](../../healthstack.kit.task.base/-step-model/id.html) | [androidJvm]<br>val [id](../../healthstack.kit.task.base/-step-model/id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>id |
 | [title](../../healthstack.kit.task.base/-step-model/title.html) | [androidJvm]<br>val [title](../../healthstack.kit.task.base/-step-model/title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>a title of UI |
-
-
 

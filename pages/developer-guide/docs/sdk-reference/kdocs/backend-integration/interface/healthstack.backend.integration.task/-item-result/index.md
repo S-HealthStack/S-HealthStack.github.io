@@ -1,20 +1,10 @@
 ---
-
-
-
 title: ItemResult
-permalink: /interface/healthstack.backend.integration.task/-item-result/index.html
-
-
+permalink: /backend-integration/interface/healthstack.backend.integration.task/-item-result/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/bi_interface.html)/[healthstack.backend.integration.task](../index.html)/[ItemResult](index.html)
+//[interface](../../../index.html)/[healthstack.backend.integration.task](../index.html)/[ItemResult](index.html)
 
 
 
@@ -44,6 +34,4 @@ Data Transfer Object for uploading the result of each item.
 |---|---|
 | [itemName](item-name.html) | [androidJvm]<br>val [itemName](item-name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>Name of the Item. |
 | [result](result.html) | [androidJvm]<br>val [result](result.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>Result of the Item. |
-
-
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: registerUser
-permalink: /healthstack-adapter/healthstack.backend.integration.adapter/-health-stack-backend-a-p-i/register-user.html
-
-
+permalink: /backend-integration/healthstack-adapter/healthstack.backend.integration.adapter/-health-stack-backend-a-p-i/register-user.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[healthstack-adapter](/healthstack-adapter.html)/[healthstack.backend.integration.adapter](../index.html)/[HealthStackBackendAPI](index.html)/[registerUser](register-user.html)
+//[healthstack-adapter](../../../index.html)/[healthstack.backend.integration.adapter](../index.html)/[HealthStackBackendAPI](index.html)/[registerUser](register-user.html)
 
 
 
@@ -32,8 +22,6 @@ sidebar: dev_doc_sidebar
 
 
 abstract suspend fun [registerUser](register-user.html)(@Header(value = &quot;id-token&quot;)idToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), @Path(value = &quot;projectId&quot;)projectId: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), @Bodyuser: User)
-
-
 
 
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: SurveyStep
 permalink: /kit/healthstack.kit.task.survey.step/-survey-step/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.step](../index.html)/[SurveyStep](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.step](../index.html)/[SurveyStep](index.html)
 
 
 
@@ -71,6 +61,4 @@ open class [SurveyStep](index.html)(id: [String](https://kotlinlang.org/api/late
 | Name |
 |---|
 | [EligibilityCheckerStep](../../healthstack.kit.task.onboarding.step/-eligibility-checker-step/index.html) |
-
-
 

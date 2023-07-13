@@ -1,20 +1,10 @@
 ---
-
-
-
 title: objectToJson
 permalink: /app-support/healthstack.app.task.converter/-result-converter/object-to-json.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.task.converter](../index.html)/[ResultConverter](index.html)/[objectToJson](object-to-json.html)
+//[app-support](../../../index.html)/[healthstack.app.task.converter](../index.html)/[ResultConverter](index.html)/[objectToJson](object-to-json.html)
 
 
 
@@ -24,8 +14,6 @@ sidebar: dev_doc_sidebar
 
 [androidJvm]\
 fun [objectToJson](object-to-json.html)(value: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Task.Result](../../healthstack.app.task.entity/-task/-result/index.html)&gt;?): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?
-
-
 
 
 

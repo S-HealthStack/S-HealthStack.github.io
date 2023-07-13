@@ -1,20 +1,10 @@
 ---
-
-
-
 title: RoundTextFieldUnMaskedPreview
 permalink: /kit/healthstack.kit.ui/-round-text-field-un-masked-preview.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[RoundTextFieldUnMaskedPreview](-round-text-field-un-masked-preview.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[RoundTextFieldUnMaskedPreview](-round-text-field-un-masked-preview.html)
 
 
 
@@ -40,8 +30,6 @@ sidebar: dev_doc_sidebar
 
 
 fun [RoundTextFieldUnMaskedPreview](-round-text-field-un-masked-preview.html)()
-
-
 
 
 

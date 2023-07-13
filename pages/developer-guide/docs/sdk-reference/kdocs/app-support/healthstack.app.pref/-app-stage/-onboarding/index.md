@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Onboarding
 permalink: /app-support/healthstack.app.pref/-app-stage/-onboarding/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[app-support](/app-support.html)/[healthstack.app.pref](../../index.html)/[AppStage](../index.html)/[Onboarding](index.html)
+//[app-support](../../../../index.html)/[healthstack.app.pref](../../index.html)/[AppStage](../index.html)/[Onboarding](index.html)
 
 
 
@@ -23,7 +13,7 @@ sidebar: dev_doc_sidebar
 
 
 [androidJvm]\
-[Onboarding](index.html)()
+[Onboarding](index.html)(&quot;Onboarding&quot;)
 
 
 
@@ -34,6 +24,5 @@ sidebar: dev_doc_sidebar
 |---|---|
 | [name](index.html#-372974862%2FProperties%2F-1544593023) | [androidJvm]<br>val [name](index.html#-372974862%2FProperties%2F-1544593023): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 | [ordinal](index.html#-739389684%2FProperties%2F-1544593023) | [androidJvm]<br>val [ordinal](index.html#-739389684%2FProperties%2F-1544593023): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
-
-
+| [title](../title.html) | [androidJvm]<br>val [title](../title.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: isIntervalData
-permalink: /interface/healthstack.healthdata.link/-health-data-link/is-interval-data.html
-
-
+permalink: /healthdata-link/interface/healthstack.healthdata.link/-health-data-link/is-interval-data.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[interface](/hl_interface.html)/[healthstack.healthdata.link](../index.html)/[HealthDataLink](index.html)/[isIntervalData](is-interval-data.html)
+//[interface](../../../index.html)/[healthstack.healthdata.link](../index.html)/[HealthDataLink](index.html)/[isIntervalData](is-interval-data.html)
 
 
 
@@ -39,8 +29,6 @@ androidJvm
 | | |
 |---|---|
 | healthDataTypeName | Type of health data to read. |
-
-
 
 
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Companion
-permalink: /healthplatform/healthstack.healthdata.link.healthplatform/-health-platform-adapter/-companion/index.html
-
-
+permalink: /healthdata-link/healthplatform/healthstack.healthdata.link.healthplatform/-health-platform-adapter/-companion/index.html
 
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[healthplatform](/healthplatform.html)/[healthstack.healthdata.link.healthplatform](../../index.html)/[HealthPlatformAdapter](../index.html)/[Companion](index.html)
+//[healthplatform](../../../../index.html)/[healthstack.healthdata.link.healthplatform](../../index.html)/[HealthPlatformAdapter](../index.html)/[Companion](index.html)
 
 
 
@@ -33,6 +23,4 @@ object [Companion](index.html)
 | Name | Summary |
 |---|---|
 | [convertStringToHealthDataType](convert-string-to-health-data-type.html) | [androidJvm]<br>fun [convertStringToHealthDataType](convert-string-to-health-data-type.html)(healthDataTypeString: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): DataType |
-
-
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: RoundTextField
 permalink: /kit/healthstack.kit.ui/-round-text-field.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.ui](index.html)/[RoundTextField](-round-text-field.html)
+//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[RoundTextField](-round-text-field.html)
 
 
 
@@ -39,8 +29,6 @@ fun [RoundTextField](-round-text-field.html)(modifier: Modifier = Modifier, valu
         focusedBorderColor = AppTheme.colors.primary,
         unfocusedBorderColor = Color.Transparent,
     ), shouldMask: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false)
-
-
 
 
 

@@ -1,20 +1,10 @@
 ---
-
-
-
 title: SubStepHolder
 permalink: /kit/healthstack.kit.task.survey.question/-sub-step-holder/index.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.question](../index.html)/[SubStepHolder](index.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.question](../index.html)/[SubStepHolder](index.html)
 
 
 
@@ -23,7 +13,7 @@ sidebar: dev_doc_sidebar
 
 
 [androidJvm]\
-class [SubStepHolder](index.html)(val id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val subSteps: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[QuestionSubStep](../-question-sub-step/index.html)&lt;*, *&gt;&gt;)
+class [SubStepHolder](index.html)(val id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), val subSteps: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[QuestionSubStep](../-question-sub-step/index.html)&lt;*, *&gt;&gt;&gt;)
 
 An object for holding one or more SubSteps
 
@@ -50,7 +40,7 @@ For example, multiple QuestionSubSteps can be managed by a SubStepHolder.
 
 | | |
 |---|---|
-| [SubStepHolder](-sub-step-holder.html) | [androidJvm]<br>fun [SubStepHolder](-sub-step-holder.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), subSteps: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[QuestionSubStep](../-question-sub-step/index.html)&lt;*, *&gt;&gt;) |
+| [SubStepHolder](-sub-step-holder.html) | [androidJvm]<br>fun [SubStepHolder](-sub-step-holder.html)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), subSteps: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[QuestionSubStep](../-question-sub-step/index.html)&lt;*, *&gt;&gt;&gt;) |
 
 
 ## Functions
@@ -59,7 +49,7 @@ For example, multiple QuestionSubSteps can be managed by a SubStepHolder.
 | Name | Summary |
 |---|---|
 | [isSufficient](is-sufficient.html) | [androidJvm]<br>fun [isSufficient](is-sufficient.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)<br>A method to get result using its subSteps. |
-| [Render](-render.html) | [androidJvm]<br>@Composable<br>fun [Render](-render.html)(callbackCollection: [CallbackCollection](../../healthstack.kit.task.base/-callback-collection/index.html))<br>A method for rendering UI. |
+| [Render](-render.html) | [androidJvm]<br>@Composable<br>fun [Render](-render.html)(callbackCollection: [CallbackCollection](../../healthstack.kit.task.base/-callback-collection/index.html), index: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))<br>A method for rendering UI. |
 
 
 ## Properties
@@ -69,8 +59,5 @@ For example, multiple QuestionSubSteps can be managed by a SubStepHolder.
 |---|---|
 | [id](id.html) | [androidJvm]<br>val [id](id.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>id |
 | [name](name.html) | [androidJvm]<br>val [name](name.html): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>name |
-| [size](size.html) | [androidJvm]<br>val [size](size.html): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
-| [subSteps](sub-steps.html) | [androidJvm]<br>val [subSteps](sub-steps.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[QuestionSubStep](../-question-sub-step/index.html)&lt;*, *&gt;&gt;<br>a list of subSteps to manage |
-
-
+| [subSteps](sub-steps.html) | [androidJvm]<br>val [subSteps](sub-steps.html): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[QuestionSubStep](../-question-sub-step/index.html)&lt;*, *&gt;&gt;&gt;<br>a list of subSteps to manage |
 

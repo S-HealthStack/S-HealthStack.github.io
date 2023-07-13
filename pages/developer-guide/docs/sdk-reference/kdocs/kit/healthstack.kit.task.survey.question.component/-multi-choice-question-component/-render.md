@@ -1,20 +1,10 @@
 ---
-
-
-
 title: Render
 permalink: /kit/healthstack.kit.task.survey.question.component/-multi-choice-question-component/-render.html
 
-
-
 sidebar: dev_doc_sidebar
-
-
 ---
-
-
-
-//[kit](/kit.html)/[healthstack.kit.task.survey.question.component](../index.html)/[MultiChoiceQuestionComponent](index.html)/[Render](-render.html)
+//[kit](../../../index.html)/[healthstack.kit.task.survey.question.component](../index.html)/[MultiChoiceQuestionComponent](index.html)/[Render](-render.html)
 
 
 
@@ -31,7 +21,7 @@ sidebar: dev_doc_sidebar
 
 
 
-open override fun [Render](-render.html)(model: [T](index.html), callbackCollection: [CallbackCollection](../../healthstack.kit.task.base/-callback-collection/index.html))
+open override fun [Render](-render.html)(model: [MultiChoiceQuestionModel](../../healthstack.kit.task.survey.question.model/-multi-choice-question-model/index.html), callbackCollection: [CallbackCollection](../../healthstack.kit.task.base/-callback-collection/index.html))
 
 
 
@@ -59,8 +49,6 @@ androidJvm
 |---|---|
 | model | an object holding data to be rendered |
 | callbackCollection | an object holding callback functions |
-
-
 
 
 
