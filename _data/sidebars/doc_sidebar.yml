@@ -108,6 +108,10 @@ entries:
     - title: Creating a Survey
       url: /creating-a-survey.html
       output: web, pdf
+    
+    - title: Survey Branching
+      url: /survey_branching.html
+      output: web, pdf
 
     - title: Previewing a Survey
       url: /previewing-a-survey.html
