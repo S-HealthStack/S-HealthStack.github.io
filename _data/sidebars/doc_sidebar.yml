@@ -109,7 +109,7 @@ entries:
       url: /creating-a-survey.html
       output: web, pdf
     
-    - title: Survey Branching
+    - title: Skip Logic (Survey Branching)
       url: /survey_branching.html
       output: web, pdf
 
@@ -120,6 +120,15 @@ entries:
     - title: Scheduling and Publishing a Survey
       url: /publishing-a-survey.html
       output: web, pdf
+
+  - title: Activity Types
+    output: web, pdf
+    folderitems:
+    
+    - title: Overview
+      url: /activity_types_overview.html
+      output: web, pdf
+    
 
   - title: Study Execution
     output: web, pdf
