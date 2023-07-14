@@ -1,5 +1,5 @@
 ---
-title: Survey Branching
+title: Skip Logic (Survey Branching)
 sidebar: doc_sidebar
 permalink: survey_branching.html
 toc: True
@@ -172,7 +172,9 @@ The “Number...” dropdown allows users to select a certain number for the con
 
 ### Multiple Conditions
 
-#### The “+” Icon![image-20230713095458551](./survey-branching.assets/image-20230713095458551.png)
+#### The “+” Icon
+
+![image-20230713095458551](./survey-branching.assets/image-20230713095458551.png)
 
 Click "+" to add a condition inside a rule. Here is an example of two conditions. 
 
