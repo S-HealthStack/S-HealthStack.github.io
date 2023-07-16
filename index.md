@@ -27,7 +27,7 @@ The App SDK simplifies the creation of mobile apps that collect data from partic
 
 ## Web Portal
 
-The Web Portal is a dashboard for interactive data visualization and study management. It offers a platform for managing research team members, creating and deploying app content such as participant surveys, tracking study participant activity, and analyzing participant data. Check the [Portal User Guide](/portal-user-guide.html) for more information. Please note, as of now, Chrome is the only browser supported for accessing the web portal.
+The Web Portal is a dashboard for interactive data visualization and study management. It offers a platform for managing research team members, creating and deploying app content such as participant surveys, tracking study participant activity, and analyzing participant data. Please note, as of now, Chrome is the only browser supported for accessing the web portal.
 
 ## Backend Services
 
