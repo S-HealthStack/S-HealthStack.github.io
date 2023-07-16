@@ -25,12 +25,15 @@ To operate the backend system, the system requirement are:
 
 2. Make sure your environment system packages are up to date.
 
-MAC:
+   MAC:
+
    ```
    sudo brew update
    sudo brew upgrade
    ```
-Linux:
+
+   Linux:
+
    ```
    sudo apt update
    sudo apt upgrade
@@ -40,12 +43,14 @@ Linux:
 
 1. Install the OpenJDK package.
 
-Mac:
-   ```
-   sudo brew install openjdk@17
+   Mac:
 
    ```
-Linux:
+   sudo brew install openjdk@17
+   ```
+
+   Linux:
+
    ```
    sudo apt install -y openjdk-17-jdk-headless unzip
    ```
@@ -119,7 +124,7 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
 
 <!-- thanks Zain for the correct files (reminder to update that below) -->
 
-1. Download **backend-config-files-v1.zip** from [https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip](https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip)
+1. Download [backend-config-files-v1.zip](/files/installing-the-backend/backend-config-files.zip) file.
 
 2. Extract the files and place them at the level of ***backend-system***. Your file structure should look as follows for **<install_path>**
 
@@ -141,11 +146,11 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
 2. (Optional) Update PostgreSQL root user password and SMTP relay server host, username, port, and password. We use SMTP service to send account invitation/activation/password reset emails.
 
    ```
-   POSTGRES_PASSWORD=<new-value-here>
-   SMTP_HOST=<new-value-here>
-   SMTP_PORT=<new-value-here>
-   MAIL_USER=<new-value-here>
-   MAIL_USER_PASSWORD= <new-value-here>
+   POSTGRES_PASSWORD= databasepassword
+   SMTP_HOST= localhost
+   SMTP_PORT= smtpport
+   MAIL_USER= usermail
+   MAIL_USER_PASSWORD= userpassword
    ```
 
 3. (Required if performing Step 2)  Sync password with Trino PostgreSQL catalog file downloaded located at:  **<install_path>/trino/etc/catalog/postgresql/postgresql.properties**
@@ -194,6 +199,7 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
    ![viewing-graphs-1](../../../images/install-docker-services.png)
 
    
+
 <!-- COMMENT: please note that we have not tested the `Manual Build` path below, so we may want to ommit this for next week, or do we feel confident with it? -->
 
 ## Method 2: Manual Build
