@@ -11,6 +11,7 @@ Follow these instructions to install, build, and verify the backend system.
 
 To operate the backend system, the system requirement are:
 
+- A 64-bit Mac OS (tested on Apple M1 Pro Mac Book Pro, Ventura 13.3, 16GB)
 - A 64-bit Linux machine running Ubuntu or Debian either as bare metal or a cloud instance.
 - Access to the local machine or development server as a non-root user with sudo privileges. 
 
@@ -20,10 +21,16 @@ To operate the backend system, the system requirement are:
 
 ## I. Update the Environment
 
-1. Open a Linux terminal window.
+1. Open a terminal window.
 
 2. Make sure your environment system packages are up to date.
 
+MAC:
+   ```
+   sudo brew update
+   sudo brew upgrade
+   ```
+Linux:
    ```
    sudo apt update
    sudo apt upgrade
@@ -33,6 +40,12 @@ To operate the backend system, the system requirement are:
 
 1. Install the OpenJDK package.
 
+Mac:
+   ```
+   sudo brew install openjdk@17
+
+   ```
+Linux:
    ```
    sudo apt install -y openjdk-17-jdk-headless unzip
    ```
@@ -47,11 +60,19 @@ To operate the backend system, the system requirement are:
 
 1. Follow the instructions at https://docs.docker.com/engine/install/ubuntu/ to install Docker and Docker Compose.
 
-      > You can also download Docker Desktop here: [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
+      > You may want to download Docker Desktop here: [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 2. Confirm successful installation.
+
+Mac:
+      ```
+      sudo docker info
+      ```
+Linux:
       ```
       sudo docker --version
+      ```
+      ```
       sudo systemctl status docker
       ```
 
@@ -75,7 +96,9 @@ To operate the backend system, the system requirement are:
 
 4. Click on the **Service accounts** tab.
 
-5. Click **Generate new private key** button to generate a new service account key file.
+5. Click **Generate new private key** button to generate a new service account key file (we used Node.js on our Mac test).
+
+NOTE: you don't need to follow any further instructions on Firebase at this point - all you had to do was generate the key
 
 6. Return to the terminal and create a Firebase **service-account-key.json** file.
 
@@ -83,10 +106,10 @@ To operate the backend system, the system requirement are:
    cd install_path>/backend-system/platform
    touch service-account-key.json
    ```
+   
+7. Update the **service-account-key.json** file with the private key generated in step 5 so **service-account-key.json** looks like the key you created/downloaded from firebase
 
-7. Update the **service-account-key.json** file with the private key generated in step 5 using the instructions at [https://firebase.google.com/docs/admin/setup?authuser=0](https://firebase.google.com/docs/admin/setup?authuser=0){:target="_blank"}.
-
-   >  Be sure to keep this file private and securely stored. It contains your unique security key.
+8. .gitignore this file as it includes sensitive info about your firebase account.
 
 # Installation
 
@@ -94,13 +117,24 @@ To operate the backend system, the system requirement are:
 
 ### I. backend-config-files-v1.zip
 
+<!-- thanks Zain for the correct files (reminder to update that below) -->
+
 1. Download **backend-config-files-v1.zip** from [https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip](https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip)
 
 2. Extract the files and place them at the level of ***backend-system***. Your file structure should look as follows for **<install_path>**
 
-   backend-system	docker-compose.yml	haproxy	multi_db	rule-update	trino	.env
+<!-- reminder that I was missing the .env, and I have an extra `ref-tgz`, and we should probably also remind them to add a .gitignore at this level with the .env noted (anything else the user should .gitignore?) -->
+```
+   backend-system
+   docker-compose.yml
+   haproxy
+   multi_db
+   rule-update
+   trino
+   .env
+```
 
-## II. Database
+## II. Database (Optional if you don't want to use our provided sample database)
 
 1. Following the [Configuring the Database](configure-database.md) page instructions if you want to connect to the running Postgres container.
 
@@ -128,9 +162,11 @@ To operate the backend system, the system requirement are:
 1. Compile and package the backend-related microservices:
 
    ```
-   cd backend-system ; ./gradlew clean ; ./gradlew build -x detekt
+   cd backend-system
+   ./gradlew clean
+   ./gradlew build -x detekt
    ```
-
+   
 2. (Optional) If you prefer to build a specific component only (e.g. account-service). Use appropriate target in Gradle:
 
    ```
@@ -140,6 +176,8 @@ To operate the backend system, the system requirement are:
 ## IV. Run
 
 1. Move back to the **<install_path>** and run provided compose file to build and start backend cluster:
+
+   <!-- this is where I'm stuck - getting the following error on command below (so running won't work): -->
 
    ```
    sudo docker compose up -d
@@ -156,6 +194,7 @@ To operate the backend system, the system requirement are:
    ![viewing-graphs-1](../../../images/install-docker-services.png)
 
    
+<!-- COMMENT: please note that we have not tested the `Manual Build` path below, so we may want to ommit this for next week, or do we feel confident with it? -->
 
 ## Method 2: Manual Build
 
