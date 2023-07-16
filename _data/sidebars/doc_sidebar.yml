@@ -12,7 +12,7 @@ entries:
     folderitems:
 
     - title: Overview
-      url: /overview.html
+      url: /index.html
       output: web, pdf
     #type: homepage
 

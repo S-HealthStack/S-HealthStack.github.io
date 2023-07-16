@@ -5,47 +5,36 @@ permalink: index.html
 toc: false
 ---
 
-{% include warning.html title="Warning" content="The tested wearable device for the pilot project is the Galaxy Watch 5. Documentation for v1.0 official release is currently under construction. In the meantime, check out release note v1.0 for new features." %}
+Samsung Health Stack is an open-source technology stack offering end-to-end solutions for collecting and analyzing data from wearable devices in Android and Wear OS environments. With applications ranging from medical research to clinician services and beyond, this tech stack provides the tools and infrastructure necessary to expedite the development and deployment of health-based studies.
 
-Today’s health studies using wearable devices typically consist of a wearable device to sense input data, a mobile app that tracks the data, and additional tools to store and analyze the data. Developing these studies from scratch is costly and time consuming. Clearly, a common-use framework can lessen the burden for everyone.
+The framework includes:
 
-A technology stack (tech stack) is a collection of tools, applications, and services used to build a product. Samsung Health Stack is a tech stack packaged as an open source project that provides end-to-end solutions for collecting and analyzing data from wearable devices in Android and Wear OS environments. Applications include medical research studies to clinician services to whatever your imagination envisions. And as open source project, you are invited to contribute those visions to grow the project.
+-   **Samsung Health Stack App SDK:** A Software Development Kit for building Android and Wear OS apps capable of collecting data from wearable devices.
+-   **Web Portal:** A customizable interface for creating surveys, managing team members, tracking participants, and analyzing data.
+-   **Backend Services:** API endpoints to access and interact with a robust data engine.
 
-The stack includes:
+The **Galaxy Watch 5** has been extensively tested for compatibility with this tech stack. Other devices may work but have not been officially tested.
 
--   A software development kit (SDK) for app development
--   A web portal for survey creation, team member management, participant tracking, and data analysis
--   Backend services and a data engine available through application programming interface (API) endpoints
+You can start by installing the components of the tech stack. Here are the links to the installation guides:
 
-Develop your app using the full stack (recommended) or just the SDK, depending on your use case.
+-   [Installing the Backend System](/install-backend.html)
+-   [Installing the App SDK](/install-sdk.html)
+-   [Installing the Web Portal](/install-portal.html)
 
-## The App SDK
+## Samsung Health Stack App SDK
 
-The app SDK provides developers with what’s needed to create mobile apps that collect data from participants. You can create a mobile app that solicits survey responses from the participant, receives data from the wearable device, displays information to the participant, and transmits the data to a backend system (yours or ours) for further analysis. Building blocks cover:
+The App SDK simplifies the creation of mobile apps that collect data from participants. It provides building blocks for participant onboarding and consent, survey presentation, participant task creation, visual reporting, and data management. For further details, please check [SDK Documentation](/sdk-docs.html)
 
-- Participant onboarding and consent
-- Survey presentation
-- Creation of participant tasks
-- Visual reporting to keep participants engaged
-- Data management and transmission to the portal
+## Web Portal
 
-## The Web Portal
+The Web Portal is a dashboard for interactive data visualization and study management. It offers a platform for managing research team members, creating and deploying app content such as participant surveys, tracking study participant activity, and analyzing participant data. Check the [Portal User Guide](/portal-user-guide.html) for more information. Please note, as of now, Chrome is the only browser supported for accessing the web portal.
 
-The web portal is a customizable dashboard for interactive data visualization. Managers of studies use the portal to:
+## Backend Services
 
-- Manage research team members
-- Create and deploy app content (for example, participant surveys)
-- Track study participant activity
-- Analyze participant data
+The Backend Services provide a set of API endpoints for data storage, retrieval, and analysis. This allows your application to interact with the data engine, performing operations as needed. For more details, visit the [API Documentation](/api-docs.html).
 
-> As of this writing, Chrome is the only browser supported for accessing the web portal.
+## Contributing
 
-## Recommended Workflow
+As an open-source project, Samsung Health Stack welcomes contributions from the developer community. If you'd like to contribute, check out [Contributing to the Open Source Project](/contribute-to-the-project.html).
 
-1.  Set up your environment.
-2.  Set up a study.
-3.  Create an app to collect wearable device data.
-4.  Create a survey to collect user symptom data.
-5.  Onboard participants.
-6.  Run your study.
-7.  Analyze the results.
+Samsung Health Stack strives to make the process of creating and managing health studies more efficient and accessible. Through its comprehensive suite of tools and services, it serves as a robust foundation for health-based projects.
