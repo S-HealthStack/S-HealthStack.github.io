@@ -5,8 +5,6 @@ permalink: viewing-individual-results.html
 toc: false
 ---
 
-{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
-
 The portal reports individual participants' average records per data class. The reporting includes data such as average step count or average heart rate. You can view the records of:
 
 - A specific participant.
@@ -26,6 +24,6 @@ To view records of the participant associated with a particular datapoint:
    ![viewing-graphs-1](../../../images/viewing-graphs-1.png)
 2. Scroll to the desired graph or chart.
 3. Click a specific datapoint.
-   ![viewing-graphs-4](../../../images/viewing-graphs-4.png)
-
+   ![image-20230716122353618](./viewing-individual-results.assets/image-20230716122353618.png)
+   
 > For more information about graphs and charts, refer to [Viewing Graphs and Charts](./viewing-graphs.md).

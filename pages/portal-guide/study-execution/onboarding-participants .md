@@ -5,7 +5,6 @@ permalink: onboarding-participants.html
 toc: false
 ---
 
-{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
 
 After inviting prospective participants to join the study, instruct each participant to:
 

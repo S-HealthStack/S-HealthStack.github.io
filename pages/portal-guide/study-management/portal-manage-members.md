@@ -5,8 +5,6 @@ permalink: portal_managing-members.html
 toc: false
 ---
 
-{% include warning.html title="Warning" content="Documentation for v1.0 official release is currently under construction. Note that the information on this page may be outdated." %}
-
 # Overview
 
 Members are the people who are conducting the study. Your team consists of as many members as is pertinent for you. Thus, the Samsung Health Stack puts no restrictions on the number of members working on studies in your organization. Each study can have any number of the members participate in conducting the study. And, member management happens at the study level.
@@ -27,7 +25,8 @@ Invite as many members to help conduct your study as you desire.
 To add a member to the study and assign the member a role for the study:
 
 1. From the **Study Settings** page, in the **Study Settings** section, click **Invite member**.
-    ![inviting-team-members](../../../images/inviting-team-members.png)
+
+    ![image-20230716123047451](./portal-manage-members.assets/image-20230716123047451.png)
 
 2. Enter the email address of the person to invite to the study.
 
