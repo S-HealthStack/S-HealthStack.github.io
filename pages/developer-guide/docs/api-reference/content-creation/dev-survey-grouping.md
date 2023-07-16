@@ -1,6 +1,8 @@
 ---
-title: survey-grouping.html
-toc:true
+title: Survey Grouping
+permalink: dev-survey-grouping.html
+sidebar: dev_doc_sidebar
+toc: True
 ---
 
 # Survey Grouping

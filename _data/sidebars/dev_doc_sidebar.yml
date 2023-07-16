@@ -90,6 +90,11 @@ entries:
       url: /preview-survey.html
       output: web, pdf
 
+    - title: Sections (Survey Grouping)
+      url: /dev-survey-grouping.html
+      output: web, pdf
+
+
     - title: Scheduling and Publishing a Survey
       url: /publish-survey.html
       output: web, pdf

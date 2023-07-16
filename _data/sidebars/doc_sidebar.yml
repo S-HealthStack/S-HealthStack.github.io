@@ -97,6 +97,11 @@ entries:
       url: /creating-a-study.html
       output: web, pdf
 
+    - title: Question Types and Configurations
+      url: /question-types-and-configurations.html
+      output: web, pdf
+
+
     - title: Managing  Members
       url: /portal_managing-members.html
       output: web, pdf
@@ -108,7 +113,12 @@ entries:
     - title: Creating a Survey
       url: /creating-a-survey.html
       output: web, pdf
-    
+
+    - title: Sections (Survey Grouping)
+      url: /survey_grouping.html
+      output: web, pdf
+
+
     - title: Skip Logic (Survey Branching)
       url: /survey_branching.html
       output: web, pdf
@@ -129,7 +139,6 @@ entries:
       url: /activity_types_overview.html
       output: web, pdf
     
-
   - title: Study Execution
     output: web, pdf
     folderitems:
