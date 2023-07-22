@@ -15,8 +15,6 @@ To operate the backend system, the system requirement are:
 - A 64-bit Linux machine running Ubuntu or Debian either as bare metal or a cloud instance.
 - Access to the local machine or development server as a non-root user with sudo privileges. 
 
-> The following installation steps are for the Ubuntu/Debian environment.
-
 # Prerequisites
 
 ## I. Update the Environment
@@ -25,15 +23,12 @@ To operate the backend system, the system requirement are:
 
 2. Make sure your environment system packages are up to date.
 
-   MAC:
-
+MAC:
    ```
    sudo brew update
    sudo brew upgrade
    ```
-
-   Linux:
-
+Linux:
    ```
    sudo apt update
    sudo apt upgrade
@@ -43,23 +38,20 @@ To operate the backend system, the system requirement are:
 
 1. Install the OpenJDK package.
 
-   Mac:
-
+Mac:
    ```
    sudo brew install openjdk@17
+
    ```
-
-   Linux:
-
+Linux:
    ```
    sudo apt install -y openjdk-17-jdk-headless unzip
    ```
 
-2. Verify that you have successfully installed version 17.
-
-   ```
-   java -version
-   ```
+2. Verify that you have successfully installed version 17:
+```
+java -version
+```
 
 ## III. Install Docker and Docker Compose
 
@@ -99,22 +91,22 @@ Linux:
 
 3. Click on the gear icon in the top left corner to access your project settings.
 
-4. Click on the **Service accounts** tab.
+4. Click on the `Service accounts` tab.
 
-5. Click **Generate new private key** button to generate a new service account key file (we used Node.js on our Mac test).
+5. Click `Generate new private key` button to generate a new service account key file (we used Node.js on our Mac test).
 
 NOTE: you don't need to follow any further instructions on Firebase at this point - all you had to do was generate the key
 
-6. Return to the terminal and create a Firebase **service-account-key.json** file.
+6. Return to the terminal and create a Firebase `service-account-key.json` file.
 
    ```
    cd install_path>/backend-system/platform
    touch service-account-key.json
    ```
    
-7. Update the **service-account-key.json** file with the private key generated in step 5 so **service-account-key.json** looks like the key you created/downloaded from firebase
+7. Update the `service-account-key.json` file with the private key generated in step 5 so `service-account-key.json` looks like the key you created/downloaded from firebase
 
-8. .gitignore this file as it includes sensitive info about your firebase account.
+8. .gitignore this `service-account-key.json` file as it includes sensitive info about your firebase account.
 
 # Installation
 
@@ -122,13 +114,10 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
 
 ### I. backend-config-files-v1.zip
 
-<!-- thanks Zain for the correct files (reminder to update that below) -->
+1. Download `backend-config-files-v1.zip` from [https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip](https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip)
 
-1. Download [backend-config-files-v1.zip](/files/installing-the-backend/backend-config-files.zip) file.
+2. Extract the files and place them at the level of `backend-system`. Your file structure should look as follows for `<install_path>`:
 
-2. Extract the files and place them at the level of ***backend-system***. Your file structure should look as follows for **<install_path>**
-
-<!-- reminder that I was missing the .env, and I have an extra `ref-tgz`, and we should probably also remind them to add a .gitignore at this level with the .env noted (anything else the user should .gitignore?) -->
 ```
    backend-system
    docker-compose.yml
@@ -136,6 +125,7 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
    multi_db
    rule-update
    trino
+   ref.tgz
    .env
 ```
 
@@ -146,14 +136,14 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
 2. (Optional) Update PostgreSQL root user password and SMTP relay server host, username, port, and password. We use SMTP service to send account invitation/activation/password reset emails.
 
    ```
-   POSTGRES_PASSWORD= databasepassword
-   SMTP_HOST= localhost
-   SMTP_PORT= smtpport
-   MAIL_USER= usermail
-   MAIL_USER_PASSWORD= userpassword
+   POSTGRES_PASSWORD=<new-value-here>
+   SMTP_HOST=<new-value-here>
+   SMTP_PORT=<new-value-here>
+   MAIL_USER=<new-value-here>
+   MAIL_USER_PASSWORD= <new-value-here>
    ```
 
-3. (Required if performing Step 2)  Sync password with Trino PostgreSQL catalog file downloaded located at:  **<install_path>/trino/etc/catalog/postgresql/postgresql.properties**
+3. (Required if performing Step 2)  Sync password with Trino PostgreSQL catalog file downloaded located at: `<install_path>/trino/etc/catalog/postgresql/postgresql.properties`
 
    ```
    connector.name=postgresql
@@ -180,9 +170,9 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
 
 ## IV. Run
 
-1. Move back to the **<install_path>** and run provided compose file to build and start backend cluster:
+1. Move back to the `<install_path>` and run provided compose file to build and start backend cluster:
 
-   <!-- this is where I'm stuck - getting the following error on command below (so running won't work): -->
+   <!-- this is where we may have an Apple Silicon issue? - getting a permissions error -->
 
    ```
    sudo docker compose up -d
@@ -199,7 +189,6 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
    ![viewing-graphs-1](../../../images/install-docker-services.png)
 
    
-
 <!-- COMMENT: please note that we have not tested the `Manual Build` path below, so we may want to ommit this for next week, or do we feel confident with it? -->
 
 ## Method 2: Manual Build

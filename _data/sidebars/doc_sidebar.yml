@@ -118,7 +118,6 @@ entries:
       url: /survey_grouping.html
       output: web, pdf
 
-
     - title: Skip Logic (Survey Branching)
       url: /survey_branching.html
       output: web, pdf
@@ -134,11 +133,26 @@ entries:
   - title: Activity Types
     output: web, pdf
     folderitems:
-    
+  
+
+    - title: Create an Activity
+      url: creating_an_activity.html
+      output: web, pdf
+
     - title: Overview
       url: /activity_types_overview.html
       output: web, pdf
+  - title: In-Lab Visit
+    output: web, pdf
+    folderitems:
+    - title: In-Lab Visit Overview
+      url: /in-lab_visit_overview.html
+      output: web, pdf
     
+    - title: Add and Edit In-lab Visit
+      url: /add_in-lab_visit.html
+      output: web, pdf
+
   - title: Study Execution
     output: web, pdf
     folderitems:
@@ -178,4 +192,11 @@ entries:
     - title: Exporting Data for External Analysis
       url: /exporting-data.html
       output: web, pdf
-# Copyright 2021 Google LLC
+
+  - title: Account Settings
+    output: web, pdf
+    folderitems:
+
+    - title: Reset Password
+      url: /reset_password.html
+      output: web, pdf

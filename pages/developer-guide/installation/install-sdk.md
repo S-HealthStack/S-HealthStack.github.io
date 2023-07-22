@@ -24,11 +24,10 @@ Follow these instructions to install, build, and verify the app SDK.
 1. Clone the app SDK repository (we recommend cloning into the same **INSTALL_PATH** as the backend-system so app-sdk and backend-system are at the same level)
 
    ```
-   git clone https://github.com/S-HealthStack/app-sdk
+   git clone https://github.com/S-HealthStack/app-sdk.git
    ```
 
 # Build
-<!-- Zain to check if detekt is supported -->
 
 ## IV. Prepare the Modules
 
@@ -44,28 +43,30 @@ cd app-sdk
    ./gradlew clean 
    ```
 
-2. Build just the SDK/kit:
+2. Build all modules
 
-   ```
-   ./gradlew :kit:build -x detekt -x lintVitalRelease -x lint
-   ```
+```
+./gradlew build -x detekt -x lint                     
+```
 
 ## V. Create a Firebase Project
 
 1. Follow the instructions at [https://firebase.google.com/docs/android/setup](https://firebase.google.com/docs/android/setup){:target="_blank"} to add a Firebase project to the Firebase account you created during backend system installation, and note that our app file name (to place the google-services.json file is `kit`.
 
-(for the application name, you may our sample at app-sdk -> samples -> researchsample -> build.gradle.kts)
+<!-- add correect info here from Yuree's email -->
 ```
 applicationId = "healthstack.sample"
 ```
 
-<!-- This is where we are at with testing -->
+NOTE that you should download the resulting `google-services.json` file from firbase into `app-sdk -> samples` (as you'll notice there is no `app` folder as the firebase documentation suggests).
 
 ## VI. Per App Configuration
 
 After app creation, for each app you need to:
 
-1. Register your app with your Firebase project by updating the ***\<repository\>*/app/google-service.json** configuration file.
+1. Register your app with your Firebase project by updating the `\<repository\>*/app/google-service.json` configuration file.
+
+<!-- This is where we are at with testing -->
 
 2. For full-stack implementations only, associate your app with the backend system and portal study.
 
