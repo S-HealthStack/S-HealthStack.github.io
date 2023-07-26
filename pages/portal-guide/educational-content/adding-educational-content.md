@@ -7,7 +7,7 @@ toc: true
 
 You can add educational content to help users understand the studies, provide articles, or add texts answering their questions. This shows in the `Education` section within the phone.
 
-![image-20230726105749431](./adding-educational-content.assets/image-20230726105749431.png){ width: 50%; }
+![image-20230726105749431](./adding-educational-content.assets/image-20230726105749431.png)
 
  To add a publication go to `Survey Management` and scroll down to `Educational Content Management`.
 
@@ -71,7 +71,7 @@ You can upload your video and add any necessary content. Once you add the inform
 
 # Managing Educational Content
 
-You can view all the drafts and published items in the `Educational Content Management` section. 
+You can view all the drafts and published items in the `Educational Content Management section. 
 
 ![image-20230726112344299](./adding-educational-content.assets/image-20230726112344299.png)
 

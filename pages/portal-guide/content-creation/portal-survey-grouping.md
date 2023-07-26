@@ -36,7 +36,7 @@ Collapsing a section keeps the section title (even if empty) and the Section Act
 
 ## Section Actions
 
-Click on the three-dot menu ![image-20230716132632032](./portal-survey-grouping.assets/image-20230716132632032-1689542019012-4.png){width: 70px;} next to the section title text box to access section actions.
+Click on the three-dot menu next to the section title text box to access section actions.
 
 ![image-20230716131955177](./portal-survey-grouping.assets/image-20230716131955177-1689542019012-6.png)
 
@@ -45,7 +45,7 @@ Click on the three-dot menu ![image-20230716132632032](./portal-survey-grouping.
 
 ## Merge Section
 
-Click the three-dot menu ![image-20230716132632032](./portal-survey-grouping.assets/image-20230716132632032-1689541741005-15.png){width: 70px} and select Merge Section. In the example above, it's "Merge to section above".
+Click the three-dot menu and select Merge Section. In the example above, it's "Merge to section above".
 
 ![image-20230716132437386](./portal-survey-grouping.assets/image-20230716132437386-1689542019012-7.png)
 
