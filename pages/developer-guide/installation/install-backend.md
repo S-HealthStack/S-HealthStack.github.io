@@ -191,10 +191,6 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
    ![viewing-graphs-1](../../../images/install-docker-services.png)
 
    
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 <!-- COMMENT: please note that we have not tested the `Manual Build` path below, so we may want to ommit this for next week, or do we feel confident with it? -->
 
 ## Method 2: Manual Build
