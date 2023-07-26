@@ -34,27 +34,27 @@ entries:
     folderitems:
         
     - title: Healthstack Adapter
-      url: /healthstack-adapter.html
+      url: /backend-integration/healthstack-adapter.html
       output: web, pdf
 
     - title: Interface
-      url: /bi_interface.html
+      url: /backend-integration/interface.html
       output: web, pdf
     
   - title: Healthdata Link
     output: web, pdf
     folderitems:
 
-    - title:     Healthconnect 
-      url: /healthconnect.html
+    - title: Healthconnect 
+      url: /healthdata-link/healthconnect.html
       output: web, pdf
 
     - title: Healthplatform 
-      url: /healthplatform.html
+      url: /healthdata-link/healthplatform.html
       output: web, pdf
 
     - title: Interface
-      url: /hl_interface.html
+      url: /healthdata-link/interface.html
       output: web, pdf
 
   - title: Kit
