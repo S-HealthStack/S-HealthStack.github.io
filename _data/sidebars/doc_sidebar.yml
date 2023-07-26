@@ -118,6 +118,10 @@ entries:
       url: /survey_grouping.html
       output: web, pdf
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
     - title: Skip Logic (Survey Branching)
       url: /survey_branching.html
       output: web, pdf
