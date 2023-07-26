@@ -13,7 +13,7 @@ This comprehensive guide introduces you to the functionalities and applications 
 
 ![image-20230713063133492](./survey-branching.assets/image-20230713063133492.png)
 
-The <img src="./survey-branching.assets/image-20230712154829406.png" alt="image-20230712154829406" style="zoom:18%;" /> button will only be visible on a question card when there are more than two questions in a survey, and will only be visible for three different types of survey questions:
+The <div style="width:18%"> ![image-20230712154829406](./survey-branching.assets/image-20230712154829406.png)</div> button will only be visible on a question card when there are more than two questions in a survey, and will only be visible for three different types of survey questions:
 
 - Single-selection
 - Multi-selection 

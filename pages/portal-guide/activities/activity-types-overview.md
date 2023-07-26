@@ -19,9 +19,9 @@ Tapping speed activities measure manual dexterity and hand-eye coordination. Thi
 
 **End-user View:**
 
-<img src="./activity-types-overview.assets/image-20230721104021794.png" alt="image-20230721104021794" style="zoom:67%;" />
+![image-20230721104021794](./activity-types-overview.assets/image-20230721104021794.png)
 
-<img src="./activity-types-overview.assets/image-20230721104115061.png" alt="image-20230721104115061" style="zoom:67%;" />
+![image-20230721104115061](./activity-types-overview.assets/image-20230721104115061.png)
 
 ### Gait & Balance
 
@@ -31,7 +31,7 @@ These activities involve walking and standing to evaluate balance, coordination,
 
 ![image-20230721105153217](./activity-types-overview.assets/image-20230721105153217.png)
 
-**End-user View: **
+**End-user View:**
 
 ![image-20230721105233775](./activity-types-overview.assets/image-20230721105233775.png)
 
@@ -43,9 +43,9 @@ Range of motion activities measures the extent of movement in a joint or series 
 
 ![image-20230721105257632](./activity-types-overview.assets/image-20230721105257632.png)
 
-**End-user View: **
+**End-user View:**
 
-<img src="./activity-types-overview.assets/image-20230721105332027.png" alt="image-20230721105332027" style="zoom:67%;" /><img src="./activity-types-overview.assets/image-20230721105414069.png" alt="image-20230721105414069" style="zoom:67%;" />
+![image-20230721105332027](./activity-types-overview.assets/image-20230721105332027.png)![image-20230721105414069](./activity-types-overview.assets/image-20230721105414069.png)
 
 ## Audio Activities
 
@@ -59,9 +59,9 @@ Sustained phonation activities involve holding a certain sound or note for as lo
 
 ![image-20230721105645584](./activity-types-overview.assets/image-20230721105645584.png)
 
-**End-user View: **
+**End-user View:**
 
-<img src="./activity-types-overview.assets/image-20230721105705183.png" alt="image-20230721105705183" style="zoom:67%;" />
+![image-20230721105705183](./activity-types-overview.assets/image-20230721105705183.png)
 
 ### Mobile Spirometry
 
@@ -71,9 +71,9 @@ Mobile spirometry activities measure the forcefulness of exhales, providing valu
 
 ![image-20230721105838630](./activity-types-overview.assets/image-20230721105838630.png)
 
-**End-user View: **
+**End-user View:**
 
-<img src="./activity-types-overview.assets/image-20230721105905179.png" alt="image-20230721105905179" style="zoom:67%;" />
+![image-20230721105905179](./activity-types-overview.assets/image-20230721105905179.png)
 
 ### Speech Recognition
 
@@ -83,9 +83,9 @@ Speech recognition activities measure voice strength and clarity. This may invol
 
 ![image-20230721105735791](./activity-types-overview.assets/image-20230721105735791.png)
 
-**End-user View: **
+**End-user View:**
 
-<img src="./activity-types-overview.assets/image-20230721105752788.png" alt="image-20230721105752788" style="zoom:67%;" />
+![image-20230721105752788](./activity-types-overview.assets/image-20230721105752788.png)
 
 ### Guided Breathing
 
@@ -95,9 +95,9 @@ Guided breathing activities involve following audio instructions to take deep, c
 
 ![image-20230721105452022](./activity-types-overview.assets/image-20230721105452022.png)
 
-**End-user View: **
+**End-user View:**
 
-<img src="./activity-types-overview.assets/image-20230721105538169.png" alt="image-20230721105538169" style="zoom:67%;" />
+![image-20230721105538169](./activity-types-overview.assets/image-20230721105538169.png)
 
 ## Cognition Activities
 
@@ -111,9 +111,9 @@ Reaction time activities measure the time taken to respond to a stimulus. This c
 
 ![image-20230721105931644](./activity-types-overview.assets/image-20230721105931644.png)
 
-**End-user View: **
+**End-user View:**
 
-<img src="./activity-types-overview.assets/image-20230721105950957.png" alt="image-20230721105950957" style="zoom:67%;" />
+![image-20230721105950957](./activity-types-overview.assets/image-20230721105950957.png)
 
 ### Color Word Challenge (Stroop Test)
 
@@ -123,7 +123,7 @@ The Color-Word Challenge involves identifying the color of a word while ignoring
 
 ![image-20230721110006580](./activity-types-overview.assets/image-20230721110006580.png)
 
-**End-user View: **
+**End-user View:**
 
-<img src="./activity-types-overview.assets/image-20230721110019510.png" alt="image-20230721110019510" style="zoom:67%;" />
+![image-20230721110019510](./activity-types-overview.assets/image-20230721110019510.png)
 
