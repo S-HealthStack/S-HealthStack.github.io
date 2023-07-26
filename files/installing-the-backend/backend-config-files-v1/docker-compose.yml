@@ -25,10 +25,11 @@ services:
         POSTGRESQL_PORT: ${POSTGRESQL_PORT:-5432}
         POSTGRESQL_PASSWORD: ${POSTGRES_PASSWORD:-password}
         POSTGRESQL_DATABASE_NAME: ${POSTGRESQL_DATABASE_NAME:-supertokens}
-    ports:
-        - "3567:3567"
+    expose:
+        - "3567"
     networks:
         - hrp
+    restart: unless-stopped
   account-service:
     container_name: hrp-account-service
     image: account-service
@@ -37,19 +38,24 @@ services:
     build: backend-system/account-service/
     environment:
         SMTP_HOST: ${SMTP_HOST:-smtp.gmail.com}
-        SMTP_PORT: ${SMTP_PORT:-465}
-        MAIL_USER: ${MAIL_USER:-testl@gmail.com}
-        MAIL_USER_PASSWORD: ${MAIL_USER_PASSWORD:-PasswordTest}
+        SMTP_PORT: ${SMTP_PORT:-587}
+        MAIL_USER: ${MAIL_USER:-user@gmail.com}
+        MAIL_USER_PASSWORD: ${MAIL_USER_PASSWORD:-password}
         SUPER_TOKEN_URL: ${SUPER_TOKEN_URL:-http://hrp-supertokens:3567}
         JWK_URL: ${JWK_URL:-http://hrp-supertokens:3567/recipe/jwt/jwks}
         DB_URL: ${DB_URL:-hrp-postgres:5432}
         DB_USERNAME: ${POSTGRESQL_USER:-postgres}
         DB_PASSWORD: ${POSTGRES_PASSWORD:-password}
         DB_NAME: ${POSTGRESQL_TOKENS_DB:-tokens}
-    ports:
-        - "8081:8080"
+        PASSWORD_RESET_URL: ${PASSWORD_RESET_URL:-http://localhost/password-reset}
+        INVITATION_URL: ${INVITATION_URL:-http://localhost/account-activation}
+        VERIFICATION_URL: ${VERIFICATION_URL:-http://localhost/email-verification}
+        debug: false
+    expose:
+        - "8080"
     networks:
-        - hrp 
+        - hrp
+    restart: unless-stopped      
   platform:
     container_name: hrp-platform
     image: hrp-platform
@@ -65,24 +71,28 @@ services:
         DB_SCHEMA: ${DB_SCHEMA:-public}
         GOOGLE_APPLICATION_CREDENTIALS: ${GOOGLE_APPLICATION_CREDENTIALS:-service-account-key.json}
         JWK_URL: ${JWK_URL:-http://hrp-supertokens:3567/recipe/jwt/jwks}
-        ACCOUNT_SERVICE_URL: ${ACCOUNT_SERVICE_URL:-http://hrp-account-service:8081}
+        ACCOUNT_SERVICE_URL: ${ACCOUNT_SERVICE_URL:-http://hrp-account-service:8080}
+        debug: false
     ports:
         - "3030:3030"
     networks:
       - hrp
+    restart: unless-stopped
   trino:
     container_name: hrp-trino
     image: trinodb/trino:402
     depends_on:
         - postgres
     ports:
-        - "8080:8080"
+        - "8090:8080"
     volumes:
         - ./rule-update/:/etc/trino/access-control/
         - ./trino/etc/jvm.config:/etc/jvm.config
         - ./trino/etc/catalog/postgresql/postgresql.properties:/etc/trino/catalog/postgresql.properties
+        - ./trino/etc/catalog/di-postgresql/dipostgresql.properties:/etc/trino/catalog/dipostgresql.properties
     networks:
         - hrp
+    restart: unless-stopped      
   data-query-service:
     container_name: hrp-data-query-service
     image: hrp-data-query-service
@@ -90,14 +100,16 @@ services:
         - trino
     build: backend-system/data-query-service/
     environment:
-        TRINO_CATALOG: ${TRINO_CATALOG:-postgresql}
+        TRINO_ORIGINAL_CATALOG: ${TRINO_ORIGINAL_CATALOG:-postgresql}
         TRINO_HOST: ${TRINO_HOST:-hrp-trino}
         TRINO_PORT: ${TRINO_PORT:-8080}
         JWK_URL: ${JWK_URL:-http://hrp-supertokens:3567/recipe/jwt/jwks}
-    ports:
-        - "3031:3030"
+        debug: false
+    expose:
+        - "3030"
     networks:
         - hrp
+    restart: unless-stopped      
   trino-rule-update-service:
     container_name: hrp-trino-rule-update-service
     image: trino-rule-update-service
@@ -105,27 +117,55 @@ services:
     environment:
         FIXED_DELAY_MILLISEC: ${FIXED_DELAY_MILLISEC:-5000}
         ACCOUNT_SERVICE_URL: ${ACCOUNT_SERVICE_URL:-http://hrp-account-service:8080}
+        debug: false
     depends_on:
         - account-service
     volumes:
         - ./rule-update/rules.json:/etc/trino/access-control/rules.json
     networks:
         - hrp
+    restart: unless-stopped
+  cloud-storage-service:
+    container_name: hrp-cloud-storage-service
+    image: cloud-storage-service
+    depends_on:
+        - supertokens
+    build: backend-system/cloud-storage-service/
+    environment:
+        JWK_URL: ${JWK_URL:-http://hrp-supertokens:3567/recipe/jwt/jwks}
+        STORAGE_TYPE: GCP
+        GCP_PROJECT_ID: ${GCP_PROJECT_ID:-healthstack2023}
+        GCP_BUCKET_NAME: ${GCP_BUCKET_NAME:-mybucket}
+        GCP_SIGNED_URL_DURATION: ${GCP_SIGNED_URL_DURATION:-60}
+        GOOGLE_APPLICATION_CREDENTIALS: ${GOOGLE_APPLICATION_CREDENTIALS:-/etc/gcp/service-account-key.json}
+        AWS_REGION: ${AWS_REGION:-aws_region}
+        AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-aws_key}
+        AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-aws_secret_access_key}
+        AWS_BUCKET_NAME: ${AWS_BUCKET_NAME:-aws_bucket}
+        AWS_PRE_SIGNED_URL_DURATION: ${AWS_PRE_SIGNED_URL_DURATION:-60}
+        debug: false
+    volumes:
+        - ./service-account-key.json:/etc/gcp/service-account-key.json      
+    expose:
+        - "8080"
+    networks:
+        - hrp
+    restart: unless-stopped            
   haproxy:
-    image: haproxy:2.6.6
+    image: haproxy:2.7
     container_name: hrp-balancer
     ports:
-      - "3035:3035"
+      - "8080:8080"
       - "8404:8404"
     volumes:
         - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
         - ./haproxy/404.http:/usr/local/etc/haproxy/errors/404.http:ro
-        - ./haproxy/cors-origins.lst:/usr/local/etc/haproxy/cors-origins.lst:ro
         - ./haproxy/cors.lua:/usr/local/etc/haproxy/cors.lua:ro
     depends_on:
         - account-service
         - platform
         - data-query-service
+        - cloud-storage-service
     networks:
       - hrp
     restart: unless-stopped       

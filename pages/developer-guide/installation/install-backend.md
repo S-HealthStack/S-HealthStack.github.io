@@ -28,9 +28,7 @@ MAC:
    sudo brew update
    sudo brew upgrade
    ```
-
-   Linux:
-
+Linux:
    ```
    sudo apt update
    sudo apt upgrade
@@ -109,6 +107,15 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
 7. Update the `service-account-key.json` file with the private key generated in step 5 so `service-account-key.json` looks like the key you created/downloaded from firebase
 
 8. .gitignore this `service-account-key.json` file as it includes sensitive info about your firebase account.
+
+## VI. Cloud Service
+
+The cloud storage service requires the users to have thier own cloud storage system. We currently support three systems: Google Cloud (GCP), Amazon Web Services (AWS), and Azure.
+
+1. Setup your cloud service if you haven't already:
+* [GCP](https://cloud.google.com/gcp) (our sample)
+* [AWS](https://aws.amazon.com/)
+* [Azure](https://azure.microsoft.com/)
 
 # Installation
 
@@ -190,12 +197,42 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
 
    ![viewing-graphs-1](../../../images/install-docker-services.png)
 
-   
+## V. Build and run cloud storage service
+
+1. Build the cloud-storage-service module:
+
+```
+./gradlew :cloud-storage-service:build -x detekt
+```
+
+2. Build a docker image based on the dockerfile under cloud-storage-service, and tag it as hrp-cloud-storage-service:1.0.0
+
+```
+sudo docker build --tag hrp-cloud-storage-service:1.0.0 ./cloud-storage-service/
+```
+
+3. Create a container based on the image we just created (GCP example below), replacing `PROJECT_ID`, `BUCKET_NAME` and `CREDENTIALS_PATH` with your information (note that from the firebase setup above, we placed the `service-account-key.json` file in `backend-system` -> `cloud-storage-service` -> `platform`:
+
+```
+sudo docker run \
+  -d \
+  --expose=8080 \
+  --name hrp-cloud-storage-service \
+  --network hrp \
+  -e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
+  -e PLATFORM_URL=http://hrp-platform:3030 \
+  -e STORAGE_TYPE=GCP \
+  -e GCP_PROJECT_ID={PROJECT_ID} \
+  -e BUCKET={BUCKET_NAME} \
+  -e GOOGLE_APPLICATION_CREDENTIALS={CREDENTIALS_PATH} \
+  hrp-cloud-storage-service:1.0.0
+```
+
 <!-- COMMENT: please note that we have not tested the `Manual Build` path below, so we may want to ommit this for next week, or do we feel confident with it? -->
 
 ## Method 2: Manual Build
 
->  You can download [**backend-config-files-v1.zip**](https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip) from [GitHub directory](https://github.com/S-HealthStack/S-HealthStack.github.io/tree/main/files/installing-the-backend){:target="_blank"}. Extract the contents to your chosen temporary location, and move each desired file into place as you encounter them in the steps below.
+>  You can download [backend-config-files-v1.zip](https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip) from [GitHub directory](https://github.com/S-HealthStack/S-HealthStack.github.io/tree/main/files/installing-the-backend). Extract the contents to your chosen temporary location, and move each desired file into place as you encounter them in the steps below.
 
 ## I. Create a Network
 
@@ -225,7 +262,6 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
      -e POSTGRES_PASSWORD=password \
      postgres:14.5
    ```
-   ***Understanding:***
    
    This command creates a Docker container based on the PostgreSQL 14.5 image, sets the container name to `hrp-postgres`, connects the container to the Docker network `hrp`, and sets the environment variable `POSTGRES_PASSWORD` to `password`.
 
@@ -234,9 +270,9 @@ NOTE: you don't need to follow any further instructions on Firebase at this poin
 You don't have to use SuperTokens. You can implement a backend adapter to complement the authorization service of your choice. If you choose to use supertokens:
 1. In Postgres, create a database named `supertokens`.
 
-2. Create database tables using following instructions: https://supertokens.com/docs/thirdparty/custom-ui/init/database-setup/postgresql
+2. Create database tables using the [instructions](https://supertokens.com/docs/thirdparty/custom-ui/init/database-setup/postgresql)
 
-3. Deploy [SuperTokens](https://supertokens.com/){:target="_blank"}.
+3. Deploy [SuperTokens](https://supertokens.com/).
 
    ```
    sudo docker run \	
@@ -282,9 +318,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
      -d \
      hrp-account-service:0.9.0
    ```
-   
-   ***Understanding:***
-   
+      
    This command runs a Docker container for an account service, with various environment variables set. The container is based on the `hrp-account-service:0.9.0` image and is named `hrp-account-service`. It is connected to the `hrp` network, and it exposes port `8080` on the Docker host. The environment variables set in the container include the SMTP server host address and port, email account credentials, super token URL, JWK URL, PostgreSQL database URL, database name, username, and password. These values should be customized to match the value you want to use in your environment.
 
 
@@ -351,19 +385,19 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    mkdir /root/healthstack
    ```
 
-3. Create a **rule-update** directory inside the healthstack directory ***<install_path>/backend-system***.
+3. Create a `rule-update` directory inside the healthstack directory `<install_path>/backend-system`.
 
    ```
    mkdir /root/healthstack/rule-update
    ```
 
-4. Create a `rules.json` file inside the `rule-update` directory. You can use the optionally provided file from the GitHub zip file located at: **backend-config-files-v1\rule-update** or create your own file with your custom rules.
+4. Create a `rules.json` file inside the `rule-update` directory. You can use the optionally provided file from the GitHub zip file located at: `backend-config-files-v1\rule-update` or create your own file with your custom rules.
 
    ```
    touch /root/healthstack/rule-update/rules.json
    ```
 
-5. Add content to **rules.json**
+5. Add content to `rules.json`
 
    ```
    echo "\
@@ -441,15 +475,15 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    sudo docker pull trinodb/trino:402
    ```
 
-2. Move to the **healthstack** directory within root, if not there.
+2. Move to the `healthstack` directory within root, if not there.
 
-3. Create **catalog** directory and **jvm.config**
+3. Create `catalog` directory and `jvm.config`
 
    ```
    mkdir -p trino/etc/catalog && touch trino/etc/catalog/jvm.config 
    ```
 
-4. Create the **<install_path>/trino/etc/catalog/jvm.config** file with these contents:
+4. Create the `<install_path>/trino/etc/catalog/jvm.config` file with these contents:
 
    ```
    echo "\
@@ -471,13 +505,13 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    -XX:+UseAESCTRIntrinsics" > ${PWD}/trino/etc/catalog/jvm.config
    ```
 
-5. Ensure you are in **healthstack** directory and create necessary directory and file for **postgresql.properties**
+5. Ensure you are in `healthstack` directory and create necessary directory and file for `postgresql.properties`
 
    ```
    mkdir -p trino/etc/postgresql && touch trino/etc/postgresql/postgresql.properties 
    ```
 
-6. Create the **<install_path>/backend-system/trino/etc/config.properties** file with these contents:
+6. Create the `<install_path>/backend-system/trino/etc/config.properties` file with these contents:
 
    ```
    echo "\
@@ -488,7 +522,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    discovery.uri=http://hrp-trino:8080" > ${PWD}/trino/etc/config.properties
    ```
 
-7. Create the **<install_path>/backend-system/trino/etc/postgresql/postgresql.properties** file with these contents:
+7. Create the `<install_path>/backend-system/trino/etc/postgresql/postgresql.properties` file with these contents:
 
    ```
    connector.name=postgresql
@@ -515,7 +549,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
 
 ## VIII. Deploy data-query-service
 
-1. Change the directory to the **backend-system**
+1. Change the directory to the `backend-system`
 
 2. Build the application data-query-service and generate a jar file, performing a code test.
 
@@ -523,7 +557,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    ./gradlew :data-query-service:build -x detekt
    ```
 
-3. Create a Docker image of data-query-service tag 0.9.0 in the **data-query-service** directory.
+3. Create a Docker image of data-query-service tag 0.9.0 in the `data-query-service` directory.
 
    ```
    sudo docker build --tag hrp-data-query-service:0.9.0 ./data-query-service/
@@ -553,21 +587,21 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
 
 ## IX. Haproxy Configuration
 
-1. Change directory to the **/root/healthstack**
+1. Change directory to the `/root/healthstack`
 
-2. Create **haproxy** directory and move into it
+2. Create `haproxy` directory and move into it
 
    ```
    mkdir haproxy && cd haproxy 
    ```
 
-3. Create required **four** files. These files are also available within the .zip to copy and paste.
+3. Create required `four` files. These files are also available within the .zip to copy and paste.
 
    ```
    touch 404.http cors.lua cors-origins.lst haproxy.cfg
    ```
 
-4. Create the Haproxy service **haproxy/404.http** file with these contents:
+4. Create the Haproxy service `haproxy/404.http` file with these contents:
 
    ```
    echo "\ 
@@ -580,7 +614,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    </html>" > 404.http
    ```
 
-5. Create the **haproxy/cors.lua** file with these contents:
+5. Create the `haproxy/cors.lua` file with these contents:
 
    ```
    echo "\ 
@@ -596,7 +630,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    end)" > cors.lua
    ```
 
-6. Create the **haproxy/cors-origins.lst** file with these contents:
+6. Create the `haproxy/cors-origins.lst` file with these contents:
 
    ```
    echo "\ 
@@ -604,7 +638,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
    .*\.mydomain\.com:[8080|8443]" > cors-origins.lst
    ```
 
-7. Create the **haproxy/haproxy.cfg** file with these contents:
+7. Create the `haproxy/haproxy.cfg` file with these contents:
 
    ```
    echo "\ 
@@ -685,7 +719,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
 
 ## X. Deploy docker-compose.yml
 
-1. Create the **docker-compose.yml** file with these contents:
+1. Create the `docker-compose.yml` file with these contents:
    ```
    version: '3.5'
     
@@ -820,7 +854,7 @@ You don't have to use SuperTokens. You can implement a backend adapter to comple
        driver: bridge
    ```
    
-2. Start the **docker-compose.yml** file.
+2. Start the `docker-compose.yml` file.
 
    ```
    sudo docker-compose up -d
@@ -966,11 +1000,11 @@ When a mail server is not available, perform these steps:
 
 <!-- 1. In Chrome, navigate to http://localhost. -->
 
-<!-- 2. Specify the port you configured in the **haproxy.cfg** file.-->
+<!-- 2. Specify the port you configured in the `haproxy.cfg` file.-->
 
 <!--    1. Press F12 to open the inspector.-->
-<!--    2. Click the **Application** tab.-->
-<!--    3. Select **Local Storage > localhost**.-->
+<!--    2. Click the `Application` tab.-->
+<!--    3. Select `Local Storage > localhost`.-->
 <!--    4. Change the value for the `API_URL` key to `http://localhost:3035`.-->
 <!-- 3. Press F5 to reload the page and open the web portal.-->
 

@@ -13,11 +13,11 @@ Follow these instructions to install, build, and verify the app SDK.
 
 ## I. Install OpenJDK 17
 
-1. Set up and install OpenJDK 17 using the instructions at [https://openjdk.org/install/](https://openjdk.org/install/){:target="_blank"}.
+1. Set up and install OpenJDK 17 using the instructions at [https://openjdk.org/install/](https://openjdk.org/install/).
 
 ## II. Install Android Studio 
 
-1. Set up and install Android Studio on Windows, macOS, or Linux using the instructions at [https://developer.android.com/studio](https://developer.android.com/studio){:target="_blank"}.
+1. Set up and install Android Studio on Windows, macOS, or Linux using the instructions at [https://developer.android.com/studio](https://developer.android.com/studio).
 
 ## III. Clone the Repository
 
@@ -51,7 +51,7 @@ cd app-sdk
 
 ## V. Create a Firebase Project
 
-1. Follow the instructions at [https://firebase.google.com/docs/android/setup](https://firebase.google.com/docs/android/setup){:target="_blank"} to add a Firebase project to the Firebase account you created during backend system installation, and note that our app file name (to place the google-services.json file is `kit`.
+1. Follow the instructions at [https://firebase.google.com/docs/android/setup](https://firebase.google.com/docs/android/setup) to add a Firebase project to the Firebase account you created during backend system installation, and note that our app file name (to place the google-services.json file is `kit`.
 
 <!-- add correect info here from Yuree's email -->
 ```
