@@ -32,7 +32,7 @@ exclude:
   - .idea/
   - .gitignore
   - vendor
-#  - pages/sdk-reference
+# - pages\developer-guide\docs\sdk-reference\kdocs
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_subject_line: Samsung Health Stack Feedback
