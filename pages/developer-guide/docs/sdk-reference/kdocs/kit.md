@@ -4,7 +4,7 @@ permalink: /kit.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](index.html)
+//[kit](kit.html)
 
 
 

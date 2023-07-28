@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.base/-image-article-model/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[ImageArticleModel](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.base](../index.html)/[ImageArticleModel](index.html)
 
 
 

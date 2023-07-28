@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.auth/-auth-callback/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.auth](../index.html)/[AuthCallback](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.auth](../index.html)/[AuthCallback](index.html)
 
 
 

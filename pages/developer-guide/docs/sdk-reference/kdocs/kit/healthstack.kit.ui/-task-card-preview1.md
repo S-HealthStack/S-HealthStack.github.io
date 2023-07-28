@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-task-card-preview1.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[TaskCardPreview1](-task-card-preview1.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[TaskCardPreview1](-task-card-preview1.html)
 
 
 

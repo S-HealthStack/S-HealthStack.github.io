@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-speech-recognition-manager/-speech-recog
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.sensor](../index.html)/[SpeechRecognitionManager](index.html)/[SpeechRecognitionManager](-speech-recognition-manager.html)
+//[kit](../../../kit.html)/[healthstack.kit.sensor](../index.html)/[SpeechRecognitionManager](index.html)/[SpeechRecognitionManager](-speech-recognition-manager.html)
 
 
 

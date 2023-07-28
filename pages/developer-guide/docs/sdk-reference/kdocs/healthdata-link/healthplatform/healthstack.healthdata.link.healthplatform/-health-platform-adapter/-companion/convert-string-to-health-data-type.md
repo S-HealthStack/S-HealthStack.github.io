@@ -4,7 +4,7 @@ permalink: /healthdata-link/healthplatform/healthstack.healthdata.link.healthpla
 
 sidebar: dev_doc_sidebar
 ---
-//[healthplatform](../../../../index.html)/[healthstack.healthdata.link.healthplatform](../../index.html)/[HealthPlatformAdapter](../index.html)/[Companion](index.html)/[convertStringToHealthDataType](convert-string-to-health-data-type.html)
+//[healthplatform](../../../../healthplatform.html)/[healthstack.healthdata.link.healthplatform](../../index.html)/[HealthPlatformAdapter](../index.html)/[Companion](index.html)/[convertStringToHealthDataType](convert-string-to-health-data-type.html)
 
 
 

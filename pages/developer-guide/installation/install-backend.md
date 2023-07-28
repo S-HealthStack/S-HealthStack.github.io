@@ -102,7 +102,7 @@ NOTE: You don't need to follow any further instructions on Firebase at this poin
 1. Download `backend-config-files-v1.zip` from [https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip](https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/backend-config-files-v1.zip)
 2. Extract the files and place them at the level of `backend-system`. Your file structure should look as follows for `<install_path>`:
 
-```
+   ```
    backend-system
    docker-compose.yml
    haproxy
@@ -111,7 +111,7 @@ NOTE: You don't need to follow any further instructions on Firebase at this poin
    trino
    ref.tgz
    .env
-```
+   ```
 
 #### II. Database (Optional)
 
@@ -173,7 +173,7 @@ NOTE: You don't need to follow any further instructions on Firebase at this poin
 
    ![viewing-graphs-1](../../../images/install-docker-services.png)
 
-#### V. [Create Initial Account](####create-initial-account)
+#### V. [Create Initial Account](#create-initial-account)
 
 ### Method 2: Manual Build (Under Construction)
 

@@ -151,7 +151,7 @@ entries:
       url: /data-query-service-api-endpoints.html
       output: web, pdf
 
-    - title: Study API Endpoints
-      url: /study-api-endpoints.html
+    - title: Platform API Endpoints
+      url: /platform-api-endpoints.html
       output: web, pdf
     

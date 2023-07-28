@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-sensor-data-manager/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.sensor](../index.html)/[SensorDataManager](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.sensor](../index.html)/[SensorDataManager](index.html)
 
 
 

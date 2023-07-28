@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model/-gait-and-balance-result-mod
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model](../index.html)/[GaitAndBalanceResultModel](index.html)/[GaitAndBalanceResultModel](-gait-and-balance-result-model.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model](../index.html)/[GaitAndBalanceResultModel](index.html)/[GaitAndBalanceResultModel](-gait-and-balance-result-model.html)
 
 
 

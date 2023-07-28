@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-sensor-utils/-companion/sensor-manager.h
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.sensor](../../index.html)/[SensorUtils](../index.html)/[Companion](index.html)/[sensorManager](sensor-manager.html)
+//[kit](../../../../kit.html)/[healthstack.kit.sensor](../../index.html)/[SensorUtils](../index.html)/[Companion](index.html)/[sensorManager](sensor-manager.html)
 
 
 

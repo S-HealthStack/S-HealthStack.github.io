@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model/-reaction-time-intro-model/-
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model](../index.html)/[ReactionTimeIntroModel](index.html)/[ReactionTimeIntroModel](-reaction-time-intro-model.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model](../index.html)/[ReactionTimeIntroModel](index.html)/[ReactionTimeIntroModel](-reaction-time-intro-model.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-tab-content/title.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.ui](../index.html)/[TabContent](index.html)/[title](title.html)
+//[kit](../../../kit.html)/[healthstack.kit.ui](../index.html)/[TabContent](index.html)/[title](title.html)
 
 
 

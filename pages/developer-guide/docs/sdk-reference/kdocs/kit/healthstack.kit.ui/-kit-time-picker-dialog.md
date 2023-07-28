@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-kit-time-picker-dialog.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[KitTimePickerDialog](-kit-time-picker-dialog.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[KitTimePickerDialog](-kit-time-picker-dialog.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /backend-integration/healthstack-adapter/healthstack.backend.integrat
 
 sidebar: dev_doc_sidebar
 ---
-//[healthstack-adapter](../../../index.html)/[healthstack.backend.integration.adapter](../index.html)/[HealthStackBackendAdapter](index.html)/[uploadTaskResultAsFile](upload-task-result-as-file.html)
+//[healthstack-adapter](../../../healthstack-adapter.html)/[healthstack.backend.integration.adapter](../index.html)/[HealthStackBackendAdapter](index.html)/[uploadTaskResultAsFile](upload-task-result-as-file.html)
 
 
 

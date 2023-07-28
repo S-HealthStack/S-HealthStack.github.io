@@ -4,7 +4,7 @@ permalink: /app-support/healthstack.app/-home-task-card.html
 
 sidebar: dev_doc_sidebar
 ---
-//[app-support](../../index.html)/[healthstack.app](index.html)/[HomeTaskCard](-home-task-card.html)
+//[app-support](../../app-support.html)/[healthstack.app](index.html)/[HomeTaskCard](-home-task-card.html)
 
 
 

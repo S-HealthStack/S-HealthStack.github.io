@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.notification/-alarm-utils/set-repeating-alarm.ht
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.notification](../index.html)/[AlarmUtils](index.html)/[setRepeatingAlarm](set-repeating-alarm.html)
+//[kit](../../../kit.html)/[healthstack.kit.notification](../index.html)/[AlarmUtils](index.html)/[setRepeatingAlarm](set-repeating-alarm.html)
 
 
 

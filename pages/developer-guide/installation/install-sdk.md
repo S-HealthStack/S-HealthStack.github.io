@@ -37,7 +37,7 @@ cd app-sdk
 
 1. Clean all modules.
 
-(Mac users may need to run `chmod +x gradlew` and/or `rm -rf /Users/<YOUR_ID>/.gradle/wrapper/dists/gradle-7.3.3-bin/` first)
+   (Mac users may need to run `chmod +x gradlew` and/or `rm -rf /Users/<YOUR_ID>/.gradle/wrapper/dists/gradle-7.3.3-bin/` first)
 
    ```
    ./gradlew clean 
@@ -45,18 +45,17 @@ cd app-sdk
 
 2. Build all modules
 
-```
-./gradlew build -x detekt -x lint                     
-```
+   ```
+   ./gradlew build -x detekt -x lint                      
+   ```
 
 ## V. Create a Firebase Project
 
 1. Follow the instructions at [https://firebase.google.com/docs/android/setup](https://firebase.google.com/docs/android/setup) to add a Firebase project to the Firebase account you created during backend system installation, and note that our app file name (to place the google-services.json file is `kit`.
 
-<!-- add correect info here from Yuree's email -->
-```
-applicationId = "healthstack.sample"
-```
+   ```
+   applicationId = "healthstack.sample"
+   ```
 
 NOTE that you should download the resulting `google-services.json` file from firbase into `app-sdk -> samples` (as you'll notice there is no `app` folder as the firebase documentation suggests).
 
@@ -74,4 +73,4 @@ Refer to [Configuring the App Environment](../app-creation/configure-app.md) for
 
 ## VII. Reference Documentation
 
-Refer to our [API reference](../docs/api-reference/all-endpoints/api-overview.md) and [SDK reference](../../sdk-reference/kit.md) documentation for details on all the backend API endpoints and SDK packages.
+Refer to our [API reference](../docs/api-reference/all-endpoints/api-overview.md) and [SDK reference](../docs/sdk-reference/SDK-Documentation.md) documentation for details on all the backend API endpoints and SDK packages.

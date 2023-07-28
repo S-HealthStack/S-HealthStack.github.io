@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.predefined/-sustained-phonation-ac
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.predefined](../index.html)/[SustainedPhonationActivityTask](index.html)/[CardView](-card-view.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.predefined](../index.html)/[SustainedPhonationActivityTask](index.html)/[CardView](-card-view.html)
 
 
 

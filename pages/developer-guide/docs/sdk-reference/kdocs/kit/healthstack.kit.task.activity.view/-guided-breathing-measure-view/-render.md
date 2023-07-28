@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.view/-guided-breathing-measure-vie
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.view](../index.html)/[GuidedBreathingMeasureView](index.html)/[Render](-render.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.view](../index.html)/[GuidedBreathingMeasureView](index.html)/[Render](-render.html)
 
 
 

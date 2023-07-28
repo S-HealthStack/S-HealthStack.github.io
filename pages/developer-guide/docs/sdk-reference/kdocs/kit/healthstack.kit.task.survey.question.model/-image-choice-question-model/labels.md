@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question.model/-image-choice-questio
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey.question.model](../index.html)/[ImageChoiceQuestionModel](index.html)/[labels](labels.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey.question.model](../index.html)/[ImageChoiceQuestionModel](index.html)/[labels](labels.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.onboarding.model/-eligibility-intro-model/d
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.onboarding.model](../index.html)/[EligibilityIntroModel](index.html)/[description](description.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.onboarding.model](../index.html)/[EligibilityIntroModel](index.html)/[description](description.html)
 
 
 

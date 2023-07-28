@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.onboarding.model/-consent-text-model/select
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.onboarding.model](../index.html)/[ConsentTextModel](index.html)/[selections](selections.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.onboarding.model](../index.html)/[ConsentTextModel](index.html)/[selections](selections.html)
 
 
 

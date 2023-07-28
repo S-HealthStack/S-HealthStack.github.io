@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model/-tapping-speed-intro-model/h
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model](../index.html)/[TappingSpeedIntroModel](index.html)/[handType](hand-type.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model](../index.html)/[TappingSpeedIntroModel](index.html)/[handType](hand-type.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model/-sustained-phonation-result-
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model](../index.html)/[SustainedPhonationResultModel](index.html)/[SustainedPhonationResultModel](-sustained-phonation-result-model.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model](../index.html)/[SustainedPhonationResultModel](index.html)/[SustainedPhonationResultModel](-sustained-phonation-result-model.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.notification/-alarm-utils/-companion/-r-e-m-i-n-
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.notification](../../index.html)/[AlarmUtils](../index.html)/[Companion](index.html)/[REMINDER_ALARM_CODE](-r-e-m-i-n-d-e-r_-a-l-a-r-m_-c-o-d-e.html)
+//[kit](../../../../kit.html)/[healthstack.kit.notification](../../index.html)/[AlarmUtils](../index.html)/[Companion](index.html)/[REMINDER_ALARM_CODE](-r-e-m-i-n-d-e-r_-a-l-a-r-m_-c-o-d-e.html)
 
 
 

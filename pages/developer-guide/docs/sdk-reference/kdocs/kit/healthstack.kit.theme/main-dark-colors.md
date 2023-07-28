@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.theme/main-dark-colors.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.theme](index.html)/[mainDarkColors](main-dark-colors.html)
+//[kit](../../kit.html)/[healthstack.kit.theme](index.html)/[mainDarkColors](main-dark-colors.html)
 
 
 

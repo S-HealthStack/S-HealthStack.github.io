@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.view/-range-of-motion-measure-view
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.view](../index.html)/[RangeOfMotionMeasureView](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.view](../index.html)/[RangeOfMotionMeasureView](index.html)
 
 
 

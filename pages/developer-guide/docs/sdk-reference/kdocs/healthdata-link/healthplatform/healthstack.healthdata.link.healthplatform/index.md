@@ -4,7 +4,7 @@ permalink: /healthdata-link/healthplatform/healthstack.healthdata.link.healthpla
 
 sidebar: dev_doc_sidebar
 ---
-//[healthplatform](../../index.html)/[healthstack.healthdata.link.healthplatform](index.html)
+//[healthplatform](../../healthplatform.html)/[healthstack.healthdata.link.healthplatform](index.html)
 
 
 

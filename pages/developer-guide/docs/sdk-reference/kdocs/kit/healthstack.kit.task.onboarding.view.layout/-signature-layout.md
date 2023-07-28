@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.onboarding.view.layout/-signature-layout.ht
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.task.onboarding.view.layout](index.html)/[SignatureLayout](-signature-layout.html)
+//[kit](../../kit.html)/[healthstack.kit.task.onboarding.view.layout](index.html)/[SignatureLayout](-signature-layout.html)
 
 
 

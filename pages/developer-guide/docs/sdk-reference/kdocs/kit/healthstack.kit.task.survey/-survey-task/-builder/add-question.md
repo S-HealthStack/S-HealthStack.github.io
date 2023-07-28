@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey/-survey-task/-builder/add-question.h
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.task.survey](../../index.html)/[SurveyTask](../index.html)/[Builder](index.html)/[addQuestion](add-question.html)
+//[kit](../../../../kit.html)/[healthstack.kit.task.survey](../../index.html)/[SurveyTask](../index.html)/[Builder](index.html)/[addQuestion](add-question.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.signup.view/-sign-up-component/of.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.signup.view](../index.html)/[SignUpComponent](index.html)/[of](of.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.signup.view](../index.html)/[SignUpComponent](index.html)/[of](of.html)
 
 
 

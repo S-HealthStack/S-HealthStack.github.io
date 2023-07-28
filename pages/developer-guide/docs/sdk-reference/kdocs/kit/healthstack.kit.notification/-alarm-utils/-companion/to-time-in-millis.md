@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.notification/-alarm-utils/-companion/to-time-in-
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.notification](../../index.html)/[AlarmUtils](../index.html)/[Companion](index.html)/[toTimeInMillis](to-time-in-millis.html)
+//[kit](../../../../kit.html)/[healthstack.kit.notification](../../index.html)/[AlarmUtils](../index.html)/[Companion](index.html)/[toTimeInMillis](to-time-in-millis.html)
 
 
 

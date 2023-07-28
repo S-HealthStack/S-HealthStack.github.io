@@ -7,7 +7,7 @@ toc: false
 
 In addition to the one-time [app SDK installation steps](../installation/install-sdk.md), these configuration steps are required for each app you develop:
 
-1. Register your app with [the Firebase project you created](../installation/install-sdk.md#vii-create-a-firebase-project) during app SDK installation and update the ***\<repository\>*/app/google-service.json** configuration file.
+1. Register your app with [the Firebase project you created](../installation/install-sdk.md#v-create-a-firebase-project) during app SDK installation and update the ***\<repository\>*/app/google-service.json** configuration file.
 > For example:
 > ```
 > {

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question.model/-question-model/quest
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey.question.model](../index.html)/[QuestionModel](index.html)/[question](question.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey.question.model](../index.html)/[QuestionModel](index.html)/[question](question.html)
 
 
 

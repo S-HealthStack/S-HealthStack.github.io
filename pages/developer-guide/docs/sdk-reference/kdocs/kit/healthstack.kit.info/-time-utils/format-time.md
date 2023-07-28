@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.info/-time-utils/format-time.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.info](../index.html)/[TimeUtils](index.html)/[formatTime](format-time.html)
+//[kit](../../../kit.html)/[healthstack.kit.info](../index.html)/[TimeUtils](index.html)/[formatTime](format-time.html)
 
 
 

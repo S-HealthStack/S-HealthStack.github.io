@@ -4,7 +4,7 @@ permalink: /app-support/healthstack.app/-education-view/change-navigation.html
 
 sidebar: dev_doc_sidebar
 ---
-//[app-support](../../../index.html)/[healthstack.app](../index.html)/[EducationView](index.html)/[changeNavigation](change-navigation.html)
+//[app-support](../../../app-support.html)/[healthstack.app](../index.html)/[EducationView](index.html)/[changeNavigation](change-navigation.html)
 
 
 

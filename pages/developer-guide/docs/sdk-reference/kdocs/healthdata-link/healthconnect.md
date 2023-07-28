@@ -4,7 +4,7 @@ permalink: /healthdata-link/healthconnect.html
 
 sidebar: dev_doc_sidebar
 ---
-//[healthconnect](index.html)
+//[healthconnect](healthconnect.html)
 
 
 

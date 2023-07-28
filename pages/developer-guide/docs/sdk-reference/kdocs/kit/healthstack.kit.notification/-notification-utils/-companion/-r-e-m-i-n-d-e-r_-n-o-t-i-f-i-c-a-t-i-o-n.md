@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.notification/-notification-utils/-companion/-r-e
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.notification](../../index.html)/[NotificationUtils](../index.html)/[Companion](index.html)/[REMINDER_NOTIFICATION](-r-e-m-i-n-d-e-r_-n-o-t-i-f-i-c-a-t-i-o-n.html)
+//[kit](../../../../kit.html)/[healthstack.kit.notification](../../index.html)/[NotificationUtils](../index.html)/[Companion](index.html)/[REMINDER_NOTIFICATION](-r-e-m-i-n-d-e-r_-n-o-t-i-f-i-c-a-t-i-o-n.html)
 
 
 

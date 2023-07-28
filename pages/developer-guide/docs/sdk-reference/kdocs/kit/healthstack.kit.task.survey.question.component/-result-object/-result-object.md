@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question.component/-result-object/-r
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey.question.component](../index.html)/[ResultObject](index.html)/[ResultObject](-result-object.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey.question.component](../index.html)/[ResultObject](index.html)/[ResultObject](-result-object.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.theme/-app-colors/data-visualization4-variant.ht
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.theme](../index.html)/[AppColors](index.html)/[dataVisualization4Variant](data-visualization4-variant.html)
+//[kit](../../../kit.html)/[healthstack.kit.theme](../index.html)/[AppColors](index.html)/[dataVisualization4Variant](data-visualization4-variant.html)
 
 
 

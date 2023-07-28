@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.onboarding.view/-consent-text-view/-consent
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.onboarding.view](../index.html)/[ConsentTextView](index.html)/[ConsentTextView](-consent-text-view.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.onboarding.view](../index.html)/[ConsentTextView](index.html)/[ConsentTextView](-consent-text-view.html)
 
 
 

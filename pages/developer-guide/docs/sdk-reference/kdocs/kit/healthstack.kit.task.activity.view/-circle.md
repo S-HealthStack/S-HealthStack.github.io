@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.view/-circle.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.task.activity.view](index.html)/[Circle](-circle.html)
+//[kit](../../kit.html)/[healthstack.kit.task.activity.view](index.html)/[Circle](-circle.html)
 
 
 

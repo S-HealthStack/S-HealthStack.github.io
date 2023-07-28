@@ -4,7 +4,7 @@ permalink: /healthdata-link/healthplatform.html
 
 sidebar: dev_doc_sidebar
 ---
-//[healthplatform](index.html)
+//[healthplatform](healthplatform.html)
 
 
 

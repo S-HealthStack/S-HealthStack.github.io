@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.base/-callback-collection/-callback-collect
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[CallbackCollection](index.html)/[CallbackCollection](-callback-collection.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.base](../index.html)/[CallbackCollection](index.html)/[CallbackCollection](-callback-collection.html)
 
 
 

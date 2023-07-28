@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.signup.step/-sign-up-step/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.signup.step](../index.html)/[SignUpStep](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.signup.step](../index.html)/[SignUpStep](index.html)
 
 
 

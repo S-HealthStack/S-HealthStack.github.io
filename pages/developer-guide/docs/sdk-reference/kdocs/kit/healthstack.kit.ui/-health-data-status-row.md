@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-health-data-status-row.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[HealthDataStatusRow](-health-data-status-row.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[HealthDataStatusRow](-health-data-status-row.html)
 
 
 

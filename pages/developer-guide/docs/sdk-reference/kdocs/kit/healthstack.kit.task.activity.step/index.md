@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.step/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.task.activity.step](index.html)
+//[kit](../../kit.html)/[healthstack.kit.task.activity.step](index.html)
 
 
 

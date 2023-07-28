@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-sensor-data-manager/on-sensor-changed.ht
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.sensor](../index.html)/[SensorDataManager](index.html)/[onSensorChanged](on-sensor-changed.html)
+//[kit](../../../kit.html)/[healthstack.kit.sensor](../index.html)/[SensorDataManager](index.html)/[onSensorChanged](on-sensor-changed.html)
 
 
 

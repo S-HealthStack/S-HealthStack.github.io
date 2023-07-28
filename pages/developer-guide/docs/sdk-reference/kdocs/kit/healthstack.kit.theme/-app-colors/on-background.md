@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.theme/-app-colors/on-background.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.theme](../index.html)/[AppColors](index.html)/[onBackground](on-background.html)
+//[kit](../../../kit.html)/[healthstack.kit.theme](../index.html)/[AppColors](index.html)/[onBackground](on-background.html)
 
 
 

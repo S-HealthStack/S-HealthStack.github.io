@@ -4,7 +4,7 @@ permalink: /healthdata-link/interface.html
 
 sidebar: dev_doc_sidebar
 ---
-//[interface](index.html)
+//[interface](interface.html)
 
 
 

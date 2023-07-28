@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/add-comma-to-int.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[addCommaToInt](add-comma-to-int.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[addCommaToInt](add-comma-to-int.html)
 
 
 

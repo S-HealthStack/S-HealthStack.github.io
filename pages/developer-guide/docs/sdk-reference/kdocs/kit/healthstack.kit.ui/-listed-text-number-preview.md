@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-listed-text-number-preview.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[ListedTextNumberPreview](-listed-text-number-preview.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[ListedTextNumberPreview](-listed-text-number-preview.html)
 
 
 

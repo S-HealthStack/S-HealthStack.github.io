@@ -1,4 +1,5 @@
 ---
+title: Healthcare Research Platform
 sidebar: dev_doc_sidebar
 permalink: platform-api-endpoints.html
 toc: true

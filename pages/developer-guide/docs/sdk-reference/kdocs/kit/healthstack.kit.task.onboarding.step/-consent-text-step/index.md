@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.onboarding.step/-consent-text-step/index.ht
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.onboarding.step](../index.html)/[ConsentTextStep](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.onboarding.step](../index.html)/[ConsentTextStep](index.html)
 
 
 

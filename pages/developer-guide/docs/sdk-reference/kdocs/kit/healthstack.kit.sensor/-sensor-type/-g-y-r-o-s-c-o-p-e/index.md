@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-sensor-type/-g-y-r-o-s-c-o-p-e/index.htm
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.sensor](../../index.html)/[SensorType](../index.html)/[GYROSCOPE](index.html)
+//[kit](../../../../kit.html)/[healthstack.kit.sensor](../../index.html)/[SensorType](../index.html)/[GYROSCOPE](index.html)
 
 
 

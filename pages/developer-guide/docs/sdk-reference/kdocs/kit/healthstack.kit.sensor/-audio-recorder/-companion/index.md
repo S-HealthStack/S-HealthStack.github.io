@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-audio-recorder/-companion/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.sensor](../../index.html)/[AudioRecorder](../index.html)/[Companion](index.html)
+//[kit](../../../../kit.html)/[healthstack.kit.sensor](../../index.html)/[AudioRecorder](../index.html)/[Companion](index.html)
 
 
 

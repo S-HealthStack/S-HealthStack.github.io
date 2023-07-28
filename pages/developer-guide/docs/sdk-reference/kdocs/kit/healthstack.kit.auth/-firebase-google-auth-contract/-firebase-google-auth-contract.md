@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.auth/-firebase-google-auth-contract/-firebase-go
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.auth](../index.html)/[FirebaseGoogleAuthContract](index.html)/[FirebaseGoogleAuthContract](-firebase-google-auth-contract.html)
+//[kit](../../../kit.html)/[healthstack.kit.auth](../index.html)/[FirebaseGoogleAuthContract](index.html)/[FirebaseGoogleAuthContract](-firebase-google-auth-contract.html)
 
 
 

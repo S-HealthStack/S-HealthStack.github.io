@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.info.publication/-text-publication/-text-publica
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.info.publication](../index.html)/[TextPublication](index.html)/[TextPublication](-text-publication.html)
+//[kit](../../../kit.html)/[healthstack.kit.info.publication](../index.html)/[TextPublication](index.html)/[TextPublication](-text-publication.html)
 
 
 

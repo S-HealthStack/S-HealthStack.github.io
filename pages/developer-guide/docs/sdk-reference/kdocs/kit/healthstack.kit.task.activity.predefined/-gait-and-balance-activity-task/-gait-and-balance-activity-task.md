@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.predefined/-gait-and-balance-activ
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.predefined](../index.html)/[GaitAndBalanceActivityTask](index.html)/[GaitAndBalanceActivityTask](-gait-and-balance-activity-task.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.predefined](../index.html)/[GaitAndBalanceActivityTask](index.html)/[GaitAndBalanceActivityTask](-gait-and-balance-activity-task.html)
 
 
 

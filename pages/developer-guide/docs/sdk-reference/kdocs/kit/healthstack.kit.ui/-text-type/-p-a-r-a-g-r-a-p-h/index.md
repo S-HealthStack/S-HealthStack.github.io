@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-text-type/-p-a-r-a-g-r-a-p-h/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.ui](../../index.html)/[TextType](../index.html)/[PARAGRAPH](index.html)
+//[kit](../../../../kit.html)/[healthstack.kit.ui](../../index.html)/[TextType](../index.html)/[PARAGRAPH](index.html)
 
 
 

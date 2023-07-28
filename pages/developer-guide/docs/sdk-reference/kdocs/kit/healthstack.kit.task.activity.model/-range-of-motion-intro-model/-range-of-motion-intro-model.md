@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model/-range-of-motion-intro-model
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model](../index.html)/[RangeOfMotionIntroModel](index.html)/[RangeOfMotionIntroModel](-range-of-motion-intro-model.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model](../index.html)/[RangeOfMotionIntroModel](index.html)/[RangeOfMotionIntroModel](-range-of-motion-intro-model.html)
 
 
 

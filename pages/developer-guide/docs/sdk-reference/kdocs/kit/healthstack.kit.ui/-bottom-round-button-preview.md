@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-bottom-round-button-preview.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[BottomRoundButtonPreview](-bottom-round-button-preview.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[BottomRoundButtonPreview](-bottom-round-button-preview.html)
 
 
 

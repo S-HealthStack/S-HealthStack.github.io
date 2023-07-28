@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.annotation/-preview-generated/-preview-generated
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.annotation](../index.html)/[PreviewGenerated](index.html)/[PreviewGenerated](-preview-generated.html)
+//[kit](../../../kit.html)/[healthstack.kit.annotation](../index.html)/[PreviewGenerated](index.html)/[PreviewGenerated](-preview-generated.html)
 
 
 

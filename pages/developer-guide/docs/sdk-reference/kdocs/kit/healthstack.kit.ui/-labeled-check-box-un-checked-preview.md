@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-labeled-check-box-un-checked-preview.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[LabeledCheckBoxUnCheckedPreview](-labeled-check-box-un-checked-preview.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[LabeledCheckBoxUnCheckedPreview](-labeled-check-box-un-checked-preview.html)
 
 
 

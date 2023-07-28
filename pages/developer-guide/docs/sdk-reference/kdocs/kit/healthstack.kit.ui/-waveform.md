@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-waveform.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[Waveform](-waveform.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[Waveform](-waveform.html)
 
 
 

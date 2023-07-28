@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.info/-settings-view/on-click-back.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.info](../index.html)/[SettingsView](index.html)/[onClickBack](on-click-back.html)
+//[kit](../../../kit.html)/[healthstack.kit.info](../index.html)/[SettingsView](index.html)/[onClickBack](on-click-back.html)
 
 
 

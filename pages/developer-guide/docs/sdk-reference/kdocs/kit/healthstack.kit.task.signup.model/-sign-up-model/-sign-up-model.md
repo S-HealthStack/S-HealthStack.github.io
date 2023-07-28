@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.signup.model/-sign-up-model/-sign-up-model.
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.signup.model](../index.html)/[SignUpModel](index.html)/[SignUpModel](-sign-up-model.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.signup.model](../index.html)/[SignUpModel](index.html)/[SignUpModel](-sign-up-model.html)
 
 
 

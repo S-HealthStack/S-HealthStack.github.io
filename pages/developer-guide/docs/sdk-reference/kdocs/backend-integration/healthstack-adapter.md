@@ -4,7 +4,7 @@ permalink: /backend-integration/healthstack-adapter.html
 
 sidebar: dev_doc_sidebar
 ---
-//[healthstack-adapter](index.html)
+//[healthstack-adapter](healthstack-adapter.html)
 
 
 

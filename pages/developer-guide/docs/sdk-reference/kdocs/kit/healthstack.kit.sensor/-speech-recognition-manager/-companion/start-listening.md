@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-speech-recognition-manager/-companion/st
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.sensor](../../index.html)/[SpeechRecognitionManager](../index.html)/[Companion](index.html)/[startListening](start-listening.html)
+//[kit](../../../../kit.html)/[healthstack.kit.sensor](../../index.html)/[SpeechRecognitionManager](../index.html)/[Companion](index.html)/[startListening](start-listening.html)
 
 
 

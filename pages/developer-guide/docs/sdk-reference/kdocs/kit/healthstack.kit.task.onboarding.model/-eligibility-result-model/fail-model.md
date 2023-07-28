@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.onboarding.model/-eligibility-result-model/
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.onboarding.model](../index.html)/[EligibilityResultModel](index.html)/[failModel](fail-model.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.onboarding.model](../index.html)/[EligibilityResultModel](index.html)/[failModel](fail-model.html)
 
 
 

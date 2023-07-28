@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-dropdown-menu-item-data/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.ui](../index.html)/[DropdownMenuItemData](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.ui](../index.html)/[DropdownMenuItemData](index.html)
 
 
 

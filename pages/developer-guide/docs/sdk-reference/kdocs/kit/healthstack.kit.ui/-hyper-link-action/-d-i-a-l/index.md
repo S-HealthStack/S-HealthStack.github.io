@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-hyper-link-action/-d-i-a-l/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.ui](../../index.html)/[HyperLinkAction](../index.html)/[DIAL](index.html)
+//[kit](../../../../kit.html)/[healthstack.kit.ui](../../index.html)/[HyperLinkAction](../index.html)/[DIAL](index.html)
 
 
 

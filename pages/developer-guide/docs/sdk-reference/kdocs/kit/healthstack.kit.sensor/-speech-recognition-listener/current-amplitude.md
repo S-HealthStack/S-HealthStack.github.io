@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-speech-recognition-listener/current-ampl
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.sensor](../index.html)/[SpeechRecognitionListener](index.html)/[currentAmplitude](current-amplitude.html)
+//[kit](../../../kit.html)/[healthstack.kit.sensor](../index.html)/[SpeechRecognitionListener](index.html)/[currentAmplitude](current-amplitude.html)
 
 
 

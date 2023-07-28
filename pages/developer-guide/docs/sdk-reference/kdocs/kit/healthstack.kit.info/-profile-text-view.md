@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.info/-profile-text-view.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.info](index.html)/[ProfileTextView](-profile-text-view.html)
+//[kit](../../kit.html)/[healthstack.kit.info](index.html)/[ProfileTextView](-profile-text-view.html)
 
 
 

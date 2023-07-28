@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question.component/-image-question-c
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey.question.component](../index.html)/[ImageQuestionComponent](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey.question.component](../index.html)/[ImageQuestionComponent](index.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey/-survey-task/started-at.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey](../index.html)/[SurveyTask](index.html)/[startedAt](started-at.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey](../index.html)/[SurveyTask](index.html)/[startedAt](started-at.html)
 
 
 

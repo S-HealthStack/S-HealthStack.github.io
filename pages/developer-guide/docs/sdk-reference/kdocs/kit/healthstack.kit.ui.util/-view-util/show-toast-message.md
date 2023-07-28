@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui.util/-view-util/show-toast-message.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.ui.util](../index.html)/[ViewUtil](index.html)/[showToastMessage](show-toast-message.html)
+//[kit](../../../kit.html)/[healthstack.kit.ui.util](../index.html)/[ViewUtil](index.html)/[showToastMessage](show-toast-message.html)
 
 
 

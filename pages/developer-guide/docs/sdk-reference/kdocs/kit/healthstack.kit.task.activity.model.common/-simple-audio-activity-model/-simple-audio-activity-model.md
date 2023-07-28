@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model.common/-simple-audio-activit
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model.common](../index.html)/[SimpleAudioActivityModel](index.html)/[SimpleAudioActivityModel](-simple-audio-activity-model.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model.common](../index.html)/[SimpleAudioActivityModel](index.html)/[SimpleAudioActivityModel](-simple-audio-activity-model.html)
 
 
 

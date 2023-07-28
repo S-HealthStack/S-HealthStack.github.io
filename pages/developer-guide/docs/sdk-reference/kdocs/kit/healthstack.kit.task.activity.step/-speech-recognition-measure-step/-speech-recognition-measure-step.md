@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.step/-speech-recognition-measure-s
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.step](../index.html)/[SpeechRecognitionMeasureStep](index.html)/[SpeechRecognitionMeasureStep](-speech-recognition-measure-step.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.step](../index.html)/[SpeechRecognitionMeasureStep](index.html)/[SpeechRecognitionMeasureStep](-speech-recognition-measure-step.html)
 
 
 

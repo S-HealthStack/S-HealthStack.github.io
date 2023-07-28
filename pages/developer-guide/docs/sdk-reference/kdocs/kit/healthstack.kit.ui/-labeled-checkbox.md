@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-labeled-checkbox.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[LabeledCheckbox](-labeled-checkbox.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[LabeledCheckbox](-labeled-checkbox.html)
 
 
 

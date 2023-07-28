@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.datastore/-preference-data-store/-companion/-p-u
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.datastore](../../index.html)/[PreferenceDataStore](../index.html)/[Companion](index.html)/[PUSH](-p-u-s-h.html)
+//[kit](../../../../kit.html)/[healthstack.kit.datastore](../../index.html)/[PreferenceDataStore](../index.html)/[Companion](index.html)/[PUSH](-p-u-s-h.html)
 
 
 

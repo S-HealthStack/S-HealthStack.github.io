@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.theme/-app-colors/on-disabled2.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.theme](../index.html)/[AppColors](index.html)/[onDisabled2](on-disabled2.html)
+//[kit](../../../kit.html)/[healthstack.kit.theme](../index.html)/[AppColors](index.html)/[onDisabled2](on-disabled2.html)
 
 
 

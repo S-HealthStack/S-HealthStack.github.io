@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.predefined/-color-word-challenge-a
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.predefined](../index.html)/[ColorWordChallengeActivityTask](index.html)/[ColorWordChallengeActivityTask](-color-word-challenge-activity-task.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.predefined](../index.html)/[ColorWordChallengeActivityTask](index.html)/[ColorWordChallengeActivityTask](-color-word-challenge-activity-task.html)
 
 
 

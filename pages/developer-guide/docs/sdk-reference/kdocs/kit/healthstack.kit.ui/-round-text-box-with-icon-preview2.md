@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-round-text-box-with-icon-preview2.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[RoundTextBoxWithIconPreview2](-round-text-box-with-icon-preview2.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[RoundTextBoxWithIconPreview2](-round-text-box-with-icon-preview2.html)
 
 
 

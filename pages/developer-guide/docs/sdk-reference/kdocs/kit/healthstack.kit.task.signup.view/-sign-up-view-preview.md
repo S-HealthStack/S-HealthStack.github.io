@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.signup.view/-sign-up-view-preview.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.task.signup.view](index.html)/[SignUpViewPreview](-sign-up-view-preview.html)
+//[kit](../../kit.html)/[healthstack.kit.task.signup.view](index.html)/[SignUpViewPreview](-sign-up-view-preview.html)
 
 
 

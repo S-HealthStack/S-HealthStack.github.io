@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.info.publication.content/-content-block/-render.
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.info.publication.content](../index.html)/[ContentBlock](index.html)/[Render](-render.html)
+//[kit](../../../kit.html)/[healthstack.kit.info.publication.content](../index.html)/[ContentBlock](index.html)/[Render](-render.html)
 
 
 

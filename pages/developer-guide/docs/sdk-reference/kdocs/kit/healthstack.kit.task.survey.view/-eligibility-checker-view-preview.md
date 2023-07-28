@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.view/-eligibility-checker-view-previ
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.task.survey.view](index.html)/[EligibilityCheckerViewPreview](-eligibility-checker-view-preview.html)
+//[kit](../../kit.html)/[healthstack.kit.task.survey.view](index.html)/[EligibilityCheckerViewPreview](-eligibility-checker-view-preview.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui.layout/-image-article-layout.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui.layout](index.html)/[ImageArticleLayout](-image-article-layout.html)
+//[kit](../../kit.html)/[healthstack.kit.ui.layout](index.html)/[ImageArticleLayout](-image-article-layout.html)
 
 
 

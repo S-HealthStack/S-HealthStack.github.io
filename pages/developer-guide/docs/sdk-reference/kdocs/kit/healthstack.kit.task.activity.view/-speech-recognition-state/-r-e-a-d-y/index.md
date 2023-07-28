@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.view/-speech-recognition-state/-r-
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.task.activity.view](../../index.html)/[SpeechRecognitionState](../index.html)/[READY](index.html)
+//[kit](../../../../kit.html)/[healthstack.kit.task.activity.view](../../index.html)/[SpeechRecognitionState](../index.html)/[READY](index.html)
 
 
 

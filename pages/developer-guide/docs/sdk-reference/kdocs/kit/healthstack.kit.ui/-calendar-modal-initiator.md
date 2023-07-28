@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-calendar-modal-initiator.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[CalendarModalInitiator](-calendar-modal-initiator.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[CalendarModalInitiator](-calendar-modal-initiator.html)
 
 
 

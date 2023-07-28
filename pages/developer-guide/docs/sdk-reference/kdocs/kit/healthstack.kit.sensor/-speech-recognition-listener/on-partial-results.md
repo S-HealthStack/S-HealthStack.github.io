@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-speech-recognition-listener/on-partial-r
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.sensor](../index.html)/[SpeechRecognitionListener](index.html)/[onPartialResults](on-partial-results.html)
+//[kit](../../../kit.html)/[healthstack.kit.sensor](../index.html)/[SpeechRecognitionListener](index.html)/[onPartialResults](on-partial-results.html)
 
 
 

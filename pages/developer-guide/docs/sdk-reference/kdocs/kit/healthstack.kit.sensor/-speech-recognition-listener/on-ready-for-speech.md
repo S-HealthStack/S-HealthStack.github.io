@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-speech-recognition-listener/on-ready-for
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.sensor](../index.html)/[SpeechRecognitionListener](index.html)/[onReadyForSpeech](on-ready-for-speech.html)
+//[kit](../../../kit.html)/[healthstack.kit.sensor](../index.html)/[SpeechRecognitionListener](index.html)/[onReadyForSpeech](on-ready-for-speech.html)
 
 
 

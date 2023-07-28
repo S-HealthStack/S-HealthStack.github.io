@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.predefined/-mobile-spirometry-acti
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.predefined](../index.html)/[MobileSpirometryActivityTask](index.html)/[MobileSpirometryActivityTask](-mobile-spirometry-activity-task.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.predefined](../index.html)/[MobileSpirometryActivityTask](index.html)/[MobileSpirometryActivityTask](-mobile-spirometry-activity-task.html)
 
 
 

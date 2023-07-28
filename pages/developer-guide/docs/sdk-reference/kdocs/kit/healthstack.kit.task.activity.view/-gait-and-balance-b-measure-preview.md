@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.view/-gait-and-balance-b-measure-p
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.task.activity.view](index.html)/[GaitAndBalanceBMeasurePreview](-gait-and-balance-b-measure-preview.html)
+//[kit](../../kit.html)/[healthstack.kit.task.activity.view](index.html)/[GaitAndBalanceBMeasurePreview](-gait-and-balance-b-measure-preview.html)
 
 
 
