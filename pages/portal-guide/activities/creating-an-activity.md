@@ -1,7 +1,7 @@
 ---
 title: Creating an Activity
 sidebar: doc_sidebar
-permalink: creating_an_activity.html
+permalink: creating-an-activity.html
 toc: True
 ---
 

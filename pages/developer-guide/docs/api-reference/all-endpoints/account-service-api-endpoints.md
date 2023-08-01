@@ -969,15 +969,22 @@ This operation does not require authentication
 
 ```
 
-A role is either system role or project role.
-Researchers must have project roles to access specific project.
-- The format of project role is as follow: $project_id:$role_name
+V1.0 expanded roles from two to four. Following are the respective key values for these roles: 
+
+| **Role**               | **REST API Key**         |
+| ---------------------- | ------------------------ |
+| Study Creator          | “study-creator”          |
+| Principal Investigator | “principal-investigator” |
+| Research Assistant     | “research-assistant”     |
+| Data Scientist         | “data-scientist”         |
+
+To get more information about the access level for each role, please refer to [Role-Based Access Control](role-based-access-control.html). 
 
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|*anonymous*|string|false|none|A role is either system role or project role.<br>Researchers must have project roles to access specific project.<br>- The format of project role is as follow: $project_id:$role_name|
+|*anonymous*|string|false|none|Researchers must have project roles to access specific project.<br>- The format of project role is as follow: $project_id:$role_name|
 
 <h2 id="tocS_ForgotPasswordReq">ForgotPasswordReq</h2>
 <!-- backwards compatibility -->

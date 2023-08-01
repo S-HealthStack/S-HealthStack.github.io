@@ -70,6 +70,10 @@ entries:
     output: web, pdf
     folderitems:
     
+    - title: Roles Management
+      url: /role-names.html
+      output: web, pdf
+
     - title: Creating a Study
       url: /create-study.html
       output: web, pdf

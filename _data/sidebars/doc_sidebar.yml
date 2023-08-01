@@ -97,10 +97,9 @@ entries:
       url: /creating-a-study.html
       output: web, pdf
 
-    - title: Question Types and Configurations
-      url: /question-types-and-configurations.html
+    - title: Study Overview Page
+      url: /study-overview-page.html
       output: web, pdf
-
 
     - title: Managing  Members
       url: /portal_managing-members.html
@@ -112,6 +111,10 @@ entries:
     
     - title: Creating a Survey
       url: /creating-a-survey.html
+      output: web, pdf
+    
+    - title: Question Types and Configurations
+      url: /question-types-and-configurations.html
       output: web, pdf
 
     - title: Sections (Survey Grouping)
@@ -139,7 +142,7 @@ entries:
       output: web, pdf  
 
     - title: Create an Activity
-      url: /creating_an_activity.html
+      url: /creating-an-activity.html
       output: web, pdf
 
   - title: Educational Content
@@ -149,7 +152,6 @@ entries:
       url: /adding-educational-content.html
       output: web, pdf
     
-
   - title: In-Lab Visit
     output: web, pdf
     folderitems:
