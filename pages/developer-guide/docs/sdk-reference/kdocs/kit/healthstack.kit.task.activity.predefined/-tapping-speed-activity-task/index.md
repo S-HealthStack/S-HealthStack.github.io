@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.predefined/-tapping-speed-activity
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.predefined](../index.html)/[TappingSpeedActivityTask](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.predefined](../index.html)/[TappingSpeedActivityTask](index.html)
 
 
 

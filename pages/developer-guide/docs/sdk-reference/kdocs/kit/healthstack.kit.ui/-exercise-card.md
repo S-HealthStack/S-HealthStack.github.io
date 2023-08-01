@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-exercise-card.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[ExerciseCard](-exercise-card.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[ExerciseCard](-exercise-card.html)
 
 
 

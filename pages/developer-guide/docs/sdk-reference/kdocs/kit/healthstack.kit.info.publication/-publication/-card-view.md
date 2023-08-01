@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.info.publication/-publication/-card-view.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.info.publication](../index.html)/[Publication](index.html)/[CardView](-card-view.html)
+//[kit](../../../kit.html)/[healthstack.kit.info.publication](../index.html)/[Publication](index.html)/[CardView](-card-view.html)
 
 
 

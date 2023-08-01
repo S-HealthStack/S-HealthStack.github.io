@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.step.common/-simple-view-activity-
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.step.common](../index.html)/[SimpleViewActivityStep](index.html)/[Render](-render.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.step.common](../index.html)/[SimpleViewActivityStep](index.html)/[Render](-render.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.onboarding.view/-eligibility-result-view/in
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.onboarding.view](../index.html)/[EligibilityResultView](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.onboarding.view](../index.html)/[EligibilityResultView](index.html)
 
 
 

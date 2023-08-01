@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.theme/-app-colors/copy.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.theme](../index.html)/[AppColors](index.html)/[copy](copy.html)
+//[kit](../../../kit.html)/[healthstack.kit.theme](../index.html)/[AppColors](index.html)/[copy](copy.html)
 
 
 

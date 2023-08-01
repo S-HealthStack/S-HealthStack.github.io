@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.view/-survey-view/-survey-view.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey.view](../index.html)/[SurveyView](index.html)/[SurveyView](-survey-view.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey.view](../index.html)/[SurveyView](index.html)/[SurveyView](-survey-view.html)
 
 
 

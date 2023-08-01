@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.onboarding.model/-consent-text-model/check-
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.onboarding.model](../index.html)/[ConsentTextModel](index.html)/[checkBoxTexts](check-box-texts.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.onboarding.model](../index.html)/[ConsentTextModel](index.html)/[checkBoxTexts](check-box-texts.html)
 
 
 

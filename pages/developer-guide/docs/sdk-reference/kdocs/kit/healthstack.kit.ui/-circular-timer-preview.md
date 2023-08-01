@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-circular-timer-preview.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[CircularTimerPreview](-circular-timer-preview.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[CircularTimerPreview](-circular-timer-preview.html)
 
 
 

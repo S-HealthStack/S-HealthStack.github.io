@@ -4,7 +4,7 @@ permalink: /app-support/healthstack.app/-home-screen-state/title.html
 
 sidebar: dev_doc_sidebar
 ---
-//[app-support](../../../index.html)/[healthstack.app](../index.html)/[HomeScreenState](index.html)/[title](title.html)
+//[app-support](../../../app-support.html)/[healthstack.app](../index.html)/[HomeScreenState](index.html)/[title](title.html)
 
 
 

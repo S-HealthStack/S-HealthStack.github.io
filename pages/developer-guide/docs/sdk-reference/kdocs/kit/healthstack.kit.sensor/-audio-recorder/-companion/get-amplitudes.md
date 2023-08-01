@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-audio-recorder/-companion/get-amplitudes
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.sensor](../../index.html)/[AudioRecorder](../index.html)/[Companion](index.html)/[getAmplitudes](get-amplitudes.html)
+//[kit](../../../../kit.html)/[healthstack.kit.sensor](../../index.html)/[AudioRecorder](../index.html)/[Companion](index.html)/[getAmplitudes](get-amplitudes.html)
 
 
 

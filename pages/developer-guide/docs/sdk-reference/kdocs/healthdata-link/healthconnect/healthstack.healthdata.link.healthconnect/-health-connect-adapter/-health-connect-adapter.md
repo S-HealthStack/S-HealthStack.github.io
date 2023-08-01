@@ -4,7 +4,7 @@ permalink: /healthdata-link/healthconnect/healthstack.healthdata.link.healthconn
 
 sidebar: dev_doc_sidebar
 ---
-//[healthconnect](../../../index.html)/[healthstack.healthdata.link.healthconnect](../index.html)/[HealthConnectAdapter](index.html)/[HealthConnectAdapter](-health-connect-adapter.html)
+//[healthconnect](../../../healthconnect.html)/[healthstack.healthdata.link.healthconnect](../index.html)/[HealthConnectAdapter](index.html)/[HealthConnectAdapter](-health-connect-adapter.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question.model/-choice-question-mode
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../../index.html)/[healthstack.kit.task.survey.question.model](../../../index.html)/[ChoiceQuestionModel](../../index.html)/[ViewType](../index.html)/[Slider](index.html)
+//[kit](../../../../../kit.html)/[healthstack.kit.task.survey.question.model](../../../index.html)/[ChoiceQuestionModel](../../index.html)/[ViewType](../index.html)/[Slider](index.html)
 
 
 

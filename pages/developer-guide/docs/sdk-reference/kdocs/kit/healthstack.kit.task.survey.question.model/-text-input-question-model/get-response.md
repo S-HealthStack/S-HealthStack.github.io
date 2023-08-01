@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question.model/-text-input-question-
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey.question.model](../index.html)/[TextInputQuestionModel](index.html)/[getResponse](get-response.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey.question.model](../index.html)/[TextInputQuestionModel](index.html)/[getResponse](get-response.html)
 
 
 

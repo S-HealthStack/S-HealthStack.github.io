@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.base/-task/canceled.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[Task](index.html)/[canceled](canceled.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.base](../index.html)/[Task](index.html)/[canceled](canceled.html)
 
 
 

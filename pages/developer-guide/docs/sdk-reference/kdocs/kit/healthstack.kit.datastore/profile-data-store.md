@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.datastore/profile-data-store.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.datastore](index.html)/[profileDataStore](profile-data-store.html)
+//[kit](../../kit.html)/[healthstack.kit.datastore](index.html)/[profileDataStore](profile-data-store.html)
 
 
 

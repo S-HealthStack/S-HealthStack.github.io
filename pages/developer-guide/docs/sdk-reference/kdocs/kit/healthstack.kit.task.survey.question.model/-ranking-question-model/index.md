@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question.model/-ranking-question-mod
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey.question.model](../index.html)/[RankingQuestionModel](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey.question.model](../index.html)/[RankingQuestionModel](index.html)
 
 
 

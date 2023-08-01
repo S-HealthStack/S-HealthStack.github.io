@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-insight-unit/color.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.ui](../index.html)/[InsightUnit](index.html)/[color](color.html)
+//[kit](../../../kit.html)/[healthstack.kit.ui](../index.html)/[InsightUnit](index.html)/[color](color.html)
 
 
 

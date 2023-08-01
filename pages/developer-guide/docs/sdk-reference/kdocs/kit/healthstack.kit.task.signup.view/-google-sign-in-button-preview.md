@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.signup.view/-google-sign-in-button-preview.
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.task.signup.view](index.html)/[GoogleSignInButtonPreview](-google-sign-in-button-preview.html)
+//[kit](../../kit.html)/[healthstack.kit.task.signup.view](index.html)/[GoogleSignInButtonPreview](-google-sign-in-button-preview.html)
 
 
 

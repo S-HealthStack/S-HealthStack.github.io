@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model/-guided-breathing-measure-mo
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model](../index.html)/[GuidedBreathingMeasureModel](index.html)/[inhaleAnim](inhale-anim.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model](../index.html)/[GuidedBreathingMeasureModel](index.html)/[inhaleAnim](inhale-anim.html)
 
 
 

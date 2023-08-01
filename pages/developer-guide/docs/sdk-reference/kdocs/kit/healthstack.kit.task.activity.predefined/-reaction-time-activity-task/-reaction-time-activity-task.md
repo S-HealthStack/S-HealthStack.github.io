@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.predefined/-reaction-time-activity
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.predefined](../index.html)/[ReactionTimeActivityTask](index.html)/[ReactionTimeActivityTask](-reaction-time-activity-task.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.predefined](../index.html)/[ReactionTimeActivityTask](index.html)/[ReactionTimeActivityTask](-reaction-time-activity-task.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.step/-survey-step/-builder/index.htm
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.task.survey.step](../../index.html)/[SurveyStep](../index.html)/[Builder](index.html)
+//[kit](../../../../kit.html)/[healthstack.kit.task.survey.step](../../index.html)/[SurveyStep](../index.html)/[Builder](index.html)
 
 
 

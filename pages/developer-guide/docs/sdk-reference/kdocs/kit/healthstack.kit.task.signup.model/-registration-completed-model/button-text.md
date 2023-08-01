@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.signup.model/-registration-completed-model/
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.signup.model](../index.html)/[RegistrationCompletedModel](index.html)/[buttonText](button-text.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.signup.model](../index.html)/[RegistrationCompletedModel](index.html)/[buttonText](button-text.html)
 
 
 

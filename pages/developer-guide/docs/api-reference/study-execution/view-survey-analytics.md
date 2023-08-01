@@ -18,6 +18,6 @@ To view survey response analytics:
 1. From the **Study Management** page, navigate to the **Survey Management** section.
 2. Under **Published**, click any survey.
 3. Click the **Survey Analytics** tab.
-    ![viewing-survey-analytics](../../../images/viewing-survey-analytics.png)
+    ![viewing-survey-analytics](../../../../../images/viewing-survey-analytics.png)
 4. In the top part of the page, view the participation details.
 5. In the bottom part of the page, view the charts showing survey participation percentages by gender and by age.

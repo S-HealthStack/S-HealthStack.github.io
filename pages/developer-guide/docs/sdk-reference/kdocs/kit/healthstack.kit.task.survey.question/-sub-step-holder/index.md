@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question/-sub-step-holder/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey.question](../index.html)/[SubStepHolder](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey.question](../index.html)/[SubStepHolder](index.html)
 
 
 

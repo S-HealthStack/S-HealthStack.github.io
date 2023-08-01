@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.datastore/-preference-data-store/-preference-dat
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.datastore](../index.html)/[PreferenceDataStore](index.html)/[PreferenceDataStore](-preference-data-store.html)
+//[kit](../../../kit.html)/[healthstack.kit.datastore](../index.html)/[PreferenceDataStore](index.html)/[PreferenceDataStore](-preference-data-store.html)
 
 
 

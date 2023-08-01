@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.view/-gait-and-balance-intro-view/
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.view](../index.html)/[GaitAndBalanceIntroView](index.html)/[GaitAndBalanceIntroView](-gait-and-balance-intro-view.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.view](../index.html)/[GaitAndBalanceIntroView](index.html)/[GaitAndBalanceIntroView](-gait-and-balance-intro-view.html)
 
 
 

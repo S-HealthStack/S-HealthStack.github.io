@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.notification/-notification-utils/-companion/init
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.notification](../../index.html)/[NotificationUtils](../index.html)/[Companion](index.html)/[initialize](initialize.html)
+//[kit](../../../../kit.html)/[healthstack.kit.notification](../../index.html)/[NotificationUtils](../index.html)/[Companion](index.html)/[initialize](initialize.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity/-activity-task/page-callbacks.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity](../index.html)/[ActivityTask](index.html)/[pageCallbacks](page-callbacks.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity](../index.html)/[ActivityTask](index.html)/[pageCallbacks](page-callbacks.html)
 
 
 

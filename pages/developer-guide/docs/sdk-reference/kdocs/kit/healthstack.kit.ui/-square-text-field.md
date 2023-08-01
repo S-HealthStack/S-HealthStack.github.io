@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-square-text-field.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[SquareTextField](-square-text-field.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[SquareTextField](-square-text-field.html)
 
 
 

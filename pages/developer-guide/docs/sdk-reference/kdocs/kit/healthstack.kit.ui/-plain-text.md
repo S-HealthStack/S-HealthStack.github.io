@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-plain-text.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[PlainText](-plain-text.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[PlainText](-plain-text.html)
 
 
 

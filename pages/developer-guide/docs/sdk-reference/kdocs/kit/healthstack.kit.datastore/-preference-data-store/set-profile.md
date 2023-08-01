@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.datastore/-preference-data-store/set-profile.htm
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.datastore](../index.html)/[PreferenceDataStore](index.html)/[setProfile](set-profile.html)
+//[kit](../../../kit.html)/[healthstack.kit.datastore](../index.html)/[PreferenceDataStore](index.html)/[setProfile](set-profile.html)
 
 
 

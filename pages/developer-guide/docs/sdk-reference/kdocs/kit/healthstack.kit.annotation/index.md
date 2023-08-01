@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.annotation/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.annotation](index.html)
+//[kit](../../kit.html)/[healthstack.kit.annotation](index.html)
 
 
 

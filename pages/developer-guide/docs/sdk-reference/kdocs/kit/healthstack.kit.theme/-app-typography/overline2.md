@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.theme/-app-typography/overline2.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.theme](../index.html)/[AppTypography](index.html)/[overline2](overline2.html)
+//[kit](../../../kit.html)/[healthstack.kit.theme](../index.html)/[AppTypography](index.html)/[overline2](overline2.html)
 
 
 

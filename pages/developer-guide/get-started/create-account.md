@@ -21,7 +21,7 @@ To invite a team member to create their account (as part of joining a study):
 ## API Endpoints
 To create your account  directly, separate from any study:
 
-1. Refer to [Create Initial Account](../installation/install-backend.md#xvi-create-initial-account) in the backend system installation instructions.
+1. Refer to [Create Initial Account](../installation/install-backend.md#create-initial-account) in the backend system installation instructions.
 
 To invite a team member to create their account (as part of joining a study):
 

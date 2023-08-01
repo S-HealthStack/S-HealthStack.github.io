@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-minute-text-timer.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[MinuteTextTimer](-minute-text-timer.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[MinuteTextTimer](-minute-text-timer.html)
 
 
 

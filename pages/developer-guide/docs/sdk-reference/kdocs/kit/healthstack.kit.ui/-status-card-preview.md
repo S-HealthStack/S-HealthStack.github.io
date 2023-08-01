@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-status-card-preview.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[StatusCardPreview](-status-card-preview.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[StatusCardPreview](-status-card-preview.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-sensor-type/-a-c-c-e-l-e-r-o-m-e-t-e-r/i
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../../index.html)/[healthstack.kit.sensor](../../index.html)/[SensorType](../index.html)/[ACCELEROMETER](index.html)
+//[kit](../../../../kit.html)/[healthstack.kit.sensor](../../index.html)/[SensorType](../index.html)/[ACCELEROMETER](index.html)
 
 
 

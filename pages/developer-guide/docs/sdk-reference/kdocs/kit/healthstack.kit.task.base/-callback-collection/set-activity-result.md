@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.base/-callback-collection/set-activity-resu
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[CallbackCollection](index.html)/[setActivityResult](set-activity-result.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.base](../index.html)/[CallbackCollection](index.html)/[setActivityResult](set-activity-result.html)
 
 
 

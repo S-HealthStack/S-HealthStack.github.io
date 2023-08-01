@@ -4,7 +4,7 @@ permalink: /app-support/healthstack.app/-status-cards.html
 
 sidebar: dev_doc_sidebar
 ---
-//[app-support](../../index.html)/[healthstack.app](index.html)/[StatusCards](-status-cards.html)
+//[app-support](../../app-support.html)/[healthstack.app](index.html)/[StatusCards](-status-cards.html)
 
 
 

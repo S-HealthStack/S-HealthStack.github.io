@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question.model/-skip-logic/condition
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey.question.model](../index.html)/[SkipLogic](index.html)/[condition](condition.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey.question.model](../index.html)/[SkipLogic](index.html)/[condition](condition.html)
 
 
 

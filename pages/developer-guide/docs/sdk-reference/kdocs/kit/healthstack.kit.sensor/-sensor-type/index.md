@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.sensor/-sensor-type/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.sensor](../index.html)/[SensorType](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.sensor](../index.html)/[SensorType](index.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.view/-tapping-speed-intro-view/ind
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.view](../index.html)/[TappingSpeedIntroView](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.view](../index.html)/[TappingSpeedIntroView](index.html)
 
 
 

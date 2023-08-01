@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-kit-date-picker-dialog.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[KitDatePickerDialog](-kit-date-picker-dialog.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[KitDatePickerDialog](-kit-date-picker-dialog.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.predefined/-guided-breathing-activ
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.predefined](../index.html)/[GuidedBreathingActivityTask](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.predefined](../index.html)/[GuidedBreathingActivityTask](index.html)
 
 
 

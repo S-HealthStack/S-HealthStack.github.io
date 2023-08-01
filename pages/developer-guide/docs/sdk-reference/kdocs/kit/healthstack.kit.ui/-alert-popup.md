@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-alert-popup.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[AlertPopup](-alert-popup.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[AlertPopup](-alert-popup.html)
 
 
 

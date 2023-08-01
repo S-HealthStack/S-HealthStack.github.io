@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.theme/-app-theme/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.theme](../index.html)/[AppTheme](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.theme](../index.html)/[AppTheme](index.html)
 
 
 

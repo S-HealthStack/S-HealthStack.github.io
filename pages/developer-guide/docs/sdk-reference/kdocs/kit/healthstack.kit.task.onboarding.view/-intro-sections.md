@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.onboarding.view/-intro-sections.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.task.onboarding.view](index.html)/[IntroSections](-intro-sections.html)
+//[kit](../../kit.html)/[healthstack.kit.task.onboarding.view](index.html)/[IntroSections](-intro-sections.html)
 
 
 

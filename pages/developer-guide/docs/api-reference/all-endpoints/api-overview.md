@@ -21,7 +21,7 @@ These topics describe the APIs:
 - [Cloud Storage Service](cloud-storage-service-endpoints.md)
 
 The information is also available in these **swagger.yml** files:
-- [Study API Endpoints](https://github.com/S-HealthStack/backend-system/blob/main/platform/swagger.yml){:target="_blank"}
+- [Platform API Endpoints](https://github.com/S-HealthStack/backend-system/blob/main/platform/swagger.yml){:target="_blank"}
 - [Account Service API Endpoints](https://github.com/S-HealthStack/backend-system/blob/main/account-service/swagger.yml){:target="_blank"}
 - [Data Query Service API Endpoints](http://github.com/S-HealthStack/backend-system/tree/main/data-query-service/swagger.yml){:target="_blank"}
 - [Cloud Storage Service](https://github.com/S-HealthStack/backend-system/blob/main/cloud-storage-service/swagger.yml){:target="_blank"}

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.theme/-open-sans.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.theme](index.html)/[OpenSans](-open-sans.html)
+//[kit](../../kit.html)/[healthstack.kit.theme](index.html)/[OpenSans](-open-sans.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-insight-card-preview2.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[InsightCardPreview2](-insight-card-preview2.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[InsightCardPreview2](-insight-card-preview2.html)
 
 
 

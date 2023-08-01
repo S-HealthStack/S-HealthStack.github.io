@@ -18,5 +18,5 @@ To view survey responses:
 1. From the **Study Management** page, navigate to the **Survey Management** section.
 2. Under **Published**, click any survey.
 3. Click the **Survey Responses** tab.
-    ![tracking-survey-responses](../../../images/tracking-survey-responses.png)
+    ![tracking-survey-responses](../../../../../images/tracking-survey-responses.png)
 4. Scroll through the charts to view the percentages for each question.

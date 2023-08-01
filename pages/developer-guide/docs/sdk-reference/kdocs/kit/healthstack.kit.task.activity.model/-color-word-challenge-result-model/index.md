@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model/-color-word-challenge-result
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model](../index.html)/[ColorWordChallengeResultModel](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model](../index.html)/[ColorWordChallengeResultModel](index.html)
 
 
 

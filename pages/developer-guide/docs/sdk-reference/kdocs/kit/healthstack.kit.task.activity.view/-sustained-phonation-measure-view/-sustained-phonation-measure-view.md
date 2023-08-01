@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.view/-sustained-phonation-measure-
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.view](../index.html)/[SustainedPhonationMeasureView](index.html)/[SustainedPhonationMeasureView](-sustained-phonation-measure-view.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.view](../index.html)/[SustainedPhonationMeasureView](index.html)/[SustainedPhonationMeasureView](-sustained-phonation-measure-view.html)
 
 
 

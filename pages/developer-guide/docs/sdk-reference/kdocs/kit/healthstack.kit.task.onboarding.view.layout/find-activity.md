@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.onboarding.view.layout/find-activity.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.task.onboarding.view.layout](index.html)/[findActivity](find-activity.html)
+//[kit](../../kit.html)/[healthstack.kit.task.onboarding.view.layout](index.html)/[findActivity](find-activity.html)
 
 
 

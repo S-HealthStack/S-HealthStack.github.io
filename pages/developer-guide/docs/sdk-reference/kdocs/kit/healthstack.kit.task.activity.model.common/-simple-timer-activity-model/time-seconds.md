@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model.common/-simple-timer-activit
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model.common](../index.html)/[SimpleTimerActivityModel](index.html)/[timeSeconds](time-seconds.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model.common](../index.html)/[SimpleTimerActivityModel](index.html)/[timeSeconds](time-seconds.html)
 
 
 

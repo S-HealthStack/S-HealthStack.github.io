@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.signup.step/-registration-completed-step/-r
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.signup.step](../index.html)/[RegistrationCompletedStep](index.html)/[RegistrationCompletedStep](-registration-completed-step.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.signup.step](../index.html)/[RegistrationCompletedStep](index.html)/[RegistrationCompletedStep](-registration-completed-step.html)
 
 
 

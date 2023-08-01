@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-education-card-with-icon.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[EducationCardWithIcon](-education-card-with-icon.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[EducationCardWithIcon](-education-card-with-icon.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model/-range-of-motion-result-mode
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model](../index.html)/[RangeOfMotionResultModel](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model](../index.html)/[RangeOfMotionResultModel](index.html)
 
 
 

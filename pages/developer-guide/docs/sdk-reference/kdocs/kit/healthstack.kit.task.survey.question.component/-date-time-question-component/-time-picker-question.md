@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question.component/-date-time-questi
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey.question.component](../index.html)/[DateTimeQuestionComponent](index.html)/[TimePickerQuestion](-time-picker-question.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey.question.component](../index.html)/[DateTimeQuestionComponent](index.html)/[TimePickerQuestion](-time-picker-question.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question.component/-ranking-question
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey.question.component](../index.html)/[RankingQuestionComponent](index.html)/[RankingQuestionComponent](-ranking-question-component.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey.question.component](../index.html)/[RankingQuestionComponent](index.html)/[RankingQuestionComponent](-ranking-question-component.html)
 
 
 

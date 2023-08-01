@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question.component/-text-input-quest
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.survey.question.component](../index.html)/[TextInputQuestionComponent](index.html)/[TextInputQuestionComponent](-text-input-question-component.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.survey.question.component](../index.html)/[TextInputQuestionComponent](index.html)/[TextInputQuestionComponent](-text-input-question-component.html)
 
 
 

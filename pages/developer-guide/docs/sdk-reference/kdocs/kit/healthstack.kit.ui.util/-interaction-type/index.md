@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui.util/-interaction-type/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.ui.util](../index.html)/[InteractionType](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.ui.util](../index.html)/[InteractionType](index.html)
 
 
 

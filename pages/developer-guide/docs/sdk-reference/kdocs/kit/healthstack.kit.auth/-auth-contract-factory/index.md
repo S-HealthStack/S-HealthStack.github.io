@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.auth/-auth-contract-factory/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.auth](../index.html)/[AuthContractFactory](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.auth](../index.html)/[AuthContractFactory](index.html)
 
 
 

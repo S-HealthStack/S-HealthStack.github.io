@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.step.common/-simple-audio-activity
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.step.common](../index.html)/[SimpleAudioActivityStep](index.html)/[SimpleAudioActivityStep](-simple-audio-activity-step.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.step.common](../index.html)/[SimpleAudioActivityStep](index.html)/[SimpleAudioActivityStep](-simple-audio-activity-step.html)
 
 
 

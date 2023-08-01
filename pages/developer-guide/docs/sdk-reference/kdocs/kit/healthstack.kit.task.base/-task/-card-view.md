@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.base/-task/-card-view.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.base](../index.html)/[Task](index.html)/[CardView](-card-view.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.base](../index.html)/[Task](index.html)/[CardView](-card-view.html)
 
 
 

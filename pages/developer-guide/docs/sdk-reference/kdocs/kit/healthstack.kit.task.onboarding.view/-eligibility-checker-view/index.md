@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.onboarding.view/-eligibility-checker-view/i
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.onboarding.view](../index.html)/[EligibilityCheckerView](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.onboarding.view](../index.html)/[EligibilityCheckerView](index.html)
 
 
 

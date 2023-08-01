@@ -5,6 +5,8 @@ permalink: activity_types_overview.html
 toc: True
 ---
 
+Activities allow researchers to collect specific types of data from users. To create an activity, see [Creating an Activity](creating-motor-activity.md) document on steps to create an activity. Three categories of activities come within our system: Motor, Audio, and Cognition.
+
 ## Motor Activities
 
 Motor activities are designed to assess and measure the physical function of the body, particularly movements and coordination. They can be helpful in tracking physical progress, diagnosing potential health issues, and planning rehabilitation strategies.

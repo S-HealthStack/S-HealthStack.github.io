@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-toggle-switch-preview2.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[ToggleSwitchPreview2](-toggle-switch-preview2.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[ToggleSwitchPreview2](-toggle-switch-preview2.html)
 
 
 

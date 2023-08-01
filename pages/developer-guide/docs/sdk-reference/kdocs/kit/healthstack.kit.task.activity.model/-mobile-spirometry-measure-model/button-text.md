@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model/-mobile-spirometry-measure-m
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model](../index.html)/[MobileSpirometryMeasureModel](index.html)/[buttonText](button-text.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model](../index.html)/[MobileSpirometryMeasureModel](index.html)/[buttonText](button-text.html)
 
 
 

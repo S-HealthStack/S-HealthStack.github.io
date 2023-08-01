@@ -4,7 +4,7 @@ permalink: /app-support.html
 
 sidebar: dev_doc_sidebar
 ---
-//[app-support](index.html)
+//[app-support](app-support.html)
 
 
 

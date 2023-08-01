@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.info.publication/-video-publication/-custom-cont
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.info.publication](../index.html)/[VideoPublication](index.html)/[CustomControls](-custom-controls.html)
+//[kit](../../../kit.html)/[healthstack.kit.info.publication](../index.html)/[VideoPublication](index.html)/[CustomControls](-custom-controls.html)
 
 
 

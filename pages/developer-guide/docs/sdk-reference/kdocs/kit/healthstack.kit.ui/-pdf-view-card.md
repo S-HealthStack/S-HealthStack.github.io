@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-pdf-view-card.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[PdfViewCard](-pdf-view-card.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[PdfViewCard](-pdf-view-card.html)
 
 
 

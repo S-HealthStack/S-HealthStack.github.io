@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.step/-tapping-speed-intro-step/-ta
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.step](../index.html)/[TappingSpeedIntroStep](index.html)/[TappingSpeedIntroStep](-tapping-speed-intro-step.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.step](../index.html)/[TappingSpeedIntroStep](index.html)/[TappingSpeedIntroStep](-tapping-speed-intro-step.html)
 
 
 

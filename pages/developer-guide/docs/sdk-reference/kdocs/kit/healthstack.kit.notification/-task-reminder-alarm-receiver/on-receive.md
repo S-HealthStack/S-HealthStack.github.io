@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.notification/-task-reminder-alarm-receiver/on-re
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.notification](../index.html)/[TaskReminderAlarmReceiver](index.html)/[onReceive](on-receive.html)
+//[kit](../../../kit.html)/[healthstack.kit.notification](../index.html)/[TaskReminderAlarmReceiver](index.html)/[onReceive](on-receive.html)
 
 
 

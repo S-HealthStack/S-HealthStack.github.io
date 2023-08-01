@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-choice-modal.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[ChoiceModal](-choice-modal.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[ChoiceModal](-choice-modal.html)
 
 
 

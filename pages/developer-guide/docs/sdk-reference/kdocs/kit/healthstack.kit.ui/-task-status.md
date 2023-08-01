@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-task-status.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[TaskStatus](-task-status.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[TaskStatus](-task-status.html)
 
 
 

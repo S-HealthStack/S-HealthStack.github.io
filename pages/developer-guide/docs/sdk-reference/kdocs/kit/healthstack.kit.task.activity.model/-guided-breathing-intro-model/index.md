@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model/-guided-breathing-intro-mode
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model](../index.html)/[GuidedBreathingIntroModel](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model](../index.html)/[GuidedBreathingIntroModel](index.html)
 
 
 

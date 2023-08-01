@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.activity.model/-speech-recognition-intro-mo
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.task.activity.model](../index.html)/[SpeechRecognitionIntroModel](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.task.activity.model](../index.html)/[SpeechRecognitionIntroModel](index.html)
 
 
 

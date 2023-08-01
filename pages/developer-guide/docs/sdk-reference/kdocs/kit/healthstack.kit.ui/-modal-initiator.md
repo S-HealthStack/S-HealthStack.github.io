@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-modal-initiator.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[ModalInitiator](-modal-initiator.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[ModalInitiator](-modal-initiator.html)
 
 
 

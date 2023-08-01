@@ -4,7 +4,7 @@ permalink: /healthdata-link/interface/healthstack.healthdata.link/-change/-chang
 
 sidebar: dev_doc_sidebar
 ---
-//[interface](../../../index.html)/[healthstack.healthdata.link](../index.html)/[Change](index.html)/[Change](-change.html)
+//[interface](../../../interface.html)/[healthstack.healthdata.link](../index.html)/[Change](index.html)/[Change](-change.html)
 
 
 

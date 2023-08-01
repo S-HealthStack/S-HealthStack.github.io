@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.info.publication/-video-publication/index.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../../index.html)/[healthstack.kit.info.publication](../index.html)/[VideoPublication](index.html)
+//[kit](../../../kit.html)/[healthstack.kit.info.publication](../index.html)/[VideoPublication](index.html)
 
 
 

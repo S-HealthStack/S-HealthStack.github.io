@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.view/-multi-page-survey-layout.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.task.survey.view](index.html)/[MultiPageSurveyLayout](-multi-page-survey-layout.html)
+//[kit](../../kit.html)/[healthstack.kit.task.survey.view](index.html)/[MultiPageSurveyLayout](-multi-page-survey-layout.html)
 
 
 

@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.task.survey.question.component/-slider-preview.h
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.task.survey.question.component](index.html)/[SliderPreview](-slider-preview.html)
+//[kit](../../kit.html)/[healthstack.kit.task.survey.question.component](index.html)/[SliderPreview](-slider-preview.html)
 
 
 

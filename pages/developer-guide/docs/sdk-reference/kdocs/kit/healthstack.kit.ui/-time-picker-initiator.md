@@ -4,7 +4,7 @@ permalink: /kit/healthstack.kit.ui/-time-picker-initiator.html
 
 sidebar: dev_doc_sidebar
 ---
-//[kit](../../index.html)/[healthstack.kit.ui](index.html)/[TimePickerInitiator](-time-picker-initiator.html)
+//[kit](../../kit.html)/[healthstack.kit.ui](index.html)/[TimePickerInitiator](-time-picker-initiator.html)
 
 
 
