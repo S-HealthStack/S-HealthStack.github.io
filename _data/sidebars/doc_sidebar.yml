@@ -80,8 +80,6 @@ entries:
       url: /api-docs.html
       output: web, pdf
 
-
-
 - title: Portal User Guide
   folders:
 
@@ -155,6 +153,7 @@ entries:
   - title: In-Lab Visit
     output: web, pdf
     folderitems:
+    
     - title: In-Lab Visit Overview
       url: /in-lab_visit_overview.html
       output: web, pdf
