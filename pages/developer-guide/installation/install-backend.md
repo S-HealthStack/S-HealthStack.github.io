@@ -232,21 +232,39 @@ docker network create hrp
 
 This creates a bridge network which allows containers connected to it to communicate.
 
-#### II: Start the PostgreSQL service
+#### II: Start the PostgreSQL Service
 
-In the Docker Compose file, the first service defined is `postgres`. We will start this service first.
+1. **Start the PostgreSQL Container**:
 
-```bash
-docker run -d --network=hrp --name=hrp-postgres \
--e POSTGRES_PASSWORD=mypassword \
--e POSTGRES_MULTIPLE_DATABASES="healthstack, supertokens, tokens" \
--p 5432:5432 \
--v ./multi_db:/docker-entrypoint-initdb.d \
---restart=unless-stopped \
-postgres:14.5
-```
+   ```bash
+   docker run -d --network=hrp --name=hrp-postgres \
+   -e POSTGRES_PASSWORD=mypassword \
+   -p 5432:5432 \
+   --restart=unless-stopped \
+   postgres:14.5
+   ```
 
-This command is running the `postgres:14.5` Docker image as a container named `hrp-postgres`. The `-e` option sets environment variables, `-p` exposes ports, `-v` mounts volumes, and `--restart` configures the restart policy.
+2. **Wait for the PostgreSQL Container to Start**: It might take a few seconds for the PostgreSQL container to initialize. You can check the logs to see when it's ready:
+
+   ```bash
+   docker logs -f hrp-postgres
+   ```
+   To exit the log view and return to the command prompt, simply press Ctrl + C.
+
+3. **Connect to the PostgreSQL Container**:
+
+   ```bash
+   docker exec -it hrp-postgres psql -U postgres
+   ```
+
+4. **Create the Required Databases**:
+
+   ```sql
+   CREATE DATABASE healthstack;
+   CREATE DATABASE supertokens;
+   CREATE DATABASE tokens;
+   \q
+   ```
 
 #### III: Start the SuperTokens service
 
@@ -254,7 +272,6 @@ SuperTokens is an open-source authentication service.
 
 ```bash
 docker run -d --network=hrp --name=hrp-supertokens \
---depends-on hrp-postgres \
 -e POSTGRESQL_USER=postgres \
 -e POSTGRESQL_HOST=hrp-postgres \
 -e POSTGRESQL_PORT=5432 \
@@ -275,7 +292,6 @@ This service likely handles account-related tasks such as authentication and pas
 docker build -t account-service ./backend-system/account-service/
 
 docker run -d --network=hrp --name=hrp-account-service \
---depends-on hrp-supertokens \
 -e SMTP_HOST=smtp.gmail.com \
 -e SMTP_PORT=587 \
 -e MAIL_USER=test@gmail.com \
@@ -303,7 +319,6 @@ This command first builds the Docker image for the account-service using the Doc
 docker build -t hrp-platform ./backend-system/platform/
 
 docker run -d --network=hrp --name=hrp-platform \
---depends-on hrp-postgres \
 -e DB_HOST=hrp-postgres \
 -e DB_USERNAME=postgres \
 -e DB_PASSWORD=mypassword \
@@ -323,7 +338,6 @@ hrp-platform
 
 ```bash
 docker run -d --network=hrp --name=hrp-trino \
---depends-on hrp-postgres \
 -p 8090:8080 \
 -v ./rule-update/:/etc/trino/access-control/ \
 -v ./trino/etc/jvm.config:/etc/jvm.config \
@@ -333,13 +347,15 @@ docker run -d --network=hrp --name=hrp-trino \
 trinodb/trino:402
 ```
 
+- This command launches the Trino container, a distributed SQL query engine that will connect with your PostgreSQL database.
+- The necessary configuration files and rules are mounted into the container.I will schedule some time for us to connect.
+
 #### VII: Start the Data-Query-Service
 
 ```bash
 docker build -t hrp-data-query-service ./backend-system/data-query-service/
 
 docker run -d --network=hrp --name=hrp-data-query-service \
---depends-on hrp-trino \
 -e TRINO_ORIGINAL_CATALOG=postgresql \
 -e TRINO_HOST=hrp-trino \
 -e TRINO_PORT=8080 \
@@ -350,28 +366,13 @@ docker run -d --network=hrp --name=hrp-data-query-service \
 hrp-data-query-service
 ```
 
-#### VIII: Run Trino Container
 
-```bash
-docker run -d \
---network hrp \
---name hrp-trino \
--p 8090:8080 \
--v ./rule-update/:/etc/trino/access-control/ \
--v ./trino/etc/jvm.config:/etc/jvm.config \
--v ./trino/etc/catalog/postgresql/postgresql.properties:/etc/trino/catalog/postgresql.properties \
--v ./trino/etc/catalog/di-postgresql/dipostgresql.properties:/etc/trino/catalog/dipostgresql.properties \
-trinodb/trino:402
-```
-
-- This command launches the Trino container, a distributed SQL query engine that will connect with your PostgreSQL database.
-- The necessary configuration files and rules are mounted into the container.
 
 #### IX: Run Data Query Service Container
 
 ##### Build Data Query Service Image
 
-Navigate to the `data-query-service` directory inside `backend-system` and build the image:
+Navigate to the `data-query-service` directory inside `backend-system` and build the image: 
 
 ```bash
 docker build -t hrp-data-query-service .
@@ -611,5 +612,4 @@ When a mail server is not available, perform these steps:
    > "email":"team-admin@samsung.com"
    > }
    > ```
-
 
