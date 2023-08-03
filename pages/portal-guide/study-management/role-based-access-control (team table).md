@@ -37,6 +37,7 @@ The table shows available features for each role.
     <td style="text-align: center;">No</td>
   </tr>
 </table>
+
 > Only the first person to create a Samsung Health Stack account gets assigned the `Team Admin` team role. Accounts for all others are team member accounts.
 
 # Study Roles
@@ -61,6 +62,7 @@ The table shows available features for each role.
     <th style="text-align: center;">Principal Investigator</th>
     <th style="text-align: center;">Research Assistant</th>
     <th style="text-align: center;">Data Scientist</th>
+    <th style="text-align: center;">Study Creator</th>
   </tr>
   <tr>
     <td colspan="6"><b>Study Overview</b></td>
@@ -71,6 +73,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -78,6 +81,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -85,6 +89,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -92,6 +97,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td colspan="6"><b>Participant List</b></td>
@@ -102,6 +108,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">De-identified</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -109,6 +116,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">De-identified</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td colspan="6"><b>In-Lab Visit</b></td>
@@ -119,6 +127,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">No</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -126,12 +135,14 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">No</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
     <td>Download</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
     <td style="text-align: center;">No</td>
   </tr>
   <tr>
@@ -143,6 +154,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -150,6 +162,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -157,6 +170,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -164,6 +178,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td colspan="6"><b>Activities</b></td>
@@ -174,6 +189,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -181,6 +197,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -188,6 +205,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -195,6 +213,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td colspan="6"><b>Educational Content</b></td>
@@ -205,6 +224,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -212,6 +232,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -219,6 +240,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -226,6 +248,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td colspan="6"><b>Sensor Data Viewing</b></td>
@@ -236,6 +259,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -243,6 +267,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td colspan="6"><b>Data Queries</b></td>
@@ -253,6 +278,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">De-identified</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td></td>
@@ -260,6 +286,7 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">De-identified</td>
+    <td style="text-align: center;">No</td>
   </tr>
   <tr>
     <td colspan="6"><b>Member Access</b></td>
@@ -270,13 +297,15 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">Yes</td>
+    <td style="text-align: center;">Yes</td>
   </tr>
   <tr>
     <td></td>
     <td>Edit Members</td>
+    <td style="text-align: center;">Yes*</td>
+    <td style="text-align: center;">If study creator</td>
+    <td style="text-align: center;">If study creator</td>
     <td style="text-align: center;">Yes</td>
-    <td style="text-align: center;">If study creator</td>
-    <td style="text-align: center;">If study creator</td>
   </tr>
   <tr>
     <td></td>
@@ -284,13 +313,15 @@ The table shows available features for each role.
     <td style="text-align: center;">Yes</td>
     <td style="text-align: center;">If study creator</td>
     <td style="text-align: center;">If study creator</td>
+    <td style="text-align: center;">Yes</td>
   </tr>
   <tr>
     <td></td>
     <td>Delete Members</td>
+    <td style="text-align: center;">Yes*</td>
+    <td style="text-align: center;">If study creator</td>
+    <td style="text-align: center;">If study creator</td>
     <td style="text-align: center;">Yes</td>
-    <td style="text-align: center;">If study creator</td>
-    <td style="text-align: center;">If study creator</td>
   </tr>
 </table>
 

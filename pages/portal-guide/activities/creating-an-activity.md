@@ -5,7 +5,7 @@ permalink: creating-an-activity.html
 toc: True
 ---
 
-Activities allow researchers to collect specific types of data from users. To create an activity, see [Creating an Activity](creating-motor-activity.md) document on steps to create an activity. Three categories of activities come within our system: Motor, Audio, and Cognition. 
+Activities allow researchers to collect specific types of data from users.
 
 1. To create an activity, go to `Study Management` and click `Activities`.![image-20230719131519078](./creating-motor-activity.assets/image-20230719131519078.png)
 
