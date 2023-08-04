@@ -216,11 +216,9 @@ NOTE: You don't need to follow any further instructions on Firebase at this poin
 
    ![viewing-graphs-1](./../../../../../../images/install-docker-services.png)
 
-#### V. [Create Initial Account](#create-initial-account-anchor)
+### Method 2: Manual Build
 
-### Method 2: Manual Build (Under Construction)
-
-> You can download [backend-config-files-v1.zip](https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/files/installing-the-backend/baI will schedule some time for us to connect.kend-config-files-v1.zip) from [GitHub directory](https://github.com/S-HealthStack/S-HealthStack.github.io/tree/main/files/installing-the-backend). Extract the contents to your chosen temporary location, and move each desired file into place as you encounter them in the steps below.
+> If you prefer to engage with the process, please carefully follow each and every step outlined in method two for creating the files manually. Alternatively, for a more streamlined approach, you can download the necessary files directly from this link: [backend-config-files-v1.zip](https://github.com/S-HealthStack/S-HealthStack.github.io/tree/main/files/installing-the-backend). The choice is yours, depending on your comfort and familiarity with the procedures involved.
 
 #### I: Create a Docker network
 
@@ -268,205 +266,775 @@ This creates a bridge network which allows containers connected to it to communi
 
 #### III: Start the SuperTokens service
 
-SuperTokens is an open-source authentication service.
+1. **Run the Docker Container:**
 
-```bash
-docker run -d --network=hrp --name=hrp-supertokens \
--e POSTGRESQL_USER=postgres \
--e POSTGRESQL_HOST=hrp-postgres \
--e POSTGRESQL_PORT=5432 \
--e POSTGRESQL_PASSWORD=mypassword \
--e POSTGRESQL_DATABASE_NAME=supertokens \
--p 3567:3567 \
---restart=unless-stopped \
-supertokens/supertokens-postgresql
-```
+   In this step, you'll launch the SuperTokens service, using a PostgreSQL database for storage. SuperTokens is an open-source authentication service. You can learn more about it here: [SuperTokens](https://supertokens.com/). Execute the following command:
 
-This command uses the `supertokens/supertokens-postgresql` image. It sets environment variables using `-e`, and exposes port `3567` with `-p`.
+   ```bash
+   docker run -d --network=hrp --name=hrp-supertokens \
+   -e POSTGRESQL_USER=postgres \
+   -e POSTGRESQL_HOST=hrp-postgres \
+   -e POSTGRESQL_PORT=5432 \
+   -e POSTGRESQL_PASSWORD=mypassword \
+   -e POSTGRESQL_DATABASE_NAME=supertokens \
+   -p 3567:3567 \
+   --restart=unless-stopped \
+   supertokens/supertokens-postgresql
+   ```
+
+   This command sets up the SuperTokens container with the necessary environment variables and network configurations. The password (`mypassword`) should be the same as what was set in the previous step for the PostgreSQL database. Port `3567` is exposed for communication, and the container will restart automatically unless stopped.
+
+2. **Verify the Platform Service is Running:**
+
+   ```bash
+   sudo docker ps | grep hrp-supertokens
+   ```
+
+   This command helps you verify that the `hrp-supertokens` container is running as expected.
 
 #### IV: Start the Account-Service
 
-This service likely handles account-related tasks such as authentication and password reset. Here is how to start it:
+The Account Service handles various account-related tasks. Here’s how you can build and start it:
 
-```bash
-docker build -t account-service ./backend-system/account-service/
+1. **Create a Jar file of the account-service**
 
-docker run -d --network=hrp --name=hrp-account-service \
--e SMTP_HOST=smtp.gmail.com \
--e SMTP_PORT=587 \
--e MAIL_USER=test@gmail.com \
--e MAIL_USER_PASSWORD=1234567 \
--e SUPER_TOKEN_URL=http://hrp-supertokens:3567 \
--e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
--e DB_URL=hrp-postgres:5432 \
--e DB_USERNAME=postgres \
--e DB_PASSWORD=mypassword \
--e DB_NAME=tokens \
--e PASSWORD_RESET_URL=http://192.168.50.146/password-reset \
--e INVITATION_URL=http://192.168.50.146/account-activation \
--e VERIFICATION_URL=http://192.168.50.146/email-verification \
--e debug=false \
--p 8080:8080 \
---restart=unless-stopped \
-account-service
-```
+   ```
+   ./gradlew :account-service:build -x detekt
+   ```
 
-This command first builds the Docker image for the account-service using the Dockerfile located in `./backend-system/account-service/` directory. The resulting image is tagged as `account-service`. Then it runs this image as a container named `hrp-account-service`.
+2. **Move to the `<Install_Path>` and Build the Docker Image:**
 
-#### V: Start the Platform service
+   ```
+   cd <install_path>
+   ```
 
-```bash
-docker build -t hrp-platform ./backend-system/platform/
+   ```bash
+   docker build -t account-service ./backend-system/account-service/
+   ```
 
-docker run -d --network=hrp --name=hrp-platform \
--e DB_HOST=hrp-postgres \
--e DB_USERNAME=postgres \
--e DB_PASSWORD=mypassword \
--e DB_PORT=5432 \
--e DB_NAME=healthstack \
--e DB_SCHEMA=public \
--e GOOGLE_APPLICATION_CREDENTIALS=service-account-key.json \
--e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
--e ACCOUNT_SERVICE_URL=http://hrp-account-service:8080 \
--e debug=false \
--p 3030:3030 \
---restart=unless-stopped \
-hrp-platform
-```
+   This command builds the Docker image for the account-service using the Dockerfile located in the specified directory. The image is tagged as `account-service`.
 
-#### VI: Start the Trino service
+3. **Run the Docker Container:**
 
-```bash
-docker run -d --network=hrp --name=hrp-trino \
--p 8090:8080 \
--v ./rule-update/:/etc/trino/access-control/ \
--v ./trino/etc/jvm.config:/etc/jvm.config \
--v ./trino/etc/catalog/postgresql/postgresql.properties:/etc/trino/catalog/postgresql.properties \
--v ./trino/etc/catalog/di-postgresql/dipostgresql.properties:/etc/trino/catalog/dipostgresql.properties \
---restart=unless-stopped \
-trinodb/trino:402
-```
+   ```bash
+   docker run -d --network=hrp --name=hrp-account-service \
+   -e SMTP_HOST=smtp.gmail.com \
+   -e SMTP_PORT=587 \
+   -e MAIL_USER=test@gmail.com \
+   -e MAIL_USER_PASSWORD=1234567 \
+   -e SUPER_TOKEN_URL=http://hrp-supertokens:3567 \
+   -e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
+   -e DB_URL=hrp-postgres:5432 \
+   -e DB_USERNAME=postgres \
+   -e DB_PASSWORD=mypassword \ # Use the same password set in the previous step
+   -e DB_NAME=tokens \
+   -e PASSWORD_RESET_URL=http://192.168.50.146/password-reset \
+   -e INVITATION_URL=http://192.168.50.146/account-activation \
+   -e VERIFICATION_URL=http://192.168.50.146/email-verification \
+   -e debug=false \
+   -p 8080:8080 \
+   --restart=unless-stopped \
+   account-service
+   ```
 
-- This command launches the Trino container, a distributed SQL query engine that will connect with your PostgreSQL database.
-- The necessary configuration files and rules are mounted into the container.I will schedule some time for us to connect.
+   This command runs the Docker container named `hrp-account-service`. It includes various environment variables for configuration, such as the SMTP settings, SuperTokens URLs, database connection details, and specific URL endpoints. The container is connected to the `hrp` network and exposes port `8080`. It will restart automatically unless stopped. Additionally, customize the values to your own setup if needed. 
 
-#### VII: Start the Data-Query-Service
+   - **Email Settings (`test@gmail.com`, `1234567`)**: Replace these with the actual email address and password used by your application for sending emails. This could be a Gmail address or another SMTP-supported email, along with the corresponding authentication details.
+   - **SMTP Settings (`smtp.gmail.com`, `587`)**: These values are specific to Gmail’s SMTP server. If you are using a different email provider, update these values with the correct SMTP host and port.
+   - **URLs (`http://192.168.50.146/password-reset`, etc.)**: These URLs are likely used for various account-related actions such as password resetting, account activation, and email verification. Customize them to match the appropriate endpoints within your application.
 
-```bash
-docker build -t hrp-data-query-service ./backend-system/data-query-service/
+4. **Verify the Platform Service is Running:**
 
-docker run -d --network=hrp --name=hrp-data-query-service \
--e TRINO_ORIGINAL_CATALOG=postgresql \
--e TRINO_HOST=hrp-trino \
--e TRINO_PORT=8080 \
--e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
--e debug=false \
--p 3030:3030 \
---restart=unless-stopped \
-hrp-data-query-service
-```
+   ```bash
+   sudo docker ps | grep hrp-account-service
+   ```
+
+   This command helps you verify that the `hrp-account-service` container is running as expected.
+
+#### V: Start the Platform Service
+
+The Platform service is essential for the application's core functionality. Follow these instructions to build the Docker image and start the Platform service:
+
+1. **Create a JAR File of the Application:**
+
+   ```bash
+   ./gradlew :platform:build -x detekt
+   ```
+
+   This command will compile the platform module and create a JAR file, excluding any Detekt tasks. Make sure that this JAR file is located where the Dockerfile for the platform expects it.
+
+2. **Move to the `<Install_Path>` and Build the Docker Image:**
+
+   ```
+   cd <install_path>
+   ```
+
+   ```bash
+   docker build -t hrp-platform ./backend-system/platform/
+   ```
+
+   This command creates the Docker image for the hrp-platform from the files located in `<install_path>/backend-system/platform/`. The image will be tagged as `hrp-platform`.
+
+3. **Run the Platform Container:**
+   ```bash
+   docker run -d --network=hrp --name=hrp-platform \
+   -e DB_HOST=hrp-postgres \
+   -e DB_USERNAME=postgres \
+   -e DB_PASSWORD=mypassword \
+   -e DB_PORT=5432 \
+   -e DB_NAME=healthstack \
+   -e DB_SCHEMA=public \
+   -e GOOGLE_APPLICATION_CREDENTIALS=service-account-key.json \
+   -e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
+   -e ACCOUNT_SERVICE_URL=http://hrp-account-service:8080 \
+   -e debug=false \
+   -p 3030:3030 \
+   --restart=unless-stopped \
+   hrp-platform
+   ```
+
+   Ensure `GOOGLE_APPLICATION_CREDENTIALS` is path to the `service-account-key.json` downloaded from Firebase earlier.
+
+4. **Verify the Platform Service is Running:**
+
+   ```bash
+   sudo docker ps | grep hrp-platform
+   ```
 
 
+#### VII: Start the Trino Service
 
-#### IX: Run Data Query Service Container
+Trino, formerly known as Presto, is a high-performance, distributed SQL query engine for big data. It's able to handle a large quantity of data and return queried results in real-time. Here's how you can deploy Trino:
 
-##### Build Data Query Service Image
+1. **Pull the Trino Docker Image:**
+   ```bash
+   docker pull trinodb/trino:402
+   ```
 
-Navigate to the `data-query-service` directory inside `backend-system` and build the image: 
+2. **Create Necessary Directories and Files:**
+   Create the following directories and files required for the Trino service configuration:
+   ```bash
+   mkdir -p trino/etc/catalog trino/etc/postgresql
+   touch trino/etc/jvm.config trino/etc/postgresql/postgresql.properties trino/etc/config.properties
+   ```
 
-```bash
-docker build -t hrp-data-query-service .
-```
+3. **Configure JVM Settings:**
+   The `jvm.config` file sets various JVM properties that control aspects such as memory allocation, garbage collection, and other operational details of the JVM. Write the necessary configuration parameters into the `jvm.config` file using the following commands:
 
-##### Run Data Query Service container
+   ```bash
+   echo "\
+   -server
+   -Xmx16G
+   -XX:InitialRAMPercentage=80
+   -XX:MaxRAMPercentage=80
+   -XX:G1HeapRegionSize=32M
+   -XX:+ExplicitGCInvokesConcurrent
+   -XX:+ExitOnOutOfMemoryError
+   -XX:+HeapDumpOnOutOfMemoryError
+   -XX:-OmitStackTraceInFastThrow
+   -XX:ReservedCodeCacheSize=512M
+   -XX:PerMethodRecompilationCutoff=10000
+   -XX:PerBytecodeRecompilationCutoff=10000
+   -Djdk.attach.allowAttachSelf=true
+   -Djdk.nio.maxCachedBufferSize=2000000
+   -XX:+UnlockDiagnosticVMOptions
+   -XX:+UseAESCTRIntrinsics
+   # Disable Preventive GC for performance reasons (JDK-8293861)
+   -XX:-G1UsePreventiveGC" > trino/etc/jvm.config
+   ```
 
-```bash
-docker run -d \
---network hrp \
---name hrp-data-query-service \
--e TRINO_ORIGINAL_CATALOG=postgresql \
--e TRINO_HOST=hrp-trino \
--e TRINO_PORT=8080 \
--e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
--e debug=false \
-hrp-data-query-service
-```
+4. **Configure Postgres Connection:**
+   The `postgresql.properties` file is used to configure the connection to the PostgreSQL database for Trino. This configuration includes essential details like the connector name (for PostgreSQL), connection URL (with hostname, port, and database name), connection user, and connection password.
 
-- This step runs the Data Query Service container, which connects to the Trino service for querying data from your databases.
-- Environment variables configure connections and other settings.
+   ```bash
+   echo "\
+   connector.name=postgresql
+   connection-url=jdbc:postgresql://hrp-postgres:5432/healthstack
+   connection-user=postgres
+   connection-password=mypassword" > trino/etc/postgresql/postgresql.properties
+   ```
 
-#### X: Run Trino Rule Update Service Container
+5. **Run the Trino Container:**
+   Start the Trino service in a Docker container named `hrp-trino`. Adjust the paths in the volume mappings if you have custom locations for the `jvm.config` and other files:
 
-##### Build Trino Rule Update Service Image
+   ```bash
+   docker run -d --network=hrp --name=hrp-trino \
+   -v ./rule-update:/etc/trino/access-control \
+   -v ./trino/etc/jvm.config:/etc/trino/jvm.config \
+   -v ./trino/etc/postgresql/postgresql.properties:/etc/trino/catalog/postgresql.properties \
+   -p 8090:8080 \
+   --restart=unless-stopped \
+   trinodb/trino:402
+   ```
 
-Navigate to the `trino-rule-update-service` directory inside `backend-system` and build the image:
+   This sequence of commands ensures that Trino is properly configured and running within your environment. If your configuration files are located in directories other than the ones shown here, make sure to modify the paths in the above commands accordingly.
 
-```bash
-docker build -t trino-rule-update-service .
-```
+6. **Verify the Trino Service is Running:**
 
-##### Run Trino Rule Update Service container
+   ```bash
+   sudo docker ps | grep hrp-trino
+   ```
 
-```bash
-docker run -d \
---network hrp \
---name hrp-trino-rule-update-service \
--e FIXED_DELAY_MILLISEC=5000 \
--e ACCOUNT_SERVICE_URL=http://hrp-account-service:8080 \
--e debug=false \
--v ./rule-update/rules.json:/etc/trino/access-control/rules.json \
-trino-rule-update-service
-```
+#### VIII: Deploy the Data Query Service
 
-- This container runs the service responsible for updating the rules in Trino.
+1. ##### **Build the Data Query Service Image:**
 
-#### XI: Run Cloud Storage Service Container
+   Navigate to the `data-query-service` directory inside `backend-system`, then build the Docker image to prepare the Data Query Service for deployment.
 
-##### Build Cloud Storage Service Image
+   ```bash
+   cd <install_path>/backend-system/data-query-service/
+   ```
 
-Navigate to the `cloud-storage-service` directory inside `backend-system` and build the image:
+      ```bash
+   docker build -t hrp-data-query-service .
+      ```
 
-```bash
-docker build -t cloud-storage-service .
-```
+2. **Run the Data Query Service Container:**
 
-##### Run Cloud Storage Service container
+      Launch the container, ensuring it's part of the `hrp` network. This container will communicate with the Trino service to query data from your databases. The environment variables below are used to configure the necessary connections and settings.
 
-```bash
-docker run -d \
---network hrp \
---name hrp-cloud-storage-service \
--e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
--e STORAGE_TYPE=GCP \
--e GCP_PROJECT_ID=healthstack2023 \
--e GCP_BUCKET_NAME=mybucket \
--e GCP_SIGNED_URL_DURATION=60 \
--e AWS_REGION=aws_region \
--e AWS_ACCESS_KEY_ID=aws_key \
--e AWS_SECRET_ACCESS_KEY=aws_secret_access_key \
--e AWS_BUCKET_NAME=aws_bucket \
--e AWS_PRE_SIGNED_URL_DURATION=60 \
--v ./service-account-key.json:/etc/gcp/service-account-key.json \
-cloud-storage-service
-```
+      ```bash
+   docker run -d \
+   --network=hrp \
+   --name=hrp-data-query-service \
+   -e TRINO_ORIGINAL_CATALOG=postgresql \
+   -e TRINO_HOST=hrp-trino \
+   -e TRINO_PORT=8080 \
+   -e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
+   -e debug=false \
+   hrp-data-query-service
+      ```
 
-- This command runs the cloud storage service, which connects with Google Cloud Platform and AWS for cloud-based storage solutions.
+   Configuration parameters such as `TRINO_ORIGINAL_CATALOG`, `TRINO_HOST`, `TRINO_PORT`, and `JWK_URL` are used to specify the Trino service connection details and authentication using JSON Web Token keys.
 
-#### XII: Run HAProxy Container
+3. **Verify the Deployment:**
 
-```bash
-docker run -d \
---network hrp \
---name hrp-balancer \
--p 8080:8080 \
--p 8404:8404 \
--v ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro \
--v ./haproxy/404.http:/usr/local/etc/haproxy/errors/404.http:ro \
--v ./haproxy/cors.lua:/usr/local/etc/haproxy/cors.lua:ro \
-haproxy:2.7
-```
+      ```bash
+   docker ps | grep hrp-data-query-service
+      ```
 
-- This command runs the HAProxy container, which balances the load between various services in your architecture, ensuring efficient distribution of network traffic.
+
+#### IX: Deploy Trino Rule Update Service
+
+Trino Rule Update Service is responsible for updating the rules in Trino. Follow these steps to set up this service:
+
+1. **Build Trino Rule Update Service Image:**
+
+   Navigate to the `trino-rule-update-service` directory inside `backend-system` and build the Docker image.
+
+      ```bash
+   ./gradlew :trino-rule-update-service:build -x detekt
+   docker build -t trino-rule-update-service .
+      ```
+
+2. **Prepare Configuration Files:**
+
+   Create a directory to store the rule configuration and a `rules.json` file to define the custom rules.
+
+      ```bash
+   mkdir -p /root/healthstack/rule-update
+   touch /root/healthstack/rule-update/rules.json
+      ```
+
+     You can populate the `rules.json` file with content, either from an existing file or by creating your own. For example:
+
+      ```bash
+   echo "\
+   {
+     "catalogs": [
+       {
+         "user": "admin",
+         "catalog": ".*",
+         "allow": "all"
+       },
+       {
+         "catalog": "postgresql",
+         "allow": "read-only"
+       },
+       {
+         "catalog": "di-postgresql",
+         "allow": "read-only"
+       },
+       {
+         "catalog": "system",
+         "allow": "none"
+       }
+     ],
+     "schemas": [
+       {
+         "user": ".*",
+         "schema": ".*",
+         "owner": false
+       }
+     ],
+     "tables": [
+       {
+         "user": "b5bd4d15-6cfa-4e69-b0ca-73ac61c657ef",
+         "catalog": "postgresql",
+         "schema": "project_1_research",
+         "table": ".*",
+         "privileges": [
+           "SELECT"
+         ]
+       },
+       {
+         "user": "b5bd4d15-6cfa-4e69-b0ca-73ac61c657ef",
+         "catalog": "postgresql",
+         "schema": "project_1_research",
+         "table": ".*",
+         "privileges": [
+           "SELECT"
+         ]
+       },
+       {
+         "user": ".*",
+         "privileges": []
+       }
+     ]
+   }
+   " > /root/healthstack/rule-update/rules.json
+      ```
+
+3. **Run Trino Rule Update Service Container:**
+
+   Start the Trino Rule Update Service container by executing the following command:
+
+      ```bash
+   docker run -d \
+   --network hrp \
+   --name hrp-trino-rule-update-service \
+   -e FIXED_DELAY_MILLISEC=5000 \
+   -e ACCOUNT_SERVICE_URL=http://hrp-account-service:8080 \
+   -e debug=false \
+   -v /root/healthstack/rule-update/rules.json:/etc/trino/access-control/rules.json \
+   trino-rule-update-service
+      ```
+
+   `FIXED_DELAY_MILLISEC` sets the interval in milliseconds for checking updates, and `ACCOUNT_SERVICE_URL` specifies the URL of the account service.
+
+4. **Verify the Deployment:**
+
+      ```bash
+   docker ps | grep hrp-trino-rule-update-service
+      ```
+
+#### X: Run Cloud Storage Service Container
+
+1. ##### Build Cloud Storage Service Image
+
+   Navigate to the `cloud-storage-service` directory inside `backend-system` and build the image:
+
+   ```bash
+   docker build -t cloud-storage-service .
+   ```
+
+2. ##### Run Cloud Storage Service Container
+
+   Execute the following command to run the cloud storage service, connecting it with Google Cloud Platform (GCP) and Amazon Web Services (AWS) for cloud-based storage solutions.
+
+   ```bash
+   docker run -d \
+   --network hrp \
+   --name hrp-cloud-storage-service \
+   -e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
+   -e STORAGE_TYPE=GCP \
+   -e GCP_PROJECT_ID=healthstack2023 \
+   -e GCP_BUCKET_NAME=mybucket \
+   -e GCP_SIGNED_URL_DURATION=60 \
+   -e GOOGLE_APPLICATION_CREDENTIALS=/etc/gcp/service-account-key.json \
+   -e AWS_REGION=aws_region \
+   -e AWS_ACCESS_KEY_ID=aws_key \
+   -e AWS_SECRET_ACCESS_KEY=aws_secret_access_key \
+   -e AWS_BUCKET_NAME=aws_bucket \
+   -e AWS_PRE_SIGNED_URL_DURATION=60 \
+   -v ./service-account-key.json:/etc/gcp/service-account-key.json \
+   cloud-storage-service
+   ```
+
+   - Make sure that the path to `service-account-key.json` is correct; this file contains the credentials needed for connecting to GCP.
+   - The container configuration includes environment variables for both GCP and AWS, enabling seamless integration with these cloud providers.
+
+3. **Verify Cloud Storage Service is Running**
+
+   ```bash
+   docker ps | grep hrp-cloud-storage-service
+   ```
+
+
+#### XI: Configure and Run HAProxy
+
+1. #### Create the HAProxy directory and move into it:
+
+   ```bash
+   mkdir haproxy && cd haproxy
+   ```
+
+2. #### Create the required three files:
+
+   ```bash
+   touch 404.http cors.lua haproxy.cfg
+   ```
+
+3. #### Create the HAProxy service `404.http` file:
+
+   ```bash
+   echo "\
+   HTTP/1.0 404 Not Found
+   Cache-Control: no-cache
+   Connection: close
+   Content-Type: text/html
+   
+   <!DOCTYPE html><html><head><title>404 - Error report</title></head>
+   <body>404 Not Found</body>
+   </html>" > 404.http
+   ```
+
+4. #### Create the `cors.lua` file:
+
+   ```bash
+   echo "\
+   --
+   -- Cross-origin Request Sharing (CORS) implementation for HAProxy Lua host
+   --
+   -- CORS RFC:
+   -- https://www.w3.org/TR/cors/
+   --
+   -- Copyright (c) 2019. Nick Ramirez <nramirez@haproxy.com>
+   -- Copyright (c) 2019. HAProxy Technologies, LLC.
+   
+   local M={}
+   
+   -- Loops through array to find the given string.
+   -- items: array of strings
+   -- test_str: string to search for
+   function contains(items, test_str)
+     for _,item in pairs(items) do
+       if item == test_str then
+         return true
+       end
+     end
+   
+     return false
+   end
+   
+   M.wildcard_origin_allowed = function(allowed_origins)
+     if contains(allowed_origins, "*") then
+       return "*"
+     end
+     return nil
+   end
+   
+   M.specifies_scheme = function(s)
+     return string.find(s, "^%a+://") ~= nil
+   end
+   
+   M.specifies_generic_scheme = function(s)
+     return string.find(s, "^//") ~= nil
+   end
+   
+   M.begins_with_dot = function(s)
+     return string.find(s, "^%.") ~= nil
+   end
+   
+   M.trim = function(s)
+     return s:gsub("%s+", "")
+   end
+   
+   M.build_pattern = function(pattern)
+     -- remove spaces
+     pattern = M.trim(pattern)
+   
+     if pattern ~= nil and pattern ~= '' then
+       -- if there is no scheme and the pattern does not begin with a dot, 
+       -- add the generic scheme to the beginning of the pattern
+       if M.specifies_scheme(pattern) == false and M.specifies_generic_scheme(pattern) == false and M.begins_with_dot(pattern) == false then
+         pattern = "//" .. pattern
+       end
+   
+       -- escape dots and dashes in pattern
+       pattern = pattern:gsub("([%.%-])", "%%%1")
+   
+       -- an asterisk for the port means allow all ports
+       if string.find(pattern, "[:]+%*$") ~= nil then
+         pattern = pattern:gsub("[:]+%*$", "[:]+[0-9]+")
+       end
+   
+       -- append end character
+       pattern = pattern .. "$"
+       return pattern
+     end
+   
+     return nil
+   end
+   
+   -- If the given origin is found within the allowed_origins string, it is returned. Otherwise, nil is returned.
+   -- origin: The value from the 'origin' request header
+   -- allowed_origins: Comma-delimited list of allowed origins. (e.g. localhost,https://localhost:8080,//test.com)
+   --   e.g. localhost                : allow http(s)://localhost
+   --   e.g. //localhost              : allow http(s)://localhost
+   --   e.g. https://mydomain.com     : allow only HTTPS of mydomain.com
+   --   e.g. http://mydomain.com      : allow only HTTP of mydomain.com
+   --   e.g. http://mydomain.com:8080 : allow only HTTP of mydomain.com from port 8080
+   --   e.g. //mydomain.com           : allow only http(s)://mydomain.com
+   --   e.g. .mydomain.com            : allow ALL subdomains of mydomain.com from ALL source ports
+   --   e.g. .mydomain.com:443        : allow ALL subdomains of mydomain.com from default HTTPS source port
+   -- 
+   --  e.g. ".mydomain.com:443, //mydomain.com:443, //localhost"
+   --    allows all subdomains and main domain of mydomain.com only for HTTPS from default HTTPS port and allows 
+   --    all HTTP and HTTPS connections from ALL source port for localhost
+   --    
+   M.get_allowed_origin = function(origin, allowed_origins)
+     if origin ~= nil then
+       -- if wildcard (*) is allowed, return it, which allows all origins
+       wildcard_origin = M.wildcard_origin_allowed(allowed_origins)
+       if wildcard_origin ~= nil then
+         return wildcard_origin
+       end
+   
+       for index, allowed_origin in ipairs(allowed_origins) do
+         pattern = M.build_pattern(allowed_origin)
+   
+         if pattern ~= nil then
+           if origin:match(pattern) then
+             core.Debug("Test: " .. pattern .. ", Origin: " .. origin .. ", Match: yes")
+             return origin
+           else
+             core.Debug("Test: " .. pattern .. ", Origin: " .. origin .. ", Match: no")
+           end
+         end
+       end
+     end
+   
+     return nil
+   end
+   
+   -- Adds headers for CORS preflight request and then attaches them to the response
+   -- after it comes back from the server. This works with versions of HAProxy prior to 2.2.
+   -- The downside is that the OPTIONS request must be sent to the backend server first and can't 
+   -- be intercepted and returned immediately.
+   -- txn: The current transaction object that gives access to response properties
+   -- allowed_methods: Comma-delimited list of allowed HTTP methods. (e.g. GET,POST,PUT,DELETE)
+   -- allowed_headers: Comma-delimited list of allowed headers. (e.g. X-Header1,X-Header2)
+   function preflight_request_ver1(txn, allowed_methods, allowed_headers)
+     core.Debug("CORS: preflight request received")
+     txn.http:res_set_header("Access-Control-Allow-Methods", allowed_methods)
+     txn.http:res_set_header("Access-Control-Allow-Headers", allowed_headers)
+     txn.http:res_set_header("Access-Control-Max-Age", 600)
+     core.Debug("CORS: attaching allowed methods to response")
+   end
+   
+   -- Add headers for CORS preflight request and then returns a 204 response.
+   -- The 'reply' function used here is available in HAProxy 2.2+. It allows HAProxy to return
+   -- a reply without contacting the server.
+   -- txn: The current transaction object that gives access to response properties
+   -- origin: The value from the 'origin' request header
+   -- allowed_methods: Comma-delimited list of allowed HTTP methods. (e.g. GET,POST,PUT,DELETE)
+   -- allowed_origins: Comma-delimited list of allowed origins. (e.g. localhost,localhost:8080,test.com)
+   -- allowed_headers: Comma-delimited list of allowed headers. (e.g. X-Header1,X-Header2)
+   function preflight_request_ver2(txn, origin, allowed_methods, allowed_origins, allowed_headers)
+     core.Debug("CORS: preflight request received")
+   
+     local reply = txn:reply()
+     reply:set_status(204, "No Content")
+     reply:add_header("Content-Type", "text/html")
+     reply:add_header("Access-Control-Allow-Methods", allowed_methods)
+     reply:add_header("Access-Control-Allow-Headers", allowed_headers)
+     reply:add_header("Access-Control-Max-Age", 600)
+   
+     local allowed_origin = M.get_allowed_origin(origin, allowed_origins)
+   
+     if allowed_origin == nil then
+       core.Debug("CORS: " .. origin .. " not allowed")
+     else
+       core.Debug("CORS: " .. origin .. " allowed")
+       reply:add_header("Access-Control-Allow-Origin", allowed_origin)
+   
+       if allowed_origin ~= "*" then
+         reply:add_header("Vary", "Accept-Encoding,Origin")
+       end
+     end
+   
+     core.Debug("CORS: Returning reply to preflight request")
+     txn:done(reply)
+   end
+   
+   -- When invoked during a request, captures the origin header if present and stores it in a private variable.
+   -- If the request is OPTIONS and it is a supported version of HAProxy, returns a preflight request reply.
+   -- Otherwise, the preflight request header is added to the response after it has returned from the server.
+   -- txn: The current transaction object that gives access to response properties
+   -- allowed_methods: Comma-delimited list of allowed HTTP methods. (e.g. GET,POST,PUT,DELETE)
+   -- allowed_origins: Comma-delimited list of allowed origins. (e.g. localhost,localhost:8080,test.com)
+   -- allowed_headers: Comma-delimited list of allowed headers. (e.g. X-Header1,X-Header2)
+   function cors_request(txn, allowed_methods, allowed_origins, allowed_headers)
+     local headers = txn.http:req_get_headers()
+     local transaction_data = {}
+     local origin = nil
+     local allowed_origins = core.tokenize(allowed_origins, ",")
+     
+     if headers["origin"] ~= nil and headers["origin"][0] ~= nil then
+       core.Debug("CORS: Got 'Origin' header: " .. headers["origin"][0])
+       origin = headers["origin"][0]
+     end
+   
+     -- Bail if client did not send an Origin
+     -- for example, it may be a regular OPTIONS request that is not a CORS preflight request
+     if origin == nil or origin == '' then
+       return
+     end
+     
+     transaction_data["origin"] = origin
+     transaction_data["allowed_methods"] = allowed_methods
+     transaction_data["allowed_origins"] = allowed_origins
+     transaction_data["allowed_headers"] = allowed_headers
+   
+     txn:set_priv(transaction_data)
+   
+     local method = txn.sf:method()
+     transaction_data["method"] = method
+   
+     if method == "OPTIONS" and txn.reply ~= nil then
+       preflight_request_ver2(txn, origin, allowed_methods, allowed_origins, allowed_headers)
+     end
+   end
+   
+   -- When invoked during a response, sets CORS headers so that the browser can read the response from permitted domains.
+   -- txn: The current transaction object that gives access to response properties.
+   function cors_response(txn)
+     local transaction_data = txn:get_priv()
+   
+     if transaction_data == nil then
+       return
+     end
+     
+     local origin = transaction_data["origin"]
+     local allowed_origins = transaction_data["allowed_origins"]
+     local allowed_methods = transaction_data["allowed_methods"]
+     local allowed_headers = transaction_data["allowed_headers"]
+     local method = transaction_data["method"]
+   
+     -- Bail if client did not send an Origin
+     if origin == nil or origin == '' then
+       return
+     end
+   
+     local allowed_origin = M.get_allowed_origin(origin, allowed_origins)
+   
+     if allowed_origin == nil then
+       core.Debug("CORS: " .. origin .. " not allowed")
+     else
+       if method == "OPTIONS" and txn.reply == nil then
+         preflight_request_ver1(txn, allowed_methods, allowed_headers)
+       end
+       
+       core.Debug("CORS: " .. origin .. " allowed")
+       txn.http:res_set_header("Access-Control-Allow-Origin", allowed_origin)
+   
+       if allowed_origin ~= "*" then
+         txn.http:res_add_header("Vary", "Accept-Encoding,Origin")
+       end
+     end
+   end
+   
+   -- Register the actions with HAProxy
+   core.register_action("cors", {"http-req"}, cors_request, 3)
+   core.register_action("cors", {"http-res"}, cors_response, 0)
+   
+   return M
+   " > cors.lua
+   ```
+
+5. #### Create the `haproxy.cfg` file:
+
+   ```
+   echo "\
+   global
+   	lua-load /usr/local/etc/haproxy/cors.lua
+   defaults
+   	log global
+   	mode http
+   	timeout connect 5000ms
+   	timeout client 50000ms
+   	timeout server 50000ms
+   	option httplog
+   	log stdout local0
+   
+   frontend stats
+   	bind *:8404
+   	stats enable
+   	stats uri /
+   	stats refresh 10s
+   frontend http_frontend
+   	bind :8080
+   	compression algo gzip
+   	compression type text/css text/html text/javascript application/javascript text/plain text/xml application/json
+   
+   	# CORS configuration
+   	# please update CORS configuration if you want to restrict API access 
+   	# http-request lua.cors "GET,PUT,POST" "example.com,localhost,localhost:8080" "X-Custom-Header1,X-Custom-Header2"
+   
+   	http-request capture req.hdr(Origin) len 20
+   	http-request lua.cors "*" "*" "*"
+   	http-response lua.cors 
+   	
+   	acl has_account-service path_beg /account-service
+       	acl has_sql_query path_reg ^\/api\/projects\/[0-9]*\/sql$
+       	acl has_graphql_query path_reg ^\/api\/projects\/[0-9]*\/graphql$
+       	acl has_platform path_beg /api/projects
+   	acl has_storage path_beg /cloud-storage
+      
+       	use_backend account-service if has_account-service
+       	use_backend query-service if has_sql_query
+       	use_backend query-service if has_graphql_query
+   	use_backend platform if has_platform
+   	use_backend storage-service if has_storage
+   	
+   	default_backend empty
+   
+   
+   backend platform
+   	http-request set-header Host localhost
+   	http-response set-header Server None
+   	server platform hrp-platform:3030 check
+   backend account-service
+   	http-request set-header Host localhost
+   	http-response set-header Server None
+   	server account-service hrp-account-service:8080 check
+   backend query-service
+   	http-request set-header Host localhost
+   	http-response set-header Server None
+   	server query-service hrp-data-query-service:3030 check
+   backend storage-service
+           http-request set-header Host localhost
+           http-response set-header Server None
+           server query-service hrp-cloud-storage-service:8080 check
+   
+   
+   backend empty
+   	errorfile 503 /usr/local/etc/haproxy/errors/404.http
+   " > haproxy.cfg
+   
+   ```
+
+6. R**un the HAProxy container with the following command:**
+
+   ```
+   docker run -d \
+   --network hrp \
+   --name hrp-balancer \
+   -p 8080:8080 \
+   -p 8404:8404 \
+   -v /root/healthstack/haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro \
+   -v /root/healthstack/haproxy/404.http:/usr/local/etc/haproxy/errors/404.http:ro \
+   -v /root/healthstack/haproxy/cors.lua:/usr/local/etc/haproxy/cors.lua:ro \
+   haproxy:2.7
+   ```
+
+7. **Confirm that the HAProxy container is running:**
+
+   ```bash
+   docker ps -a | grep hrp-balancer
+   ```
+
 
 ### Conclusion
 
@@ -543,9 +1111,9 @@ When a mail server is not available, perform these steps:
    > {
    > "status": "OK",
    > "user": {
-   >    "email": "your_address@your_email.com",
-   >    "id": "785d492b-688f-49c1-adbb-e9c00ed0c5b4",
-   >    "timeJoined": 1664864683438
+   > "email": "your_address@your_email.com",
+   > "id": "785d492b-688f-49c1-adbb-e9c00ed0c5b4",
+   > "timeJoined": 1664864683438
    > }
    > }
    > ```
@@ -612,4 +1180,3 @@ When a mail server is not available, perform these steps:
    > "email":"team-admin@samsung.com"
    > }
    > ```
-
