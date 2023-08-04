@@ -184,7 +184,17 @@ NOTE: You don't need to follow any further instructions on Firebase at this poin
    cd <package-path> ./gradlew :account-service:build -x detekt)
    ```
 
-#### IV. Run
+#### IV. Edit `.env` 
+
+Within the zip, there is an `.env` file that needs to be updated with the right configurations. Here's the context for each configuration option:
+
+1. **POSTGRES_PASSWORD**: This is the password for the PostgreSQL database. It's essential to keep this secure, as it grants access to the database.
+2. **PASSWORD_RESET_URL**, **INVITATION_URL**, **VERIFICATION_URL**: These URLs are likely used by the web application to handle user account actions, such as resetting a password, accepting an invitation, or verifying an email address.
+3. **SMTP Configuration (SMTP_HOST, SMTP_PORT, MAIL_USER, MAIL_USER_PASSWORD)**: This section configures the Simple Mail Transfer Protocol (SMTP) settings, enabling the application to send emails. In this example, Gmail's SMTP server is being used, and the settings include the host address, port number, email username, and password.
+4. **TRINO_ORIGINAL_CATALOG** and **TRINO_DE_IDENTIFIED_CATALOG**: These could be related to the Trino querying engine, specifying catalogs to be used. Trino (formerly known as PrestoSQL) allows querying data across various data sources. The catalog in Trino is a collection of schemas, and a schema is a collection of tables.
+5. **Cloud storage service configuration**: This is likely a placeholder for configurations related to a cloud storage service. Specifics would depend on the service being used, such as AWS S3, Azure Blob Storage, etc., and might include keys, bucket names, or other authentication details.
+
+#### V. Run
 
 1. Create a Docker network
 
@@ -328,9 +338,9 @@ The Account Service handles various account-related tasks. Here’s how you can 
    -e DB_USERNAME=postgres \
    -e DB_PASSWORD=mypassword \ # Use the same password set in the previous step
    -e DB_NAME=tokens \
-   -e PASSWORD_RESET_URL=http://192.168.50.146/password-reset \
-   -e INVITATION_URL=http://192.168.50.146/account-activation \
-   -e VERIFICATION_URL=http://192.168.50.146/email-verification \
+   -e PASSWORD_RESET_URL=http://0.0.0.0/password-reset \
+   -e INVITATION_URL=http://0.0.0.0/account-activation \
+   -e VERIFICATION_URL=http://0.0.0.0/email-verification \
    -e debug=false \
    -p 8080:8080 \
    --restart=unless-stopped \
@@ -540,58 +550,7 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
 
       ```bash
    echo "\
-   {
-     "catalogs": [
-       {
-         "user": "admin",
-         "catalog": ".*",
-         "allow": "all"
-       },
-       {
-         "catalog": "postgresql",
-         "allow": "read-only"
-       },
-       {
-         "catalog": "di-postgresql",
-         "allow": "read-only"
-       },
-       {
-         "catalog": "system",
-         "allow": "none"
-       }
-     ],
-     "schemas": [
-       {
-         "user": ".*",
-         "schema": ".*",
-         "owner": false
-       }
-     ],
-     "tables": [
-       {
-         "user": "b5bd4d15-6cfa-4e69-b0ca-73ac61c657ef",
-         "catalog": "postgresql",
-         "schema": "project_1_research",
-         "table": ".*",
-         "privileges": [
-           "SELECT"
-         ]
-       },
-       {
-         "user": "b5bd4d15-6cfa-4e69-b0ca-73ac61c657ef",
-         "catalog": "postgresql",
-         "schema": "project_1_research",
-         "table": ".*",
-         "privileges": [
-           "SELECT"
-         ]
-       },
-       {
-         "user": ".*",
-         "privileges": []
-       }
-     ]
-   }
+   {}
    " > /root/healthstack/rule-update/rules.json
       ```
 
