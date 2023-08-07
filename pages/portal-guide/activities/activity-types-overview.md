@@ -5,7 +5,7 @@ permalink: activity_types_overview.html
 toc: True
 ---
 
-Activities allow researchers to collect specific types of data from users. To create an activity, see [Creating an Activity](creating-motor-activity.md) document on steps to create an activity. Three categories of activities come within our system: Motor, Audio, and Cognition.
+Activities allow researchers to collect specific types of data from users. To create an activity, see [Creating an Activity](creating-an-activity.md) document on steps to create an activity. Three categories of activities come within our system: Motor, Audio, and Cognition.
 
 ## Motor Activities
 
