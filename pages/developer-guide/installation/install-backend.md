@@ -1118,7 +1118,7 @@ When a mail server is not available, perform these steps:
    curl --location --request POST 'localhost:3567/recipe/signup' \
    --header 'cdi-version: 2.15' \
    --header 'Content-Type: application/json' \
-   --data-raw '{ "email": "your_address@your_email.com", "password": "your_password", "profile": {} }'
+   --data-raw '{ "email": "your_address@your_email.com", "password": "your_password"}'
    ```
 
    > Successful result is similar to:
