@@ -97,7 +97,7 @@ To operate the backend system, you must have one of the following:
 4. Click on the `Service accounts` tab.
 5. Click the `Generate new private key` button to generate a new service account key file (we used Node.js on our Mac test).
 
-NOTE: You don't need to follow any further instructions on Firebase at this point - all you had to do was generate the key.
+   NOTE: You don't need to follow any further instructions on Firebase at this point - all you had to do was generate the key.
 
 6. Return to the terminal and create a Firebase `service-account-key.json` file.
 
@@ -194,7 +194,32 @@ Within the zip, there is an `.env` file that needs to be updated with the right 
 4. **TRINO_ORIGINAL_CATALOG** and **TRINO_DE_IDENTIFIED_CATALOG**: These could be related to the Trino querying engine, specifying catalogs to be used. Trino (formerly known as PrestoSQL) allows querying data across various data sources. The catalog in Trino is a collection of schemas, and a schema is a collection of tables.
 5. **Cloud storage service configuration**: This is likely a placeholder for configurations related to a cloud storage service. Specifics would depend on the service being used, such as AWS S3, Azure Blob Storage, etc., and might include keys, bucket names, or other authentication details.
 
-#### V. Run
+#### V. Enable Account Creation Without Mail Server (Optional)
+
+> This setting allows for direct API calls to SuperTokens. As this increases the risk of a security breach, only make these changes if you do not have access to a mail server. Additionally, make sure that the port used is not accessible from outside the development environment.
+
+Modify the supertokens service under `docker-compose.yml` file as follows to enable account creation and verification without mail server access. After the installation is complete, follow [these steps](#without-mail-server) to create an account.
+
+```
+supertokens:
+    container_name: hrp-supertokens
+    image: supertokens/supertokens-postgresql
+    depends_on:
+        - postgres
+    environment:
+        POSTGRESQL_USER: ${POSTGRESQL_USER:-postgres}
+        POSTGRESQL_HOST: ${POSTGRESQL_HOST:-hrp-postgres}
+        POSTGRESQL_PORT: ${POSTGRESQL_PORT:-5432}
+        POSTGRESQL_PASSWORD: ${POSTGRES_PASSWORD:-password}
+        POSTGRESQL_DATABASE_NAME: ${POSTGRESQL_DATABASE_NAME:-supertokens}
+    ports:
+        - "3567:3567"
+    networks:
+        - hrp
+    restart: unless-stopped
+```
+
+#### VI. Run
 
 1. Create a Docker network
 
@@ -224,7 +249,7 @@ Within the zip, there is an `.env` file that needs to be updated with the right 
    docker ps -a
    ```
 
-   ![viewing-graphs-1](./../../../../../../images/install-docker-services.png)
+   ![viewing-graphs-1](../../../images/install-docker-services.png)
 
 ### Method 2: Manual Build
 
@@ -278,7 +303,22 @@ This creates a bridge network which allows containers connected to it to communi
 
 1. **Run the Docker Container:**
 
-   In this step, you'll launch the SuperTokens service, using a PostgreSQL database for storage. SuperTokens is an open-source authentication service. You can learn more about it here: [SuperTokens](https://supertokens.com/). Execute the following command:
+   In this step, you'll launch the SuperTokens service, using a PostgreSQL database for storage. SuperTokens is an open-source authentication service. You can learn more about it here: [SuperTokens](https://supertokens.com/). <br><br> If you can utilize a mail server, execute the following command:
+
+   ```bash
+   docker run -d --network=hrp --name=hrp-supertokens \
+   -e POSTGRESQL_USER=postgres \
+   -e POSTGRESQL_HOST=hrp-postgres \
+   -e POSTGRESQL_PORT=5432 \
+   -e POSTGRESQL_PASSWORD=mypassword \
+   -e POSTGRESQL_DATABASE_NAME=supertokens \
+   --expose 3567 \
+   --restart=unless-stopped \
+   supertokens/supertokens-postgresql
+   ```
+
+   This command sets up the SuperTokens container with the necessary environment variables and network configurations. The password (`mypassword`) should be the same as what was set in the previous step for the PostgreSQL database. Port `3567` is exposed for communication, and the container will restart automatically unless stopped. <br><br> If you do not have access to a mail server, execute the following command:
+   > This setting allows for direct API calls to SuperTokens. As this increases the risk of a security breach, only make these changes if you do not have access to a mail server. Additionally, make sure that the port used is not accessible from outside the development environment.
 
    ```bash
    docker run -d --network=hrp --name=hrp-supertokens \
@@ -291,8 +331,6 @@ This creates a bridge network which allows containers connected to it to communi
    --restart=unless-stopped \
    supertokens/supertokens-postgresql
    ```
-
-   This command sets up the SuperTokens container with the necessary environment variables and network configurations. The password (`mypassword`) should be the same as what was set in the previous step for the PostgreSQL database. Port `3567` is exposed for communication, and the container will restart automatically unless stopped.
 
 2. **Verify the Platform Service is Running:**
 
@@ -342,7 +380,7 @@ The Account Service handles various account-related tasks. Here’s how you can 
    -e INVITATION_URL=http://0.0.0.0/account-activation \
    -e VERIFICATION_URL=http://0.0.0.0/email-verification \
    -e debug=false \
-   -p 8080:8080 \
+   --expose 8080 \
    --restart=unless-stopped \
    account-service
    ```
@@ -351,7 +389,7 @@ The Account Service handles various account-related tasks. Here’s how you can 
 
    - **Email Settings (`test@gmail.com`, `1234567`)**: Replace these with the actual email address and password used by your application for sending emails. This could be a Gmail address or another SMTP-supported email, along with the corresponding authentication details.
    - **SMTP Settings (`smtp.gmail.com`, `587`)**: These values are specific to Gmail’s SMTP server. If you are using a different email provider, update these values with the correct SMTP host and port.
-   - **URLs (`http://192.168.50.146/password-reset`, etc.)**: These URLs are likely used for various account-related actions such as password resetting, account activation, and email verification. Customize them to match the appropriate endpoints within your application.
+   - **URLs (`http://0.0.0.0/password-reset`, etc.)**: These URLs are likely used for various account-related actions such as password resetting, account activation, and email verification. Customize them to match the appropriate endpoints within your application.
 
 4. **Verify the Platform Service is Running:**
 
@@ -424,8 +462,9 @@ Trino, formerly known as Presto, is a high-performance, distributed SQL query en
 2. **Create Necessary Directories and Files:**
    Create the following directories and files required for the Trino service configuration:
    ```bash
-   mkdir -p trino/etc/catalog trino/etc/postgresql
-   touch trino/etc/jvm.config trino/etc/postgresql/postgresql.properties trino/etc/config.properties
+   mkdir -p rule-update trino/etc/catalog trino/etc/catalog/postgresql trino/etc/catalog/di-postgresql
+   touch trino/etc/jvm.config trino/etc/catalog/postgresql/postgresql.properties \
+   trino/etc/catalog/di-postgresql/dipostgresql.properties
    ```
 
 3. **Configure JVM Settings:**
@@ -461,17 +500,29 @@ Trino, formerly known as Presto, is a high-performance, distributed SQL query en
    connector.name=postgresql
    connection-url=jdbc:postgresql://hrp-postgres:5432/healthstack
    connection-user=postgres
-   connection-password=mypassword" > trino/etc/postgresql/postgresql.properties
+   connection-password=mypassword" > trino/etc/catalog/postgresql/postgresql.properties
    ```
 
-5. **Run the Trino Container:**
+5. **Configure De-identified Postgres Connection:**
+   The `dipostgresql.properties` file is used to configure the connection to the PostgreSQL database for de-identified datasets. Customize the variables to connect a different PostgreSQL database instance for de-identified data.
+
+   ```bash
+   echo "\
+   connector.name=postgresql
+   connection-url=jdbc:postgresql://hrp-postgres:5432/healthstack
+   connection-user=postgres
+   connection-password=mypassword" > trino/etc/catalog/di-postgresql/dipostgresql.properties
+   ```
+
+6. **Run the Trino Container:**
    Start the Trino service in a Docker container named `hrp-trino`. Adjust the paths in the volume mappings if you have custom locations for the `jvm.config` and other files:
 
    ```bash
    docker run -d --network=hrp --name=hrp-trino \
-   -v ./rule-update:/etc/trino/access-control \
-   -v ./trino/etc/jvm.config:/etc/trino/jvm.config \
-   -v ./trino/etc/postgresql/postgresql.properties:/etc/trino/catalog/postgresql.properties \
+   -v ./rule-update/:/etc/trino/access-control/ \
+   -v ./trino/etc/jvm.config:/etc/jvm.config \
+   -v ./trino/etc/catalog/postgresql/postgresql.properties:/etc/trino/catalog/postgresql.properties \
+   -v ./trino/etc/catalog/di-postgresql/dipostgresql.properties:/etc/trino/catalog/dipostgresql.properties \
    -p 8090:8080 \
    --restart=unless-stopped \
    trinodb/trino:402
@@ -479,7 +530,7 @@ Trino, formerly known as Presto, is a high-performance, distributed SQL query en
 
    This sequence of commands ensures that Trino is properly configured and running within your environment. If your configuration files are located in directories other than the ones shown here, make sure to modify the paths in the above commands accordingly.
 
-6. **Verify the Trino Service is Running:**
+7. **Verify the Trino Service is Running:**
 
    ```bash
    sudo docker ps | grep hrp-trino
@@ -512,6 +563,8 @@ Trino, formerly known as Presto, is a high-performance, distributed SQL query en
    -e TRINO_PORT=8080 \
    -e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
    -e debug=false \
+   --expose 3030 \
+   --restart=unless-stopped \
    hrp-data-query-service
       ```
 
@@ -539,11 +592,11 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
 
 2. **Prepare Configuration Files:**
 
-   Create a directory to store the rule configuration and a `rules.json` file to define the custom rules.
+   Navigate to the `<install_path>` directory. Create a `rules.json` file under the previously created `rule-update` directory to define custom rules.
 
       ```bash
-   mkdir -p /root/healthstack/rule-update
-   touch /root/healthstack/rule-update/rules.json
+   cd <install_path>
+   touch rule-update/rules.json
       ```
 
      You can populate the `rules.json` file with content, either from an existing file or by creating your own. For example:
@@ -551,7 +604,7 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
       ```bash
    echo "\
    {}
-   " > /root/healthstack/rule-update/rules.json
+   " > rule-update/rules.json
       ```
 
 3. **Run Trino Rule Update Service Container:**
@@ -565,7 +618,7 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
    -e FIXED_DELAY_MILLISEC=5000 \
    -e ACCOUNT_SERVICE_URL=http://hrp-account-service:8080 \
    -e debug=false \
-   -v /root/healthstack/rule-update/rules.json:/etc/trino/access-control/rules.json \
+   -v ./rule-update/rules.json:/etc/trino/access-control/rules.json \
    trino-rule-update-service
       ```
 
@@ -579,7 +632,7 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
 
 #### X: Run Cloud Storage Service Container
 
-1. ##### Build Cloud Storage Service Image
+1. **Build Cloud Storage Service Image**
 
    Navigate to the `cloud-storage-service` directory inside `backend-system` and build the image:
 
@@ -587,9 +640,10 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
    docker build -t cloud-storage-service .
    ```
 
-2. ##### Run Cloud Storage Service Container
+2. **Run Cloud Storage Service Container**
 
-   Execute the following command to run the cloud storage service, connecting it with Google Cloud Platform (GCP) and Amazon Web Services (AWS) for cloud-based storage solutions.
+   Execute the following command to run the cloud storage service container, connecting it with a cloud-based storage solution of your choice. The example command below connects the container to a Google Cloud Platform (GCP) instance.
+   > Our backend system supports connections to Google Cloud Platform, Amazon Web Services, and Azure. To connect to a different cloud-based storage solution, replace the environmental variables in the sample command. The necessary variables to connect to each solution can be found [here](https://github.com/S-HealthStack/backend-system/blob/main/cloud-storage-service/src/main/resources/application.yml).
 
    ```bash
    docker run -d \
@@ -597,21 +651,17 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
    --name hrp-cloud-storage-service \
    -e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
    -e STORAGE_TYPE=GCP \
+   -e SIGNED_URL_DURATION=60 \
    -e GCP_PROJECT_ID=healthstack2023 \
    -e GCP_BUCKET_NAME=mybucket \
-   -e GCP_SIGNED_URL_DURATION=60 \
    -e GOOGLE_APPLICATION_CREDENTIALS=/etc/gcp/service-account-key.json \
-   -e AWS_REGION=aws_region \
-   -e AWS_ACCESS_KEY_ID=aws_key \
-   -e AWS_SECRET_ACCESS_KEY=aws_secret_access_key \
-   -e AWS_BUCKET_NAME=aws_bucket \
-   -e AWS_PRE_SIGNED_URL_DURATION=60 \
    -v ./service-account-key.json:/etc/gcp/service-account-key.json \
+   --expose 8080 \
+   --restart=unless-stopped \
    cloud-storage-service
    ```
 
    - Make sure that the path to `service-account-key.json` is correct; this file contains the credentials needed for connecting to GCP.
-   - The container configuration includes environment variables for both GCP and AWS, enabling seamless integration with these cloud providers.
 
 3. **Verify Cloud Storage Service is Running**
 
@@ -622,19 +672,21 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
 
 #### XI: Configure and Run HAProxy
 
-1. #### Create the HAProxy directory and move into it:
-
+1. **Create the HAProxy directory and navigate to the directory:**
+   
+   Run the following commands to create and navigate to the `haproxy` directory.
    ```bash
+   cd <install_path>
    mkdir haproxy && cd haproxy
    ```
 
-2. #### Create the required three files:
+2. **Create the required three files:**
 
    ```bash
    touch 404.http cors.lua haproxy.cfg
    ```
 
-3. #### Create the HAProxy service `404.http` file:
+3. **Populate the HAProxy service `404.http` file:**
 
    ```bash
    echo "\
@@ -648,7 +700,7 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
    </html>" > 404.http
    ```
 
-4. #### Create the `cors.lua` file:
+4. **Populate the `cors.lua` file:**
 
    ```bash
    echo "\
@@ -902,7 +954,7 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
    " > cors.lua
    ```
 
-5. #### Create the `haproxy.cfg` file:
+5. **Populate the `haproxy.cfg` file:**
 
    ```
    echo "\
@@ -974,17 +1026,19 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
    
    ```
 
-6. R**un the HAProxy container with the following command:**
+6. **Run the HAProxy container with the following command:**
 
    ```
+   cd <install_path>
    docker run -d \
    --network hrp \
    --name hrp-balancer \
    -p 8080:8080 \
    -p 8404:8404 \
-   -v /root/healthstack/haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro \
-   -v /root/healthstack/haproxy/404.http:/usr/local/etc/haproxy/errors/404.http:ro \
-   -v /root/healthstack/haproxy/cors.lua:/usr/local/etc/haproxy/cors.lua:ro \
+   -v ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro \
+   -v ./haproxy/404.http:/usr/local/etc/haproxy/errors/404.http:ro \
+   -v ./haproxy/cors.lua:/usr/local/etc/haproxy/cors.lua:ro \
+   --restart=unless-stopped \
    haproxy:2.7
    ```
 
@@ -1002,7 +1056,7 @@ You've successfully deployed the entire system using Docker CLI commands. All th
 You can verify the status of all containers by running:
 
 ```bash
-docker ps
+docker ps -a
 ```
 
 And manage the network with:
@@ -1027,7 +1081,8 @@ When a mail server is available, perform these steps:
    ```
    curl --location --request POST 'localhost:8080/account-service/signup' --header 'Content-Type: application/json'--data-raw '{
      "email": "your_address@your_email.com",
-     "password": "your_password"
+     "password": "your_password",
+     "profile": {}
    }'
    
    ```
@@ -1038,12 +1093,14 @@ When a mail server is available, perform these steps:
 
 ##### Without Mail Server
 
+> The following steps can only be executed if the relevant SuperTokens port settings were changed. If the commands return a 404 response, make sure that port 3567 was mapped to the hrp-supertokens container.
+
 When a mail server is not available, perform these steps:
 
 1. Create the `Team Admin` team role.
 
    ```
-   curl --location --request PUT 'localhost:8080/recipe/role' --header 'Content-Type: application/json' --data-raw '{ "role": "team-admin" }'
+   curl --location --request PUT 'localhost:3567/recipe/role' --header 'Content-Type: application/json' --data-raw '{ "role": "team-admin" }'
    ```
 
    > Successful result:
@@ -1058,10 +1115,10 @@ When a mail server is not available, perform these steps:
 2. Create the initial user login.
 
    ```
-   curl --location --request POST 'localhost:8080/recipe/signup' \
+   curl --location --request POST 'localhost:3567/recipe/signup' \
    --header 'cdi-version: 2.15' \
    --header 'Content-Type: application/json' \
-   --data-raw '{ "email": "your_address@your_email.com", "password": "your_password" }'
+   --data-raw '{ "email": "your_address@your_email.com", "password": "your_password"}'
    ```
 
    > Successful result is similar to:
@@ -1080,7 +1137,7 @@ When a mail server is not available, perform these steps:
 3. Copy the returned `id` to the `userId` field in the following command to assign the `Team Admin` team role to the user.
 
    ```
-   curl --location --request PUT 'localhost:8080/recipe/user/role' \
+   curl --location --request PUT 'localhost:3567/recipe/user/role' \
    --header 'Content-Type: application/json' \
    --data-raw '{
      "userId": "785d492b-688f-49c1-adbb-e9c00ed0c5b4",
@@ -1101,7 +1158,7 @@ When a mail server is not available, perform these steps:
 4. Copy the returned `email` to the `email` field and the returned `id` to the `userId` field in the following command to retrieve a verifcation token.
 
    ```
-   curl --location --request POST 'localhost:8080/recipe/user/email/verify/token' \
+   curl --location --request POST 'localhost:3567/recipe/user/email/verify/token' \
    --header 'Content-Type: application/json' \
    --data-raw '{
      "userId": "7e5b869e-ed96-4768-9595-93a459f9f5ad",
@@ -1122,7 +1179,7 @@ When a mail server is not available, perform these steps:
 5. Copy the returned `token` to the `token` field to activate your account.
 
    ```
-   curl --location --request POST 'localhost:8080/recipe/user/email/verify' \
+   curl --location --request POST 'localhost:3567/recipe/user/email/verify' \
    --header 'Content-Type: application/json' \
    --data-raw '{
        "method": "token",
