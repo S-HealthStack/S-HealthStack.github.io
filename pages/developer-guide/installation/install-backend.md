@@ -224,7 +224,7 @@ Within the zip, there is an `.env` file that needs to be updated with the right 
    docker ps -a
    ```
 
-   ![viewing-graphs-1](./../../../../../../images/install-docker-services.png)
+   ![viewing-graphs-1](../../../images/install-docker-services.png)
 
 ### Method 2: Manual Build
 
@@ -351,7 +351,7 @@ The Account Service handles various account-related tasks. Here’s how you can 
 
    - **Email Settings (`test@gmail.com`, `1234567`)**: Replace these with the actual email address and password used by your application for sending emails. This could be a Gmail address or another SMTP-supported email, along with the corresponding authentication details.
    - **SMTP Settings (`smtp.gmail.com`, `587`)**: These values are specific to Gmail’s SMTP server. If you are using a different email provider, update these values with the correct SMTP host and port.
-   - **URLs (`http://192.168.50.146/password-reset`, etc.)**: These URLs are likely used for various account-related actions such as password resetting, account activation, and email verification. Customize them to match the appropriate endpoints within your application.
+   - **URLs (`http://0.0.0.0/password-reset`, etc.)**: These URLs are likely used for various account-related actions such as password resetting, account activation, and email verification. Customize them to match the appropriate endpoints within your application.
 
 4. **Verify the Platform Service is Running:**
 
