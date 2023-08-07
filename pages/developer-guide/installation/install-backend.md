@@ -97,7 +97,7 @@ To operate the backend system, you must have one of the following:
 4. Click on the `Service accounts` tab.
 5. Click the `Generate new private key` button to generate a new service account key file (we used Node.js on our Mac test).
 
-NOTE: You don't need to follow any further instructions on Firebase at this point - all you had to do was generate the key.
+   NOTE: You don't need to follow any further instructions on Firebase at this point - all you had to do was generate the key.
 
 6. Return to the terminal and create a Firebase `service-account-key.json` file.
 
@@ -194,7 +194,32 @@ Within the zip, there is an `.env` file that needs to be updated with the right 
 4. **TRINO_ORIGINAL_CATALOG** and **TRINO_DE_IDENTIFIED_CATALOG**: These could be related to the Trino querying engine, specifying catalogs to be used. Trino (formerly known as PrestoSQL) allows querying data across various data sources. The catalog in Trino is a collection of schemas, and a schema is a collection of tables.
 5. **Cloud storage service configuration**: This is likely a placeholder for configurations related to a cloud storage service. Specifics would depend on the service being used, such as AWS S3, Azure Blob Storage, etc., and might include keys, bucket names, or other authentication details.
 
-#### V. Run
+#### V. Enable Account Creation Without Mail Server (Optional)
+
+> This setting allows for direct API calls to SuperTokens. As this increases the risk of a security breach, only make these changes if you do not have access to a mail server. Additionally, make sure that the port used is not accessible from outside the development environment.
+
+Modify the supertokens service under `docker-compose.yml` file as follows to enable account creation and verification without mail server access. After the installation is complete, follow [these steps](#without-mail-server) to create an account.
+
+```
+supertokens:
+    container_name: hrp-supertokens
+    image: supertokens/supertokens-postgresql
+    depends_on:
+        - postgres
+    environment:
+        POSTGRESQL_USER: ${POSTGRESQL_USER:-postgres}
+        POSTGRESQL_HOST: ${POSTGRESQL_HOST:-hrp-postgres}
+        POSTGRESQL_PORT: ${POSTGRESQL_PORT:-5432}
+        POSTGRESQL_PASSWORD: ${POSTGRES_PASSWORD:-password}
+        POSTGRESQL_DATABASE_NAME: ${POSTGRESQL_DATABASE_NAME:-supertokens}
+    ports:
+        - "3567:3567"
+    networks:
+        - hrp
+    restart: unless-stopped
+```
+
+#### VI. Run
 
 1. Create a Docker network
 
@@ -278,7 +303,7 @@ This creates a bridge network which allows containers connected to it to communi
 
 1. **Run the Docker Container:**
 
-   In this step, you'll launch the SuperTokens service, using a PostgreSQL database for storage. SuperTokens is an open-source authentication service. You can learn more about it here: [SuperTokens](https://supertokens.com/). Execute the following command:
+   In this step, you'll launch the SuperTokens service, using a PostgreSQL database for storage. SuperTokens is an open-source authentication service. You can learn more about it here: [SuperTokens](https://supertokens.com/). <br><br> If you can utilize a mail server, execute the following command:
 
    ```bash
    docker run -d --network=hrp --name=hrp-supertokens \
@@ -292,7 +317,20 @@ This creates a bridge network which allows containers connected to it to communi
    supertokens/supertokens-postgresql
    ```
 
-   This command sets up the SuperTokens container with the necessary environment variables and network configurations. The password (`mypassword`) should be the same as what was set in the previous step for the PostgreSQL database. Port `3567` is exposed for communication, and the container will restart automatically unless stopped.
+   This command sets up the SuperTokens container with the necessary environment variables and network configurations. The password (`mypassword`) should be the same as what was set in the previous step for the PostgreSQL database. Port `3567` is exposed for communication, and the container will restart automatically unless stopped. <br><br> If you do not have access to a mail server, execute the following command:
+   > This setting allows for direct API calls to SuperTokens. As this increases the risk of a security breach, only make these changes if you do not have access to a mail server. Additionally, make sure that the port used is not accessible from outside the development environment.
+
+   ```bash
+   docker run -d --network=hrp --name=hrp-supertokens \
+   -e POSTGRESQL_USER=postgres \
+   -e POSTGRESQL_HOST=hrp-postgres \
+   -e POSTGRESQL_PORT=5432 \
+   -e POSTGRESQL_PASSWORD=mypassword \
+   -e POSTGRESQL_DATABASE_NAME=supertokens \
+   -p 3567:3567 \
+   --restart=unless-stopped \
+   supertokens/supertokens-postgresql
+   ```
 
 2. **Verify the Platform Service is Running:**
 
@@ -1043,7 +1081,8 @@ When a mail server is available, perform these steps:
    ```
    curl --location --request POST 'localhost:8080/account-service/signup' --header 'Content-Type: application/json'--data-raw '{
      "email": "your_address@your_email.com",
-     "password": "your_password"
+     "password": "your_password",
+     "profile": {}
    }'
    
    ```
@@ -1054,12 +1093,14 @@ When a mail server is available, perform these steps:
 
 ##### Without Mail Server
 
+> The following steps can only be executed if the relevant SuperTokens port settings were changed. If the commands return a 404 response, make sure that port 3567 was mapped to the hrp-supertokens container.
+
 When a mail server is not available, perform these steps:
 
 1. Create the `Team Admin` team role.
 
    ```
-   curl --location --request PUT 'localhost:8080/recipe/role' --header 'Content-Type: application/json' --data-raw '{ "role": "team-admin" }'
+   curl --location --request PUT 'localhost:3567/recipe/role' --header 'Content-Type: application/json' --data-raw '{ "role": "team-admin" }'
    ```
 
    > Successful result:
@@ -1074,10 +1115,10 @@ When a mail server is not available, perform these steps:
 2. Create the initial user login.
 
    ```
-   curl --location --request POST 'localhost:8080/recipe/signup' \
+   curl --location --request POST 'localhost:3567/recipe/signup' \
    --header 'cdi-version: 2.15' \
    --header 'Content-Type: application/json' \
-   --data-raw '{ "email": "your_address@your_email.com", "password": "your_password" }'
+   --data-raw '{ "email": "your_address@your_email.com", "password": "your_password", "profile": {} }'
    ```
 
    > Successful result is similar to:
@@ -1096,7 +1137,7 @@ When a mail server is not available, perform these steps:
 3. Copy the returned `id` to the `userId` field in the following command to assign the `Team Admin` team role to the user.
 
    ```
-   curl --location --request PUT 'localhost:8080/recipe/user/role' \
+   curl --location --request PUT 'localhost:3567/recipe/user/role' \
    --header 'Content-Type: application/json' \
    --data-raw '{
      "userId": "785d492b-688f-49c1-adbb-e9c00ed0c5b4",
@@ -1117,7 +1158,7 @@ When a mail server is not available, perform these steps:
 4. Copy the returned `email` to the `email` field and the returned `id` to the `userId` field in the following command to retrieve a verifcation token.
 
    ```
-   curl --location --request POST 'localhost:8080/recipe/user/email/verify/token' \
+   curl --location --request POST 'localhost:3567/recipe/user/email/verify/token' \
    --header 'Content-Type: application/json' \
    --data-raw '{
      "userId": "7e5b869e-ed96-4768-9595-93a459f9f5ad",
@@ -1138,7 +1179,7 @@ When a mail server is not available, perform these steps:
 5. Copy the returned `token` to the `token` field to activate your account.
 
    ```
-   curl --location --request POST 'localhost:8080/recipe/user/email/verify' \
+   curl --location --request POST 'localhost:3567/recipe/user/email/verify' \
    --header 'Content-Type: application/json' \
    --data-raw '{
        "method": "token",
