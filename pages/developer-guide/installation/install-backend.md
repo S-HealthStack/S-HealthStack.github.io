@@ -287,7 +287,7 @@ This creates a bridge network which allows containers connected to it to communi
    -e POSTGRESQL_PORT=5432 \
    -e POSTGRESQL_PASSWORD=mypassword \
    -e POSTGRESQL_DATABASE_NAME=supertokens \
-   -p 3567:3567 \
+   --expose 3567 \
    --restart=unless-stopped \
    supertokens/supertokens-postgresql
    ```
@@ -342,7 +342,7 @@ The Account Service handles various account-related tasks. Here’s how you can 
    -e INVITATION_URL=http://0.0.0.0/account-activation \
    -e VERIFICATION_URL=http://0.0.0.0/email-verification \
    -e debug=false \
-   -p 8080:8080 \
+   --expose 8080 \
    --restart=unless-stopped \
    account-service
    ```
@@ -424,8 +424,9 @@ Trino, formerly known as Presto, is a high-performance, distributed SQL query en
 2. **Create Necessary Directories and Files:**
    Create the following directories and files required for the Trino service configuration:
    ```bash
-   mkdir -p trino/etc/catalog trino/etc/postgresql
-   touch trino/etc/jvm.config trino/etc/postgresql/postgresql.properties trino/etc/config.properties
+   mkdir -p rule-update trino/etc/catalog trino/etc/catalog/postgresql trino/etc/catalog/di-postgresql
+   touch trino/etc/jvm.config trino/etc/catalog/postgresql/postgresql.properties \
+   trino/etc/catalog/di-postgresql/dipostgresql.properties
    ```
 
 3. **Configure JVM Settings:**
@@ -461,17 +462,29 @@ Trino, formerly known as Presto, is a high-performance, distributed SQL query en
    connector.name=postgresql
    connection-url=jdbc:postgresql://hrp-postgres:5432/healthstack
    connection-user=postgres
-   connection-password=mypassword" > trino/etc/postgresql/postgresql.properties
+   connection-password=mypassword" > trino/etc/catalog/postgresql/postgresql.properties
    ```
 
-5. **Run the Trino Container:**
+5. **Configure De-identified Postgres Connection:**
+   The `dipostgresql.properties` file is used to configure the connection to the PostgreSQL database for de-identified datasets. Customize the variables to connect a different PostgreSQL database instance for de-identified data.
+
+   ```bash
+   echo "\
+   connector.name=postgresql
+   connection-url=jdbc:postgresql://hrp-postgres:5432/healthstack
+   connection-user=postgres
+   connection-password=mypassword" > trino/etc/catalog/di-postgresql/dipostgresql.properties
+   ```
+
+6. **Run the Trino Container:**
    Start the Trino service in a Docker container named `hrp-trino`. Adjust the paths in the volume mappings if you have custom locations for the `jvm.config` and other files:
 
    ```bash
    docker run -d --network=hrp --name=hrp-trino \
-   -v ./rule-update:/etc/trino/access-control \
-   -v ./trino/etc/jvm.config:/etc/trino/jvm.config \
-   -v ./trino/etc/postgresql/postgresql.properties:/etc/trino/catalog/postgresql.properties \
+   -v ./rule-update/:/etc/trino/access-control/ \
+   -v ./trino/etc/jvm.config:/etc/jvm.config \
+   -v ./trino/etc/catalog/postgresql/postgresql.properties:/etc/trino/catalog/postgresql.properties \
+   -v ./trino/etc/catalog/di-postgresql/dipostgresql.properties:/etc/trino/catalog/dipostgresql.properties \
    -p 8090:8080 \
    --restart=unless-stopped \
    trinodb/trino:402
@@ -479,7 +492,7 @@ Trino, formerly known as Presto, is a high-performance, distributed SQL query en
 
    This sequence of commands ensures that Trino is properly configured and running within your environment. If your configuration files are located in directories other than the ones shown here, make sure to modify the paths in the above commands accordingly.
 
-6. **Verify the Trino Service is Running:**
+7. **Verify the Trino Service is Running:**
 
    ```bash
    sudo docker ps | grep hrp-trino
@@ -512,6 +525,8 @@ Trino, formerly known as Presto, is a high-performance, distributed SQL query en
    -e TRINO_PORT=8080 \
    -e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
    -e debug=false \
+   --expose 3030 \
+   --restart=unless-stopped \
    hrp-data-query-service
       ```
 
@@ -539,11 +554,11 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
 
 2. **Prepare Configuration Files:**
 
-   Create a directory to store the rule configuration and a `rules.json` file to define the custom rules.
+   Navigate to the `<install_path>` directory. Create a `rules.json` file under the previously created `rule-update` directory to define custom rules.
 
       ```bash
-   mkdir -p /root/healthstack/rule-update
-   touch /root/healthstack/rule-update/rules.json
+   cd <install_path>
+   touch rule-update/rules.json
       ```
 
      You can populate the `rules.json` file with content, either from an existing file or by creating your own. For example:
@@ -551,7 +566,7 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
       ```bash
    echo "\
    {}
-   " > /root/healthstack/rule-update/rules.json
+   " > rule-update/rules.json
       ```
 
 3. **Run Trino Rule Update Service Container:**
@@ -565,7 +580,7 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
    -e FIXED_DELAY_MILLISEC=5000 \
    -e ACCOUNT_SERVICE_URL=http://hrp-account-service:8080 \
    -e debug=false \
-   -v /root/healthstack/rule-update/rules.json:/etc/trino/access-control/rules.json \
+   -v ./rule-update/rules.json:/etc/trino/access-control/rules.json \
    trino-rule-update-service
       ```
 
@@ -579,7 +594,7 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
 
 #### X: Run Cloud Storage Service Container
 
-1. ##### Build Cloud Storage Service Image
+1. **Build Cloud Storage Service Image**
 
    Navigate to the `cloud-storage-service` directory inside `backend-system` and build the image:
 
@@ -587,9 +602,10 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
    docker build -t cloud-storage-service .
    ```
 
-2. ##### Run Cloud Storage Service Container
+2. **Run Cloud Storage Service Container**
 
-   Execute the following command to run the cloud storage service, connecting it with Google Cloud Platform (GCP) and Amazon Web Services (AWS) for cloud-based storage solutions.
+   Execute the following command to run the cloud storage service container, connecting it with a cloud-based storage solution of your choice. The example command below connects the container to a Google Cloud Platform (GCP) instance.
+   > Our backend system supports connections to Google Cloud Platform, Amazon Web Services, and Azure. To connect to a different cloud-based storage solution, replace the environmental variables in the sample command. The necessary variables to connect to each solution can be found [here](https://github.com/S-HealthStack/backend-system/blob/main/cloud-storage-service/src/main/resources/application.yml).
 
    ```bash
    docker run -d \
@@ -597,21 +613,17 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
    --name hrp-cloud-storage-service \
    -e JWK_URL=http://hrp-supertokens:3567/recipe/jwt/jwks \
    -e STORAGE_TYPE=GCP \
+   -e SIGNED_URL_DURATION=60 \
    -e GCP_PROJECT_ID=healthstack2023 \
    -e GCP_BUCKET_NAME=mybucket \
-   -e GCP_SIGNED_URL_DURATION=60 \
    -e GOOGLE_APPLICATION_CREDENTIALS=/etc/gcp/service-account-key.json \
-   -e AWS_REGION=aws_region \
-   -e AWS_ACCESS_KEY_ID=aws_key \
-   -e AWS_SECRET_ACCESS_KEY=aws_secret_access_key \
-   -e AWS_BUCKET_NAME=aws_bucket \
-   -e AWS_PRE_SIGNED_URL_DURATION=60 \
    -v ./service-account-key.json:/etc/gcp/service-account-key.json \
+   --expose 8080 \
+   --restart=unless-stopped \
    cloud-storage-service
    ```
 
    - Make sure that the path to `service-account-key.json` is correct; this file contains the credentials needed for connecting to GCP.
-   - The container configuration includes environment variables for both GCP and AWS, enabling seamless integration with these cloud providers.
 
 3. **Verify Cloud Storage Service is Running**
 
@@ -622,19 +634,21 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
 
 #### XI: Configure and Run HAProxy
 
-1. #### Create the HAProxy directory and move into it:
-
+1. **Create the HAProxy directory and navigate to the directory:**
+   
+   Run the following commands to create and navigate to the `haproxy` directory.
    ```bash
+   cd <install_path>
    mkdir haproxy && cd haproxy
    ```
 
-2. #### Create the required three files:
+2. **Create the required three files:**
 
    ```bash
    touch 404.http cors.lua haproxy.cfg
    ```
 
-3. #### Create the HAProxy service `404.http` file:
+3. **Populate the HAProxy service `404.http` file:**
 
    ```bash
    echo "\
@@ -648,7 +662,7 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
    </html>" > 404.http
    ```
 
-4. #### Create the `cors.lua` file:
+4. **Populate the `cors.lua` file:**
 
    ```bash
    echo "\
@@ -902,7 +916,7 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
    " > cors.lua
    ```
 
-5. #### Create the `haproxy.cfg` file:
+5. **Populate the `haproxy.cfg` file:**
 
    ```
    echo "\
@@ -974,17 +988,19 @@ Trino Rule Update Service is responsible for updating the rules in Trino. Follow
    
    ```
 
-6. R**un the HAProxy container with the following command:**
+6. **Run the HAProxy container with the following command:**
 
    ```
+   cd <install_path>
    docker run -d \
    --network hrp \
    --name hrp-balancer \
    -p 8080:8080 \
    -p 8404:8404 \
-   -v /root/healthstack/haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro \
-   -v /root/healthstack/haproxy/404.http:/usr/local/etc/haproxy/errors/404.http:ro \
-   -v /root/healthstack/haproxy/cors.lua:/usr/local/etc/haproxy/cors.lua:ro \
+   -v ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro \
+   -v ./haproxy/404.http:/usr/local/etc/haproxy/errors/404.http:ro \
+   -v ./haproxy/cors.lua:/usr/local/etc/haproxy/cors.lua:ro \
+   --restart=unless-stopped \
    haproxy:2.7
    ```
 
@@ -1002,7 +1018,7 @@ You've successfully deployed the entire system using Docker CLI commands. All th
 You can verify the status of all containers by running:
 
 ```bash
-docker ps
+docker ps -a
 ```
 
 And manage the network with:
