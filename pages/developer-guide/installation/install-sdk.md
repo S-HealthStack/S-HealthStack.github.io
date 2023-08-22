@@ -57,7 +57,7 @@ cd app-sdk
    applicationId = "healthstack.sample"
    ```
 
-NOTE that you should download the resulting `google-services.json` file from firbase into `app-sdk -> samples` (as you'll notice there is no `app` folder as the firebase documentation suggests).
+NOTE that you should download the resulting `google-services.json` file from firebase into `app-sdk -> samples` (as you'll notice there is no `app` folder as the firebase documentation suggests).
 
 ## VI. Per App Configuration
 
