@@ -8,6 +8,6 @@ The web portal provides a straightforward way to export your data to **.csv** fi
 To export **.csv** data:
 
 1. From the **Data Insights** page, click **Export .csv**.
-   ![exporting-data.png](https://github.com/S-HealthStack/S-HealthStack.github.io/blob/main/images/exporting-data.png?raw=true)
+   ![exporting-data.png](https://raw.githubusercontent.com/S-HealthStack/S-HealthStack.github.io/main/images/exporting-data.png)
 2. Use the standard file browsing interface to export the data to the desired folder and filename.
 

@@ -244,7 +244,7 @@ supertokens:
    docker ps -a
    ```
 
-   ![viewing-graphs-1](.\install-backend.assets\install-docker-services.png)
+   ![viewing-graphs-1](https://raw.githubusercontent.com/S-HealthStack/S-HealthStack.github.io/main/images/install-docker-services.png)
 
 ### Method 2: Manual Build
 
