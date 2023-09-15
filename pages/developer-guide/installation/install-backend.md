@@ -238,7 +238,7 @@ supertokens:
 3. Run provided compose file to build and start the backend cluster:
 
    ```
-   docker compose up -d
+   docker compose up --build --detach
    ```
 
    Please note that the supertokens container is optional and is to be replaced with your own authorization service if necessary.

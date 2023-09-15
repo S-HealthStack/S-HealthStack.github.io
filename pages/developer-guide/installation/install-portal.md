@@ -51,7 +51,7 @@ This section is only required if you are planning to make changes to the source 
 
     ```
     docker build . -t open-source-portal \
-    --build-arg API_URL="http://localhost:8081" \
+    --build-arg API_URL="http://localhost:8080" \
     --build-arg PUBLIC_PATH='/' \
     --build-arg MOCK_API='/api'
     ```
