@@ -1,0 +1,19 @@
+$dokka.format:jekyll-v1
+$dokka.linkExtension:html
+$dokka.location:healthstack.healthdata.link.healthconnect////PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/index.html
+$dokka.location:healthstack.healthdata.link.healthconnect//toChange/androidx.health.connect.client.response.ChangesResponse#kotlin.String/PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/to-change.html
+$dokka.location:healthstack.healthdata.link.healthconnect//toHealthData/androidx.health.connect.client.response.ReadRecordsResponse[androidx.health.connect.client.records.Record]#kotlin.String/PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/to-health-data.html
+$dokka.location:healthstack.healthdata.link.healthconnect//toHealthData/kotlin.collections.List[androidx.health.connect.client.records.Record]#kotlin.collections.MutableList[kotlin.collections.Map[kotlin.String,kotlin.Any]]/PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/to-health-data.html
+$dokka.location:healthstack.healthdata.link.healthconnect/HealthConnectAdapter///PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-adapter/index.html
+$dokka.location:healthstack.healthdata.link.healthconnect/HealthConnectAdapter/HealthConnectAdapter/#kotlin.collections.List[kotlin.String]#androidx.health.connect.client.HealthConnectClient/PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-adapter/-health-connect-adapter.html
+$dokka.location:healthstack.healthdata.link.healthconnect/HealthConnectAdapter/createLauncher/#androidx.activity.ComponentActivity/PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-adapter/create-launcher.html
+$dokka.location:healthstack.healthdata.link.healthconnect/HealthConnectAdapter/getChanges/#kotlin.String#kotlin.String/PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-adapter/get-changes.html
+$dokka.location:healthstack.healthdata.link.healthconnect/HealthConnectAdapter/getChangesToken/#kotlin.String/PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-adapter/get-changes-token.html
+$dokka.location:healthstack.healthdata.link.healthconnect/HealthConnectAdapter/getHealthData/#java.time.Instant#java.time.Instant#kotlin.String/PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-adapter/get-health-data.html
+$dokka.location:healthstack.healthdata.link.healthconnect/HealthConnectAdapter/hasAllPermissions/#/PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-adapter/has-all-permissions.html
+$dokka.location:healthstack.healthdata.link.healthconnect/HealthConnectAdapter/isIntervalData/#kotlin.String/PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-adapter/is-interval-data.html
+$dokka.location:healthstack.healthdata.link.healthconnect/HealthConnectAdapter/requestPermissions/#/PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-adapter/request-permissions.html
+$dokka.location:healthstack.healthdata.link.healthconnect/HealthConnectUtils///PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-utils/index.html
+$dokka.location:healthstack.healthdata.link.healthconnect/HealthConnectUtils/nameToRecord/#kotlin.String/PointingToDeclaration/healthconnect/healthstack.healthdata.link.healthconnect/-health-connect-utils/name-to-record.html
+healthstack.healthdata.link.healthconnect
+

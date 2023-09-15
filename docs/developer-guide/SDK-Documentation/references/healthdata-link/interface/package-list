@@ -1,0 +1,27 @@
+$dokka.format:jekyll-v1
+$dokka.linkExtension:html
+$dokka.location:healthstack.healthdata.link////PointingToDeclaration/interface/healthstack.healthdata.link/index.html
+$dokka.location:healthstack.healthdata.link/Change///PointingToDeclaration/interface/healthstack.healthdata.link/-change/index.html
+$dokka.location:healthstack.healthdata.link/Change/Change/#healthstack.healthdata.link.HealthData#kotlin.String/PointingToDeclaration/interface/healthstack.healthdata.link/-change/-change.html
+$dokka.location:healthstack.healthdata.link/Change/healthData/#/PointingToDeclaration/interface/healthstack.healthdata.link/-change/health-data.html
+$dokka.location:healthstack.healthdata.link/Change/token/#/PointingToDeclaration/interface/healthstack.healthdata.link/-change/token.html
+$dokka.location:healthstack.healthdata.link/HealthData.Companion///PointingToDeclaration/interface/healthstack.healthdata.link/-health-data/-companion/index.html
+$dokka.location:healthstack.healthdata.link/HealthData.Companion/END_TIME_KEY/#/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data/-companion/-e-n-d_-t-i-m-e_-k-e-y.html
+$dokka.location:healthstack.healthdata.link/HealthData.Companion/START_TIME_KEY/#/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data/-companion/-s-t-a-r-t_-t-i-m-e_-k-e-y.html
+$dokka.location:healthstack.healthdata.link/HealthData.Companion/TIME_KEY/#/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data/-companion/-t-i-m-e_-k-e-y.html
+$dokka.location:healthstack.healthdata.link/HealthData///PointingToDeclaration/interface/healthstack.healthdata.link/-health-data/index.html
+$dokka.location:healthstack.healthdata.link/HealthData/HealthData/#kotlin.String#kotlin.collections.List[kotlin.collections.Map[kotlin.String,kotlin.Any]]/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data/-health-data.html
+$dokka.location:healthstack.healthdata.link/HealthData/data/#/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data/data.html
+$dokka.location:healthstack.healthdata.link/HealthData/type/#/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data/type.html
+$dokka.location:healthstack.healthdata.link/HealthDataLink///PointingToDeclaration/interface/healthstack.healthdata.link/-health-data-link/index.html
+$dokka.location:healthstack.healthdata.link/HealthDataLink/getChanges/#kotlin.String#kotlin.String/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data-link/get-changes.html
+$dokka.location:healthstack.healthdata.link/HealthDataLink/getChangesToken/#kotlin.String/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data-link/get-changes-token.html
+$dokka.location:healthstack.healthdata.link/HealthDataLink/getHealthData/#java.time.Instant#java.time.Instant#kotlin.String/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data-link/get-health-data.html
+$dokka.location:healthstack.healthdata.link/HealthDataLink/hasAllPermissions/#/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data-link/has-all-permissions.html
+$dokka.location:healthstack.healthdata.link/HealthDataLink/isIntervalData/#kotlin.String/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data-link/is-interval-data.html
+$dokka.location:healthstack.healthdata.link/HealthDataLink/requestPermissions/#/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data-link/request-permissions.html
+$dokka.location:healthstack.healthdata.link/HealthDataLinkHolder///PointingToDeclaration/interface/healthstack.healthdata.link/-health-data-link-holder/index.html
+$dokka.location:healthstack.healthdata.link/HealthDataLinkHolder/getInstance/#/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data-link-holder/get-instance.html
+$dokka.location:healthstack.healthdata.link/HealthDataLinkHolder/initialize/#healthstack.healthdata.link.HealthDataLink/PointingToDeclaration/interface/healthstack.healthdata.link/-health-data-link-holder/initialize.html
+healthstack.healthdata.link
+
