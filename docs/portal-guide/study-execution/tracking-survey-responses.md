@@ -11,6 +11,6 @@ To view survey responses:
 
 3. Click the **Survey Responses** tab.
 
-    ![image-20230716122557951](./tracking-survey-responses.assets/image-20230716122557951.png)
+    ![image-20230716122557951](https://raw.githubusercontent.com/S-HealthStack/S-HealthStack.github.io/post-migrations-structure/docs/portal-guide/study-execution/tracking-survey-responses.assets/image-20230716122557951.png)
 
 4. Scroll through the charts to view the percentages for each question.

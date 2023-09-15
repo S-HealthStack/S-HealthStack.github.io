@@ -22,7 +22,7 @@ To add a member to the study and assign the member a role for the study:
 
 1. From the **Study Settings** page, in the **Study Settings** section, click **Invite member**.
 
-    ![image-20230716123047451](./portal-manage-members.assets/image-20230716123047451.png)
+    ![image-20230716123047451](https://raw.githubusercontent.com/S-HealthStack/S-HealthStack.github.io/post-migrations-structure/docs/portal-guide/study-management/portal-manage-members.assets/image-20230716123047451.png)
 
 2. Enter the email address of the person to invite to the study.
 

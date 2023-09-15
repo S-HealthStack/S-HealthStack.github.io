@@ -9,7 +9,7 @@ toc: false
 
 The Project Overview screen is the first choice on the left navigation, providing users with various stats. It contains various stats about the study under `Study Overview` and sensors under `Sensor Data`. 
 
-![image-20230801110157528](./study-progress.assets/image-20230801110157528.png) 
+![image-20230801110157528](https://raw.githubusercontent.com/S-HealthStack/S-HealthStack.github.io/post-migrations-structure/docs/portal-guide/study-management/study-progress.assets/image-20230801110157528.png) 
 
 The `Study Overview` contains information about the following:
 

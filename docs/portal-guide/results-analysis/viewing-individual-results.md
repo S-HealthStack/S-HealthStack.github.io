@@ -9,17 +9,16 @@ The portal reports individual participants' average records per data class. The 
 To view individual participant records:
 
 1. From the **Overview**, **Study Management**, or **Data Insights** page, navigate to the **Participant Management** section.
-   ![viewing-individual-results](../../../images/viewing-individual-results.png)
+   ![viewing-individual-results.png](https://raw.githubusercontent.com/S-HealthStack/S-HealthStack.github.io/post-migrations-structure/docs/portal-guide/results-analysis/viewing-individual-results.assets/viewing-individual-results.png)
    
 1. In the **Participant ID** column, click the desired participant.
-   ![viewing-graphs-4](../../..//images/viewing-graphs-4.png)
+   ![viewing-graphs-4.png](https://raw.githubusercontent.com/S-HealthStack/S-HealthStack.github.io/post-migrations-structure/docs/portal-guide/results-analysis/viewing-individual-results.assets/viewing-graphs-4.png)
 
 To view records of the participant associated with a particular datapoint:
 
 1. From the **Overview** page, navigate to the **Sensor Data** section.
-   ![viewing-graphs-1](../../../images/viewing-graphs-1.png)
+   ![viewing-graphs-1.png](https://raw.githubusercontent.com/S-HealthStack/S-HealthStack.github.io/post-migrations-structure/docs/portal-guide/results-analysis/viewing-individual-results.assets/viewing-graphs-1.png)
 2. Scroll to the desired graph or chart.
 3. Click a specific datapoint.
-   ![image-20230716122353618](./viewing-individual-results.assets/image-20230716122353618.png)
-   
+   ![image-20230716122353618](https://raw.githubusercontent.com/S-HealthStack/S-HealthStack.github.io/post-migrations-structure/docs/portal-guide/results-analysis/viewing-individual-results.assets/image-20230716122353618.png)
 > For more information about graphs and charts, refer to [Viewing Graphs and Charts](./viewing-graphs.md).

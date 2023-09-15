@@ -30,7 +30,7 @@ The Backend Services provide a set of API endpoints for data storage, retrieval,
 
 ## How does it all fit all together?
 
-![img](./overview.assets/clip_image002.gif)
+![img](https://raw.githubusercontent.com/S-HealthStack/S-HealthStack.github.io/post-migrations-structure/docs/overview.assets/clip_image002.gif)
 
 ## Contributing
 
