@@ -26,7 +26,7 @@ services:
         POSTGRESQL_PASSWORD: ${POSTGRES_PASSWORD:-password}
         POSTGRESQL_DATABASE_NAME: ${POSTGRESQL_DATABASE_NAME:-supertokens}
     expose:
-        - "3567"
+        - "3567:3567"
     networks:
         - hrp
     restart: unless-stopped
@@ -50,7 +50,7 @@ services:
         PASSWORD_RESET_URL: ${PASSWORD_RESET_URL:-http://localhost/password-reset}
         INVITATION_URL: ${INVITATION_URL:-http://localhost/account-activation}
         VERIFICATION_URL: ${VERIFICATION_URL:-http://localhost/email-verification}
-        debug: false
+        debug: "false"
     expose:
         - "8080"
     networks:
@@ -72,7 +72,7 @@ services:
         GOOGLE_APPLICATION_CREDENTIALS: ${GOOGLE_APPLICATION_CREDENTIALS:-service-account-key.json}
         JWK_URL: ${JWK_URL:-http://hrp-supertokens:3567/recipe/jwt/jwks}
         ACCOUNT_SERVICE_URL: ${ACCOUNT_SERVICE_URL:-http://hrp-account-service:8080}
-        debug: false
+        debug: "false"
     ports:
         - "3030:3030"
     networks:
@@ -104,7 +104,7 @@ services:
         TRINO_HOST: ${TRINO_HOST:-hrp-trino}
         TRINO_PORT: ${TRINO_PORT:-8080}
         JWK_URL: ${JWK_URL:-http://hrp-supertokens:3567/recipe/jwt/jwks}
-        debug: false
+        debug: "false"
     expose:
         - "3030"
     networks:
@@ -117,7 +117,7 @@ services:
     environment:
         FIXED_DELAY_MILLISEC: ${FIXED_DELAY_MILLISEC:-5000}
         ACCOUNT_SERVICE_URL: ${ACCOUNT_SERVICE_URL:-http://hrp-account-service:8080}
-        debug: false
+        debug: "false"
     depends_on:
         - account-service
     volumes:
@@ -143,7 +143,7 @@ services:
         AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-aws_secret_access_key}
         AWS_BUCKET_NAME: ${AWS_BUCKET_NAME:-aws_bucket}
         AWS_PRE_SIGNED_URL_DURATION: ${AWS_PRE_SIGNED_URL_DURATION:-60}
-        debug: false
+        debug: "false"
     volumes:
         - ./service-account-key.json:/etc/gcp/service-account-key.json      
     expose:
