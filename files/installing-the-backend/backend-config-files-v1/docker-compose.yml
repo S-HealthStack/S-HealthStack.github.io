@@ -16,7 +16,7 @@ services:
     restart: unless-stopped
   supertokens:
     container_name: hrp-supertokens
-    image: supertokens/supertokens-postgresql
+    image: supertokens/supertokens-postgresql:6.0
     depends_on:
         - postgres
     environment:
