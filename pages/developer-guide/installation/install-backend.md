@@ -203,7 +203,7 @@ Modify the supertokens service under `docker-compose.yml` file as follows to ena
 ```
 supertokens:
     container_name: hrp-supertokens
-    image: supertokens/supertokens-postgresql
+    image: supertokens/supertokens-postgresql:6.0
     depends_on:
         - postgres
     environment:
@@ -314,7 +314,7 @@ This creates a bridge network which allows containers connected to it to communi
    -e POSTGRESQL_DATABASE_NAME=supertokens \
    --expose 3567 \
    --restart=unless-stopped \
-   supertokens/supertokens-postgresql
+   supertokens/supertokens-postgresql:6.0
    ```
 
    This command sets up the SuperTokens container with the necessary environment variables and network configurations. The password (`mypassword`) should be the same as what was set in the previous step for the PostgreSQL database. Port `3567` is exposed for communication, and the container will restart automatically unless stopped. <br><br> If you do not have access to a mail server, execute the following command:
@@ -329,7 +329,7 @@ This creates a bridge network which allows containers connected to it to communi
    -e POSTGRESQL_DATABASE_NAME=supertokens \
    -p 3567:3567 \
    --restart=unless-stopped \
-   supertokens/supertokens-postgresql
+   supertokens/supertokens-postgresql:6.0
    ```
 
 2. **Verify the Platform Service is Running:**
