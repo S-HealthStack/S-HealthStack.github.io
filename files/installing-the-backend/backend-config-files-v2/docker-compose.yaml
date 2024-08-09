@@ -1,0 +1,106 @@
+services:
+  redis:
+    image: redis:alpine
+    restart: always
+    environment:
+      REDIS_PASSWORD: pw
+    ports:
+      - 6379:6379
+    networks:
+      - app_network
+
+  mongo:
+    image: mongo:7.0.12
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: admin
+    ports:
+      - 27018:27017
+    networks:
+      - app_network
+
+  postgres:
+    image: postgres:14.12
+    volumes:
+      - ./postgres-databases.sql:/docker-entrypoint-initdb.d/postgres-databases.sql
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+    ports:
+      - 5434:5432
+    networks:
+      - app_network
+    restart: unless-stopped
+    healthcheck:
+      test: ['CMD', 'pg_isready -U supertokens_user']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  supertokens:
+    image: supertokens/supertokens-postgresql:6.0
+    depends_on:
+      - postgres
+      - mongo
+    ports:
+      - 3567:3567
+    environment:
+      POSTGRESQL_CONNECTION_URI: "postgresql://postgres:admin@postgres:5432/supertokens"
+    networks:
+      - app_network
+    restart: unless-stopped
+    healthcheck:
+      test: >
+        bash -c 'exec 3<>/dev/tcp/127.0.0.1/3567 && echo -e "GET /hello HTTP/1.1\r\nhost: 127.0.0.1:3567\r\nConnection: close\r\n\r\n" >&3 && cat <&3 | grep "Hello"'
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    image: shs/backend:2.0
+    restart: always
+    depends_on:
+      - supertokens
+      - redis
+    ports:
+      - 50001:50001
+    environment:
+      debug: true
+      DATABASE_TYPE: MONGO
+      AWS_BUCKET_NAME: test-bucket
+      AWS_PRESIGNED_URL_DURATION: 60
+      AWS_REGION: ap-northeast-2
+      AWS_ACCESS_KEY_ID: test-access-key
+      AWS_SECRET_ACCESS_KEY: test-secret-access-key
+      CASBIN_DB_HOST: postgres
+      CASBIN_DB_PORT: 5432
+      CASBIN_DB_SCHEMA: casbin
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: pw
+      REDIS_SSL_ENABLED: false
+      SUPER_TOKENS_JWK_URL: http://supertokens:3567/recipe/jwt/jwks
+      SUPER_TOKENS_URL: http://supertokens:3567
+      CASBIN_DB_USERNAME: postgres
+      CASBIN_DB_PASSWORD: admin
+      MONGODB_URI: mongodb://mongo:admin@mongo:27017
+    networks:
+      - app_network
+
+  portal:
+    image: shs/web:2.0
+    restart: always
+    depends_on:
+      - backend
+    ports:
+      - 80:80
+    environment:
+      API_URL: http://localhost:50001
+    networks:
+      - app_network
+     
+networks:
+  app_network:
+    driver: bridge
+
