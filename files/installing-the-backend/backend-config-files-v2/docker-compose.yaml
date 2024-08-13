@@ -68,23 +68,17 @@ services:
     environment:
       debug: true
       DATABASE_TYPE: MONGO
-      AWS_BUCKET_NAME: test-bucket
-      AWS_PRESIGNED_URL_DURATION: 60
-      AWS_REGION: ap-northeast-2
-      AWS_ACCESS_KEY_ID: test-access-key
-      AWS_SECRET_ACCESS_KEY: test-secret-access-key
       CASBIN_DB_HOST: postgres
       CASBIN_DB_PORT: 5432
       CASBIN_DB_SCHEMA: casbin
+      CASBIN_DB_USERNAME: postgres
+      CASBIN_DB_PASSWORD: admin
+      MONGODB_URI: mongodb://mongo:admin@mongo:27017
       REDIS_HOST: redis
       REDIS_PORT: 6379
       REDIS_PASSWORD: pw
       REDIS_SSL_ENABLED: false
-      SUPER_TOKENS_JWK_URL: http://supertokens:3567/recipe/jwt/jwks
       SUPER_TOKENS_URL: http://supertokens:3567
-      CASBIN_DB_USERNAME: postgres
-      CASBIN_DB_PASSWORD: admin
-      MONGODB_URI: mongodb://mongo:admin@mongo:27017
     networks:
       - app_network
 
