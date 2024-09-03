@@ -42,7 +42,6 @@ services:
     image: supertokens/supertokens-postgresql:6.0
     depends_on:
       - postgres
-      - mongo
     ports:
       - 3567:3567
     environment:
@@ -57,12 +56,24 @@ services:
       timeout: 5s
       retries: 5
 
+  trino:
+    image: trinodb/trino:431
+    volumes:
+      - ./mongodb.properties:/etc/trino/catalog/mongodb.properties
+    depends_on:
+      - mongo
+    networks:
+      - app_network
+    restart: unless-stopped
+
   backend:
     image: bluesquanium/shs-backend:latest
+    pull_policy: always
     restart: always
     depends_on:
-      - supertokens
       - redis
+      - supertokens
+      - trino
     ports:
       - 50001:50001
     environment:
@@ -79,11 +90,15 @@ services:
       REDIS_PASSWORD: pw
       REDIS_SSL_ENABLED: false
       SUPER_TOKENS_URL: http://supertokens:3567
+      TRINO_CATALOG: mongodb
+      TRINO_HOST: trino
+      TRINO_PORT: 8080
     networks:
       - app_network
 
   portal:
     image: bluesquanium/shs-web:latest
+    pull_policy: always
     restart: always
     depends_on:
       - backend
