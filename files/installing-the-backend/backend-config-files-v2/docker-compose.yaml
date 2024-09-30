@@ -67,7 +67,7 @@ services:
     restart: unless-stopped
 
   backend:
-    image: bluesquanium/shs-backend:latest
+    image: researchstack/backend-system:v2.0-beta
     pull_policy: always
     restart: always
     depends_on:
